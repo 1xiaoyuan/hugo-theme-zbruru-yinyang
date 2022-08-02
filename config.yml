@@ -74,7 +74,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there, i'm zburu \U0001F44B"
-    Content: 这是一个静态博客，存放我的 typecho 博客备份，没有任何交互功能，纯文字站点，托管在 vercel 。
+    Content: 这是一个静态博客，存放我的 typecho 博客备份，没有任何交互功能，纯文字站点，托管在 vercel 。<br> 订阅地址【 https://zburu-hugo.vercel.app/index.xml 】
 
   socialIcons:
     - name: twitter
@@ -98,8 +98,8 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/zburu/hugo-blog/content"
-    Text: "Suggest Changes" # edit text
+    URL: "https://github.com/zburu/hugo-blog/blob/main/content"
+    Text: "Edit" # edit text
     appendFilePath: true # to append file path to Edit link
 
   # for search
@@ -114,22 +114,26 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
+    - identifier: posts
+      name: posts
+      url: /posts
+      weight: 1
     - identifier: categories
       name: categories
-      url: /categories/
-      weight: 1
+      url: /categories
+      weight: 2
     - identifier: tags
       name: tags
-      url: /tags/
-      weight: 2
+      url: /tags
+      weight: 3
     - identifier: search
       name: search
-      url: /search/
-      weight: 3
+      url: /search
+      weight: 4
     - identifier: about
       name: about
-      url: /about/
-      weight: 4
+      url: /about
+      weight: 5
     - identifier: github
       name: github
       url: https://github.com/zburu

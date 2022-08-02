@@ -62,7 +62,7 @@
     </item>
     
     <item>
-      <title>如何使用坚果云进行多端同步?</title>
+      <title>obsidian 如何使用坚果云进行多端同步?</title>
       <link>https://zburu-hugo.vercel.app/posts/20220627/</link>
       <pubDate>Mon, 27 Jun 2022 13:53:00 +0000</pubDate>
       
@@ -370,22 +370,6 @@ javascript:void function(){var lauthor=[&amp;#34;#author&amp;#34;,&amp;#34;input
 运行 最后回到定时任务，在分页的最后一页，找到最开始的那个脚本，单击允许，就会一直转圈在运行中，等到运行结束之后，选择禁用它，以后会始终保定时运行的。
 最后为了安全起见，把前面的脚本中带有 加密 二字的任务全部禁用。
 到这里就结束了，基本每天可以跑个100-200左右的豆子，虽然少，时间长了也很可观，以后买东西可以抵扣，心中暗爽&amp;hellip;.</description>
-    </item>
-    
-    <item>
-      <title>友链</title>
-      <link>https://zburu-hugo.vercel.app/page/20220408/</link>
-      <pubDate>Fri, 08 Apr 2022 15:29:00 +0000</pubDate>
-      
-      <guid>https://zburu-hugo.vercel.app/page/20220408/</guid>
-      <description>其实我个人是不太愿意做友情链接这个东西，但是有时候就会遇到一些文章写的不错的博主，记录下来之后也会经常搞丢，所以干脆开了这个页面。
-友链申请可以前往留言板。
-要求也不多，原创，个人写作，技术博客都可以，资源站等就勿扰了。对时间没有太大的限制，只要你能坚持下去，希望多年后还可以看到你的博客。
-名称：子舒的博客 链接：https://zburu.com 头像：https://img.zburu.com/favicon.png 描述：不如吃茶去
-上面是我的友链信息，添加友链的伙伴可以选择自己需要的信息复制。
-伙伴，推荐一些个人独立博客
-涛叔 江卮可乐 kaiboshi 梦繁星 她亦满眼星河 依然 王宜楷工作室 随望淡思 叶开楗博客 小鹿生活志 东东博客 涓滴意念汇成河 南弦 SharpG.的博客 胡言胡语 墨子卿 青丝博客 Java码农博客 Jay出
-推荐网站 繁星API 梦繁星做的api网站，本站多处使用该站接口，稳定速度快。</description>
     </item>
     
     <item>
@@ -765,24 +749,6 @@ https://cravatar.cn/avatar/ https://sdn.geekzu.org/avatar/</description>
 这里的 .post-content 正文的类名，如果你是别的类名，可以直接将 .post-content 替换掉。
 $(function(){ $(&amp;#39;.post-content img&amp;#39;).addClass(&amp;#39;smallimg&amp;#39;) $(&amp;#39;.post-content img&amp;#39;).wrap(&amp;#39;&amp;lt;div class=&amp;#34;imgbox&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;&amp;#39;) }) 接着我们需要对插件进行初始化，直接在刚才的代码下面写入。
 $(function(){ $(&amp;#39;.post-content img&amp;#39;).addClass(&amp;#39;smallimg&amp;#39;) $(&amp;#39;.post-content img&amp;#39;).wrap(&amp;#39;&amp;lt;div class=&amp;#34;imgbox&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;&amp;#39;) /* smallimg // 小图 bigimg //点击放大的图片 mask //黑色遮罩 */ var obj = new zoom(&amp;#39;mask&amp;#39;, &amp;#39;bigimg&amp;#39;, &amp;#39;smallimg&amp;#39;); obj.</description>
-    </item>
-    
-    <item>
-      <title>标签</title>
-      <link>https://zburu-hugo.vercel.app/page/20211206/</link>
-      <pubDate>Mon, 06 Dec 2021 13:19:00 +0000</pubDate>
-      
-      <guid>https://zburu-hugo.vercel.app/page/20211206/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>留言</title>
-      <link>https://zburu-hugo.vercel.app/page/20211129/</link>
-      <pubDate>Mon, 29 Nov 2021 15:09:00 +0000</pubDate>
-      
-      <guid>https://zburu-hugo.vercel.app/page/20211129/</guid>
-      <description>虽然没什么意义，还是拉个留言板吧&amp;hellip; 但是有些遗憾的是，之前的评论丢失了，从头开始吧&amp;hellip;</description>
     </item>
     
     <item>
@@ -2192,11 +2158,7 @@ mounted: function () { console.log(&amp;#39;mounted:&amp;#39;,document.getElemen
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zburu-hugo.vercel.app/about/</guid>
-      <description>我是子舒。
-个人说明 学习新思想，争做新青年，一个在杭州的新生代农民工，20年毕业后来到杭州，从事前端方面的工作。
-这是一个我在闲暇时间写的博客，写一些生活琐事，也会写一些技术笔记。
-欢迎和我一起探讨一些问题，或者聊聊人生与理想。 the road ahead will be long and our climb will be steep. ✨2021年的新年愿望是可以 new 一个对象！ &amp;mdash;2020.12
-✨2022，希望世界和平。 &amp;ndash;2021.12</description>
+      <description>i&amp;rsquo;m happy.</description>
     </item>
     
     
