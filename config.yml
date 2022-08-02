@@ -82,7 +82,7 @@ params:
     - name: stackoverflow
       url: "https://stackoverflow.com"
     - name: github
-      url: "https://github.com/98fuel"
+      url: "https://github.com/zburu"
 
   analytics:
     google:
@@ -98,7 +98,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/98fuel/hugo-blog/content"
+    URL: "https://github.com/zburu/hugo-blog/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -124,7 +124,7 @@ menu:
       weight: 20
     - identifier: github
       name: github
-      url: https://github.com/98fuel
+      url: https://github.com/zburu
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
