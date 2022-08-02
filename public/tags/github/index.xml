@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Github on 不如吃茶去</title>
+    <link>https://zburu-hugo.vercel.app/tags/github/</link>
+    <description>Recent content in Github on 不如吃茶去</description>
+    <image>
+      <url>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 25 Jan 2022 11:39:00 +0000</lastBuildDate><atom:link href="https://zburu-hugo.vercel.app/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Love主题的数据库</title>
+      <link>https://zburu-hugo.vercel.app/posts/2022-01-25-%E4%BD%BF%E7%94%A8love%E4%B8%BB%E9%A2%98%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <pubDate>Tue, 25 Jan 2022 11:39:00 +0000</pubDate>
+      
+      <guid>https://zburu-hugo.vercel.app/posts/2022-01-25-%E4%BD%BF%E7%94%A8love%E4%B8%BB%E9%A2%98%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <description>基于typecho中的LOVE主题备份的一个数据库文件，因为需要写一百个文章，将名字一一打字进去，非常耗时间和精力，所以我做了这个数据库，可以直接使用。
+作者没有贴Github地址，就直接指向主题列表说明了，这是主题地址
+数据库的仓库地址: https://github.com/zburu/love-sql
+演示网站: https://love.zburu.cn
+我花了点时间将一百件事的数据写进数据库，然后导出它得到这个文件，如果使用了LOVE恋爱主题，可以下载这个 love.sql。
+上传到服务器中 /www/backup/database 文件下，然后在数据库中导入 sql 文件。
+进入网站就可以直接显示一百件事了。</description>
+    </item>
+    
+  </channel>
+</rss>

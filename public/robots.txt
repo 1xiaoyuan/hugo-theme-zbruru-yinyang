@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://zburu-hugo.vercel.app/sitemap.xml
