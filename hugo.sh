@@ -1,4 +1,5 @@
-
+cd e:
+cd hugo-blog
 hugo
 
 time=$(date "+%Y-%m-%d %H:%M:%S")
