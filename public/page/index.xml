@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pages on 不如吃茶去</title>
+    <link>https://zburu-hugo.vercel.app/page/</link>
+    <description>Recent content in Pages on 不如吃茶去</description>
+    <image>
+      <url>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 08 Apr 2022 15:29:00 +0000</lastBuildDate><atom:link href="https://zburu-hugo.vercel.app/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>友链</title>
+      <link>https://zburu-hugo.vercel.app/page/20220408/</link>
+      <pubDate>Fri, 08 Apr 2022 15:29:00 +0000</pubDate>
+      
+      <guid>https://zburu-hugo.vercel.app/page/20220408/</guid>
+      <description>其实我个人是不太愿意做友情链接这个东西，但是有时候就会遇到一些文章写的不错的博主，记录下来之后也会经常搞丢，所以干脆开了这个页面。
+友链申请可以前往留言板。
+要求也不多，原创，个人写作，技术博客都可以，资源站等就勿扰了。对时间没有太大的限制，只要你能坚持下去，希望多年后还可以看到你的博客。
+名称：子舒的博客 链接：https://zburu.com 头像：https://img.zburu.com/favicon.png 描述：不如吃茶去
+上面是我的友链信息，添加友链的伙伴可以选择自己需要的信息复制。
+伙伴，推荐一些个人独立博客
+涛叔 江卮可乐 kaiboshi 梦繁星 她亦满眼星河 依然 王宜楷工作室 随望淡思 叶开楗博客 小鹿生活志 东东博客 涓滴意念汇成河 南弦 SharpG.的博客 胡言胡语 墨子卿 青丝博客 Java码农博客 Jay出
+推荐网站 繁星API 梦繁星做的api网站，本站多处使用该站接口，稳定速度快。</description>
+    </item>
+    
+    <item>
+      <title>标签</title>
+      <link>https://zburu-hugo.vercel.app/page/20211206/</link>
+      <pubDate>Mon, 06 Dec 2021 13:19:00 +0000</pubDate>
+      
+      <guid>https://zburu-hugo.vercel.app/page/20211206/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>留言</title>
+      <link>https://zburu-hugo.vercel.app/page/20211129/</link>
+      <pubDate>Mon, 29 Nov 2021 15:09:00 +0000</pubDate>
+      
+      <guid>https://zburu-hugo.vercel.app/page/20211129/</guid>
+      <description>虽然没什么意义，还是拉个留言板吧&amp;hellip; 但是有些遗憾的是，之前的评论丢失了，从头开始吧&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

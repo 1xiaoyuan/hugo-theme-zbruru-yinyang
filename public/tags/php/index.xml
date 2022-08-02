@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>php on 不如吃茶去</title>
+    <link>https://zburu-hugo.vercel.app/tags/php/</link>
+    <description>Recent content in php on 不如吃茶去</description>
+    <image>
+      <url>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 22 Feb 2022 17:12:00 +0000</lastBuildDate><atom:link href="https://zburu-hugo.vercel.app/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【笔记】使用php写接口文件调用数据</title>
+      <link>https://zburu-hugo.vercel.app/posts/20220222/</link>
+      <pubDate>Tue, 22 Feb 2022 17:12:00 +0000</pubDate>
+      
+      <guid>https://zburu-hugo.vercel.app/posts/20220222/</guid>
+      <description>如何使用 php 写一个接口，然后将数据以 json 文件格式调用。
+&amp;lt;?php header(&amp;#39;Content-Type:application/json; charset=utf-8&amp;#39;); header(&amp;#34;Access-Control-Allow-Origin:*&amp;#34;); $servername = &amp;#34;localhost&amp;#34;; $username = &amp;#34;数据库账号&amp;#34;; $password = &amp;#34;数据库密码&amp;#34;; $dbname = &amp;#34;数据库名称&amp;#34;; // 创建连接 $conn = new mysqli($servername, $username, $password, $dbname); // 检测连接 if ($conn-&amp;gt;connect_error) { die(&amp;#34;连接失败: &amp;#34; . $conn-&amp;gt;connect_error); } $sql = &amp;#34;select slug,title,created,text from typecho_contents&amp;#34;; $result = $conn-&amp;gt;query($sql); if ($result-&amp;gt;num_rows &amp;gt; 0) { // 输出数据 while($row = $result-&amp;gt;fetch_assoc()) { $data[]=$row; } $json = json_encode($data,JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT);//把数据转换为JSON数据. exit($json) ; } else { echo &amp;#34;未查询到结果！&amp;#34;; } $conn-&amp;gt;close(); ?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>随手拍 on 不如吃茶去</title>
+    <link>https://zburu-hugo.vercel.app/tags/%E9%9A%8F%E6%89%8B%E6%8B%8D/</link>
+    <description>Recent content in 随手拍 on 不如吃茶去</description>
+    <image>
+      <url>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 02 Jul 2022 14:11:00 +0000</lastBuildDate><atom:link href="https://zburu-hugo.vercel.app/tags/%E9%9A%8F%E6%89%8B%E6%8B%8D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>好久没看到这么蓝的天</title>
+      <link>https://zburu-hugo.vercel.app/posts/20220702/</link>
+      <pubDate>Sat, 02 Jul 2022 14:11:00 +0000</pubDate>
+      
+      <guid>https://zburu-hugo.vercel.app/posts/20220702/</guid>
+      <description>手机像素一般，更主要的是拍照手法不行，拍不出优美的感觉。</description>
+    </item>
+    
+  </channel>
+</rss>
