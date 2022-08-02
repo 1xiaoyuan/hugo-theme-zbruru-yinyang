@@ -619,5 +619,9 @@
   </url><url>
     <loc>https://zburu-hugo.vercel.app/posts/20200614/</loc>
     <lastmod>2020-06-14T20:57:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zburu-hugo.vercel.app/about/</loc>
+  </url><url>
+    <loc>https://zburu-hugo.vercel.app/search/</loc>
   </url>
 </urlset>
