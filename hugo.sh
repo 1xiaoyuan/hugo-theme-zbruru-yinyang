@@ -1,8 +1,6 @@
 cd e:
 cd hugo-blog
 
-del public
-
 hugo
 
 time=$(date "+%Y-%m-%d %H:%M:%S")
