@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 不如吃茶去</title>
-    <link>https://zburu-hugo.vercel.app/categories/</link>
-    <description>Recent content in Categories on 不如吃茶去</description>
-    <image>
-      <url>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
+    <title>Categories on A Hugo Site</title>
+    <link>http://example.org/categories/</link>
+    <description>Recent content in Categories on A Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 30 Jul 2022 20:11:00 +0000</lastBuildDate><atom:link href="https://zburu-hugo.vercel.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Sat, 30 Jul 2022 20:11:00 +0000</lastBuildDate><atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>技术</title>
-      <link>https://zburu-hugo.vercel.app/categories/%E6%8A%80%E6%9C%AF/</link>
+      <link>http://example.org/categories/%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Sat, 30 Jul 2022 20:11:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/categories/%E6%8A%80%E6%9C%AF/</guid>
+      <guid>http://example.org/categories/%E6%8A%80%E6%9C%AF/</guid>
       <description></description>
     </item>
     
     <item>
       <title>随笔</title>
-      <link>https://zburu-hugo.vercel.app/categories/%E9%9A%8F%E7%AC%94/</link>
+      <link>http://example.org/categories/%E9%9A%8F%E7%AC%94/</link>
       <pubDate>Fri, 29 Jul 2022 17:11:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/categories/%E9%9A%8F%E7%AC%94/</guid>
+      <guid>http://example.org/categories/%E9%9A%8F%E7%AC%94/</guid>
       <description></description>
     </item>
     

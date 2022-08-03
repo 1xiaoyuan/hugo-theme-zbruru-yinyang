@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>随笔 on 不如吃茶去</title>
-    <link>https://zburu-hugo.vercel.app/categories/%E9%9A%8F%E7%AC%94/</link>
-    <description>Recent content in 随笔 on 不如吃茶去</description>
-    <image>
-      <url>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
+    <title>随笔 on A Hugo Site</title>
+    <link>http://example.org/categories/%E9%9A%8F%E7%AC%94/</link>
+    <description>Recent content in 随笔 on A Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 29 Jul 2022 17:11:00 +0000</lastBuildDate><atom:link href="https://zburu-hugo.vercel.app/categories/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Fri, 29 Jul 2022 17:11:00 +0000</lastBuildDate><atom:link href="http://example.org/categories/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>随想录 (7) --- 随便写的别当真</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-07-29-%E9%9A%8F%E6%83%B3%E5%BD%95_7_---_%E9%9A%8F%E4%BE%BF%E5%86%99%E7%9A%84%E5%88%AB%E5%BD%93%E7%9C%9F/</link>
+      <link>http://example.org/posts/2022-07-29-%E9%9A%8F%E6%83%B3%E5%BD%95_7_---_%E9%9A%8F%E4%BE%BF%E5%86%99%E7%9A%84%E5%88%AB%E5%BD%93%E7%9C%9F/</link>
       <pubDate>Fri, 29 Jul 2022 17:11:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-07-29-%E9%9A%8F%E6%83%B3%E5%BD%95_7_---_%E9%9A%8F%E4%BE%BF%E5%86%99%E7%9A%84%E5%88%AB%E5%BD%93%E7%9C%9F/</guid>
+      <guid>http://example.org/posts/2022-07-29-%E9%9A%8F%E6%83%B3%E5%BD%95_7_---_%E9%9A%8F%E4%BE%BF%E5%86%99%E7%9A%84%E5%88%AB%E5%BD%93%E7%9C%9F/</guid>
       <description>好像很久没有写随笔了，最近发生的事很多，却不是件件如人心意。上午烈日当空，下午乌云密布，也已经是常事。当然我说的是天气。
 生活只是尽量让自己过的更好，喂自己一口毒鸡汤，艰难前行。
 &amp;ldquo;定个小目标，先瘦他个十斤！&amp;rdquo; 子舒狠狠的咬下一块鸡肉发出豪言壮语。
@@ -25,29 +23,29 @@
     
     <item>
       <title>2022年7月8日安倍晋三遭枪击</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-07-08-%E6%96%B0%E9%97%BB__2022%E5%B9%B47%E6%9C%888%E6%97%A5%E5%AE%89%E5%80%8D%E6%99%8B%E4%B8%89%E9%81%AD%E6%9E%AA%E5%87%BB/</link>
+      <link>http://example.org/posts/2022-07-08-%E6%96%B0%E9%97%BB__2022%E5%B9%B47%E6%9C%888%E6%97%A5%E5%AE%89%E5%80%8D%E6%99%8B%E4%B8%89%E9%81%AD%E6%9E%AA%E5%87%BB/</link>
       <pubDate>Fri, 08 Jul 2022 13:04:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-07-08-%E6%96%B0%E9%97%BB__2022%E5%B9%B47%E6%9C%888%E6%97%A5%E5%AE%89%E5%80%8D%E6%99%8B%E4%B8%89%E9%81%AD%E6%9E%AA%E5%87%BB/</guid>
+      <guid>http://example.org/posts/2022-07-08-%E6%96%B0%E9%97%BB__2022%E5%B9%B47%E6%9C%888%E6%97%A5%E5%AE%89%E5%80%8D%E6%99%8B%E4%B8%89%E9%81%AD%E6%9E%AA%E5%87%BB/</guid>
       <description>2022年7月8日，安倍晋三在街头发表演讲时遭枪击。据奈良市消防局称，遇袭的安倍晋三目前失去意识，心肺停止。嫌疑人41岁男子山上彻也（现住奈良市）随后被控制。
 相关报道: https://www.sohu.com/a/565207100_121425542 https://new.qq.com/omn/20220708/20220708A03YIA00.html</description>
     </item>
     
     <item>
       <title>好久没看到这么蓝的天</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-07-02-%E5%A5%BD%E4%B9%85%E6%B2%A1%E7%9C%8B%E5%88%B0%E8%BF%99%E4%B9%88%E8%93%9D%E7%9A%84%E5%A4%A9/</link>
+      <link>http://example.org/posts/2022-07-02-%E5%A5%BD%E4%B9%85%E6%B2%A1%E7%9C%8B%E5%88%B0%E8%BF%99%E4%B9%88%E8%93%9D%E7%9A%84%E5%A4%A9/</link>
       <pubDate>Sat, 02 Jul 2022 14:11:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-07-02-%E5%A5%BD%E4%B9%85%E6%B2%A1%E7%9C%8B%E5%88%B0%E8%BF%99%E4%B9%88%E8%93%9D%E7%9A%84%E5%A4%A9/</guid>
+      <guid>http://example.org/posts/2022-07-02-%E5%A5%BD%E4%B9%85%E6%B2%A1%E7%9C%8B%E5%88%B0%E8%BF%99%E4%B9%88%E8%93%9D%E7%9A%84%E5%A4%A9/</guid>
       <description>手机像素一般，更主要的是拍照手法不行，拍不出优美的感觉。</description>
     </item>
     
     <item>
       <title>usb 接口的三面性</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-06-21-usb_%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%B8%89%E9%9D%A2%E6%80%A7/</link>
+      <link>http://example.org/posts/2022-06-21-usb_%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%B8%89%E9%9D%A2%E6%80%A7/</link>
       <pubDate>Tue, 21 Jun 2022 12:22:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-06-21-usb_%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%B8%89%E9%9D%A2%E6%80%A7/</guid>
+      <guid>http://example.org/posts/2022-06-21-usb_%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%B8%89%E9%9D%A2%E6%80%A7/</guid>
       <description>传统的 usb 接口是一个神奇的物品，当你插入第一次的时候肯定是反方向的，所以你要反过来插第二次，但是结果仍然是插不进去。这个时候你就会发现，它存在第三面，所以当你再次反过来的时候就可以正常插进接口了。
 这就是 usb 接口的三面性 😐。
 所以为了保护精神和心理不受伤害，请离开传统的 usb ，投入 type-c 的怀抱吧！</description>
@@ -55,10 +53,10 @@
     
     <item>
       <title>无题</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-06-18-%E6%97%A0%E9%A2%98/</link>
+      <link>http://example.org/posts/2022-06-18-%E6%97%A0%E9%A2%98/</link>
       <pubDate>Sat, 18 Jun 2022 13:32:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-06-18-%E6%97%A0%E9%A2%98/</guid>
+      <guid>http://example.org/posts/2022-06-18-%E6%97%A0%E9%A2%98/</guid>
       <description>当情绪破防的时候， 任何事情都是最后一根稻草。
 尘埃落定。
 &amp;mdash;2022/06/23</description>
@@ -66,10 +64,10 @@
     
     <item>
       <title>随想录 (6)</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-06-10-%E9%9A%8F%E6%83%B3%E5%BD%95_6/</link>
+      <link>http://example.org/posts/2022-06-10-%E9%9A%8F%E6%83%B3%E5%BD%95_6/</link>
       <pubDate>Fri, 10 Jun 2022 12:29:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-06-10-%E9%9A%8F%E6%83%B3%E5%BD%95_6/</guid>
+      <guid>http://example.org/posts/2022-06-10-%E9%9A%8F%E6%83%B3%E5%BD%95_6/</guid>
       <description>随着年龄的增长，越发感觉自我想象力的缺失。
 最近迷上了科幻小说，遂找到刘慈欣的小说集，大概二十多篇，花上一周时间研读完毕，只有一种惊艳的感觉，不论是文笔还是世界观架构，都令我着迷。
 而大刘作为理工生，将充满浪漫色彩的想象力和严谨的物理学知识相结合，我很佩服。
@@ -81,10 +79,10 @@
     
     <item>
       <title>随想录 (5)</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-06-02-%E9%9A%8F%E6%83%B3%E5%BD%95_5/</link>
+      <link>http://example.org/posts/2022-06-02-%E9%9A%8F%E6%83%B3%E5%BD%95_5/</link>
       <pubDate>Thu, 02 Jun 2022 08:54:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-06-02-%E9%9A%8F%E6%83%B3%E5%BD%95_5/</guid>
+      <guid>http://example.org/posts/2022-06-02-%E9%9A%8F%E6%83%B3%E5%BD%95_5/</guid>
       <description>抽空看完了爱死机第三季，个人感受比第二季优秀，但是还是不如第一季。太过追求三者的结合，科幻与死亡的元素，不够灵活。
 但是其中的剧情还是比较精彩的，比如邪神那一集，估计只有了解克苏鲁的人才能看懂，结局也比较贴合剧情走向。女子挖去了眼睛和耳朵，听不到邪神的喃语，才免受精神污染，活着走出危机。（2022/05/26）
 bootcss4是一个轻量前端ui框架，最近的项目中用到了它，使用体验还不错，不过功能倒是与element相比弱了一些（2022/05/27）
@@ -94,10 +92,10 @@ bootcss4是一个轻量前端ui框架，最近的项目中用到了它，使用�
     
     <item>
       <title>随想录 (4)</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-05-13-%E9%9A%8F%E6%83%B3%E5%BD%95_4_/</link>
+      <link>http://example.org/posts/2022-05-13-%E9%9A%8F%E6%83%B3%E5%BD%95_4_/</link>
       <pubDate>Fri, 13 May 2022 10:37:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-05-13-%E9%9A%8F%E6%83%B3%E5%BD%95_4_/</guid>
+      <guid>http://example.org/posts/2022-05-13-%E9%9A%8F%E6%83%B3%E5%BD%95_4_/</guid>
       <description>好事和坏事总是接踵而至，你永远不知道下一秒会发生什么。但是总有解决的办法，不是吗？但实际上我也不确定。
 昨天很晚才睡，想了很多，乱七八糟的。生活哪有容易的事情，就跟摸石头过河一样，跌跌拌拌，最后才找到适合自己生活的模式。（2020/05/09）
 coding构建部署同步github好像有bug，搞了半天最后重新刷新 GitHub.com OAuth 认证就好了。（2020/05/10）
@@ -113,10 +111,10 @@ coding构建部署同步github好像有bug，搞了半天最后重新刷新 GitH
     
     <item>
       <title>随想录 (3)</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-05-06-%E9%9A%8F%E6%83%B3%E5%BD%95_3/</link>
+      <link>http://example.org/posts/2022-05-06-%E9%9A%8F%E6%83%B3%E5%BD%95_3/</link>
       <pubDate>Fri, 06 May 2022 13:23:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-05-06-%E9%9A%8F%E6%83%B3%E5%BD%95_3/</guid>
+      <guid>http://example.org/posts/2022-05-06-%E9%9A%8F%E6%83%B3%E5%BD%95_3/</guid>
       <description>五一假期回老家处理一些事情，收拾东西的时候，从角落里翻出来几张老照片，很有怀念意义。（2022/05/03）
 好事和坏事总是接踵而至，你永远不知道下一秒会发生什么。但是总有解决的办法，不是吗？（2022/05/05）
 整理了一下个人书单，发现读过的书太少了，打算做一个阅读计划，保证持续阅读。
@@ -125,10 +123,10 @@ ps: 这周碎碎念很少，因为五一有事出去了，身体和心灵都没�
     
     <item>
       <title>随想录 (2)</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-04-29-%E9%9A%8F%E6%83%B3%E5%BD%95_2/</link>
+      <link>http://example.org/posts/2022-04-29-%E9%9A%8F%E6%83%B3%E5%BD%95_2/</link>
       <pubDate>Fri, 29 Apr 2022 09:48:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-04-29-%E9%9A%8F%E6%83%B3%E5%BD%95_2/</guid>
+      <guid>http://example.org/posts/2022-04-29-%E9%9A%8F%E6%83%B3%E5%BD%95_2/</guid>
       <description>今天醒的很早，原来以为是失眠，结果是早起，这两天发生的有点多，导致情绪都有些低落，精神萎靡。希望风波赶紧过去，太影响生活了。
 （2022/04/25）
 很喜欢雨后的阴天，骑着车，微凉的空气扑面而来，清新而舒适，本来早上有些困倦的大脑清醒了很多。
@@ -142,10 +140,10 @@ ps: 这周碎碎念很少，因为五一有事出去了，身体和心灵都没�
     
     <item>
       <title>关于我选择笔记系统这件小事</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-04-28-%E5%85%B3%E4%BA%8E%E6%88%91%E9%80%89%E6%8B%A9%E7%AC%94%E8%AE%B0%E7%B3%BB%E7%BB%9F%E8%BF%99%E4%BB%B6%E5%B0%8F%E4%BA%8B/</link>
+      <link>http://example.org/posts/2022-04-28-%E5%85%B3%E4%BA%8E%E6%88%91%E9%80%89%E6%8B%A9%E7%AC%94%E8%AE%B0%E7%B3%BB%E7%BB%9F%E8%BF%99%E4%BB%B6%E5%B0%8F%E4%BA%8B/</link>
       <pubDate>Thu, 28 Apr 2022 22:43:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-04-28-%E5%85%B3%E4%BA%8E%E6%88%91%E9%80%89%E6%8B%A9%E7%AC%94%E8%AE%B0%E7%B3%BB%E7%BB%9F%E8%BF%99%E4%BB%B6%E5%B0%8F%E4%BA%8B/</guid>
+      <guid>http://example.org/posts/2022-04-28-%E5%85%B3%E4%BA%8E%E6%88%91%E9%80%89%E6%8B%A9%E7%AC%94%E8%AE%B0%E7%B3%BB%E7%BB%9F%E8%BF%99%E4%BB%B6%E5%B0%8F%E4%BA%8B/</guid>
       <description>受年龄增长以及生活影响，人接触到的新事物和知识将会越来越多，大脑就显得有些混乱了，我也不敢保证自己的思维会始终保持一个高强度的在线状态。
 因此决定整理个人知识库， 将大脑中的片段和思想整理出来。以笔记和文字的形式将他记录下来，但是最近一直在寻求这样的工具，多方对比，也没有一款能真正满足我的需求的工具。
 最好是自建的笔记，因为我今天在语雀写了一篇私密笔记，或许因为内容略带敏感吧，然后就被审查了，说我违规。
@@ -177,10 +175,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>随想录 (1)</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-04-24-%E9%9A%8F%E6%83%B3%E5%BD%95_1/</link>
+      <link>http://example.org/posts/2022-04-24-%E9%9A%8F%E6%83%B3%E5%BD%95_1/</link>
       <pubDate>Sun, 24 Apr 2022 09:29:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-04-24-%E9%9A%8F%E6%83%B3%E5%BD%95_1/</guid>
+      <guid>http://example.org/posts/2022-04-24-%E9%9A%8F%E6%83%B3%E5%BD%95_1/</guid>
       <description>正式启动一周碎碎念计划，起因是无意中发现了一个网站，古天乐的博客 。看完之后震撼了，虽然每天都是很简短的一句话，但是一个习惯坚持了12年。
 因为我决定仿效他的做法，看看自己是否能坚持足够长的时间。碎片化一些记录，然后通过语雀小记进行记录，最后在每周最后一天工作日总结一下，发布到博客。
 （2022/04/20）
@@ -198,10 +196,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>2022 清明出游</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-04-07-2022_%E6%B8%85%E6%98%8E%E5%87%BA%E6%B8%B8/</link>
+      <link>http://example.org/posts/2022-04-07-2022_%E6%B8%85%E6%98%8E%E5%87%BA%E6%B8%B8/</link>
       <pubDate>Thu, 07 Apr 2022 10:21:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-04-07-2022_%E6%B8%85%E6%98%8E%E5%87%BA%E6%B8%B8/</guid>
+      <guid>http://example.org/posts/2022-04-07-2022_%E6%B8%85%E6%98%8E%E5%87%BA%E6%B8%B8/</guid>
       <description>清明过去两天了，由于出去玩了两天，身体很累等原因，再加上工作忙碌所以没有来得及记录。今天略有闲时间，整理一下随笔。
 爬山&amp;mdash;杭州半山森林公园 相比于西湖等景点，半山已经算是人非常少的呢，因为疫情原因也不敢去外地太远的地方，万一给隔离就完蛋了，所以就在市内景点挑人少没去过的地方玩了一下。
 西溪&amp;mdash;花朝节 &amp;ldquo;迟日江山丽,春风花草香。&amp;rdquo; 一年一度的西溪花朝节，虽然说平时也都经常去，但是借着这个假期和女朋友出来闲逛，也挺舒服，刚好也不热穿着卫衣，漫步在花丛中，别有一番风味。
@@ -210,10 +208,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>好久不做饭，突然上手倒也说得过去</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-03-21-%E5%A5%BD%E4%B9%85%E4%B8%8D%E5%81%9A%E9%A5%AD%E7%AA%81%E7%84%B6%E4%B8%8A%E6%89%8B%E5%80%92%E4%B9%9F%E8%AF%B4%E5%BE%97%E8%BF%87%E5%8E%BB/</link>
+      <link>http://example.org/posts/2022-03-21-%E5%A5%BD%E4%B9%85%E4%B8%8D%E5%81%9A%E9%A5%AD%E7%AA%81%E7%84%B6%E4%B8%8A%E6%89%8B%E5%80%92%E4%B9%9F%E8%AF%B4%E5%BE%97%E8%BF%87%E5%8E%BB/</link>
       <pubDate>Mon, 21 Mar 2022 17:36:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-03-21-%E5%A5%BD%E4%B9%85%E4%B8%8D%E5%81%9A%E9%A5%AD%E7%AA%81%E7%84%B6%E4%B8%8A%E6%89%8B%E5%80%92%E4%B9%9F%E8%AF%B4%E5%BE%97%E8%BF%87%E5%8E%BB/</guid>
+      <guid>http://example.org/posts/2022-03-21-%E5%A5%BD%E4%B9%85%E4%B8%8D%E5%81%9A%E9%A5%AD%E7%AA%81%E7%84%B6%E4%B8%8A%E6%89%8B%E5%80%92%E4%B9%9F%E8%AF%B4%E5%BE%97%E8%BF%87%E5%8E%BB/</guid>
       <description>故事前景参照上上篇文章 《小区封锁下的生活》。不想订外卖，打工人觉得饭菜太贵，并且好像味道也就那样，所以和对象打算自己动手，丰衣足食。
 在美团买了一些菜，肉，水果等，可以放到小区门口，报上门牌号，会有工作人员帮忙送进来，也挺方便。唯一不好的就是这两天断断续续的下雨，辛苦工作人员和医护人员一直在采样核酸。（写下这篇之前，刚去做过核酸。）
 用简单的食材做出了味道还不错的饭，只能称之为饭，而不是美食，因为我们俩的手艺还在进步中。
@@ -226,10 +224,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>小区封锁下的生活</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-03-20-%E5%B0%8F%E5%8C%BA%E5%B0%81%E9%94%81%E4%B8%8B%E7%9A%84%E7%94%9F%E6%B4%BB/</link>
+      <link>http://example.org/posts/2022-03-20-%E5%B0%8F%E5%8C%BA%E5%B0%81%E9%94%81%E4%B8%8B%E7%9A%84%E7%94%9F%E6%B4%BB/</link>
       <pubDate>Sun, 20 Mar 2022 00:15:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-03-20-%E5%B0%8F%E5%8C%BA%E5%B0%81%E9%94%81%E4%B8%8B%E7%9A%84%E7%94%9F%E6%B4%BB/</guid>
+      <guid>http://example.org/posts/2022-03-20-%E5%B0%8F%E5%8C%BA%E5%B0%81%E9%94%81%E4%B8%8B%E7%9A%84%E7%94%9F%E6%B4%BB/</guid>
       <description>2022年3月19日，坐标杭州，很不巧，是我最近几年经历的第一次疫情封锁小区。
 小区里出现一个密切接触者，询问过医护人员，可能是疑似感染新冠病毒。来的有些突然，不过倒也在意料之中，前段时间已经在余杭区爆发过一场大规模的疫情，我所在的地方紧挨着余杭区的边缘，说不好因为什么原因传播，已经尽力做好防护。
 而我是今天刚搬来这里住的，和对象租房子找到这个小区。租房之旅已经够辛苦，中午收拾完东西准备躺着休息一下，然后下午收到通知，小区即将封锁。然后赶紧出门，买菜和生活用品，屯够了一周的物品，也够生活了，没什么大问题。
@@ -242,10 +240,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>时隔六年我终于换电脑了</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-03-03-%E6%97%B6%E9%9A%94%E5%85%AD%E5%B9%B4%E6%88%91%E7%BB%88%E4%BA%8E%E6%8D%A2%E7%94%B5%E8%84%91%E4%BA%86/</link>
+      <link>http://example.org/posts/2022-03-03-%E6%97%B6%E9%9A%94%E5%85%AD%E5%B9%B4%E6%88%91%E7%BB%88%E4%BA%8E%E6%8D%A2%E7%94%B5%E8%84%91%E4%BA%86/</link>
       <pubDate>Thu, 03 Mar 2022 16:56:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-03-03-%E6%97%B6%E9%9A%94%E5%85%AD%E5%B9%B4%E6%88%91%E7%BB%88%E4%BA%8E%E6%8D%A2%E7%94%B5%E8%84%91%E4%BA%86/</guid>
+      <guid>http://example.org/posts/2022-03-03-%E6%97%B6%E9%9A%94%E5%85%AD%E5%B9%B4%E6%88%91%E7%BB%88%E4%BA%8E%E6%8D%A2%E7%94%B5%E8%84%91%E4%BA%86/</guid>
       <description>迫于我之前的电脑已经服役了六年，还是高考结束后购买的，一直陪伴我度过了整个青春 ?。 大学时写论文，作业都是通过它。
 但是最近越来越严重，主要是屏幕的色域出现了一些问题，大面积发白，很伤眼睛。
 其次显卡配置等，虽然凑合一下还能用，但也是很多年前的产物了。显卡、cpu也是不能满足我目前的使用了（主要是现在的游戏太吃配置了），综合考虑我决定让它退休? 。然后在我精挑细选下，选择了惠普暗影精灵7。
@@ -262,10 +260,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>“不如吃茶去”</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-02-24-%E4%B8%8D%E5%A6%82%E5%90%83%E8%8C%B6%E5%8E%BB/</link>
+      <link>http://example.org/posts/2022-02-24-%E4%B8%8D%E5%A6%82%E5%90%83%E8%8C%B6%E5%8E%BB/</link>
       <pubDate>Thu, 24 Feb 2022 10:29:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-02-24-%E4%B8%8D%E5%A6%82%E5%90%83%E8%8C%B6%E5%8E%BB/</guid>
+      <guid>http://example.org/posts/2022-02-24-%E4%B8%8D%E5%A6%82%E5%90%83%E8%8C%B6%E5%8E%BB/</guid>
       <description>想了很久，也算是结合自己的心境吧，打算正式起一个博客名称，以前子舒的博客，也就是挂着自己的名字，总觉得差点意思。所以现在决定更名为 &amp;lsquo;不如吃茶去&amp;rsquo;。其中含义，听我娓娓道来&amp;hellip;
 我是从中学开始接触音乐的，当时喜欢唱歌，会听很多当时流行的歌曲。那时候比较火的最多的还是周杰伦的歌，还有就是林俊杰等歌手。
 然后再到初入高中，准确的说应该是初三，开始听许嵩的歌，最开始是《自定义》专辑，每天都听，节奏很有旋律感。为此还专门买了一个mp4，带着一块小屏幕的那种，下载了许嵩的歌，上学放学路上经常会听，包括在上晚自习的时候，也会一边听，一边写作业。
@@ -279,10 +277,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>2022新春快乐</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-01-31-2022%E6%96%B0%E6%98%A5%E5%BF%AB%E4%B9%90/</link>
+      <link>http://example.org/posts/2022-01-31-2022%E6%96%B0%E6%98%A5%E5%BF%AB%E4%B9%90/</link>
       <pubDate>Mon, 31 Jan 2022 13:22:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-01-31-2022%E6%96%B0%E6%98%A5%E5%BF%AB%E4%B9%90/</guid>
+      <guid>http://example.org/posts/2022-01-31-2022%E6%96%B0%E6%98%A5%E5%BF%AB%E4%B9%90/</guid>
       <description>万物更新，旧疾当愈，长安常安。
 今日是除夕，极目不见故土，抬头却是一片星空。
 今年也是在杭州过的第三个新年，因为疫情的缘故，支持国家防疫政策。
@@ -293,10 +291,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>《夜幕》</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-01-21-%E5%A4%9C%E5%B9%95/</link>
+      <link>http://example.org/posts/2022-01-21-%E5%A4%9C%E5%B9%95/</link>
       <pubDate>Fri, 21 Jan 2022 12:00:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-01-21-%E5%A4%9C%E5%B9%95/</guid>
+      <guid>http://example.org/posts/2022-01-21-%E5%A4%9C%E5%B9%95/</guid>
       <description>0. 引言 如果再来一次的话，我不敢保证还会再做出这样的选择。
 “悲剧是一种特殊的，无与伦比的喜剧。任何一种事物走到极端时，都会不可避免的朝着反方向前进。所以正确的方法应该是在随着时间的推移中，通过自身的动力以及外在的压力双重作用下，不断修正自己，那句话怎么说来着，是一种缓慢但稳定的螺旋式上升。” 男子响亮而坚定的声音在天花板下回荡。​
 1. 悲剧 “威廉·莎士比亚对人性的缺陷有着自己独到的理解和表达方式，这种思想最典型的表现是在戏剧《哈姆雷特》中..”
@@ -356,10 +354,10 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>读一读柏拉图的《理想国》</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-01-19-%E8%AF%BB%E4%B8%80%E8%AF%BB%E6%9F%8F%E6%8B%89%E5%9B%BE%E7%9A%84%E7%90%86%E6%83%B3%E5%9B%BD/</link>
+      <link>http://example.org/posts/2022-01-19-%E8%AF%BB%E4%B8%80%E8%AF%BB%E6%9F%8F%E6%8B%89%E5%9B%BE%E7%9A%84%E7%90%86%E6%83%B3%E5%9B%BD/</link>
       <pubDate>Wed, 19 Jan 2022 15:10:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-01-19-%E8%AF%BB%E4%B8%80%E8%AF%BB%E6%9F%8F%E6%8B%89%E5%9B%BE%E7%9A%84%E7%90%86%E6%83%B3%E5%9B%BD/</guid>
+      <guid>http://example.org/posts/2022-01-19-%E8%AF%BB%E4%B8%80%E8%AF%BB%E6%9F%8F%E6%8B%89%E5%9B%BE%E7%9A%84%E7%90%86%E6%83%B3%E5%9B%BD/</guid>
       <description>最近在读柏拉图的《理想国》，源于罗翔老师的推荐，让我也有一些冲动。也抱着对自己灵魂有一丝净化的作用。让浮躁的内心安静下来。
 但是通书有一点诡辩的色彩，所以还是要认真分辨的。不可掉入设置的“陷阱”，就像是生活一般，做事都要对其认识分析，不可一概而信。人都是主观的，每个人读到的内容都是不一样的。
 当一个人知道自己将要死亡的时候，会有一种恐慌和忧虑在他的脑子里久久不散，即来世会受到今世所做之恶的惩罚。
@@ -381,20 +379,20 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>网易云音乐年度报告分享</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-12-27-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%E5%88%86%E4%BA%AB/</link>
+      <link>http://example.org/posts/2021-12-27-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%E5%88%86%E4%BA%AB/</link>
       <pubDate>Mon, 27 Dec 2021 15:50:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-12-27-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%E5%88%86%E4%BA%AB/</guid>
+      <guid>http://example.org/posts/2021-12-27-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%E5%88%86%E4%BA%AB/</guid>
       <description>我真的老了吗？看看我的网易云音乐年度报告分享吧！
 图片 图片 </description>
     </item>
     
     <item>
       <title>有关 cdn.jsdelivr.net 证书错误的一些想法</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-12-20-%E6%9C%89%E5%85%B3_cdn.jsdelivr.net_%E8%AF%81%E4%B9%A6%E9%94%99%E8%AF%AF%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/</link>
+      <link>http://example.org/posts/2021-12-20-%E6%9C%89%E5%85%B3_cdn.jsdelivr.net_%E8%AF%81%E4%B9%A6%E9%94%99%E8%AF%AF%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/</link>
       <pubDate>Mon, 20 Dec 2021 14:25:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-12-20-%E6%9C%89%E5%85%B3_cdn.jsdelivr.net_%E8%AF%81%E4%B9%A6%E9%94%99%E8%AF%AF%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/</guid>
+      <guid>http://example.org/posts/2021-12-20-%E6%9C%89%E5%85%B3_cdn.jsdelivr.net_%E8%AF%81%E4%B9%A6%E9%94%99%E8%AF%AF%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/</guid>
       <description>记录一次不大不小的事件，2021年12月20日，cdn.jsdelivr.net 国内ip全面崩盘，说是证书出错了，然后所有使用cdn.jsdelivr.net进行加速的资源全部404。
 我也是在朋友圈看到的这个消息，上线一看果然全部显示丢失。
 对国外资源没有影响，所以这是一次只出现在国内的问题，jsd官网都还在，估计是cdn配置出错，应该很快就可以修复了。
@@ -409,10 +407,10 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>闲谈2021</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-12-17-%E9%97%B2%E8%B0%882021/</link>
+      <link>http://example.org/posts/2021-12-17-%E9%97%B2%E8%B0%882021/</link>
       <pubDate>Fri, 17 Dec 2021 16:39:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-12-17-%E9%97%B2%E8%B0%882021/</guid>
+      <guid>http://example.org/posts/2021-12-17-%E9%97%B2%E8%B0%882021/</guid>
       <description>2021，不知不觉，又过去一年了。
 因为最近也比较忙，所以一直拖到了中旬末，现在闲下心准备闲谈一下。 该说不说，坚持写博客也有500多天了，大概是我的水平有限，产出的技术文章也是寥寥无几，大多是一些笔记和一些生活中的琐碎事。
 认识了几个一起玩博客的新朋友，优化了一下自己网站，然后帮助别人解决一些力所能及的问题，大家都很友善。
@@ -423,10 +421,10 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>关于人际交往的礼节感触</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-11-24-%E5%85%B3%E4%BA%8E%E4%BA%BA%E9%99%85%E4%BA%A4%E5%BE%80%E7%9A%84%E7%A4%BC%E8%8A%82%E6%84%9F%E8%A7%A6/</link>
+      <link>http://example.org/posts/2021-11-24-%E5%85%B3%E4%BA%8E%E4%BA%BA%E9%99%85%E4%BA%A4%E5%BE%80%E7%9A%84%E7%A4%BC%E8%8A%82%E6%84%9F%E8%A7%A6/</link>
       <pubDate>Wed, 24 Nov 2021 12:37:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-11-24-%E5%85%B3%E4%BA%8E%E4%BA%BA%E9%99%85%E4%BA%A4%E5%BE%80%E7%9A%84%E7%A4%BC%E8%8A%82%E6%84%9F%E8%A7%A6/</guid>
+      <guid>http://example.org/posts/2021-11-24-%E5%85%B3%E4%BA%8E%E4%BA%BA%E9%99%85%E4%BA%A4%E5%BE%80%E7%9A%84%E7%A4%BC%E8%8A%82%E6%84%9F%E8%A7%A6/</guid>
       <description>因为一件小事有感而发，在人际交往的过程中，我们通常都会关注一些细节，从而影响对一个人印象。这是一个作为人很正常的行为。
 打个比方，两个人聊天，其中一个人不停拿起手机查看，就很给人一种很没有礼貌的印象。假如说有工作要忙，或者其他要处理的事项，这当然另当别论。换个思维，如果真的有那么忙，也不会发生此次社会交互行为活动。所以这是一个悖论了。基本上不存在忙的要命的情况。
 我们在社会交往中，大多抱着一种善意的目的，希望从别人那里获得一些“利益”，这里的利益更多指代一中虚拟的情绪，比如开心，愉快，满足等。所以我在平时跟朋友社交，包括并不限于聚餐，出行游玩等，都是将重心放在此次活动中，如果有其他的事情，我都会提前处理安排好，不会影响活动进行。
@@ -440,19 +438,19 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>网易云摸鱼，测测你的听歌流量</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-11-18-%E7%BD%91%E6%98%93%E4%BA%91%E6%91%B8%E9%B1%BC%E6%B5%8B%E6%B5%8B%E4%BD%A0%E7%9A%84%E5%90%AC%E6%AD%8C%E6%B5%81%E9%87%8F/</link>
+      <link>http://example.org/posts/2021-11-18-%E7%BD%91%E6%98%93%E4%BA%91%E6%91%B8%E9%B1%BC%E6%B5%8B%E6%B5%8B%E4%BD%A0%E7%9A%84%E5%90%AC%E6%AD%8C%E6%B5%81%E9%87%8F/</link>
       <pubDate>Thu, 18 Nov 2021 15:37:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-11-18-%E7%BD%91%E6%98%93%E4%BA%91%E6%91%B8%E9%B1%BC%E6%B5%8B%E6%B5%8B%E4%BD%A0%E7%9A%84%E5%90%AC%E6%AD%8C%E6%B5%81%E9%87%8F/</guid>
+      <guid>http://example.org/posts/2021-11-18-%E7%BD%91%E6%98%93%E4%BA%91%E6%91%B8%E9%B1%BC%E6%B5%8B%E6%B5%8B%E4%BD%A0%E7%9A%84%E5%90%AC%E6%AD%8C%E6%B5%81%E9%87%8F/</guid>
       <description>格局刚好。</description>
     </item>
     
     <item>
       <title>这两天的碎碎念</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-11-11-%E8%BF%99%E4%B8%A4%E5%A4%A9%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/</link>
+      <link>http://example.org/posts/2021-11-11-%E8%BF%99%E4%B8%A4%E5%A4%A9%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/</link>
       <pubDate>Thu, 11 Nov 2021 10:14:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-11-11-%E8%BF%99%E4%B8%A4%E5%A4%A9%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/</guid>
+      <guid>http://example.org/posts/2021-11-11-%E8%BF%99%E4%B8%A4%E5%A4%A9%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/</guid>
       <description>这段时间双十一，发现没有了往年那种囤货淘宝的欲望了，翻来翻去不知道买什么，包括那些活动，有好多朋友给我发链接助力我都没怎么弄，可能是生活的打磨让我对它没兴趣了吧~~
 唯一的消费活动就是买了一台服务器，腾讯云正在做双十一特惠活动，一台2h4g6m的服务器，三年才一百多，个人感觉还是比较划算的，以后可以放一些脚本，跑跑服务啥的，还可以把我的博客挂在上面。
 并且购买了一个新的域名 xiabanlo.cn，不过最近正在备案，通过之后就会使用了。坚持，不忘初心！
@@ -465,10 +463,10 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>有关国庆出行的感想</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-10-07-%E6%9C%89%E5%85%B3%E5%9B%BD%E5%BA%86%E5%87%BA%E8%A1%8C%E7%9A%84%E6%84%9F%E6%83%B3/</link>
+      <link>http://example.org/posts/2021-10-07-%E6%9C%89%E5%85%B3%E5%9B%BD%E5%BA%86%E5%87%BA%E8%A1%8C%E7%9A%84%E6%84%9F%E6%83%B3/</link>
       <pubDate>Thu, 07 Oct 2021 06:15:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-10-07-%E6%9C%89%E5%85%B3%E5%9B%BD%E5%BA%86%E5%87%BA%E8%A1%8C%E7%9A%84%E6%84%9F%E6%83%B3/</guid>
+      <guid>http://example.org/posts/2021-10-07-%E6%9C%89%E5%85%B3%E5%9B%BD%E5%BA%86%E5%87%BA%E8%A1%8C%E7%9A%84%E6%84%9F%E6%83%B3/</guid>
       <description>好长时间没回老家了，这次本想借着国庆七天回家一趟，顺便处理一些其他的事情。所以我从9月30日晚，与家人一同驾车回家。
 艰难的回家之路 刚上高速跑得很快，原以为已经错开出行高峰期，结果发现是我想多了，不出意外的堵在高速上。
 导航呢，这时候也是推荐不走高速，直接从国道走（真的是后悔），然后我们就下了高速，结果这个导航给我整的有点蒙，在临安绕来绕去，11点从杭州出发，凌晨3点还在临安出不去，国道都在堵车，然后没办法只能就地休息，困得实在不行了，其实睡也睡不舒服，跑夜车都是这个样子。
@@ -487,10 +485,10 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>冷知识世界新增一个大洋变成五大洋</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-06-10-%E5%86%B7%E7%9F%A5%E8%AF%86%E4%B8%96%E7%95%8C%E6%96%B0%E5%A2%9E%E4%B8%80%E4%B8%AA%E5%A4%A7%E6%B4%8B%E5%8F%98%E6%88%90%E4%BA%94%E5%A4%A7%E6%B4%8B/</link>
+      <link>http://example.org/posts/2021-06-10-%E5%86%B7%E7%9F%A5%E8%AF%86%E4%B8%96%E7%95%8C%E6%96%B0%E5%A2%9E%E4%B8%80%E4%B8%AA%E5%A4%A7%E6%B4%8B%E5%8F%98%E6%88%90%E4%BA%94%E5%A4%A7%E6%B4%8B/</link>
       <pubDate>Thu, 10 Jun 2021 15:39:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-06-10-%E5%86%B7%E7%9F%A5%E8%AF%86%E4%B8%96%E7%95%8C%E6%96%B0%E5%A2%9E%E4%B8%80%E4%B8%AA%E5%A4%A7%E6%B4%8B%E5%8F%98%E6%88%90%E4%BA%94%E5%A4%A7%E6%B4%8B/</guid>
+      <guid>http://example.org/posts/2021-06-10-%E5%86%B7%E7%9F%A5%E8%AF%86%E4%B8%96%E7%95%8C%E6%96%B0%E5%A2%9E%E4%B8%80%E4%B8%AA%E5%A4%A7%E6%B4%8B%E5%8F%98%E6%88%90%E4%BA%94%E5%A4%A7%E6%B4%8B/</guid>
       <description>从6月8日世界海洋日开始，南大洋将被认定为世界第五大洋。世界上就有七大洲，五大洋啦！中学课文需要改一改了。
 美国国家地理学会宣布，南极洲周围海域将被称为南大洋，并正式承认南大洋为地球第五大洋。
 南大洋是海洋生态系统的重要家园，也是南半球的焦点。它直接包围着南极洲，从大陆的海岸线一直延伸到南纬 60 度。
@@ -499,10 +497,10 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>呼吸之野</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-05-07-%E5%91%BC%E5%90%B8%E4%B9%8B%E9%87%8E/</link>
+      <link>http://example.org/posts/2021-05-07-%E5%91%BC%E5%90%B8%E4%B9%8B%E9%87%8E/</link>
       <pubDate>Fri, 07 May 2021 21:48:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-05-07-%E5%91%BC%E5%90%B8%E4%B9%8B%E9%87%8E/</guid>
+      <guid>http://example.org/posts/2021-05-07-%E5%91%BC%E5%90%B8%E4%B9%8B%E9%87%8E/</guid>
       <description>2021许嵩第8张全创作专辑《呼吸之野》首支曲目《乌鸦》5月7日正式发行。
 《乌鸦》 我们都曾领受过误解、怀疑、孤立，都品尝过爱而不得或种种挫败的滋味，都有过觉得“一切都糟透了”的时候……但感伤过后，却还是会相信“一切都会好起来的”，还是会为了反转剧情而振作前行——也许是为了心里最在乎的人，也许是因为心底笃定的信念。被生活不断刮蹭的脆弱羽翼之下，有着强韧的骨架。许嵩以从未讨喜的乌鸦为第一视角，飞抵呼吸之野。
 人生不过一场呼吸。呼吸不停，则生命与思考不止。当人们习惯于蒙上口罩生活，畅快呼吸日渐成为一种奢侈。比这更为奢侈的，是袒露真心的酣畅对谈，是呼吸于野，吐纳心声。《呼吸之野》从冷色调里起笔，以自如沉着的笔触，描摹情感与境遇。十首音乐，如十场呼吸冥想般令人全神贯注。许嵩在想象与写实的互照里，在温柔与凛冽的交汇处，在浪漫与生猛的切换中，记述着生活与思考。
@@ -533,10 +531,10 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>基耶斯洛夫斯基和他的现实</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-04-24-%E5%9F%BA%E8%80%B6%E6%96%AF%E6%B4%9B%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C%E4%BB%96%E7%9A%84%E7%8E%B0%E5%AE%9E/</link>
+      <link>http://example.org/posts/2021-04-24-%E5%9F%BA%E8%80%B6%E6%96%AF%E6%B4%9B%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C%E4%BB%96%E7%9A%84%E7%8E%B0%E5%AE%9E/</link>
       <pubDate>Sat, 24 Apr 2021 11:47:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-04-24-%E5%9F%BA%E8%80%B6%E6%96%AF%E6%B4%9B%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C%E4%BB%96%E7%9A%84%E7%8E%B0%E5%AE%9E/</guid>
+      <guid>http://example.org/posts/2021-04-24-%E5%9F%BA%E8%80%B6%E6%96%AF%E6%B4%9B%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C%E4%BB%96%E7%9A%84%E7%8E%B0%E5%AE%9E/</guid>
       <description>文章作者: 江江_Jan
 文章链接: https://blog.jannns.com/posts/Kieslowski-and-his-reality/
 版权声明: 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 4.0 许可协议。转载请注明来自 江卮可乐！
@@ -579,20 +577,20 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>清明时节雨纷纷</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-04-03-%E6%B8%85%E6%98%8E%E6%97%B6%E8%8A%82%E9%9B%A8%E7%BA%B7%E7%BA%B7/</link>
+      <link>http://example.org/posts/2021-04-03-%E6%B8%85%E6%98%8E%E6%97%B6%E8%8A%82%E9%9B%A8%E7%BA%B7%E7%BA%B7/</link>
       <pubDate>Sat, 03 Apr 2021 16:13:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-04-03-%E6%B8%85%E6%98%8E%E6%97%B6%E8%8A%82%E9%9B%A8%E7%BA%B7%E7%BA%B7/</guid>
+      <guid>http://example.org/posts/2021-04-03-%E6%B8%85%E6%98%8E%E6%97%B6%E8%8A%82%E9%9B%A8%E7%BA%B7%E7%BA%B7/</guid>
       <description>清明时节雨纷纷，路上行人欲断魂。
 云栖竹径 </description>
     </item>
     
     <item>
       <title>小张厨房日记（二）</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-01-17-%E5%B0%8F%E5%BC%A0%E5%8E%A8%E6%88%BF%E6%97%A5%E8%AE%B0%E4%BA%8C/</link>
+      <link>http://example.org/posts/2021-01-17-%E5%B0%8F%E5%BC%A0%E5%8E%A8%E6%88%BF%E6%97%A5%E8%AE%B0%E4%BA%8C/</link>
       <pubDate>Sun, 17 Jan 2021 19:59:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-01-17-%E5%B0%8F%E5%BC%A0%E5%8E%A8%E6%88%BF%E6%97%A5%E8%AE%B0%E4%BA%8C/</guid>
+      <guid>http://example.org/posts/2021-01-17-%E5%B0%8F%E5%BC%A0%E5%8E%A8%E6%88%BF%E6%97%A5%E8%AE%B0%E4%BA%8C/</guid>
       <description>自从上次更新厨房日记之后，好像过了两个月多，实际上我一直在进阶我的厨艺，为什么没有更新我的厨房日记呢？因为实际在做的过程中我发现，每种菜的组合太多了，没必要组合一次就写一篇攻略，那样就有些做无用功了，没有太大的意义。
 思来想去，我决定了，不再更新做菜的步骤攻略，我想这些攻略网上一抓一大把。把内容着重放在做菜中遇到的一些问题，细节，这样不但可以让我记忆的深刻，还能分享出更多有意思的东西让小伙伴们开心。
 今天做了一道菜，红烧茄子，我在茄子的时候发现皮挺硬的，就在想要不要去皮（不要笑我，因为之前没做过茄子）。想了一会没想出个所以然，直接百度一番，“烧茄子要不要去皮？”，第一条搜索结果是这样说的，
@@ -606,10 +604,10 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>许嵩的歌又一次被抄袭！</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-01-16-%E8%AE%B8%E5%B5%A9%E7%9A%84%E6%AD%8C%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A2%AB%E6%8A%84%E8%A2%AD/</link>
+      <link>http://example.org/posts/2021-01-16-%E8%AE%B8%E5%B5%A9%E7%9A%84%E6%AD%8C%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A2%AB%E6%8A%84%E8%A2%AD/</link>
       <pubDate>Sat, 16 Jan 2021 20:00:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-01-16-%E8%AE%B8%E5%B5%A9%E7%9A%84%E6%AD%8C%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A2%AB%E6%8A%84%E8%A2%AD/</guid>
+      <guid>http://example.org/posts/2021-01-16-%E8%AE%B8%E5%B5%A9%E7%9A%84%E6%AD%8C%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A2%AB%E6%8A%84%E8%A2%AD/</guid>
       <description>最新网上爆出风风火火的一件事，许嵩的《有何不可》被抄袭，抄袭者为罗聪，《简单的幸福》。
 我从14年开始听许嵩的歌，一直到现在，许多年过去了，他的歌依旧脍炙人口，从之前的抒情浪漫情歌，批判社会的思想，一直到现在具体哲学内涵，中华传统思想。大部分都是包揽作词作曲为一身，真的很有才华。
 因为太有才华了，所以被“碰瓷”抄袭。这也算是一场闹剧了。据说嵩哥本人对此没有发表什么看法和言论，一直都是粉丝和公司在发声。
@@ -624,10 +622,10 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>2020年度总结</title>
-      <link>https://zburu-hugo.vercel.app/posts/2020-12-25-2020%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
+      <link>http://example.org/posts/2020-12-25-2020%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
       <pubDate>Fri, 25 Dec 2020 13:25:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2020-12-25-2020%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://example.org/posts/2020-12-25-2020%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
       <description>年度总结这个东西很有意思（我觉得），可以静下心来好好回顾一下这一年做了些什么事情，希望我能养成这个好习惯，多总结。
 这个博客是我在年中搭建起来了，到现在也将近半年了，没怎么做过seo优化，也没怎么想过推广，就简简单单的写一些自己的东西。更大的原因是我的文笔太拙劣，不敢让人发现，哈哈哈。
 大学四年过的还算充实，学到了自己感兴趣的东西，培养的业余兴趣爱好，旅游爬山等，但有名的大山目前只爬了嵩山（河南境内），因为在郑州读的大学。更远的山也没怎么去过，我给自己定个计划，在两年内爬一次泰山，因为工作太忙咯，不敢说短期内一定有时间。想体会一下&amp;quot;会当凌绝顶，一览众山小&amp;quot;的感觉。
@@ -647,10 +645,10 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>吐槽－－控制好自己的情绪</title>
-      <link>https://zburu-hugo.vercel.app/posts/2020-12-13-%E5%90%90%E6%A7%BD%E6%8E%A7%E5%88%B6%E5%A5%BD%E8%87%AA%E5%B7%B1%E7%9A%84%E6%83%85%E7%BB%AA/</link>
+      <link>http://example.org/posts/2020-12-13-%E5%90%90%E6%A7%BD%E6%8E%A7%E5%88%B6%E5%A5%BD%E8%87%AA%E5%B7%B1%E7%9A%84%E6%83%85%E7%BB%AA/</link>
       <pubDate>Sun, 13 Dec 2020 13:11:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2020-12-13-%E5%90%90%E6%A7%BD%E6%8E%A7%E5%88%B6%E5%A5%BD%E8%87%AA%E5%B7%B1%E7%9A%84%E6%83%85%E7%BB%AA/</guid>
+      <guid>http://example.org/posts/2020-12-13-%E5%90%90%E6%A7%BD%E6%8E%A7%E5%88%B6%E5%A5%BD%E8%87%AA%E5%B7%B1%E7%9A%84%E6%83%85%E7%BB%AA/</guid>
       <description>缘于一些小事，本想发在朋友圈里，但是熟人挺多，不方便发，就在博客里吐槽一下
 一个正常的人际交往应该是互相传递出好的情绪，开心的事情，这样不但有利于两个人之间的交往，而且对个人对身心健康也是有帮助的
 正面的情绪绝对有助于自己的身体和心理健康，反观整体郁郁寡欢，跟别人说自己多不顺，和别人吵架，不好的情绪就传达给另一个人了
@@ -664,10 +662,10 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>关于react的一份学习计划</title>
-      <link>https://zburu-hugo.vercel.app/posts/2020-11-27-%E5%85%B3%E4%BA%8Ereact%E7%9A%84%E4%B8%80%E4%BB%BD%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/</link>
+      <link>http://example.org/posts/2020-11-27-%E5%85%B3%E4%BA%8Ereact%E7%9A%84%E4%B8%80%E4%BB%BD%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/</link>
       <pubDate>Fri, 27 Nov 2020 13:08:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2020-11-27-%E5%85%B3%E4%BA%8Ereact%E7%9A%84%E4%B8%80%E4%BB%BD%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/</guid>
+      <guid>http://example.org/posts/2020-11-27-%E5%85%B3%E4%BA%8Ereact%E7%9A%84%E4%B8%80%E4%BB%BD%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/</guid>
       <description>有关react框架的学习计划，除了之前推荐的react开源作者写的学习建议，我还参考了阮一峰的react实例教程，写的通俗易懂，又难易并进，可以很快的掌握react的核心要点
 之前说了，为了公司的项目决定学习react框架，看了一份react.js开源作者的一份学习计划，react学习路径－－怎么学习react？个人感觉还是不错，但是需要看的文档比较多且官方文档没有那么详细的讲解，只说个原理，有些难以参透。
 在网络上浏览很久，发现大家对阮一峰的react教程风评不错，就去看了一下。
@@ -683,10 +681,10 @@ github &amp;raquo;&amp;gt; ruanyf/react-demos
     
     <item>
       <title>对全栈的一些思考</title>
-      <link>https://zburu-hugo.vercel.app/posts/2020-09-18-%E5%AF%B9%E5%85%A8%E6%A0%88%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</link>
+      <link>http://example.org/posts/2020-09-18-%E5%AF%B9%E5%85%A8%E6%A0%88%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</link>
       <pubDate>Fri, 18 Sep 2020 21:10:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2020-09-18-%E5%AF%B9%E5%85%A8%E6%A0%88%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</guid>
+      <guid>http://example.org/posts/2020-09-18-%E5%AF%B9%E5%85%A8%E6%A0%88%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</guid>
       <description>这里我要推荐一本书，叫做《Web全栈工程师的自我修养》，在看的过程中，自己也代入进去进行分析，然后写了这篇笔记。
 “全栈工程师正在成为IT行业的新秀，无论是在上市互联网公司还是在创业公司，都对全栈工程师青睐有加。本书作者是腾讯公 司高级工程师，在前端、后端和APP开发方面都有丰富的经验，在本书中分享了全栈工程师的技能与要求、核心竞争力、未来发 展方向、对移动端的思考。除此之外，本书还详细记录了作者从零开始、学习心得。本书内容全面、客观务实适合互联网行业新人 、程序员。以及期待技术转型的从业者阅读参考。”
 作者余果毕业于西安点击科技大学软件工程学院，曾任腾讯社交用户体验设计部高级UI工程师、前端开发负责人，负责多个项目的产品设计，以自身的经历为模板撰写了这本书。
@@ -709,10 +707,10 @@ github &amp;raquo;&amp;gt; ruanyf/react-demos
     
     <item>
       <title>推荐书籍《CSS世界》</title>
-      <link>https://zburu-hugo.vercel.app/posts/2020-08-11-%E6%8E%A8%E8%8D%90%E4%B9%A6%E7%B1%8Dcss%E4%B8%96%E7%95%8C/</link>
+      <link>http://example.org/posts/2020-08-11-%E6%8E%A8%E8%8D%90%E4%B9%A6%E7%B1%8Dcss%E4%B8%96%E7%95%8C/</link>
       <pubDate>Tue, 11 Aug 2020 21:09:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2020-08-11-%E6%8E%A8%E8%8D%90%E4%B9%A6%E7%B1%8Dcss%E4%B8%96%E7%95%8C/</guid>
+      <guid>http://example.org/posts/2020-08-11-%E6%8E%A8%E8%8D%90%E4%B9%A6%E7%B1%8Dcss%E4%B8%96%E7%95%8C/</guid>
       <description>本书从前端开发人员的需求出发，以“流”为线索，从结构、内容到美化装饰灯方面，全面且深入地讲解前端开发人员必须了解和掌握的大量的CSS知识点。同时，作者结合多年的从业经验，通过大量的实战案例，详尽解析CSS的相关知识与常见问题。
 作者还为本书开发了专门的配套网站，进行实例展示。问题答疑。作为一本CSS深度学习的书，书中介绍大量许多前端开发人员都不知道的CSS知识点。通过阅读本书，读者会对CSS世界的深度和广度有一个全新的认识。
 这本书作者采用口语化的方式，讲述在css中遇到的一些有意思的问题，循序渐进，引人入胜，对有前端基础的人来说，读这本书还是很有意思的。我经常在闲余时间看看这本书，会给我一些启发。</description>
@@ -720,10 +718,10 @@ github &amp;raquo;&amp;gt; ruanyf/react-demos
     
     <item>
       <title>hello, world</title>
-      <link>https://zburu-hugo.vercel.app/posts/2020-06-14-hello_world/</link>
+      <link>http://example.org/posts/2020-06-14-hello_world/</link>
       <pubDate>Sun, 14 Jun 2020 20:57:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2020-06-14-hello_world/</guid>
+      <guid>http://example.org/posts/2020-06-14-hello_world/</guid>
       <description>2020年6月14日
 我的博客正式建立。
 愿一切安好。</description>

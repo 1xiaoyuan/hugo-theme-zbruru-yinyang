@@ -1,0 +1,339 @@
+<?xml-stylesheet href="/rss.xsl" type="text/xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content on A Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Sat, 30 Jul 2022 20:11:00 +0000</lastBuildDate>
+    
+        <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>无题</title>
+        <link>http://example.org/posts/2022-06-18-%E6%97%A0%E9%A2%98/</link>
+        <pubDate>Sat, 18 Jun 2022 13:32:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2022-06-18-%E6%97%A0%E9%A2%98/</guid>
+        <description>A Hugo Site http://example.org/posts/2022-06-18-%E6%97%A0%E9%A2%98/ -&lt;p&gt;当情绪破防的时候，
+任何事情都是最后一根稻草。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;尘埃落定。&lt;/p&gt;
+&lt;p&gt;&amp;mdash;2022/06/23&lt;/p&gt;
+- http://example.org/posts/2022-06-18-%E6%97%A0%E9%A2%98/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>随想录 (6)</title>
+        <link>http://example.org/posts/2022-06-10-%E9%9A%8F%E6%83%B3%E5%BD%95_6/</link>
+        <pubDate>Fri, 10 Jun 2022 12:29:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2022-06-10-%E9%9A%8F%E6%83%B3%E5%BD%95_6/</guid>
+        <description>A Hugo Site http://example.org/posts/2022-06-10-%E9%9A%8F%E6%83%B3%E5%BD%95_6/ -&lt;p&gt;随着年龄的增长，越发感觉自我想象力的缺失。&lt;/p&gt;
+&lt;p&gt;最近迷上了科幻小说，遂找到刘慈欣的小说集，大概二十多篇，花上一周时间研读完毕，只有一种惊艳的感觉，不论是文笔还是世界观架构，都令我着迷。&lt;/p&gt;
+&lt;p&gt;而大刘作为理工生，将充满浪漫色彩的想象力和严谨的物理学知识相结合，我很佩服。&lt;/p&gt;
+&lt;p&gt;诗云中对宇宙艺术的理解，是我最喜欢的一篇，文明发展到最后，生存就已经变成了婴孩时期的啼哭，除了怀念已经没有意义了，要追求更高层次的满足，唯有艺术感。&lt;/p&gt;
+&lt;p&gt;对艺术的追求已经强烈到毁灭银河系，简单粗暴而又充满艺术感。&lt;/p&gt;
+&lt;p&gt;与诗云一样的还有低温艺术家，描述群体文明的终点是个体文明，也同样没有了生存的追求，整篇充满了艺术彩色。但是对于低层次的文明，生存的追求还是极其必要的。&lt;/p&gt;
+&lt;p&gt;大刘的文笔是非常浪漫的，将残酷的宇宙以温柔的笔墨书写，而又相对严谨的科学知识，都令我着迷。&lt;/p&gt;
+- http://example.org/posts/2022-06-10-%E9%9A%8F%E6%83%B3%E5%BD%95_6/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>typecho 评论回复艾特评论人</title>
+        <link>http://example.org/posts/2022-06-07-typecho_%E8%AF%84%E8%AE%BA%E5%9B%9E%E5%A4%8D%E8%89%BE%E7%89%B9%E8%AF%84%E8%AE%BA%E4%BA%BA/</link>
+        <pubDate>Tue, 07 Jun 2022 10:35:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2022-06-07-typecho_%E8%AF%84%E8%AE%BA%E5%9B%9E%E5%A4%8D%E8%89%BE%E7%89%B9%E8%AF%84%E8%AE%BA%E4%BA%BA/</guid>
+        <description>A Hugo Site http://example.org/posts/2022-06-07-typecho_%E8%AF%84%E8%AE%BA%E5%9B%9E%E5%A4%8D%E8%89%BE%E7%89%B9%E8%AF%84%E8%AE%BA%E4%BA%BA/ -&lt;p&gt;typecho 在评论时默认是没有 &lt;code&gt;@&lt;/code&gt;  评论人的功能，可以用代码加一下。&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;functions.php&lt;/code&gt; 中：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;* 评论回复时 @ 评论人
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;get_comment_at&lt;/span&gt;(&lt;span style=&#34;color:#00688b&#34;&gt;$coid&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#00688b&#34;&gt;$db&lt;/span&gt;   = Typecho_Db::&lt;span style=&#34;color:#658b00&#34;&gt;get&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#00688b&#34;&gt;$prow&lt;/span&gt; = &lt;span style=&#34;color:#00688b&#34;&gt;$db&lt;/span&gt;-&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;fetchRow&lt;/span&gt;(&lt;span style=&#34;color:#00688b&#34;&gt;$db&lt;/span&gt;-&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;select&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;parent,status&amp;#39;&lt;/span&gt;)-&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;from&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;table.comments&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        -&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;where&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;coid = ?&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#00688b&#34;&gt;$coid&lt;/span&gt;));
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#00688b&#34;&gt;$mail&lt;/span&gt; = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#00688b&#34;&gt;$parent&lt;/span&gt; = @&lt;span style=&#34;color:#00688b&#34;&gt;$prow&lt;/span&gt;[&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;parent&amp;#39;&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#00688b&#34;&gt;$parent&lt;/span&gt; != &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00688b&#34;&gt;$arow&lt;/span&gt; = &lt;span style=&#34;color:#00688b&#34;&gt;$db&lt;/span&gt;-&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;fetchRow&lt;/span&gt;(&lt;span style=&#34;color:#00688b&#34;&gt;$db&lt;/span&gt;-&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;select&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;author,status,mail&amp;#39;&lt;/span&gt;)-&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;from&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;table.comments&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            -&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;where&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;coid = ?&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#00688b&#34;&gt;$parent&lt;/span&gt;));
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        @&lt;span style=&#34;color:#00688b&#34;&gt;$author&lt;/span&gt; = @&lt;span style=&#34;color:#00688b&#34;&gt;$arow&lt;/span&gt;[&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;author&amp;#39;&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00688b&#34;&gt;$mail&lt;/span&gt; = @&lt;span style=&#34;color:#00688b&#34;&gt;$arow&lt;/span&gt;[&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;mail&amp;#39;&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt;(@&lt;span style=&#34;color:#00688b&#34;&gt;$author&lt;/span&gt; &amp;amp;&amp;amp; &lt;span style=&#34;color:#00688b&#34;&gt;$arow&lt;/span&gt;[&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;status&amp;#39;&lt;/span&gt;] == &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;approved&amp;#34;&lt;/span&gt;){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; (@&lt;span style=&#34;color:#00688b&#34;&gt;$prow&lt;/span&gt;[&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;status&amp;#39;&lt;/span&gt;] == &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;waiting&amp;#34;&lt;/span&gt;){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;lt;p class=&amp;#34;commentReview&amp;#34;&amp;gt;（评论审核中）)&amp;lt;/p&amp;gt;&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;lt;a href=&amp;#34;#comment-&amp;#39;&lt;/span&gt; . &lt;span style=&#34;color:#00688b&#34;&gt;$parent&lt;/span&gt; . &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#34;&amp;gt;@&amp;#39;&lt;/span&gt; . &lt;span style=&#34;color:#00688b&#34;&gt;$author&lt;/span&gt; . &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;lt;/a&amp;gt;&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;else&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; (@&lt;span style=&#34;color:#00688b&#34;&gt;$prow&lt;/span&gt;[&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;status&amp;#39;&lt;/span&gt;] == &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;waiting&amp;#34;&lt;/span&gt;){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;lt;p class=&amp;#34;commentReview&amp;#34;&amp;gt;（评论审核中）)&amp;lt;/p&amp;gt;&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            }&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;else&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    } &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;else&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; (@&lt;span style=&#34;color:#00688b&#34;&gt;$prow&lt;/span&gt;[&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;status&amp;#39;&lt;/span&gt;] == &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;waiting&amp;#34;&lt;/span&gt;){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;lt;p class=&amp;#34;commentReview&amp;#34;&amp;gt;（评论审核中）)&amp;lt;/p&amp;gt;&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;else&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后在 &lt;code&gt;comments.php&lt;/code&gt; 中输出评论内容代码的前面加上：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;?php &lt;span style=&#34;color:#00688b&#34;&gt;$parentMail&lt;/span&gt; = get_comment_at(&lt;span style=&#34;color:#00688b&#34;&gt;$comments&lt;/span&gt;-&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;coid&lt;/span&gt;)&lt;span style=&#34;color:#1e889b&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;&amp;lt;?php echo $parentMail;?&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;▼代码所示
+&lt;img src=&#34;https://img.zburu.com/i/2022/06/07/629eb95de8a9f.png&#34; alt=&#34;1654569311759.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;▼效果图
+&lt;img src=&#34;https://img.zburu.com/i/2022/06/07/629eba26472e8.png&#34; alt=&#34;1654569512094.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;我的博客即将同步至腾讯云+社区，邀请大家一同入驻：https://cloud.tencent.com/developer/support-plan?invite_code=17ctk6evsjk5b&lt;/p&gt;
+- http://example.org/posts/2022-06-07-typecho_%E8%AF%84%E8%AE%BA%E5%9B%9E%E5%A4%8D%E8%89%BE%E7%89%B9%E8%AF%84%E8%AE%BA%E4%BA%BA/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>随想录 (5)</title>
+        <link>http://example.org/posts/2022-06-02-%E9%9A%8F%E6%83%B3%E5%BD%95_5/</link>
+        <pubDate>Thu, 02 Jun 2022 08:54:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2022-06-02-%E9%9A%8F%E6%83%B3%E5%BD%95_5/</guid>
+        <description>A Hugo Site http://example.org/posts/2022-06-02-%E9%9A%8F%E6%83%B3%E5%BD%95_5/ -&lt;p&gt;抽空看完了爱死机第三季，个人感受比第二季优秀，但是还是不如第一季。太过追求三者的结合，科幻与死亡的元素，不够灵活。&lt;/p&gt;
+&lt;p&gt;但是其中的剧情还是比较精彩的，比如邪神那一集，估计只有了解克苏鲁的人才能看懂，结局也比较贴合剧情走向。女子挖去了眼睛和耳朵，听不到邪神的喃语，才免受精神污染，活着走出危机。（2022/05/26）&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;bootcss4是一个轻量前端ui框架，最近的项目中用到了它，使用体验还不错，不过功能倒是与element相比弱了一些（2022/05/27）&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;今天运气不知是好好坏，刚下地铁，就下了毛毛雨。然后一路上四个路口全是绿灯，一口气骑回家，虽然我也穿了雨披，不过还是为自己的运气感到骄傲，很少碰到连续四个绿灯的情况。看来老天都不想让我淋雨，刚在小区停好车，就下大了。（2022/05/31）&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;最近又步入了雨季，已经记不清这是杭州第几次了，感觉全年都处于下雨天。闷热加潮湿，基本在屋里呆着都要开空调和风扇，不然感觉不透气。所以吃完饭后我喜欢到小区楼下走走，很凉快空气也很清新。（2022/06/02）&lt;/p&gt;
+- http://example.org/posts/2022-06-02-%E9%9A%8F%E6%83%B3%E5%BD%95_5/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>宝塔自动备份网站到邮箱教程</title>
+        <link>http://example.org/posts/2022-05-25-%E5%AE%9D%E5%A1%94%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BD%E7%BD%91%E7%AB%99%E5%88%B0%E9%82%AE%E7%AE%B1%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Wed, 25 May 2022 17:27:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2022-05-25-%E5%AE%9D%E5%A1%94%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BD%E7%BD%91%E7%AB%99%E5%88%B0%E9%82%AE%E7%AE%B1%E6%95%99%E7%A8%8B/</guid>
+        <description>A Hugo Site http://example.org/posts/2022-05-25-%E5%AE%9D%E5%A1%94%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BD%E7%BD%91%E7%AB%99%E5%88%B0%E9%82%AE%E7%AE%B1%E6%95%99%E7%A8%8B/ -&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;
+&lt;p&gt;网站经常备份好处就是遇到问题以后可以迅速的恢复，不那么被动，防止信息丢失，操作性很大。虽然搭建一个网站非常容易，但为了应对网络上各种各样的意外情况，避免自己的网站付诸东流，做好网站备份是非常有必要的。&lt;/p&gt;
+&lt;p&gt;现在邮箱接收都支持附件文件，将网站文件和数据库文件备份到我们自己的邮箱也是一种很好地备份方式，也防止备份文件丢失。&lt;/p&gt;
+&lt;p&gt;邮箱接收附件文件大小，取决于使用的邮箱服务。一般来说个人博客网站源文件，数据库文件不大，常见邮箱服务都是可以使用的。&lt;/p&gt;
+&lt;p&gt;下面开始教程，宝塔安装教程可去&lt;a href=&#34;https://bt.cn/new/product.html&#34;&gt;宝塔官网&lt;/a&gt;查看安装教程。&lt;/p&gt;
+&lt;p&gt;系统环境：CentOS 7.9.2009 x86_64（其他系统可参考方式，命令安装自行解决）&lt;/p&gt;
+&lt;p&gt;宝塔面板：7.9.0&lt;/p&gt;
+&lt;h3 id=&#34;安装mailx&#34;&gt;安装mailx&lt;/h3&gt;
+&lt;p&gt;浏览器登录进入宝塔面板，左侧-》&lt;strong&gt;终端&lt;/strong&gt;。首次使用宝塔终端，需要登录服务器，填写root用户密码后登录。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.emoao.com/post-img/2022-05-13/53c6eca1cfb4eef40e63c916a59fa44b.webp&#34; alt=&#34;13-1.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在终端中输入以下mailx安装命令，回车安装。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;yum install -y mailx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://img.emoao.com/post-img/2022-05-13/30bec003dc2046e71c18494c305b21cc.webp&#34; alt=&#34;13-2.webp&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;编辑配置文件&#34;&gt;编辑配置文件&lt;/h3&gt;
+&lt;p&gt;安装完成后，编辑邮箱服务的相关配置文件。
+在终端输入以下命令，然后回车进入编辑文件界面。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;vim /etc/mail.rc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://img.emoao.com/post-img/2022-05-13/56989b03520d4abd7823fe5283d2b519.webp&#34; alt=&#34;13-3.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;使用键盘上下键，找到大约69行位置，按‘i’键输入，添加以下配置。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;from&lt;/span&gt;=发件人@qq.com &lt;span style=&#34;color:#228b22&#34;&gt;#发送邮件后显示的邮件发送方 需要修改&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;smtp&lt;/span&gt;=smtps://smtp.qq.com:465 &lt;span style=&#34;color:#228b22&#34;&gt;#SMTP服务器的网址及端口 需要修改&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;set&lt;/span&gt; smtp-auth-user=发件人@qq.com &lt;span style=&#34;color:#228b22&#34;&gt;#发送邮箱 需要修改&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;set&lt;/span&gt; smtp-auth-password=邮箱密码/SMTP授权码 &lt;span style=&#34;color:#228b22&#34;&gt;#设置的邮箱密码，SMTP授权密码 需要修改&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;set&lt;/span&gt; smtp-auth=login &lt;span style=&#34;color:#228b22&#34;&gt;#动作、登录 无需修改&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;set&lt;/span&gt; ssl-verify=ignore &lt;span style=&#34;color:#228b22&#34;&gt;#ssl验证忽略 无需修改&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;set&lt;/span&gt; nss-config-dir=/etc/pki/nssdb &lt;span style=&#34;color:#228b22&#34;&gt;#证书存放目录 无需修改&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;请将配置按要求修改为自己所使用的邮箱服务配置。服务器需要开启465端口。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.emoao.com/post-img/2022-05-13/e7c11a400bb3d30c2a81293f732d84fe.webp&#34; alt=&#34;13-4.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.emoao.com/post-img/2022-05-13/acde4506e7a574d1baf6588f7f5b178d.webp&#34; alt=&#34;13-5.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;配置修改完成后，按Esc键，输入&lt;code&gt;:wq&lt;/code&gt;回车保存退出编辑界面。&lt;/p&gt;
+&lt;h3 id=&#34;测试发送邮件&#34;&gt;测试发送邮件&lt;/h3&gt;
+&lt;p&gt;在终端输入发送测试邮件命令，需要修改收件人邮箱，回车执行。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;这是一封测试邮件&amp;#34;&lt;/span&gt; | mail -s &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;邮件主题&amp;#34;&lt;/span&gt; 收件人@qq.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://img.emoao.com/post-img/2022-05-13/e5192c7240feebf85e2f8dc5e4858e5e.webp&#34; alt=&#34;13-6.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;查看邮箱是否收到测试邮件。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.emoao.com/post-img/2022-05-13/47dcafa9c8b6307406aec0f12712872b.webp&#34; alt=&#34;13-7.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果发现终端报以下错误（但没有影响收件），没有错误请跳过。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Error in certificate: Peer&#39;s certificate issuer has been marked as not trusted by the.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.emoao.com/post-img/2022-05-13/8db1d9c84d292df3841c535ef8ad724b.webp&#34; alt=&#34;13-8.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Ctrl+C&lt;/code&gt;结束命令后，修改邮箱服务配置文件，将&lt;code&gt;set ssl-verify=ignore&lt;/code&gt;修改为&lt;code&gt;set ssl-verify=strict&lt;/code&gt;后保存退出（编辑方法同上）。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.emoao.com/post-img/2022-05-13/c12d5ffecf4e6e48061bdc495d7570ff.webp&#34; alt=&#34;13-9.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;修改完成后在终端输入以下命令。&lt;/p&gt;
+&lt;p&gt;获取邮件服务器证书&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt;   -n &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt; |  openssl s_client -connect smtp.qq.com:465 | sed -ne  &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;/-BEGIN CERTIFICATE-/,/-END CERTIFIICATE-/p&amp;#39;&lt;/span&gt;  &amp;gt;  /etc/pki/nssdb/qq.crt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;把证书添加到受信任表&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;certutil    -A    -n   &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;yeah&amp;#39;&lt;/span&gt;    -t    &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;P,P,P&amp;#34;&lt;/span&gt;    -d    /etc/pki/nssdb    -i    /etc/pki/nssdb/qq.crt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;注：如果是163或者其他邮箱服务器请将&lt;code&gt;smtp.qq.com&lt;/code&gt;改为&lt;code&gt;smtp.163.com&lt;/code&gt;，&lt;code&gt;qq.crt&lt;/code&gt;改为&lt;code&gt;163.crt&lt;/code&gt; 以此类推。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;命令执行完成后，重新执行发送测试邮件命令，不在报错。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.emoao.com/post-img/2022-05-13/3252062ac53690690f832dd73d0863aa.webp&#34; alt=&#34;13-10.webp&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;宝塔定时任务&#34;&gt;宝塔定时任务&lt;/h3&gt;
+&lt;p&gt;左侧-》&lt;strong&gt;计划任务&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;首先按自己需求（计划任务执行时间，保留文件数量等）添加网站和数据库源文件备份任务。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.emoao.com/post-img/2022-05-13/4968cb73cd43ee6ece060bb011feef8d.webp&#34; alt=&#34;13-11.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;然后添加&lt;/strong&gt;&lt;code&gt;shell&lt;/code&gt;脚本任务，在脚本内容中添加以下脚本命令，修改收件人为自己的邮箱。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1e889b&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1e889b&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;cd&lt;/span&gt; /www/backup/site
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;for&lt;/span&gt; file in &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;$(&lt;/span&gt;ls *&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00688b&#34;&gt;str&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#00688b&#34;&gt;str&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt; -a &lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#00688b&#34;&gt;file&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;主人，今天的网站备份又到了哦，请注意查收！&amp;#34;&lt;/span&gt; | mail -s &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;网站备份&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00688b&#34;&gt;$str&lt;/span&gt; 2502393029@qq.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://img.emoao.com/post-img/2022-05-13/89e2ce5cfc848ae5688021f650415776.webp&#34; alt=&#34;13-12.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;执行时间可按需求，晚于网站，数据库备份任务执行时间。&lt;/p&gt;
+&lt;p&gt;数据库备份和网站备份一样需要再添加一次计划任务，将&lt;code&gt;cd /www/backup/site &lt;/code&gt;修改为&lt;code&gt;cd /www/backup/database&lt;/code&gt;数据库备份文件所在目录即可，参考改一下邮件主题，和内容信息。&lt;/p&gt;
+&lt;p&gt;计划任务添加完成后，可先执行网站，数据库源文件备份任务，再执行网站，数据库邮箱&lt;code&gt;shell&lt;/code&gt;脚本备份任务，然后前往邮箱查看文件是否收到，文件过大，邮件会有延迟。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.emoao.com/post-img/2022-05-13/deb9c05584f5bc00013188daa3e758b0.webp&#34; alt=&#34;13-13.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.emoao.com/post-img/2022-05-13/1564dc76c2f6b94299a153d25d9d15d9.webp&#34; alt=&#34;13-14.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注：如果有报错或收不到邮件情况，请仔细检查命令，配置文件是否有误，或者查看脚本执行日志进行排查。&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;转载自梦繁星博客: &lt;a href=&#34;https://blog.emoao.com/13.html&#34;&gt;https://blog.emoao.com/13.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果问题请在评论区留言。&lt;/p&gt;
+- http://example.org/posts/2022-05-25-%E5%AE%9D%E5%A1%94%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BD%E7%BD%91%E7%AB%99%E5%88%B0%E9%82%AE%E7%AE%B1%E6%95%99%E7%A8%8B/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>一个优雅的字体压缩解决方案 ---fonttools</title>
+        <link>http://example.org/posts/2022-05-24-%E4%B8%80%E4%B8%AA%E4%BC%98%E9%9B%85%E7%9A%84%E5%AD%97%E4%BD%93%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88_---fonttools/</link>
+        <pubDate>Tue, 24 May 2022 14:28:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2022-05-24-%E4%B8%80%E4%B8%AA%E4%BC%98%E9%9B%85%E7%9A%84%E5%AD%97%E4%BD%93%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88_---fonttools/</guid>
+        <description>A Hugo Site http://example.org/posts/2022-05-24-%E4%B8%80%E4%B8%AA%E4%BC%98%E9%9B%85%E7%9A%84%E5%AD%97%E4%BD%93%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88_---fonttools/ -&lt;p&gt;分享一个 python 的库 &amp;mdash;fonttools，针对字体文件进行处理非常方便。&lt;/p&gt;
+&lt;h3 id=&#34;下载&#34;&gt;下载&lt;/h3&gt;
+&lt;p&gt;需要先在电脑上下载 python 环境，这个就不多说了。&lt;/p&gt;
+&lt;p&gt;然后在本地命令行输入：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install fonttools
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;字体库&#34;&gt;字体库&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.zburu.com/i/2022/05/27/62904bc40bec5.png&#34; alt=&#34;1653623749590.png&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;本地新建一个文件夹，取名为 &lt;code&gt;fonts&lt;/code&gt; ，随意即可。将自己需要压缩整理的字体放在文件夹中，如 &lt;code&gt;OPPOSans.ttf&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;然后建立一个文件取名为 &lt;code&gt;word.txt&lt;/code&gt;，这时我们需要找到一个常用字体库，这里我在github分享一个 &lt;a href=&#34;https://github.com/zburu/cdn/blob/main/font/%E6%B1%89%E5%AD%97%E5%B8%B8%E7%94%A8%E5%AD%97%E4%BD%93.txt&#34;&gt;https://github.com/zburu/cdn/blob/main/font/汉字常用字体.txt&lt;/a&gt; ，把里面的内容常用字体复制到 &lt;code&gt;word.txt&lt;/code&gt; 文件。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;运行&#34;&gt;运行&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pyftsubset OPPOSans.ttf --text=&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;$(&lt;/span&gt;cat word.txt&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;)&lt;/span&gt; --no-hinting
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://img.zburu.com/i/2022/05/27/62904c5765152.png&#34; alt=&#34;1653623896959.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我们看一下命令，其中 &lt;code&gt;OPPOSans.ttf&lt;/code&gt; 是字体文件，&lt;code&gt;word.txt&lt;/code&gt; 是常用字体，我们要将这些字单独分离出来。&lt;/p&gt;
+&lt;p&gt;名字都可以按照自己的要求来，但是一定要互相对应。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.zburu.com/i/2022/05/27/62904c7f37cd3.png&#34; alt=&#34;1653623936778.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在命令行输入即可，运行完成之后，可以在文件夹中看到带有 &lt;code&gt;subset&lt;/code&gt; 字样的字体文件，占用空间大大缩小，可以直接拿来使用。&lt;/p&gt;
+- http://example.org/posts/2022-05-24-%E4%B8%80%E4%B8%AA%E4%BC%98%E9%9B%85%E7%9A%84%E5%AD%97%E4%BD%93%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88_---fonttools/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>随想录 (4)</title>
+        <link>http://example.org/posts/2022-05-13-%E9%9A%8F%E6%83%B3%E5%BD%95_4_/</link>
+        <pubDate>Fri, 13 May 2022 10:37:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2022-05-13-%E9%9A%8F%E6%83%B3%E5%BD%95_4_/</guid>
+        <description>A Hugo Site http://example.org/posts/2022-05-13-%E9%9A%8F%E6%83%B3%E5%BD%95_4_/ -&lt;p&gt;好事和坏事总是接踵而至，你永远不知道下一秒会发生什么。但是总有解决的办法，不是吗？但实际上我也不确定。&lt;/p&gt;
+&lt;p&gt;昨天很晚才睡，想了很多，乱七八糟的。生活哪有容易的事情，就跟摸石头过河一样，跌跌拌拌，最后才找到适合自己生活的模式。（2020/05/09）&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;coding构建部署同步github好像有bug，搞了半天最后重新刷新 GitHub.com OAuth 认证就好了。（2020/05/10）&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;昨天一整天都是雨天，我从地铁出来时，雨是朦朦胧胧的，跟雾一样。索性就直接骑着车了，迎面而来的冷空气让我打了个冷战，疲惫的身体清醒了许多。&lt;/p&gt;
+&lt;p&gt;向前骑去时看到一对情侣，也是晃晃悠悠的骑着电车，女生侧坐着靠在男生的背上。一瞬间有些恍惚，好像是我羡慕的场景。带着心爱的女孩漫无目的的漂游，或许她可以在后座一边搂着我的腰，一边听我讲述生活遇到的趣事或者烦恼。 （2020/05/11）&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这两天读了一本新书《菜根谭》，作者是明代洪应明，内容是儒家通俗读物，采儒、佛、道三家思想。&lt;/p&gt;
+&lt;p&gt;以心学、禅学为核心，拥有修身、齐家、治国、平天下等大道，同时由于它融处世哲学，生活艺术，审美情趣这些特色，也是一部使人奋发向上的中国文学作品。&lt;/p&gt;
+&lt;p&gt;挺有意思，说是鸡汤又不太像。如果对网络文学读腻的朋友，可以试着看一看。通篇为五言，也不显得臃肿。&lt;/p&gt;
+&lt;p&gt;建议在微信读书阅读，可以用无限卡免费。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;拨开世尘氛，消却心鄙吝。拨开世尘氛，消却心鄙吝。拨开世尘氛，消却心鄙吝&amp;hellip;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;（2020/05/13）&lt;/p&gt;
+- http://example.org/posts/2022-05-13-%E9%9A%8F%E6%83%B3%E5%BD%95_4_/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>分享一款自用的 v2ex 主题样式</title>
+        <link>http://example.org/posts/2022-05-12-%E5%88%86%E4%BA%AB%E4%B8%80%E6%AC%BE%E8%87%AA%E7%94%A8%E7%9A%84_v2ex_%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F/</link>
+        <pubDate>Thu, 12 May 2022 13:46:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2022-05-12-%E5%88%86%E4%BA%AB%E4%B8%80%E6%AC%BE%E8%87%AA%E7%94%A8%E7%9A%84_v2ex_%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F/</guid>
+        <description>A Hugo Site http://example.org/posts/2022-05-12-%E5%88%86%E4%BA%AB%E4%B8%80%E6%AC%BE%E8%87%AA%E7%94%A8%E7%9A%84_v2ex_%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F/ -&lt;p&gt;起因是因为觉得 v2ex 网站主题略有拥挤，阅读体验不好，而正好网站支持自定义 css，所以就在参考其他人的基础上，修改了一套比较美观的样式。&lt;/p&gt;
+&lt;p&gt;本来是自用的，但是看到有人发帖分享主题，我也索性将它分享出来了。&lt;/p&gt;
+&lt;p&gt;v2ex 帖子: &lt;a href=&#34;https://www.v2ex.com/t/851735&#34;&gt;https://www.v2ex.com/t/851735&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Github 仓库: &lt;a href=&#34;https://github.com/zburu/v2ex_theme&#34;&gt;https://github.com/zburu/v2ex_theme&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不想看文档可以直接用下面的链接。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/* 通过 jsd 加速 github 文件 */
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;@import &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/gh/zburu/v2ex_theme/v2ex_theme.min.css&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/* 放在我自己服务器上的链接 */
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;@import &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;https://cdn.zburu.com/list/v2ex_theme.css&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;- http://example.org/posts/2022-05-12-%E5%88%86%E4%BA%AB%E4%B8%80%E6%AC%BE%E8%87%AA%E7%94%A8%E7%9A%84_v2ex_%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>随想录 (3)</title>
+        <link>http://example.org/posts/2022-05-06-%E9%9A%8F%E6%83%B3%E5%BD%95_3/</link>
+        <pubDate>Fri, 06 May 2022 13:23:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2022-05-06-%E9%9A%8F%E6%83%B3%E5%BD%95_3/</guid>
+        <description>A Hugo Site http://example.org/posts/2022-05-06-%E9%9A%8F%E6%83%B3%E5%BD%95_3/ -&lt;p&gt;五一假期回老家处理一些事情，收拾东西的时候，从角落里翻出来几张老照片，很有怀念意义。（2022/05/03）&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;p&gt;好事和坏事总是接踵而至，你永远不知道下一秒会发生什么。但是总有解决的办法，不是吗？（2022/05/05）&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;整理了一下个人书单，发现读过的书太少了，打算做一个阅读计划，保证持续阅读。&lt;/p&gt;
+&lt;p&gt;ps: 这周碎碎念很少，因为五一有事出去了，身体和心灵都没停下来，有些疲惫。（2022/05/06）&lt;/p&gt;
+- http://example.org/posts/2022-05-06-%E9%9A%8F%E6%83%B3%E5%BD%95_3/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>docker部署思源笔记</title>
+        <link>http://example.org/posts/2022-05-05-docker%E9%83%A8%E7%BD%B2%E6%80%9D%E6%BA%90%E7%AC%94%E8%AE%B0/</link>
+        <pubDate>Thu, 05 May 2022 09:33:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2022-05-05-docker%E9%83%A8%E7%BD%B2%E6%80%9D%E6%BA%90%E7%AC%94%E8%AE%B0/</guid>
+        <description>A Hugo Site http://example.org/posts/2022-05-05-docker%E9%83%A8%E7%BD%B2%E6%80%9D%E6%BA%90%E7%AC%94%E8%AE%B0/ -&lt;blockquote&gt;
+&lt;p&gt;文章废弃&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;部署&#34;&gt;部署&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run --name siyuan -itd -p 6806:6806 -v /opt/my_siyuan_path:/opt/siyuan --restart always b3log/siyuan
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;备份&#34;&gt;备份&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo su
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# 查看容器列表&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker ps -a
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# 制作备份&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker commit -p 7409ce6aae7b siyuan_backup
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# 其中 403e6db0c 是容器id, jenkins_backup是备份名称&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# 查看备份是否成功&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker images
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# 将镜像制作成文件 docker save -o [filename] [image]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker save -o siyuan_backup.tar siyuan_backup
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ls
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# 在 /home/ubuntu/ 中可以看到制作后的压缩包&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;- http://example.org/posts/2022-05-05-docker%E9%83%A8%E7%BD%B2%E6%80%9D%E6%BA%90%E7%AC%94%E8%AE%B0/ - This is a customized copyright.</description>
+        </item>
+    
+    
+  </channel>
+</rss> 

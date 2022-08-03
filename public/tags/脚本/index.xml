@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>脚本 on 不如吃茶去</title>
-    <link>https://zburu-hugo.vercel.app/tags/%E8%84%9A%E6%9C%AC/</link>
-    <description>Recent content in 脚本 on 不如吃茶去</description>
-    <image>
-      <url>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
+    <title>脚本 on A Hugo Site</title>
+    <link>http://example.org/tags/%E8%84%9A%E6%9C%AC/</link>
+    <description>Recent content in 脚本 on A Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 15 Apr 2022 13:57:00 +0000</lastBuildDate><atom:link href="https://zburu-hugo.vercel.app/tags/%E8%84%9A%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Fri, 15 Apr 2022 13:57:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/%E8%84%9A%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在宝塔中使用青龙面板代挂京豆</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-04-15-%E5%9C%A8%E5%AE%9D%E5%A1%94%E4%B8%AD%E4%BD%BF%E7%94%A8%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E4%BB%A3%E6%8C%82%E4%BA%AC%E8%B1%86/</link>
+      <link>http://example.org/posts/2022-04-15-%E5%9C%A8%E5%AE%9D%E5%A1%94%E4%B8%AD%E4%BD%BF%E7%94%A8%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E4%BB%A3%E6%8C%82%E4%BA%AC%E8%B1%86/</link>
       <pubDate>Fri, 15 Apr 2022 13:57:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-04-15-%E5%9C%A8%E5%AE%9D%E5%A1%94%E4%B8%AD%E4%BD%BF%E7%94%A8%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E4%BB%A3%E6%8C%82%E4%BA%AC%E8%B1%86/</guid>
+      <guid>http://example.org/posts/2022-04-15-%E5%9C%A8%E5%AE%9D%E5%A1%94%E4%B8%AD%E4%BD%BF%E7%94%A8%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E4%BB%A3%E6%8C%82%E4%BA%AC%E8%B1%86/</guid>
       <description>如题所述，想要在闲置的服务器中跑一些服务，青龙面板代挂京豆现存很多开源的脚本，安全性已经经过很多人验证，可以放心使用。
 因此我也安排了一个脚本，成功部署之后，就写这篇不算教程的笔记来记录一下整个过程。
 拉取镜像 我是在宝塔中运行服务的，也是非常简单方便。至于怎么安装宝塔，这里就不介绍了，之前写过一篇关于部署宝塔面板的教程，可以点击站内搜索。

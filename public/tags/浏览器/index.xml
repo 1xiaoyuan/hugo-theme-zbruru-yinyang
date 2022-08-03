@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>浏览器 on 不如吃茶去</title>
-    <link>https://zburu-hugo.vercel.app/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/</link>
-    <description>Recent content in 浏览器 on 不如吃茶去</description>
-    <image>
-      <url>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
+    <title>浏览器 on A Hugo Site</title>
+    <link>http://example.org/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/</link>
+    <description>Recent content in 浏览器 on A Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 26 Jan 2022 14:20:00 +0000</lastBuildDate><atom:link href="https://zburu-hugo.vercel.app/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Wed, 26 Jan 2022 14:20:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何使用谷歌插件为网站注入代码</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-01-26-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E8%B0%B7%E6%AD%8C%E6%8F%92%E4%BB%B6%E4%B8%BA%E7%BD%91%E7%AB%99%E6%B3%A8%E5%85%A5%E4%BB%A3%E7%A0%81/</link>
+      <link>http://example.org/posts/2022-01-26-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E8%B0%B7%E6%AD%8C%E6%8F%92%E4%BB%B6%E4%B8%BA%E7%BD%91%E7%AB%99%E6%B3%A8%E5%85%A5%E4%BB%A3%E7%A0%81/</link>
       <pubDate>Wed, 26 Jan 2022 14:20:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-01-26-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E8%B0%B7%E6%AD%8C%E6%8F%92%E4%BB%B6%E4%B8%BA%E7%BD%91%E7%AB%99%E6%B3%A8%E5%85%A5%E4%BB%A3%E7%A0%81/</guid>
+      <guid>http://example.org/posts/2022-01-26-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E8%B0%B7%E6%AD%8C%E6%8F%92%E4%BB%B6%E4%B8%BA%E7%BD%91%E7%AB%99%E6%B3%A8%E5%85%A5%E4%BB%A3%E7%A0%81/</guid>
       <description>在浏览网站时，受限于网站的缺陷，我们通常都会写一些脚本和插件来进行扩展，常规方法有油猴和谷歌插件两种，油猴也是一种插件，使用起来很方便，今天要讲的是如何通过谷歌插件进行注入。
 按照结构生成下面几个文件
 |chrome-plugin|---manifest.json|---script.js|---favicon.ico 在 manifest.json 中写入代码，这是一个入口文件，声明了插件的基本信息。
@@ -28,10 +26,10 @@ default_icon 是插件的图标 matches 是使用的网站，在该域名下的�
     
     <item>
       <title>IE10的兼容性处理</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-03-18-ie10%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E5%A4%84%E7%90%86/</link>
+      <link>http://example.org/posts/2021-03-18-ie10%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E5%A4%84%E7%90%86/</link>
       <pubDate>Thu, 18 Mar 2021 22:15:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-03-18-ie10%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E5%A4%84%E7%90%86/</guid>
+      <guid>http://example.org/posts/2021-03-18-ie10%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E5%A4%84%E7%90%86/</guid>
       <description>IE10不支持箭头函数，写js的时候慎用。
 IE10下对js的语法要求严格，正常参数后如果没有多余的代码，写个,会报错，如果加了删掉就OK，Chrome下不会产生影响。
 zoom属性能不用，尽量别用。我在Chrome使用zoom进行大小调整，放到IE10运行，整个页面都错位了，找半天才想起来之前给一个容器设置了zoom: 1.1;，真是让人头大。
@@ -43,10 +41,10 @@ IE10不兼容es6新语法。</description>
     
     <item>
       <title>chrome浏览器无法显示12px以下的字体</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-02-26-chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA12px%E4%BB%A5%E4%B8%8B%E7%9A%84%E5%AD%97%E4%BD%93/</link>
+      <link>http://example.org/posts/2021-02-26-chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA12px%E4%BB%A5%E4%B8%8B%E7%9A%84%E5%AD%97%E4%BD%93/</link>
       <pubDate>Fri, 26 Feb 2021 22:38:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-02-26-chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA12px%E4%BB%A5%E4%B8%8B%E7%9A%84%E5%AD%97%E4%BD%93/</guid>
+      <guid>http://example.org/posts/2021-02-26-chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA12px%E4%BB%A5%E4%B8%8B%E7%9A%84%E5%AD%97%E4%BD%93/</guid>
       <description>最近正在面试，遇到了很多有意思的东西，比如今天，在面试前先做了一套面试题，其中有这么一道题，觉得挺有意思，之前也没见过，就打算记录下来：
 &amp;lt;!-- chrome浏览器12px字体大小以下无法显示，均显示为12px，应该怎么解决。 --&amp;gt; 我确实有点蒙，在之前写代码的时候，没有遇到过这样的情况，不过既然这样问了，就得想出解决的办法。
 首先我想到之前的一个问题，0.5px 的边框该如何实现，通过 scale(0.5) 可以实现，这是 css3 新属性。
@@ -61,10 +59,10 @@ IE10不兼容es6新语法。</description>
     
     <item>
       <title>chrome浏览器中对autoplay的一些处理技巧</title>
-      <link>https://zburu-hugo.vercel.app/posts/2020-09-11-chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E5%AF%B9autoplay%E7%9A%84%E4%B8%80%E4%BA%9B%E5%A4%84%E7%90%86%E6%8A%80%E5%B7%A7/</link>
+      <link>http://example.org/posts/2020-09-11-chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E5%AF%B9autoplay%E7%9A%84%E4%B8%80%E4%BA%9B%E5%A4%84%E7%90%86%E6%8A%80%E5%B7%A7/</link>
       <pubDate>Fri, 11 Sep 2020 21:08:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2020-09-11-chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E5%AF%B9autoplay%E7%9A%84%E4%B8%80%E4%BA%9B%E5%A4%84%E7%90%86%E6%8A%80%E5%B7%A7/</guid>
+      <guid>http://example.org/posts/2020-09-11-chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E5%AF%B9autoplay%E7%9A%84%E4%B8%80%E4%BA%9B%E5%A4%84%E7%90%86%E6%8A%80%E5%B7%A7/</guid>
       <description>我在写博客的时候，想给博客网页添加自己喜欢的音乐，这样我在写作和阅读的时候，心情也会比较愉悦，这个时候，我们就需要用到audio这个标签。
 &amp;lt;audio src=&amp;#34;&amp;#34;&amp;gt;&amp;lt;/audio&amp;gt; 同时audio标签还带有很多实用的属性，常用的有以下几个：
 src &amp;ndash; 这个就不说了，懂的都懂 autoplay &amp;ndash; 如果出现该属性，音频在就绪后马上播放 controls &amp;ndash; 网页中显示音频控件 loop &amp;ndash; 循环播放 muted &amp;ndash; 默认静音 但是我在设置 autoplay 的时候发现，chrome对自动播放深恶痛绝，直接从根源上限制了这个属性的开启，意思是说，这个属性直接禁用，在打开网页没有交互的情况下，不允许自动播放。

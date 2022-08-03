@@ -1,19 +1,415 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>浏览器收藏夹一键填写博客评论信息 | 不如吃茶去</title><meta name=keywords content="博客,js"><meta name=description content="先点击收藏一个页面，然后右键它，选择修改，在网址输入框复制下面的js代码，就可以一键填入了。
+<!DOCTYPE html>
+<html><head>
+<title>浏览器收藏夹一键填写博客评论信息</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="浏览器收藏夹一键填写博客评论信息" />
+<meta property="og:description" content="先点击收藏一个页面，然后右键它，选择修改，在网址输入框复制下面的js代码，就可以一键填入了。
 将其中的昵称，邮箱，网址修改成自己的信息。
 目前支持绝大多数主流博客平台和系统，如果发现没有起作用，可以在下面代码里面修改增加一下input的属性。
 如果你不会修改的话，可以在评论区留言没有起作用的网站，我可以更新代码。
-javascript:void function(){var lauthor=[&#34;#author&#34;,&#34;input[name='comname']&#34;,&#34;#inpName&#34;,&#34;input[name='author']&#34;,&#34;#ds-dialog-name&#34;,&#34;input[name='wc_name']&#34;, &#34;input[name='nick']&#34;,],lmail=[&#34;#mail&#34;,&#34;#email&#34;,&#34;input[name='commail']&#34;,&#34;#inpEmail&#34;,&#34;input[name='email']&#34;,&#34;#ds-dialog-email&#34;,&#34;input[name='wc_email']&#34;,&#34;input[name='mail']&#34;,],lurl=[&#34;#url&#34;,&#34;input[name='comurl']&#34;,&#34;#inpHomePage&#34;,&#34;#ds-dialog-url&#34;,&#34;input[name='url']&#34;,&#34;input[name='wc_website']&#34;,&#34;input[name='link']&#34;,];for(i=0;i<lauthor.length;i++){var author=document.querySelector(lauthor[i]);if(author!=null){author.value='子舒';break}}for(j=0;j<lmail.length;j++){var mail=document.querySelector(lmail[j]);if(mail!=null){mail.value='shuxhan@163.com';break}}for(k=0;k<lurl.length;k++){var url=document.querySelector(lurl[k]);if(url!=null){url.value='https://imhan.cn';break}}return!1}() "><meta name=author content="Me"><link rel=canonical href=https://zburu-hugo.vercel.app/posts/2022-04-26-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%94%B6%E8%97%8F%E5%A4%B9%E4%B8%80%E9%94%AE%E5%A1%AB%E5%86%99%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E4%BF%A1%E6%81%AF/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.ba440c9e3234243e74b01a794e5be1e5ed2ea2b1b088b818edcb1bc5edd382fa.css integrity="sha256-ukQMnjI0JD50sBp5Tlvh5e0uorGwiLgY7csbxe3Tgvo=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG+9vmJ0cTS+ovo0FeA=" onload=hljs.initHighlightingOnLoad()></script>
-<link rel=icon href=https://img.zburu.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://img.zburu.com/favicon.ico><link rel=icon type=image/png sizes=32x32 href=https://img.zburu.com/favicon.ico><link rel=apple-touch-icon href=https://img.zburu.com/favicon.ico><link rel=mask-icon href=https://img.zburu.com/favicon.ico><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="浏览器收藏夹一键填写博客评论信息"><meta property="og:description" content="先点击收藏一个页面，然后右键它，选择修改，在网址输入框复制下面的js代码，就可以一键填入了。
+javascript:void function(){var lauthor=[&#34;#author&#34;,&#34;input[name=&#39;comname&#39;]&#34;,&#34;#inpName&#34;,&#34;input[name=&#39;author&#39;]&#34;,&#34;#ds-dialog-name&#34;,&#34;input[name=&#39;wc_name&#39;]&#34;, &#34;input[name=&#39;nick&#39;]&#34;,],lmail=[&#34;#mail&#34;,&#34;#email&#34;,&#34;input[name=&#39;commail&#39;]&#34;,&#34;#inpEmail&#34;,&#34;input[name=&#39;email&#39;]&#34;,&#34;#ds-dialog-email&#34;,&#34;input[name=&#39;wc_email&#39;]&#34;,&#34;input[name=&#39;mail&#39;]&#34;,],lurl=[&#34;#url&#34;,&#34;input[name=&#39;comurl&#39;]&#34;,&#34;#inpHomePage&#34;,&#34;#ds-dialog-url&#34;,&#34;input[name=&#39;url&#39;]&#34;,&#34;input[name=&#39;wc_website&#39;]&#34;,&#34;input[name=&#39;link&#39;]&#34;,];for(i=0;i&lt;lauthor.length;i&#43;&#43;){var author=document.querySelector(lauthor[i]);if(author!=null){author.value=&#39;子舒&#39;;break}}for(j=0;j&lt;lmail.length;j&#43;&#43;){var mail=document.querySelector(lmail[j]);if(mail!=null){mail.value=&#39;shuxhan@163.com&#39;;break}}for(k=0;k&lt;lurl.length;k&#43;&#43;){var url=document.querySelector(lurl[k]);if(url!=null){url.value=&#39;https://imhan.cn&#39;;break}}return!1}() " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/2022-04-26-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%94%B6%E8%97%8F%E5%A4%B9%E4%B8%80%E9%94%AE%E5%A1%AB%E5%86%99%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E4%BF%A1%E6%81%AF/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-26T14:08:00+00:00" />
+<meta property="article:modified_time" content="2022-04-26T14:08:00+00:00" /><meta property="og:site_name" content="My Blog" />
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="浏览器收藏夹一键填写博客评论信息"/>
+<meta name="twitter:description" content="先点击收藏一个页面，然后右键它，选择修改，在网址输入框复制下面的js代码，就可以一键填入了。
 将其中的昵称，邮箱，网址修改成自己的信息。
 目前支持绝大多数主流博客平台和系统，如果发现没有起作用，可以在下面代码里面修改增加一下input的属性。
 如果你不会修改的话，可以在评论区留言没有起作用的网站，我可以更新代码。
-javascript:void function(){var lauthor=[&#34;#author&#34;,&#34;input[name='comname']&#34;,&#34;#inpName&#34;,&#34;input[name='author']&#34;,&#34;#ds-dialog-name&#34;,&#34;input[name='wc_name']&#34;, &#34;input[name='nick']&#34;,],lmail=[&#34;#mail&#34;,&#34;#email&#34;,&#34;input[name='commail']&#34;,&#34;#inpEmail&#34;,&#34;input[name='email']&#34;,&#34;#ds-dialog-email&#34;,&#34;input[name='wc_email']&#34;,&#34;input[name='mail']&#34;,],lurl=[&#34;#url&#34;,&#34;input[name='comurl']&#34;,&#34;#inpHomePage&#34;,&#34;#ds-dialog-url&#34;,&#34;input[name='url']&#34;,&#34;input[name='wc_website']&#34;,&#34;input[name='link']&#34;,];for(i=0;i<lauthor.length;i++){var author=document.querySelector(lauthor[i]);if(author!=null){author.value='子舒';break}}for(j=0;j<lmail.length;j++){var mail=document.querySelector(lmail[j]);if(mail!=null){mail.value='shuxhan@163.com';break}}for(k=0;k<lurl.length;k++){var url=document.querySelector(lurl[k]);if(url!=null){url.value='https://imhan.cn';break}}return!1}() "><meta property="og:type" content="article"><meta property="og:url" content="https://zburu-hugo.vercel.app/posts/2022-04-26-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%94%B6%E8%97%8F%E5%A4%B9%E4%B8%80%E9%94%AE%E5%A1%AB%E5%86%99%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E4%BF%A1%E6%81%AF/"><meta property="og:image" content="https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-04-26T14:08:00+00:00"><meta property="article:modified_time" content="2022-04-26T14:08:00+00:00"><meta property="og:site_name" content="ExampleSite"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="浏览器收藏夹一键填写博客评论信息"><meta name=twitter:description content="先点击收藏一个页面，然后右键它，选择修改，在网址输入框复制下面的js代码，就可以一键填入了。
-将其中的昵称，邮箱，网址修改成自己的信息。
-目前支持绝大多数主流博客平台和系统，如果发现没有起作用，可以在下面代码里面修改增加一下input的属性。
-如果你不会修改的话，可以在评论区留言没有起作用的网站，我可以更新代码。
-javascript:void function(){var lauthor=[&#34;#author&#34;,&#34;input[name='comname']&#34;,&#34;#inpName&#34;,&#34;input[name='author']&#34;,&#34;#ds-dialog-name&#34;,&#34;input[name='wc_name']&#34;, &#34;input[name='nick']&#34;,],lmail=[&#34;#mail&#34;,&#34;#email&#34;,&#34;input[name='commail']&#34;,&#34;#inpEmail&#34;,&#34;input[name='email']&#34;,&#34;#ds-dialog-email&#34;,&#34;input[name='wc_email']&#34;,&#34;input[name='mail']&#34;,],lurl=[&#34;#url&#34;,&#34;input[name='comurl']&#34;,&#34;#inpHomePage&#34;,&#34;#ds-dialog-url&#34;,&#34;input[name='url']&#34;,&#34;input[name='wc_website']&#34;,&#34;input[name='link']&#34;,];for(i=0;i<lauthor.length;i++){var author=document.querySelector(lauthor[i]);if(author!=null){author.value='子舒';break}}for(j=0;j<lmail.length;j++){var mail=document.querySelector(lmail[j]);if(mail!=null){mail.value='shuxhan@163.com';break}}for(k=0;k<lurl.length;k++){var url=document.querySelector(lurl[k]);if(url!=null){url.value='https://imhan.cn';break}}return!1}() "><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://zburu-hugo.vercel.app/posts/"},{"@type":"ListItem","position":3,"name":"浏览器收藏夹一键填写博客评论信息","item":"https://zburu-hugo.vercel.app/posts/2022-04-26-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%94%B6%E8%97%8F%E5%A4%B9%E4%B8%80%E9%94%AE%E5%A1%AB%E5%86%99%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E4%BF%A1%E6%81%AF/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"浏览器收藏夹一键填写博客评论信息","name":"浏览器收藏夹一键填写博客评论信息","description":"先点击收藏一个页面，然后右键它，选择修改，在网址输入框复制下面的js代码，就可以一键填入了。\n将其中的昵称，邮箱，网址修改成自己的信息。\n目前支持绝大多数主流博客平台和系统，如果发现没有起作用，可以在下面代码里面修改增加一下input的属性。\n如果你不会修改的话，可以在评论区留言没有起作用的网站，我可以更新代码。\njavascript:void function(){var lauthor=[\u0026#34;#author\u0026#34;,\u0026#34;input[name=\u0026#39;comname\u0026#39;]\u0026#34;,\u0026#34;#inpName\u0026#34;,\u0026#34;input[name=\u0026#39;author\u0026#39;]\u0026#34;,\u0026#34;#ds-dialog-name\u0026#34;,\u0026#34;input[name=\u0026#39;wc_name\u0026#39;]\u0026#34;, \u0026#34;input[name=\u0026#39;nick\u0026#39;]\u0026#34;,],lmail=[\u0026#34;#mail\u0026#34;,\u0026#34;#email\u0026#34;,\u0026#34;input[name=\u0026#39;commail\u0026#39;]\u0026#34;,\u0026#34;#inpEmail\u0026#34;,\u0026#34;input[name=\u0026#39;email\u0026#39;]\u0026#34;,\u0026#34;#ds-dialog-email\u0026#34;,\u0026#34;input[name=\u0026#39;wc_email\u0026#39;]\u0026#34;,\u0026#34;input[name=\u0026#39;mail\u0026#39;]\u0026#34;,],lurl=[\u0026#34;#url\u0026#34;,\u0026#34;input[name=\u0026#39;comurl\u0026#39;]\u0026#34;,\u0026#34;#inpHomePage\u0026#34;,\u0026#34;#ds-dialog-url\u0026#34;,\u0026#34;input[name=\u0026#39;url\u0026#39;]\u0026#34;,\u0026#34;input[name=\u0026#39;wc_website\u0026#39;]\u0026#34;,\u0026#34;input[name=\u0026#39;link\u0026#39;]\u0026#34;,];for(i=0;i\u0026lt;lauthor.length;i++){var author=document.querySelector(lauthor[i]);if(author!=null){author.value=\u0026#39;子舒\u0026#39;;break}}for(j=0;j\u0026lt;lmail.length;j++){var mail=document.querySelector(lmail[j]);if(mail!=null){mail.value=\u0026#39;shuxhan@163.com\u0026#39;;break}}for(k=0;k\u0026lt;lurl.length;k++){var url=document.querySelector(lurl[k]);if(url!=null){url.value=\u0026#39;https://imhan.cn\u0026#39;;break}}return!1}() ","keywords":["博客","js"],"articleBody":"先点击收藏一个页面，然后右键它，选择修改，在网址输入框复制下面的js代码，就可以一键填入了。\n将其中的昵称，邮箱，网址修改成自己的信息。\n目前支持绝大多数主流博客平台和系统，如果发现没有起作用，可以在下面代码里面修改增加一下input的属性。\n如果你不会修改的话，可以在评论区留言没有起作用的网站，我可以更新代码。\njavascript:void function(){var lauthor=[\"#author\",\"input[name='comname']\",\"#inpName\",\"input[name='author']\",\"#ds-dialog-name\",\"input[name='wc_name']\", \"input[name='nick']\",],lmail=[\"#mail\",\"#email\",\"input[name='commail']\",\"#inpEmail\",\"input[name='email']\",\"#ds-dialog-email\",\"input[name='wc_email']\",\"input[name='mail']\",],lurl=[\"#url\",\"input[name='comurl']\",\"#inpHomePage\",\"#ds-dialog-url\",\"input[name='url']\",\"input[name='wc_website']\",\"input[name='link']\",];for(i=0;i\u003clauthor.length;i++){var author=document.querySelector(lauthor[i]);if(author!=null){author.value='子舒';break}}for(j=0;j\u003clmail.length;j++){var mail=document.querySelector(lmail[j]);if(mail!=null){mail.value='shuxhan@163.com';break}}for(k=0;k\u003clurl.length;k++){var url=document.querySelector(lurl[k]);if(url!=null){url.value='https://imhan.cn';break}}return!1}() ","wordCount":"11","inLanguage":"en","datePublished":"2022-04-26T14:08:00Z","dateModified":"2022-04-26T14:08:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://zburu-hugo.vercel.app/posts/2022-04-26-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%94%B6%E8%97%8F%E5%A4%B9%E4%B8%80%E9%94%AE%E5%A1%AB%E5%86%99%E5%8D%9A%E5%AE%A2%E8%AF%84%E8%AE%BA%E4%BF%A1%E6%81%AF/"},"publisher":{"@type":"Organization","name":"不如吃茶去","logo":{"@type":"ImageObject","url":"https://img.zburu.com/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://zburu-hugo.vercel.app accesskey=h title="Home (Alt + H)">Home</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://zburu-hugo.vercel.app/posts title=posts><span>posts</span></a></li><li><a href=https://zburu-hugo.vercel.app/categories title=categories><span>categories</span></a></li><li><a href=https://zburu-hugo.vercel.app/tags title=tags><span>tags</span></a></li><li><a href=https://zburu-hugo.vercel.app/search title="search (Alt + /)" accesskey=/><span>search</span></a></li><li><a href=https://zburu-hugo.vercel.app/about title=about><span>about</span></a></li><li><a href=https://github.com/zburu title=github><span>github</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://zburu-hugo.vercel.app>Home</a>&nbsp;»&nbsp;<a href=https://zburu-hugo.vercel.app/posts/>Posts</a></div><h1 class=post-title>浏览器收藏夹一键填写博客评论信息</h1><div class=post-meta><span title='2022-04-26 14:08:00 +0000 UTC'>April 26, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;11 words&nbsp;·&nbsp;Me&nbsp;|&nbsp;<a href=https://github.com/zburu/hugo-blog/blob/main/content/posts/2022-04-26-%e6%b5%8f%e8%a7%88%e5%99%a8%e6%94%b6%e8%97%8f%e5%a4%b9%e4%b8%80%e9%94%ae%e5%a1%ab%e5%86%99%e5%8d%9a%e5%ae%a2%e8%af%84%e8%ae%ba%e4%bf%a1%e6%81%af.md rel="noopener noreferrer" target=_blank>Edit</a></div></header><div class=post-content><p>先点击收藏一个页面，然后右键它，选择修改，在网址输入框复制下面的js代码，就可以一键填入了。</p><p>将其中的昵称，邮箱，网址修改成自己的信息。</p><p>目前支持绝大多数主流博客平台和系统，如果发现没有起作用，可以在下面代码里面修改增加一下input的属性。</p><p>如果你不会修改的话，可以在评论区留言没有起作用的网站，我可以更新代码。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=nx>javascript</span><span class=o>:</span><span class=k>void</span> <span class=kd>function</span><span class=p>(){</span><span class=kd>var</span> <span class=nx>lauthor</span><span class=o>=</span><span class=p>[</span><span class=s2>&#34;#author&#34;</span><span class=p>,</span><span class=s2>&#34;input[name=&#39;comname&#39;]&#34;</span><span class=p>,</span><span class=s2>&#34;#inpName&#34;</span><span class=p>,</span><span class=s2>&#34;input[name=&#39;author&#39;]&#34;</span><span class=p>,</span><span class=s2>&#34;#ds-dialog-name&#34;</span><span class=p>,</span><span class=s2>&#34;input[name=&#39;wc_name&#39;]&#34;</span><span class=p>,</span> <span class=s2>&#34;input[name=&#39;nick&#39;]&#34;</span><span class=p>,],</span><span class=nx>lmail</span><span class=o>=</span><span class=p>[</span><span class=s2>&#34;#mail&#34;</span><span class=p>,</span><span class=s2>&#34;#email&#34;</span><span class=p>,</span><span class=s2>&#34;input[name=&#39;commail&#39;]&#34;</span><span class=p>,</span><span class=s2>&#34;#inpEmail&#34;</span><span class=p>,</span><span class=s2>&#34;input[name=&#39;email&#39;]&#34;</span><span class=p>,</span><span class=s2>&#34;#ds-dialog-email&#34;</span><span class=p>,</span><span class=s2>&#34;input[name=&#39;wc_email&#39;]&#34;</span><span class=p>,</span><span class=s2>&#34;input[name=&#39;mail&#39;]&#34;</span><span class=p>,],</span><span class=nx>lurl</span><span class=o>=</span><span class=p>[</span><span class=s2>&#34;#url&#34;</span><span class=p>,</span><span class=s2>&#34;input[name=&#39;comurl&#39;]&#34;</span><span class=p>,</span><span class=s2>&#34;#inpHomePage&#34;</span><span class=p>,</span><span class=s2>&#34;#ds-dialog-url&#34;</span><span class=p>,</span><span class=s2>&#34;input[name=&#39;url&#39;]&#34;</span><span class=p>,</span><span class=s2>&#34;input[name=&#39;wc_website&#39;]&#34;</span><span class=p>,</span><span class=s2>&#34;input[name=&#39;link&#39;]&#34;</span><span class=p>,];</span><span class=k>for</span><span class=p>(</span><span class=nx>i</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span><span class=nx>i</span><span class=o>&lt;</span><span class=nx>lauthor</span><span class=p>.</span><span class=nx>length</span><span class=p>;</span><span class=nx>i</span><span class=o>++</span><span class=p>){</span><span class=kd>var</span> <span class=nx>author</span><span class=o>=</span><span class=nb>document</span><span class=p>.</span><span class=nx>querySelector</span><span class=p>(</span><span class=nx>lauthor</span><span class=p>[</span><span class=nx>i</span><span class=p>]);</span><span class=k>if</span><span class=p>(</span><span class=nx>author</span><span class=o>!=</span><span class=kc>null</span><span class=p>){</span><span class=nx>author</span><span class=p>.</span><span class=nx>value</span><span class=o>=</span><span class=s1>&#39;子舒&#39;</span><span class=p>;</span><span class=k>break</span><span class=p>}}</span><span class=k>for</span><span class=p>(</span><span class=nx>j</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span><span class=nx>j</span><span class=o>&lt;</span><span class=nx>lmail</span><span class=p>.</span><span class=nx>length</span><span class=p>;</span><span class=nx>j</span><span class=o>++</span><span class=p>){</span><span class=kd>var</span> <span class=nx>mail</span><span class=o>=</span><span class=nb>document</span><span class=p>.</span><span class=nx>querySelector</span><span class=p>(</span><span class=nx>lmail</span><span class=p>[</span><span class=nx>j</span><span class=p>]);</span><span class=k>if</span><span class=p>(</span><span class=nx>mail</span><span class=o>!=</span><span class=kc>null</span><span class=p>){</span><span class=nx>mail</span><span class=p>.</span><span class=nx>value</span><span class=o>=</span><span class=s1>&#39;shuxhan@163.com&#39;</span><span class=p>;</span><span class=k>break</span><span class=p>}}</span><span class=k>for</span><span class=p>(</span><span class=nx>k</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span><span class=nx>k</span><span class=o>&lt;</span><span class=nx>lurl</span><span class=p>.</span><span class=nx>length</span><span class=p>;</span><span class=nx>k</span><span class=o>++</span><span class=p>){</span><span class=kd>var</span> <span class=nx>url</span><span class=o>=</span><span class=nb>document</span><span class=p>.</span><span class=nx>querySelector</span><span class=p>(</span><span class=nx>lurl</span><span class=p>[</span><span class=nx>k</span><span class=p>]);</span><span class=k>if</span><span class=p>(</span><span class=nx>url</span><span class=o>!=</span><span class=kc>null</span><span class=p>){</span><span class=nx>url</span><span class=p>.</span><span class=nx>value</span><span class=o>=</span><span class=s1>&#39;https://imhan.cn&#39;</span><span class=p>;</span><span class=k>break</span><span class=p>}}</span><span class=k>return</span><span class=o>!</span><span class=mi>1</span><span class=p>}()</span>
-</span></span></code></pre></div><p><img loading=lazy src=https://img.zburu.com/i/2022/04/26/62678b1d61c4b.png alt></p></div><footer class=post-footer><ul class=post-tags><li><a href=https://zburu-hugo.vercel.app/tags/%E5%8D%9A%E5%AE%A2/>博客</a></li><li><a href=https://zburu-hugo.vercel.app/tags/js/>js</a></li></ul><nav class=paginav><a class=prev href=https://zburu-hugo.vercel.app/posts/2022-04-28-%E5%85%B3%E4%BA%8E%E6%88%91%E9%80%89%E6%8B%A9%E7%AC%94%E8%AE%B0%E7%B3%BB%E7%BB%9F%E8%BF%99%E4%BB%B6%E5%B0%8F%E4%BA%8B/><span class=title>« Prev</span><br><span>关于我选择笔记系统这件小事</span></a>
-<a class=next href=https://zburu-hugo.vercel.app/posts/2022-04-24-%E9%9A%8F%E6%83%B3%E5%BD%95_1/><span class=title>Next »</span><br><span>随想录 (1)</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2022 <a href=https://zburu-hugo.vercel.app>不如吃茶去</a></span>
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+javascript:void function(){var lauthor=[&#34;#author&#34;,&#34;input[name=&#39;comname&#39;]&#34;,&#34;#inpName&#34;,&#34;input[name=&#39;author&#39;]&#34;,&#34;#ds-dialog-name&#34;,&#34;input[name=&#39;wc_name&#39;]&#34;, &#34;input[name=&#39;nick&#39;]&#34;,],lmail=[&#34;#mail&#34;,&#34;#email&#34;,&#34;input[name=&#39;commail&#39;]&#34;,&#34;#inpEmail&#34;,&#34;input[name=&#39;email&#39;]&#34;,&#34;#ds-dialog-email&#34;,&#34;input[name=&#39;wc_email&#39;]&#34;,&#34;input[name=&#39;mail&#39;]&#34;,],lurl=[&#34;#url&#34;,&#34;input[name=&#39;comurl&#39;]&#34;,&#34;#inpHomePage&#34;,&#34;#ds-dialog-url&#34;,&#34;input[name=&#39;url&#39;]&#34;,&#34;input[name=&#39;wc_website&#39;]&#34;,&#34;input[name=&#39;link&#39;]&#34;,];for(i=0;i&lt;lauthor.length;i&#43;&#43;){var author=document.querySelector(lauthor[i]);if(author!=null){author.value=&#39;子舒&#39;;break}}for(j=0;j&lt;lmail.length;j&#43;&#43;){var mail=document.querySelector(lmail[j]);if(mail!=null){mail.value=&#39;shuxhan@163.com&#39;;break}}for(k=0;k&lt;lurl.length;k&#43;&#43;){var url=document.querySelector(lurl[k]);if(url!=null){url.value=&#39;https://imhan.cn&#39;;break}}return!1}() "/>
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/journal.min.0f46f98b723f2aad4b02d9370bb6aa7848b5c2b2a5579642014082283683d2d8.css" integrity="sha256-D0b5i3I/Kq1LAtk3C7aqeEi1wrKlV5ZCAUCCKDaD0tg=" media="screen">
+
+
+
+<link rel="stylesheet" href="/scss/dark-mode.min.79c34391dbcff20df8b4dac718e2606701efcbfdb9f3b08447ac39ac9dc7b463.css" integrity="sha256-ecNDkdvP8g34tNrHGOJgZwHvy/2587CER6w5rJ3HtGM=" media="screen">
+
+
+<script src="/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/js/toc.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/vendor/js/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+  clientID: 'your client id',
+  clientSecret: 'your client secret',
+  repo: 'repo name',
+  owner: 'user',
+  admin: ['user'],
+  id: md5(location.pathname),
+  distractionFreeMode: 'false'
+  });
+  window.onload = function () {
+        gitalk.render('gitalk-container')
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://example.org/">
+    
+        <div class="nav-title">
+            A Hugo Site
+        </div>
+        
+        <div class="nav-subtitle">
+            Themed by Diary.
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                Archive
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                Categories
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                Tags
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/index.xml">
+                RSS Feed
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    Archive
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    Categories
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    Tags
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/index.xml">
+                    RSS Feed
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="http://example.org/">
+            A Hugo Site
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://example.org/">
+        <div class="single-column-header-title">A Hugo Site</div>
+        
+        <div class="single-column-header-subtitle">Themed by Diary.</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    浏览器收藏夹一键填写博客评论信息
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2022-04-26 14:08
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/">[技术]</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/%E5%8D%9A%E5%AE%A2">博客</a>
+                                &nbsp;
+                            
+                                <a href="/tags/js">js</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p>先点击收藏一个页面，然后右键它，选择修改，在网址输入框复制下面的js代码，就可以一键填入了。</p>
+<p>将其中的昵称，邮箱，网址修改成自己的信息。</p>
+<p>目前支持绝大多数主流博客平台和系统，如果发现没有起作用，可以在下面代码里面修改增加一下input的属性。</p>
+<p>如果你不会修改的话，可以在评论区留言没有起作用的网站，我可以更新代码。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>javascript:<span style="color:#8b008b;font-weight:bold">void</span> <span style="color:#8b008b;font-weight:bold">function</span>(){<span style="color:#8b008b;font-weight:bold">var</span> lauthor=[<span style="color:#cd5555">&#34;#author&#34;</span>,<span style="color:#cd5555">&#34;input[name=&#39;comname&#39;]&#34;</span>,<span style="color:#cd5555">&#34;#inpName&#34;</span>,<span style="color:#cd5555">&#34;input[name=&#39;author&#39;]&#34;</span>,<span style="color:#cd5555">&#34;#ds-dialog-name&#34;</span>,<span style="color:#cd5555">&#34;input[name=&#39;wc_name&#39;]&#34;</span>, <span style="color:#cd5555">&#34;input[name=&#39;nick&#39;]&#34;</span>,],lmail=[<span style="color:#cd5555">&#34;#mail&#34;</span>,<span style="color:#cd5555">&#34;#email&#34;</span>,<span style="color:#cd5555">&#34;input[name=&#39;commail&#39;]&#34;</span>,<span style="color:#cd5555">&#34;#inpEmail&#34;</span>,<span style="color:#cd5555">&#34;input[name=&#39;email&#39;]&#34;</span>,<span style="color:#cd5555">&#34;#ds-dialog-email&#34;</span>,<span style="color:#cd5555">&#34;input[name=&#39;wc_email&#39;]&#34;</span>,<span style="color:#cd5555">&#34;input[name=&#39;mail&#39;]&#34;</span>,],lurl=[<span style="color:#cd5555">&#34;#url&#34;</span>,<span style="color:#cd5555">&#34;input[name=&#39;comurl&#39;]&#34;</span>,<span style="color:#cd5555">&#34;#inpHomePage&#34;</span>,<span style="color:#cd5555">&#34;#ds-dialog-url&#34;</span>,<span style="color:#cd5555">&#34;input[name=&#39;url&#39;]&#34;</span>,<span style="color:#cd5555">&#34;input[name=&#39;wc_website&#39;]&#34;</span>,<span style="color:#cd5555">&#34;input[name=&#39;link&#39;]&#34;</span>,];<span style="color:#8b008b;font-weight:bold">for</span>(i=<span style="color:#b452cd">0</span>;i&lt;lauthor.length;i++){<span style="color:#8b008b;font-weight:bold">var</span> author=<span style="color:#658b00">document</span>.querySelector(lauthor[i]);<span style="color:#8b008b;font-weight:bold">if</span>(author!=<span style="color:#8b008b;font-weight:bold">null</span>){author.value=<span style="color:#cd5555">&#39;子舒&#39;</span>;<span style="color:#8b008b;font-weight:bold">break</span>}}<span style="color:#8b008b;font-weight:bold">for</span>(j=<span style="color:#b452cd">0</span>;j&lt;lmail.length;j++){<span style="color:#8b008b;font-weight:bold">var</span> mail=<span style="color:#658b00">document</span>.querySelector(lmail[j]);<span style="color:#8b008b;font-weight:bold">if</span>(mail!=<span style="color:#8b008b;font-weight:bold">null</span>){mail.value=<span style="color:#cd5555">&#39;shuxhan@163.com&#39;</span>;<span style="color:#8b008b;font-weight:bold">break</span>}}<span style="color:#8b008b;font-weight:bold">for</span>(k=<span style="color:#b452cd">0</span>;k&lt;lurl.length;k++){<span style="color:#8b008b;font-weight:bold">var</span> url=<span style="color:#658b00">document</span>.querySelector(lurl[k]);<span style="color:#8b008b;font-weight:bold">if</span>(url!=<span style="color:#8b008b;font-weight:bold">null</span>){url.value=<span style="color:#cd5555">&#39;https://imhan.cn&#39;</span>;<span style="color:#8b008b;font-weight:bold">break</span>}}<span style="color:#8b008b;font-weight:bold">return</span>!<span style="color:#b452cd">1</span>}()
+</span></span></code></pre></div><p><img src="https://img.zburu.com/i/2022/04/26/62678b1d61c4b.png" alt=""></p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">Last modified on 2022-04-26</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="/posts/2022-04-28-%E5%85%B3%E4%BA%8E%E6%88%91%E9%80%89%E6%8B%A9%E7%AC%94%E8%AE%B0%E7%B3%BB%E7%BB%9F%E8%BF%99%E4%BB%B6%E5%B0%8F%E4%BA%8B/">
+			Next<br>关于我选择笔记系统这件小事
+                </a>
+                
+                
+                
+                <a class="older-posts" href="/posts/2022-04-24-%E9%9A%8F%E6%83%B3%E5%BD%95_1/">
+			Previous<br>随想录 (1)
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+<div id="gitalk-container"></div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+</div>
+            </div>
+    
+    <script src="/js/journal.js"></script>
+    </body>
+</html>

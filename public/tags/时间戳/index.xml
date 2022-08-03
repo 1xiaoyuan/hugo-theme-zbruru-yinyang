@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>时间戳 on 不如吃茶去</title>
-    <link>https://zburu-hugo.vercel.app/tags/%E6%97%B6%E9%97%B4%E6%88%B3/</link>
-    <description>Recent content in 时间戳 on 不如吃茶去</description>
-    <image>
-      <url>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
+    <title>时间戳 on A Hugo Site</title>
+    <link>http://example.org/tags/%E6%97%B6%E9%97%B4%E6%88%B3/</link>
+    <description>Recent content in 时间戳 on A Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 10 Mar 2022 17:33:00 +0000</lastBuildDate><atom:link href="https://zburu-hugo.vercel.app/tags/%E6%97%B6%E9%97%B4%E6%88%B3/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Thu, 10 Mar 2022 17:33:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/%E6%97%B6%E9%97%B4%E6%88%B3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>sql中时间戳转日期</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-03-10-sql%E4%B8%AD%E6%97%B6%E9%97%B4%E6%88%B3%E8%BD%AC%E6%97%A5%E6%9C%9F/</link>
+      <link>http://example.org/posts/2022-03-10-sql%E4%B8%AD%E6%97%B6%E9%97%B4%E6%88%B3%E8%BD%AC%E6%97%A5%E6%9C%9F/</link>
       <pubDate>Thu, 10 Mar 2022 17:33:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-03-10-sql%E4%B8%AD%E6%97%B6%E9%97%B4%E6%88%B3%E8%BD%AC%E6%97%A5%E6%9C%9F/</guid>
+      <guid>http://example.org/posts/2022-03-10-sql%E4%B8%AD%E6%97%B6%E9%97%B4%E6%88%B3%E8%BD%AC%E6%97%A5%E6%9C%9F/</guid>
       <description>需求: 我将博客和 typecho 后台结合起来，打算做一个在线说说的功能，在 typecho 中输入内容，然后调用接口，实现在我的博客查看说说功能的功能。是不是有点绕？我也这么觉得，但是折腾一下也挺好的。
 typecho 导出的数据默认是时间戳格式，那我在前端调用的时候就很麻烦，所以选择在 sql 查询时直接转换，created 是表里面的参数。
 // 时间转换语句 FROM_UNIXTIME(created) // 数据库查询语句 $sql = &amp;#34;select FROM_UNIXTIME(created),text from ... order by created desc&amp;#34;; 这里导出的数据就是下面这个样子。

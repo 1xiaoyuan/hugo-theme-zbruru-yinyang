@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>转载 on 不如吃茶去</title>
-    <link>https://zburu-hugo.vercel.app/tags/%E8%BD%AC%E8%BD%BD/</link>
-    <description>Recent content in 转载 on 不如吃茶去</description>
-    <image>
-      <url>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
+    <title>转载 on A Hugo Site</title>
+    <link>http://example.org/tags/%E8%BD%AC%E8%BD%BD/</link>
+    <description>Recent content in 转载 on A Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 13 May 2021 14:51:00 +0000</lastBuildDate><atom:link href="https://zburu-hugo.vercel.app/tags/%E8%BD%AC%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Thu, 13 May 2021 14:51:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/%E8%BD%AC%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oracle数据库安装教程（超详细）</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-05-13-oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/</link>
+      <link>http://example.org/posts/2021-05-13-oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/</link>
       <pubDate>Thu, 13 May 2021 14:51:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-05-13-oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/</guid>
+      <guid>http://example.org/posts/2021-05-13-oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E8%B6%85%E8%AF%A6%E7%BB%86/</guid>
       <description>转载自：https://www.moeor.com/26.html
 前言 本教程讲解Oracle Database Express Edition (XE) Release 11.2.0.2.0 (11gR2)版本的下载安装教程！
 该版本是一个便携式安装版本，直接安装，就可以了，非常方便。
@@ -44,10 +42,10 @@
     
     <item>
       <title>Typecho博客搭建及优化教程(详细)</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-05-11-typecho%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BC%98%E5%8C%96%E6%95%99%E7%A8%8B%E8%AF%A6%E7%BB%86/</link>
+      <link>http://example.org/posts/2021-05-11-typecho%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BC%98%E5%8C%96%E6%95%99%E7%A8%8B%E8%AF%A6%E7%BB%86/</link>
       <pubDate>Tue, 11 May 2021 22:29:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-05-11-typecho%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BC%98%E5%8C%96%E6%95%99%E7%A8%8B%E8%AF%A6%E7%BB%86/</guid>
+      <guid>http://example.org/posts/2021-05-11-typecho%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BC%98%E5%8C%96%E6%95%99%E7%A8%8B%E8%AF%A6%E7%BB%86/</guid>
       <description>1.前言 本文从Typecho 简介开始讲解，其中包括服务器的选择，以及域名注册，服务器系统选择 ，宝塔安装，环境配置，Typecho安装包括中间的防采坑注意事项，为您提供完整的保姆级搭建流程，请珍惜哦！
 如果不喜欢前面的啰嗦讲解，请跳过，直接从宝塔安装开始。
 不喜勿喷，谢谢！
@@ -87,10 +85,10 @@ Linux系统的话，本文使用Centos 8系统讲解。
     
     <item>
       <title>基耶斯洛夫斯基和他的现实</title>
-      <link>https://zburu-hugo.vercel.app/posts/2021-04-24-%E5%9F%BA%E8%80%B6%E6%96%AF%E6%B4%9B%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C%E4%BB%96%E7%9A%84%E7%8E%B0%E5%AE%9E/</link>
+      <link>http://example.org/posts/2021-04-24-%E5%9F%BA%E8%80%B6%E6%96%AF%E6%B4%9B%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C%E4%BB%96%E7%9A%84%E7%8E%B0%E5%AE%9E/</link>
       <pubDate>Sat, 24 Apr 2021 11:47:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2021-04-24-%E5%9F%BA%E8%80%B6%E6%96%AF%E6%B4%9B%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C%E4%BB%96%E7%9A%84%E7%8E%B0%E5%AE%9E/</guid>
+      <guid>http://example.org/posts/2021-04-24-%E5%9F%BA%E8%80%B6%E6%96%AF%E6%B4%9B%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%92%8C%E4%BB%96%E7%9A%84%E7%8E%B0%E5%AE%9E/</guid>
       <description>文章作者: 江江_Jan
 文章链接: https://blog.jannns.com/posts/Kieslowski-and-his-reality/
 版权声明: 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 4.0 许可协议。转载请注明来自 江卮可乐！

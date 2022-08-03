@@ -1,0 +1,959 @@
+<?xml-stylesheet href="/rss.xsl" type="text/xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content on A Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Sat, 30 Jul 2022 20:11:00 +0000</lastBuildDate>
+    
+        <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>chrome浏览器无法显示12px以下的字体</title>
+        <link>http://example.org/posts/2021-02-26-chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA12px%E4%BB%A5%E4%B8%8B%E7%9A%84%E5%AD%97%E4%BD%93/</link>
+        <pubDate>Fri, 26 Feb 2021 22:38:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2021-02-26-chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA12px%E4%BB%A5%E4%B8%8B%E7%9A%84%E5%AD%97%E4%BD%93/</guid>
+        <description>A Hugo Site http://example.org/posts/2021-02-26-chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA12px%E4%BB%A5%E4%B8%8B%E7%9A%84%E5%AD%97%E4%BD%93/ -&lt;p&gt;最近正在面试，遇到了很多有意思的东西，比如今天，在面试前先做了一套面试题，其中有这么一道题，觉得挺有意思，之前也没见过，就打算记录下来：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&amp;lt;!-- chrome浏览器12px字体大小以下无法显示，均显示为12px，应该怎么解决。 --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我确实有点蒙，在之前写代码的时候，没有遇到过这样的情况，不过既然这样问了，就得想出解决的办法。&lt;/p&gt;
+&lt;p&gt;首先我想到之前的一个问题，0.5px 的边框该如何实现，通过 scale(0.5) 可以实现，这是 css3 新属性。&lt;/p&gt;
+&lt;p&gt;所以当时我就写了通过 &lt;code&gt;transform:scale()&lt;/code&gt; 可以实现。不过后续在面试的中，面试官也没有提及这些问题。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;回到家之后，吃完饭坐在电脑旁，正准备逛一逛 github ，突然想起来了这么一个问题，就自己测试了一遍：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;style&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;font-size: 13px;&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    测试
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;style&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;font-size: 12px;&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    测试
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;style&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;font-size: 11px;&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    测试
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://img.zburu.com/i/2021/02/26/d3c345e515d6a29d9ff49f78382ac95b.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;竟然真的存在这样的问题，Chrome 12px 以下的字体无法正常显示，均显示为12px。&lt;/p&gt;
+&lt;p&gt;然后我用 scale 设置了一下属性，&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;style&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;font-size: 13px;&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    测试
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;style&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;font-size: 12px;&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    测试
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;style&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;font-size: 11px;transform: scale(0.5);&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    测试
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://img.zburu.com/i/2021/02/26/9e5f13c26524aae53acbc9bd5edd57f9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;字体确实可以再次缩小到自己想到的程度，但是存在一些弊端，所有带有长度的属性均被缩小，比如图中的div的长度，本来默认是 &lt;code&gt;100%&lt;/code&gt; ，但是显示只有原来的一半了。&lt;/p&gt;
+&lt;p&gt;虽然存在这么个问题，但是按照我自己的预估，平时我们浏览的网站基本没有低于12px大小的字体吧！反正我是没有遇到过，我估计面试题也是想考验我们对一些生僻知识的处理吧，不过也不算生僻，前有0.5px，后有12px，其实都大同小异。&lt;/p&gt;
+&lt;p&gt;在遇到这个问题的时候，确实可以通过 &lt;code&gt;scale()&lt;/code&gt; 处理一下，然后在认真设置其他属性，尽量避免更多的弊端。&lt;/p&gt;
+- http://example.org/posts/2021-02-26-chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA12px%E4%BB%A5%E4%B8%8B%E7%9A%84%E5%AD%97%E4%BD%93/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>使用宝塔面板安装 autoPicCdn 图床工具</title>
+        <link>http://example.org/posts/2021-02-25-%E4%BD%BF%E7%94%A8%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85_autopiccdn_%E5%9B%BE%E5%BA%8A%E5%B7%A5%E5%85%B7/</link>
+        <pubDate>Thu, 25 Feb 2021 22:41:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2021-02-25-%E4%BD%BF%E7%94%A8%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85_autopiccdn_%E5%9B%BE%E5%BA%8A%E5%B7%A5%E5%85%B7/</guid>
+        <description>A Hugo Site http://example.org/posts/2021-02-25-%E4%BD%BF%E7%94%A8%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85_autopiccdn_%E5%9B%BE%E5%BA%8A%E5%B7%A5%E5%85%B7/ -&lt;p&gt;很多小伙伴在做个人网站或者博客时，总能用到各种各样的图床工具，毕竟在写文章的时候需要插入一些图片，我也不例外，来盘点一下之前用的工具，&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;最开始是找一些免费的图床网站，比如sm.ms等，但是后来为了安全性和稳定性考虑放弃了这种。&lt;/li&gt;
+&lt;li&gt;然后是在 github，gitee 仓库存储的（缺点就是github访问速度有些尴尬，gitee其实挺好的，但时用起来怪怪的）&lt;/li&gt;
+&lt;li&gt;阿里云oss储存桶（挺好使的，搭配picgo软件，一年也才9.9，但是链接很尴尬，直接下载，无法右键访问图片，搜过了解决办法，嫌太麻烦就搁置了，至今在那放着）&lt;/li&gt;
+&lt;li&gt;后来在自己的服务器建一个网站，把图片放进去，使用的时候直接引用链接（缺点就是上传太麻烦，然后就是图片太占内存了，影响服务器的性能）&lt;/li&gt;
+&lt;li&gt;然后就是今天的重头戏，autoPicCdn ，一款开源软件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;也是基于github实现图床功能，后来才知道可以用 jsdelivr 给资源进行加速，autoPicCdn 就是基于这样的功能实现。&lt;/p&gt;
+&lt;p&gt;今天就讲讲用宝塔面板配置 autoPicCdn 的流程吧！&lt;/p&gt;
+&lt;h3 id=&#34;准备工作&#34;&gt;准备工作&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;进入 github 仓库下载资源到本地。
+&lt;a href=&#34;https://github.com/yumusb/autoPicCdn&#34;&gt;https://github.com/yumusb/autoPicCdn&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.zburu.com/i/2021/02/25/c5afee4580eb4e9ab70e48e79024efa9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;在 github 建立一个新的仓库，自由命名，我的是 shuxhan/pic-cdn ，简单易懂&lt;/li&gt;
+&lt;li&gt;去这个页面 &lt;a href=&#34;https://github.com/settings/tokens&#34;&gt;https://github.com/settings/tokens&lt;/a&gt;生成一个有写权限的 token（repo：Full control of private repositories 和write:packages 前打勾，然后点击确定，会生成一个 token码，&lt;strong&gt;记住它，最好复制到你的记事本，不然一刷新网页就不会再显示了&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;然后解压。&lt;/p&gt;
+&lt;h3 id=&#34;上传到服务器&#34;&gt;上传到服务器&lt;/h3&gt;
+&lt;p&gt;先利用自己的域名添加一个新的站点，比如我使用的是 &lt;a href=&#34;https://img.shuxhan.com&#34;&gt;img.shuxhan.com&lt;/a&gt; ，然后建立数据库。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.zburu.com/i/2021/02/25/22154c6e873e4741530c0344940069b2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;站点建立成功后，进入目录将默认生成的文件删除，然后点击上传，找到刚才解压的文件，点击上传即可。&lt;/p&gt;
+&lt;h3 id=&#34;配置文件&#34;&gt;配置文件&lt;/h3&gt;
+&lt;p&gt;找到目录中的 up.php 配置文件，&lt;/p&gt;
+&lt;p&gt;将下面两个地方配置好，具体的内容在代码里。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;//必选项
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;define(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;TYPE&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;GITHUB&amp;#34;&lt;/span&gt;);&lt;span style=&#34;color:#228b22&#34;&gt;//选择github
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;//define(&amp;#34;TYPE&amp;#34;,&amp;#34;GITEE&amp;#34;);//选择gitee，如果使用gitee，需要手动建立master分支，可以看这里 https://gitee.com/help/articles/4122
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;define(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;USER&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;shuxhan&amp;#34;&lt;/span&gt;);&lt;span style=&#34;color:#228b22&#34;&gt;//你的GitHub/Gitee的用户名
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;define(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;REPO&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;pic-cdn&amp;#34;&lt;/span&gt;);&lt;span style=&#34;color:#228b22&#34;&gt;//必须是上面用户名下的 公开仓库
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;define(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;MAIL&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;shuxhan@163.com&amp;#34;&lt;/span&gt;);&lt;span style=&#34;color:#228b22&#34;&gt;//邮箱无所谓，随便写
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;define(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;TOKEN&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;971b0a96ff5af545d5fe081f829cf5542007e70b&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// Github 去这个页面 https://github.com/settings/tokens生成一个有写权限的token（repo：Full control of private repositories 和write:packages前打勾）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// gitee  去往这个页面 https://gitee.com/personal_access_tokens
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;//数据库配置文件
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;//请确保把当前目录下的 pic.sql 导入到你的数据库
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#00688b&#34;&gt;$database&lt;/span&gt; = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;array&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;dbname&amp;#39;&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;img&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#228b22&#34;&gt;//你的数据库名字
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;host&amp;#39;&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;port&amp;#39;&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#b452cd&#34;&gt;3306&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;user&amp;#39;&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;img&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#228b22&#34;&gt;//你的数据库用户名
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;pass&amp;#39;&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;img&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#228b22&#34;&gt;//你的数据库用户名对应的密码
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后最重要的一步是，将目录下的 pic.sql 导入刚才建立并链接的数据库，先右键复制 pic.sql 文件，然后进入路径&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.zburu.com/i/2021/02/25/8d1badf54c5439b18c8dd8334357183c.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;点击粘贴即可。&lt;/p&gt;
+&lt;h3 id=&#34;测试访问&#34;&gt;测试访问&lt;/h3&gt;
+&lt;p&gt;打开你的浏览器，输入绑定的站点&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.zburu.com/i/2021/02/25/a5a7c37f2f0312035c54726c9d1cd46f.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;然后随便截个图，然后拖动到上传窗口，显示上传成功，下面是图片的廉价，复制 markdown 可以在写文章的时候使用辣！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.zburu.com/i/2021/02/25/908c287c823d4ceb7752e9071cde6737.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;通过 jsdelivr 加速，结果非常令人满意，以后就决定使用 github + jsdelivr + autoPicCdn 来做图床工具啦！&lt;/p&gt;
+- http://example.org/posts/2021-02-25-%E4%BD%BF%E7%94%A8%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85_autopiccdn_%E5%9B%BE%E5%BA%8A%E5%B7%A5%E5%85%B7/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>typecho 博客小表情无法显示问题</title>
+        <link>http://example.org/posts/2021-02-04-typecho_%E5%8D%9A%E5%AE%A2%E5%B0%8F%E8%A1%A8%E6%83%85%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</link>
+        <pubDate>Thu, 04 Feb 2021 19:47:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2021-02-04-typecho_%E5%8D%9A%E5%AE%A2%E5%B0%8F%E8%A1%A8%E6%83%85%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</guid>
+        <description>A Hugo Site http://example.org/posts/2021-02-04-typecho_%E5%8D%9A%E5%AE%A2%E5%B0%8F%E8%A1%A8%E6%83%85%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/ -&lt;p&gt;typecho 博客建立完成之后，会发现如果插入一些小表情，页面渲染完之后，表情不会显示，并且表情之后的内容全部消失，导致体验感很差。&lt;/p&gt;
+&lt;p&gt;表情无法显示的原因是 uft-8 编码的问题，无法识别小表情，需要将其改成 utf8mb4&lt;/p&gt;
+&lt;h3 id=&#34;第一步进入数据库&#34;&gt;第一步，进入数据库&lt;/h3&gt;
+&lt;p&gt;首先登陆博客后台的数据库，然后点击 sql ，输入下列代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;alter&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;typecho_comments&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;character&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;utf8mb4&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;collate&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;utf8mb4_unicode_ci;&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;alter&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;typecho_contents&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;character&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;utf8mb4&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;collate&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;utf8mb4_unicode_ci;&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;alter&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;typecho_fields&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;character&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;utf8mb4&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;collate&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;utf8mb4_unicode_ci;&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;alter&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;typecho_metas&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;character&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;utf8mb4&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;collate&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;utf8mb4_unicode_ci;&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;alter&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;typecho_options&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;character&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;utf8mb4&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;collate&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;utf8mb4_unicode_ci;&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;alter&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;typecho_relationships&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;character&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;utf8mb4&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;collate&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;utf8mb4_unicode_ci;&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;alter&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;typecho_users&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;convert&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;to&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;character&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;utf8mb4&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;collate&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;utf8mb4_unicode_ci;&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;直接复制，然后点击右下角的执行&lt;/p&gt;
+&lt;h3 id=&#34;第二步修改-typecho-配置文件&#34;&gt;第二步，修改 typecho 配置文件&lt;/h3&gt;
+&lt;p&gt;我使用的宝塔面板，点击左侧 &lt;code&gt;网站&lt;/code&gt; ，然后点击我们这个网站的根目录，进入之后，可以找到一个 &lt;code&gt;config.inc.php&lt;/code&gt; 的文件，进入然后滑到最下面。&lt;/p&gt;
+&lt;p&gt;**可以发现 &lt;code&gt;&#39;charset&#39; =&amp;gt; &#39;utf8&#39;,&lt;/code&gt;**下面我为了更直观的显示，将其注释掉，重新写的，实际操作中，将 &lt;code&gt;utf8&lt;/code&gt; 改为 &lt;code&gt;utf8mb4&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;/** 定义数据库参数 */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00688b&#34;&gt;$db&lt;/span&gt; = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; Typecho_Db(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;Pdo_Mysql&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;typecho_&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00688b&#34;&gt;$db&lt;/span&gt;-&amp;gt;&lt;span style=&#34;color:#658b00&#34;&gt;addServer&lt;/span&gt;(&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;array&lt;/span&gt; (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;host&amp;#39;&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;user&amp;#39;&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;blog&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;blog&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#cd5555&#34;&gt;/** &amp;#39;charset&amp;#39; =&amp;gt; &amp;#39;utf8&amp;#39;, */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;charset&amp;#39;&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;utf8mb4&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;port&amp;#39;&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;3306&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;database&amp;#39;&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;blog&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;), Typecho_Db::&lt;span style=&#34;color:#658b00&#34;&gt;READ&lt;/span&gt; | Typecho_Db::&lt;span style=&#34;color:#658b00&#34;&gt;WRITE&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Typecho_Db::&lt;span style=&#34;color:#658b00&#34;&gt;set&lt;/span&gt;(&lt;span style=&#34;color:#00688b&#34;&gt;$db&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在文章后台重新输入小表情，然后保存回到页面，小表情成功显示了。&lt;/p&gt;
+- http://example.org/posts/2021-02-04-typecho_%E5%8D%9A%E5%AE%A2%E5%B0%8F%E8%A1%A8%E6%83%85%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>掘金个人主页头像旋转效果</title>
+        <link>http://example.org/posts/2021-02-03-%E6%8E%98%E9%87%91%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E5%A4%B4%E5%83%8F%E6%97%8B%E8%BD%AC%E6%95%88%E6%9E%9C/</link>
+        <pubDate>Wed, 03 Feb 2021 19:43:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2021-02-03-%E6%8E%98%E9%87%91%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E5%A4%B4%E5%83%8F%E6%97%8B%E8%BD%AC%E6%95%88%E6%9E%9C/</guid>
+        <description>A Hugo Site http://example.org/posts/2021-02-03-%E6%8E%98%E9%87%91%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E5%A4%B4%E5%83%8F%E6%97%8B%E8%BD%AC%E6%95%88%E6%9E%9C/ -&lt;p&gt;在浏览掘金社区的时候，发现一个很有意思的小彩蛋，在个人主页将鼠标悬浮在头像上，会不停的加速旋转，我感觉挺有意思，f12 看看这个样式怎么写的，发现用到了 css3 的相关技术。&lt;/p&gt;
+&lt;p&gt;下面是具体代码，img 是头像元素，直接写在 hover 中即可。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;img&lt;/span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;hover&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;transform&lt;/span&gt;: &lt;span style=&#34;color:#658b00&#34;&gt;rotate&lt;/span&gt;(&lt;span style=&#34;color:#b452cd&#34;&gt;666&lt;/span&gt;&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;turn&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;transition-delay&lt;/span&gt;: &lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;s&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;transition-property&lt;/span&gt;: &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;all&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;transition-duration&lt;/span&gt;: &lt;span style=&#34;color:#b452cd&#34;&gt;59&lt;/span&gt;&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;s&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;transition-timing-function&lt;/span&gt;: &lt;span style=&#34;color:#658b00&#34;&gt;cubic-bezier&lt;/span&gt;(&lt;span style=&#34;color:#b452cd&#34;&gt;.34&lt;/span&gt;,&lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#b452cd&#34;&gt;.84&lt;/span&gt;,&lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ps：今天是2021年2月4号，农历腊月二十三，传统的小年，祝朋友们小年愉快。不知不觉，快过年了。&lt;/p&gt;
+- http://example.org/posts/2021-02-03-%E6%8E%98%E9%87%91%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E5%A4%B4%E5%83%8F%E6%97%8B%E8%BD%AC%E6%95%88%E6%9E%9C/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>ES5 和 ES6 的区别？</title>
+        <link>http://example.org/posts/2021-01-20-es5_%E5%92%8C_es6_%E7%9A%84%E5%8C%BA%E5%88%AB_/</link>
+        <pubDate>Wed, 20 Jan 2021 19:58:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2021-01-20-es5_%E5%92%8C_es6_%E7%9A%84%E5%8C%BA%E5%88%AB_/</guid>
+        <description>A Hugo Site http://example.org/posts/2021-01-20-es5_%E5%92%8C_es6_%E7%9A%84%E5%8C%BA%E5%88%AB_/ -&lt;h2 id=&#34;一javascript-由三部分组成&#34;&gt;一、javascript 由三部分组成&lt;/h2&gt;
+&lt;h3 id=&#34;1ecmascript核心&#34;&gt;1.ECMAScript（核心）&lt;/h3&gt;
+&lt;p&gt;它规定了语言的组成部分：法语，类型，语句，关键字，操作符等等。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shuxhan-imgbed.oss-cn-hangzhou.aliyuncs.com/img/20210120215430.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2dom文档对象模型&#34;&gt;2.DOM（文档对象模型）&lt;/h3&gt;
+&lt;p&gt;DOM 把整个页面映射为一个多层节点结果，开发人员可借助DOM提供的API，轻松地删除、添加、替换或修改任何节点。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shuxhan-imgbed.oss-cn-hangzhou.aliyuncs.com/img/20210120215524.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3bom浏览器对象模型&#34;&gt;3.BOM（浏览器对象模型）&lt;/h3&gt;
+&lt;p&gt;支持可以访问和操作浏览器窗口的浏览器对象模型，开发人员可以控制浏览器显示的页面以外的部分。&lt;/p&gt;
+&lt;h2 id=&#34;二什么是es5&#34;&gt;二、什么是ES5？&lt;/h2&gt;
+&lt;p&gt;作为ECMAScript第五个版本（第四版因为过于复杂废弃了），浏览器支持情况可看第一副图，增加特性如下。&lt;/p&gt;
+&lt;h3 id=&#34;1strict模式&#34;&gt;1.strict模式&lt;/h3&gt;
+&lt;p&gt;严格模式，限制一些用法，&amp;lsquo;use strict&amp;rsquo;;&lt;/p&gt;
+&lt;h3 id=&#34;2array增加方法&#34;&gt;2.Array增加方法&lt;/h3&gt;
+&lt;p&gt;增加了every、some 、forEach、filter 、indexOf、lastIndexOf、isArray、map、reduce、reduceRight方法&lt;/p&gt;
+&lt;p&gt;PS： 还有其他方法 Function.prototype.bind、String.prototype.trim、Date.now&lt;/p&gt;
+&lt;h3 id=&#34;3object方法&#34;&gt;3.Object方法&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Object.getPrototypeOf&lt;/li&gt;
+&lt;li&gt;Object.create&lt;/li&gt;
+&lt;li&gt;Object.getOwnPropertyNames&lt;/li&gt;
+&lt;li&gt;Object.defineProperty&lt;/li&gt;
+&lt;li&gt;Object.getOwnPropertyDescriptor&lt;/li&gt;
+&lt;li&gt;Object.defineProperties&lt;/li&gt;
+&lt;li&gt;Object.keys&lt;/li&gt;
+&lt;li&gt;Object.preventExtensions / Object.isExtensible&lt;/li&gt;
+&lt;li&gt;Object.seal / Object.isSealed&lt;/li&gt;
+&lt;li&gt;Object.freeze / Object.isFrozen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;PS：只讲有什么，不讲是什么。&lt;/p&gt;
+&lt;h3 id=&#34;2什么是es6&#34;&gt;2.什么是ES6?&lt;/h3&gt;
+&lt;p&gt;ECMAScript6在保证向下兼容的前提下，提供大量新特性，目前浏览器兼容情况如下：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ES6特性如下：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;块级作用域 关键字let, 常量const&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对象字面量的属性赋值简写（property value shorthand）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;var&lt;/span&gt; obj = {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#228b22&#34;&gt;// __proto__
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;    __proto__: theProtoObj,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#228b22&#34;&gt;// Shorthand for ‘handler: handler’
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;    handler,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#228b22&#34;&gt;// Method definitions
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;    toString() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#228b22&#34;&gt;// Super calls
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;d &amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;super&lt;/span&gt;.toString();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#228b22&#34;&gt;// Computed (dynamic) property names
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;    [ &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;prop_&amp;#39;&lt;/span&gt; + (() =&amp;gt; &lt;span style=&#34;color:#b452cd&#34;&gt;42&lt;/span&gt;)() ]: &lt;span style=&#34;color:#b452cd&#34;&gt;42&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;赋值解构&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;let&lt;/span&gt; singer = { first: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;, last: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;Dylan&amp;#34;&lt;/span&gt; };
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;let&lt;/span&gt; { first: f, last: l } = singer; &lt;span style=&#34;color:#228b22&#34;&gt;// 相当于 f = &amp;#34;Bob&amp;#34;, l = &amp;#34;Dylan&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;let&lt;/span&gt; [all, year, month, day] =  &lt;span style=&#34;color:#1c7e71&#34;&gt;/^(\d\d\d\d)-(\d\d)-(\d\d)$/&lt;/span&gt;.exec(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;2015-10-25&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;let&lt;/span&gt; [x, y] = [&lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;3&lt;/span&gt;]; &lt;span style=&#34;color:#228b22&#34;&gt;// x = 1, y = 2
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;函数参数 - 默认值、参数打包、 数组展开（Default 、Rest 、Spread）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;//Default
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;function&lt;/span&gt; findArtist(name=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;lu&amp;#39;&lt;/span&gt;, age=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;26&amp;#39;&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;//Rest
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;function&lt;/span&gt; f(x, ...y) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#228b22&#34;&gt;// y is an Array
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; x * y.length;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;f(&lt;span style=&#34;color:#b452cd&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;true&lt;/span&gt;) == &lt;span style=&#34;color:#b452cd&#34;&gt;6&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;//Spread
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;function&lt;/span&gt; f(x, y, z) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; x + y + z;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// Pass each elem of array as argument
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;f(...[&lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#b452cd&#34;&gt;3&lt;/span&gt;]) == &lt;span style=&#34;color:#b452cd&#34;&gt;6&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;箭头函数 Arrow functions&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;(1) 简化了代码形式，默认return表达式结果。&lt;/p&gt;
+&lt;p&gt;(2) 自动绑定语义this，即定义函数时的this。如上面例子中，forEach的匿名函数参数中用到的this。&lt;/p&gt;
+&lt;p&gt;6.字符串模板 Template strings&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;var&lt;/span&gt; name = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;, time = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;today&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;`Hello &lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;${&lt;/span&gt;name&lt;span style=&#34;color:#cd5555&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;, how are you &lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;${&lt;/span&gt;time&lt;span style=&#34;color:#cd5555&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;?`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// return &amp;#34;Hello Bob, how are you today?&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;Iterators（迭代器）+ for..of&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;迭代器有个next方法，调用会返回：&lt;/p&gt;
+&lt;p&gt;(1) 返回迭代对象的一个元素：{ done: false, value: elem }&lt;/p&gt;
+&lt;p&gt;(2) 如果已到迭代对象的末端：{ done: true, value: retVal }&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;for (var n of [&amp;#39;a&amp;#39;,&amp;#39;b&amp;#39;,&amp;#39;c&amp;#39;]) {
+  console.log(n);
+}
+// 打印a、b、c
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;生成器 （Generators）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Class&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Class，有constructor、extends、super，但本质上是语法糖（对语言的功能并没有影响，但是更方便程序员使用）。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;class&lt;/span&gt; Artist {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    constructor(name) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.name = name;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    perform() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.name + &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34; performs &amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;class&lt;/span&gt; Singer &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;extends&lt;/span&gt; Artist {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    constructor(name, song) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;super&lt;/span&gt;.constructor(name);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.song = song;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    perform() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;super&lt;/span&gt;.perform() + &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;[&amp;#34;&lt;/span&gt; + &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.song + &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;]&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;let&lt;/span&gt; james = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; Singer(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;Etta James&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;At last&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;james &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;instanceof&lt;/span&gt; Artist; &lt;span style=&#34;color:#228b22&#34;&gt;// true
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;james &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;instanceof&lt;/span&gt; Singer; &lt;span style=&#34;color:#228b22&#34;&gt;// true
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;james.perform(); &lt;span style=&#34;color:#228b22&#34;&gt;// &amp;#34;Etta James performs [At last]&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;Modules&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;ES6的内置模块功能借鉴了CommonJS和AMD各自的优点：&lt;/p&gt;
+&lt;p&gt;(1) 具有CommonJS的精简语法、唯一导出出口(single exports)和循环依赖(cyclic dependencies)的特点。&lt;/p&gt;
+&lt;p&gt;(2) 类似AMD，支持异步加载和可配置的模块加载。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// lib/math.js
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;function&lt;/span&gt; sum(x, y) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; x + y;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;var&lt;/span&gt; pi = &lt;span style=&#34;color:#b452cd&#34;&gt;3.141593&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// app.js
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; * as math from &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;lib/math&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;alert(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;2π = &amp;#34;&lt;/span&gt; + math.sum(math.pi, math.pi));
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// otherApp.js
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; {sum, pi} from &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;lib/math&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;alert(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;2π = &amp;#34;&lt;/span&gt; + sum(pi, pi));
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Module Loaders:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// Dynamic loading – ‘System’ is default loader
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;System.&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;lib/math&amp;#39;&lt;/span&gt;).then(&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;function&lt;/span&gt;(m) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  alert(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;2π = &amp;#34;&lt;/span&gt; + m.sum(m.pi, m.pi));
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// Directly manipulate module cache
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;System.get(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;jquery&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;System.set(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;jquery&amp;#39;&lt;/span&gt;, Module({$: $})); &lt;span style=&#34;color:#228b22&#34;&gt;// WARNING: not yet finalized
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;11&#34;&gt;
+&lt;li&gt;Map + Set + WeakMap + WeakSet&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;四种集合类型，WeakMap、WeakSet作为属性键的对象如果没有别的变量在引用它们，则会被回收释放掉。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// Sets
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;var&lt;/span&gt; s = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; Set();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;s.add(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;).add(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;goodbye&amp;#34;&lt;/span&gt;).add(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;s.size === &lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;s.has(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;) === &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;true&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// Maps
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;var&lt;/span&gt; m = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; Map();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;m.set(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;42&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;m.set(s, &lt;span style=&#34;color:#b452cd&#34;&gt;34&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;m.get(s) == &lt;span style=&#34;color:#b452cd&#34;&gt;34&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;//WeakMap
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;var&lt;/span&gt; wm = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; WeakMap();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wm.set(s, { extra: &lt;span style=&#34;color:#b452cd&#34;&gt;42&lt;/span&gt; });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wm.size === &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;undefined&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// Weak Sets
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;var&lt;/span&gt; ws = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; WeakSet();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ws.add({ data: &lt;span style=&#34;color:#b452cd&#34;&gt;42&lt;/span&gt; });&lt;span style=&#34;color:#228b22&#34;&gt;//Because the added object has no other references, it will not be held in the set
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;12&#34;&gt;
+&lt;li&gt;Math + Number + String + Array + Object APIs&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;一些新的API&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;Number&lt;/span&gt;.EPSILON
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;Number&lt;/span&gt;.isInteger(&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;Infinity&lt;/span&gt;) &lt;span style=&#34;color:#228b22&#34;&gt;// false
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;Number&lt;/span&gt;.&lt;span style=&#34;color:#658b00&#34;&gt;isNaN&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;NaN&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#228b22&#34;&gt;// false
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;Math&lt;/span&gt;.acosh(&lt;span style=&#34;color:#b452cd&#34;&gt;3&lt;/span&gt;) &lt;span style=&#34;color:#228b22&#34;&gt;// 1.762747174039086
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;Math&lt;/span&gt;.hypot(&lt;span style=&#34;color:#b452cd&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;4&lt;/span&gt;) &lt;span style=&#34;color:#228b22&#34;&gt;// 5
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;Math&lt;/span&gt;.imul(&lt;span style=&#34;color:#658b00&#34;&gt;Math&lt;/span&gt;.pow(&lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;32&lt;/span&gt;) - &lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#658b00&#34;&gt;Math&lt;/span&gt;.pow(&lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;32&lt;/span&gt;) - &lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;) &lt;span style=&#34;color:#228b22&#34;&gt;// 2
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;abcde&amp;#34;&lt;/span&gt;.includes(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;cd&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#228b22&#34;&gt;// true
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;abc&amp;#34;&lt;/span&gt;.repeat(&lt;span style=&#34;color:#b452cd&#34;&gt;3&lt;/span&gt;) &lt;span style=&#34;color:#228b22&#34;&gt;// &amp;#34;abcabcabc&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;Array&lt;/span&gt;.from(&lt;span style=&#34;color:#658b00&#34;&gt;document&lt;/span&gt;.querySelectorAll(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;*&amp;#39;&lt;/span&gt;)) &lt;span style=&#34;color:#228b22&#34;&gt;// Returns a real Array
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;Array&lt;/span&gt;.&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;of&lt;/span&gt;(&lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;3&lt;/span&gt;) &lt;span style=&#34;color:#228b22&#34;&gt;// Similar to new Array(...), but without special one-arg behavior
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;].fill(&lt;span style=&#34;color:#b452cd&#34;&gt;7&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#228b22&#34;&gt;// [0,7,7]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;[&lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;3&lt;/span&gt;].find(x =&amp;gt; x == &lt;span style=&#34;color:#b452cd&#34;&gt;3&lt;/span&gt;) &lt;span style=&#34;color:#228b22&#34;&gt;// 3
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;[&lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;3&lt;/span&gt;].findIndex(x =&amp;gt; x == &lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;) &lt;span style=&#34;color:#228b22&#34;&gt;// 1
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;[&lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;4&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;5&lt;/span&gt;].copyWithin(&lt;span style=&#34;color:#b452cd&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;) &lt;span style=&#34;color:#228b22&#34;&gt;// [1, 2, 3, 1, 2]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;[&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;a&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;b&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;c&amp;#34;&lt;/span&gt;].entries() &lt;span style=&#34;color:#228b22&#34;&gt;// iterator [0, &amp;#34;a&amp;#34;], [1,&amp;#34;b&amp;#34;], [2,&amp;#34;c&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;[&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;a&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;b&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;c&amp;#34;&lt;/span&gt;].keys() &lt;span style=&#34;color:#228b22&#34;&gt;// iterator 0, 1, 2
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;[&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;a&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;b&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;c&amp;#34;&lt;/span&gt;].values() &lt;span style=&#34;color:#228b22&#34;&gt;// iterator &amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;, &amp;#34;c&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;Object&lt;/span&gt;.assign(Point, { origin: &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; Point(&lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;) })
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;13&#34;&gt;
+&lt;li&gt;Proxies&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用代理（Proxy）监听对象的操作，然后可以做一些相应事情。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;var&lt;/span&gt; target = {};
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;var&lt;/span&gt; handler = {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  get: &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;function&lt;/span&gt; (receiver, name) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;`Hello, &lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;${&lt;/span&gt;name&lt;span style=&#34;color:#cd5555&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;!`&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;var&lt;/span&gt; p = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;Proxy&lt;/span&gt;(target, handler);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;p.world === &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;Hello, world!&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;可监听的操作： get、set、has、deleteProperty、apply、construct、getOwnPropertyDescriptor、defineProperty、getPrototypeOf、setPrototypeOf、enumerate、ownKeys、preventExtensions、isExtensible。&lt;/p&gt;
+&lt;ol start=&#34;14&#34;&gt;
+&lt;li&gt;Symbols&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Symbol是一种基本类型。Symbol 通过调用symbol函数产生，它接收一个可选的名字参数，该函数返回的symbol是唯一的。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;var&lt;/span&gt; key = Symbol(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;key&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;var&lt;/span&gt; key2 = Symbol(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;key&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;key == key2  &lt;span style=&#34;color:#228b22&#34;&gt;//false
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;15&#34;&gt;
+&lt;li&gt;Promises&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Promises是处理异步操作的对象，使用了 Promise 对象之后可以用一种链式调用的方式来组织代码，让代码更加直观（类似jQuery的deferred 对象）。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;function&lt;/span&gt; fakeAjax(url) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;Promise&lt;/span&gt;(&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;function&lt;/span&gt; (resolve, reject) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#228b22&#34;&gt;// setTimeouts are for effect, typically we would handle XHR
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; (!url) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; setTimeout(reject, &lt;span style=&#34;color:#b452cd&#34;&gt;1000&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; setTimeout(resolve, &lt;span style=&#34;color:#b452cd&#34;&gt;1000&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// no url, promise rejected
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;fakeAjax().then(&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;function&lt;/span&gt; () {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  console.log(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;success&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;},&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;function&lt;/span&gt; () {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  console.log(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;fail&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;- http://example.org/posts/2021-01-20-es5_%E5%92%8C_es6_%E7%9A%84%E5%8C%BA%E5%88%AB_/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>webpack 的核心概念和构建流程</title>
+        <link>http://example.org/posts/2021-01-18-webpack_%E7%9A%84%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/</link>
+        <pubDate>Mon, 18 Jan 2021 19:59:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2021-01-18-webpack_%E7%9A%84%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/</guid>
+        <description>A Hugo Site http://example.org/posts/2021-01-18-webpack_%E7%9A%84%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/ -&lt;h2 id=&#34;1webpack-的核心概念&#34;&gt;1.webpack 的核心概念&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;entry（入口）&lt;/strong&gt;：一个可执行模块或者库的入口。定义了打包后的入口文件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;output（出口）&lt;/strong&gt;：指示 webpack 如何去输出，以及在哪里输出。
+path: 打包文件存放的绝对路径
+publicPath: 网站运行时的访问路径
+filename: 打包后的文件名&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;module（模块）&lt;/strong&gt;：在 webpack 里，一切皆模块，一个模块对应一个文件。webpack 会从配置的 entry 中开始递归找出所有依赖的模块。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;chunk（代码块）&lt;/strong&gt;：一个 &lt;code&gt;chunk&lt;/code&gt; 由多个 &lt;code&gt;模块&lt;/code&gt; 组合而成。可以将可执行的模块和他所依赖的模块组合成一个 chunk ，这就是打包。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;loader（模块转换器）&lt;/strong&gt;：用于把一个模块原内容按照需求转换成新的内容。例如：es6 转换为 es5，scss 转换为 css 等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;plugin（扩展）&lt;/strong&gt;：扩展webpack功能的插件。在webpack构建的生命周期节点上加入扩展hook，添加功能。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;2webpack-构建流程&#34;&gt;2.webpack 构建流程&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;初始化参数&lt;/strong&gt;：解析 webpack 的配置参数，合并 shell 传入和 webpack.config.js 文件配置的参数，形成最后的配置结果。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;开始编译&lt;/strong&gt;：上一步得到的参数初始化 compiler 对象，注册所有配置的插件，插件监听 webpack 构建生命周期的事件节点，做出相应的反应，执行对象的 run 方法开始执行编译。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;确定入口&lt;/strong&gt;：其配置的 entry 入口，开始解析文件构建的 AST 语法树，找出依赖，递归下去。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;编译模块&lt;/strong&gt;：根据文件类型和 loader 配置，调用所有配置的 loader 对文件进行转换，再找出该模块依赖的模块，再递归本步骤知道所有入口依赖的文件都经过了本步骤的处理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;完成模块编译并输出&lt;/strong&gt;：递归完后，得到每个文件结果，包含了每个模块及她们之间的依赖关系，根据 entry 配置生成代码块 chunk 。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;输出完成&lt;/strong&gt;：输出所有的 chunk 到文件系统。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;3有哪些常见的-loader-&#34;&gt;3.有哪些常见的 loader ？&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;babel-loader：把es6转成es5；&lt;/li&gt;
+&lt;li&gt;css-loader：加载css，支持模块化，压缩，文件导入等特性；&lt;/li&gt;
+&lt;li&gt;style-loader：把css代码注入到js中，通过dom操作去加载css；&lt;/li&gt;
+&lt;li&gt;eslint-loader：通过Eslint检查js代码；&lt;/li&gt;
+&lt;li&gt;image-loader：加载并且压缩图片晚间；&lt;/li&gt;
+&lt;li&gt;file-loader：文件输出到一个文件夹中，在代码中通过相对url去引用输出的文件；&lt;/li&gt;
+&lt;li&gt;url-loader：和file-loader类似，文件很小的时候可以base64方式吧文件内容注入到代码中。&lt;/li&gt;
+&lt;li&gt;source-map-loader：加载额外的source map文件，方便调试。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;4业务场景和对应解决方案&#34;&gt;4.业务场景和对应解决方案&lt;/h2&gt;
+&lt;h3 id=&#34;1单页应用&#34;&gt;1.单页应用&lt;/h3&gt;
+&lt;p&gt;一个单页应用需要配置一个entry指明执行入口，web-webpack-plugin里的WebPlugin可以自动的完成这些工作：webpack会为entry生成一个包含这个入口的所有依赖文件的chunk，但是还需要一个html来加载chunk生成的js，如果还提取出css需要HTML文件中引入提取的css。&lt;/p&gt;
+&lt;p&gt;一个简单的webpack配置文件例子：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;const&lt;/span&gt; { WebPlugin } = require(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;web-webpack-plugin&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;module.exports = {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  entry: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    app: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;./src/doc/index.js&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    home: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;./src/doc/home.js&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  plugins: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#228b22&#34;&gt;// 一个WebPlugin对应生成一个html文件
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; WebPlugin({
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#228b22&#34;&gt;//输出的html文件名称
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;      filename: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;index.html&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#228b22&#34;&gt;//这个html依赖的`entry`
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;      requires: [&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;app&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;home&amp;#39;&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;说明：require: [&amp;lsquo;app&amp;rsquo;, &amp;lsquo;home&amp;rsquo;]指明这个html依赖哪些entry，entry生成的js和css会自动注入到html中。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;还支持配置这些资源注入方式，支持如下属性：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;_dist只有在生产环境中才引入的资源；&lt;/li&gt;
+&lt;li&gt;_dev只有在开发环境中才引入的资源；&lt;/li&gt;
+&lt;li&gt;_inline把资源的内容潜入到html中；&lt;/li&gt;
+&lt;li&gt;_ie只有IE浏览器才需要引入的资源。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这些属性可以通过在js里配置，看个简单例子：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; WebPlugin({
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    filename: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;index.html&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    requires: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;         app:{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              _dist:&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;true&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              _inline:&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;false&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;         }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}),
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这些属性还可以在模板中设置，使用模板好处就是可以灵活的控制资源的注入点&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; WebPlugin({
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      filename: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;index.html&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      template: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;./template.html&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}),
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#1e889b&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;html&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;lang&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;zh-cn&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;head&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;link&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;rel&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;href&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;app?_inline&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;src&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;ie-polyfill?_ie&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;head&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;body&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;id&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;react-body&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;src&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;app&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;body&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;html&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;WebPlugin插件借鉴了fis3的思想，补足了webpack缺失的以HTML为入口的功能。想了解WebPlugin的更多功能，见文档。&lt;/p&gt;
+&lt;h3 id=&#34;2一个项目管理多个单页面&#34;&gt;2.一个项目管理多个单页面&lt;/h3&gt;
+&lt;p&gt;一个项目中会包含多个单页应用，虽然多个单页面应用可以合成一个，但是这样做会导致用户没有访问的部分也加载了，如果项目中有很多的单页应用。为每一个单页应用配置一个entry和WebPlugin？如果又新增，又要新增webpack配置，这样做麻烦，这时候有一个插件web-webpack-plugin里的AutoWebPlugin方法可以解决这些问题。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;module.exports = {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    plugins: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#228b22&#34;&gt;// 所有页面的入口目录
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; AutoWebPlugin(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;./src/&amp;#39;&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;分析：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;AutoWebPlugin&lt;/code&gt;会把./src/目录下所有每个文件夹作为一个单页页面的入口，自动为所有的页面入口配置一个 &lt;code&gt;WebPlugin&lt;/code&gt; 输出对应的html。&lt;/li&gt;
+&lt;li&gt;要新增一个页面就在 &lt;code&gt;./src/&lt;/code&gt; 下新建一个文件夹包含这个单页应用所依赖的代码，&lt;code&gt;AutoWebPlugin&lt;/code&gt; 自动生成一个名叫文件夹名称的html文件。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;3代码分隔优化&#34;&gt;3.代码分隔优化&lt;/h3&gt;
+&lt;p&gt;一个好的代码分割对浏览器首屏效果提升很大。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最常见的react体系：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;先抽出基础库react react-dom redux react-redux到一个单独的文件而不是和其它文件放在一起打包为一个文件，这样做的好处是只要你不升级他们的版本这个文件永远不会被刷新。如果你把这些基础库和业务代码打包在一个文件里每次改动业务代码都会导致文件hash值变化从而导致缓存失效浏览器重复下载这些包含基础库的代码。所以把基础库打包成一个文件。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// vender.js 文件抽离基础库到单独的一个文件里防止跟随业务代码被刷新
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// 所有页面都依赖的第三方库
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// react基础
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;react&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;react-dom&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;react-redux&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// redux基础
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;redux&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;redux-thunk&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// webpack配置
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  entry: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    vendor: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;./path/to/vendor.js&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;通过CommonsChunkPlugin可以提取出多个代码块都依赖的代码形成一个单独的chunk。在应用有多个页面的场景下提取出所有页面公共的代码减少单个页面的代码，在不同页面之间切换时所有页面公共的代码之前被加载过而不必重新加载。所以通过CommonsChunkPlugin可以提取出多个代码块都依赖的代码形成一个单独的chunk。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;4构建服务端渲染&#34;&gt;4.构建服务端渲染&lt;/h3&gt;
+&lt;p&gt;服务端渲染的代码要运行在nodejs环境，和浏览器不同的是，服务端渲染代码需要采用commonjs规范同时不应该包含除js之外的文件比如css。&lt;/p&gt;
+&lt;p&gt;webpack配置如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;module.exports = {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  target: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;node&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  entry: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;server_render&amp;#39;&lt;/span&gt;: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;./src/server_render&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  output: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    filename: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;./dist/server/[name].js&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    libraryTarget: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;commonjs2&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  module: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    rules: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        test: &lt;span style=&#34;color:#1c7e71&#34;&gt;/\.js$/&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        loader: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;babel-loader&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        test: &lt;span style=&#34;color:#1c7e71&#34;&gt;/\.(scss|css|pdf)$/&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        loader: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;ignore-loader&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;分析一下：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;target: &#39;node&#39;&lt;/code&gt; 指明构建出代码要运行在node环境中。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;libraryTarget: &#39;commonjs2&#39;&lt;/code&gt; 指明输出的代码要是 commonjs 规范。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{test: /\.(scss|css|pdf)$/,loader: &#39;ignore-loader&#39;}&lt;/code&gt; 是为了防止不能在node里执行服务端渲染也用不上的文件被打包进去。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;5fis3迁移到webpack&#34;&gt;5.fis3迁移到webpack&lt;/h3&gt;
+&lt;p&gt;fis3和webpack有很多相似地方也有不同的地方，相似地方：都采用commonjs规范，不同地方：导入css这些非js资源的方式。&lt;/p&gt;
+&lt;p&gt;fis3通过@require &amp;lsquo;./index.scss&amp;rsquo;，而webpack是通过require(&amp;rsquo;./index.scss&amp;rsquo;)。&lt;/p&gt;
+&lt;p&gt;如果想把fis3平滑迁移到webpack，可以使用comment-require-loader。&lt;/p&gt;
+&lt;p&gt;比如：你想在webpack构建是使用采用了fis3方式的imui模块&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;loaders:[{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     test: &lt;span style=&#34;color:#1c7e71&#34;&gt;/\.js$/&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     loaders: [&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;comment-require-loader&amp;#39;&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     include: [path.resolve(__dirname, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;node_modules/imui&amp;#39;&lt;/span&gt;),]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;5自定义webpack扩展&#34;&gt;5.自定义webpack扩展&lt;/h2&gt;
+&lt;p&gt;如果你在社区找不到你的应用场景的解决方案，那就需要自己动手了写loader或者plugin了。&lt;/p&gt;
+&lt;p&gt;在你编写自定义webpack扩展前你需要想明白到底是要做一个loader还是plugin呢？可以这样判断：&lt;/p&gt;
+&lt;p&gt;如果你的扩展是想对一个个单独的文件进行转换那么就编写loader剩下的都是plugin。&lt;/p&gt;
+&lt;p&gt;其中对文件进行转换可以是像：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;babel-loader把es6转为es5；&lt;/li&gt;
+&lt;li&gt;file-loader把文件替换成对应的url；&lt;/li&gt;
+&lt;li&gt;raw-loader注入文本文件内容到代码中。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;1编写webpack-loader&#34;&gt;1.编写webpack loader&lt;/h3&gt;
+&lt;p&gt;编写loader非常简单，以comment-require-loader为例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;module.exports = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;function&lt;/span&gt; (content) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; replace(content);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;loader的入口需要导出一个函数，这个函数要干的事情就是转换一个文件的内容。&lt;/p&gt;
+&lt;p&gt;函数接收的参数content是一个文件在转换前的字符串形式内容，需要返回一个新的字符串形式内容作为转换后的结果，所有通过模块化倒入的文件都会经过loader。从这里可以看出loader只能处理一个个单独的文件而不能处理代码块。可以参考官方文档。&lt;/p&gt;
+&lt;h3 id=&#34;2-编写webpack-plugin&#34;&gt;2. 编写webpack plugin&lt;/h3&gt;
+&lt;p&gt;plugin应用场景广泛，所以稍微复杂点。以end-webpack-plugin为例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;class&lt;/span&gt; EndWebpackPlugin {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    constructor(doneCallback, failCallback) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.doneCallback = doneCallback;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.failCallback = failCallback;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    apply(compiler) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#228b22&#34;&gt;// 监听webpack生命周期里的事件，做相应的处理
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;        compiler.plugin(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;done&amp;#39;&lt;/span&gt;, (stats) =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.doneCallback(stats);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        compiler.plugin(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;failed&amp;#39;&lt;/span&gt;, (err) =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.failCallback(err);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;module.exports = EndWebpackPlugin;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;loader的入口需要导出一个class，在new EndWebpackPlugin()的时候通过构造函数传入这个插件需要的参数，在webpack启动的时候会先实例化plugin，再调用plugin的apply方法，插件在apply函数里监听webpack生命周期里的事件，做相应的处理。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;webpack plugin的两个核心概念：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;compiler：从webpack启动到退出只存在一个Compiler，compiler存放着webpack的配置。&lt;/li&gt;
+&lt;li&gt;compilation：由于webpack的监听文件变化自动编译机制，compilation代表一次编译。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Compiler 和 Compilation 都会广播一系列事件。webpack生命周期里有非常多的事件。&lt;/p&gt;
+&lt;p&gt;以上只是一个最简单的demo，更复杂的可以查看 how to write a plugin或参考web-webpack-plugin。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考文章：https://www.cnblogs.com/chengxs/p/11022842.html&lt;/p&gt;
+&lt;/blockquote&gt;
+- http://example.org/posts/2021-01-18-webpack_%E7%9A%84%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9E%84%E5%BB%BA%E6%B5%81%E7%A8%8B/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>小张厨房日记（二）</title>
+        <link>http://example.org/posts/2021-01-17-%E5%B0%8F%E5%BC%A0%E5%8E%A8%E6%88%BF%E6%97%A5%E8%AE%B0%E4%BA%8C/</link>
+        <pubDate>Sun, 17 Jan 2021 19:59:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2021-01-17-%E5%B0%8F%E5%BC%A0%E5%8E%A8%E6%88%BF%E6%97%A5%E8%AE%B0%E4%BA%8C/</guid>
+        <description>A Hugo Site http://example.org/posts/2021-01-17-%E5%B0%8F%E5%BC%A0%E5%8E%A8%E6%88%BF%E6%97%A5%E8%AE%B0%E4%BA%8C/ -&lt;p&gt;自从上次更新厨房日记之后，好像过了两个月多，实际上我一直在进阶我的厨艺，为什么没有更新我的厨房日记呢？因为实际在做的过程中我发现，每种菜的组合太多了，没必要组合一次就写一篇攻略，那样就有些做无用功了，没有太大的意义。&lt;/p&gt;
+&lt;p&gt;思来想去，我决定了，不再更新做菜的步骤攻略，我想这些攻略网上一抓一大把。把内容着重放在做菜中遇到的一些问题，细节，这样不但可以让我记忆的深刻，还能分享出更多有意思的东西让小伙伴们开心。&lt;/p&gt;
+&lt;p&gt;今天做了一道菜，红烧茄子，我在茄子的时候发现皮挺硬的，就在想要不要去皮（不要笑我，因为之前没做过茄子）。想了一会没想出个所以然，直接百度一番，“烧茄子要不要去皮？”，第一条搜索结果是这样说的，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“不要。营养专家建议在吃茄子的时候最好不要去皮，因在茄子表皮及表皮与肉质的连接部位，含有大量的有益于人体健康的物质，如芦丁、维生素E、维生素P的含量都隐藏在茄子皮中，如果将茄子皮去掉会降低营养价值。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;嗯，挺好，不用去皮，但是作为百度谷歌资深用户，怎么可能只相信第一条搜索结果呢？我又往下翻了翻，有一条知乎用户是这样说的&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;茄子去不去皮，关键还是看你做什么菜了。如果是家常茄子，最好是不要去皮；如是是油煎茄子，因为要打花刀的原因，所以也不要去皮；如果是茄子煲，那就非去皮不可了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;略加思考，好像说得有那么几分道理，很是欣喜，所以我就采用了他的说法。今天做的是烧茄子，所以不用去皮，直接炒就可以了。&lt;/p&gt;
+&lt;p&gt;又增加了一个小技巧。&lt;/p&gt;
+&lt;p&gt;结束语：当你在心情不好的时候，或者有心事，可以做一些让你分散注意力的事情，就比如说做菜，不仅可以享受食物，享受生活，内心还可以获得成就感，我感觉这是一举两得的事情。&lt;/p&gt;
+- http://example.org/posts/2021-01-17-%E5%B0%8F%E5%BC%A0%E5%8E%A8%E6%88%BF%E6%97%A5%E8%AE%B0%E4%BA%8C/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>许嵩的歌又一次被抄袭！</title>
+        <link>http://example.org/posts/2021-01-16-%E8%AE%B8%E5%B5%A9%E7%9A%84%E6%AD%8C%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A2%AB%E6%8A%84%E8%A2%AD/</link>
+        <pubDate>Sat, 16 Jan 2021 20:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2021-01-16-%E8%AE%B8%E5%B5%A9%E7%9A%84%E6%AD%8C%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A2%AB%E6%8A%84%E8%A2%AD/</guid>
+        <description>A Hugo Site http://example.org/posts/2021-01-16-%E8%AE%B8%E5%B5%A9%E7%9A%84%E6%AD%8C%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A2%AB%E6%8A%84%E8%A2%AD/ -&lt;p&gt;最新网上爆出风风火火的一件事，许嵩的《有何不可》被抄袭，抄袭者为罗聪，《简单的幸福》。&lt;/p&gt;
+&lt;p&gt;我从14年开始听许嵩的歌，一直到现在，许多年过去了，他的歌依旧脍炙人口，从之前的抒情浪漫情歌，批判社会的思想，一直到现在具体哲学内涵，中华传统思想。大部分都是包揽作词作曲为一身，真的很有才华。&lt;/p&gt;
+&lt;p&gt;因为太有才华了，所以被“碰瓷”抄袭。这也算是一场闹剧了。据说嵩哥本人对此没有发表什么看法和言论，一直都是粉丝和公司在发声。&lt;/p&gt;
+&lt;p&gt;据网友戏称：“许嵩：这要放十年前，我早写歌骂你了。”，“低情商：这不就是抄袭《有何不可》？高情商：你这《有何不可》唱得有点跑调”。&lt;/p&gt;
+&lt;p&gt;令人没有想象到的事，罗聪所在公司发表声明：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2021%2F0107%2Fa2d8b18dj00qmk2qy002cd000hs00sqp.jpg&amp;amp;thumbnail=650x2147483647&amp;amp;quality=80&amp;amp;type=jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;突然感觉有些搞笑，我也不对他再发表什么看法，只希望官方能解决这件事，给我们松鼠一个交代。&lt;/p&gt;
+&lt;p&gt;要是靠抄袭就能火的话，还要才华做什么。&lt;/p&gt;
+&lt;p&gt;这也一直是我的理念，在写博客的时候，我也很注重版权，引用别人写的文章的时候，我都会申请作者授权，标明出处。同时，对于我自己的文章，如果你想要引用转载，只需要标明出处即可。&lt;/p&gt;
+&lt;p&gt;大部分做技术的人应该都是和我抱有一样的想法，喜欢分享，但是可不能张冠李戴，毕竟写文章也是耗费脑细胞的。并不指望能获得什么成绩，只是希望当有人看到你的文章时，解决了自己的问题，有一丝认可足以。&lt;/p&gt;
+&lt;p&gt;版权一直是一件很重要的事情，很多年前我们还比较淡漠，但是这几年对版权的重视开始慢慢提升了，审查力度增加，这是一件好事。&lt;/p&gt;
+- http://example.org/posts/2021-01-16-%E8%AE%B8%E5%B5%A9%E7%9A%84%E6%AD%8C%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A2%AB%E6%8A%84%E8%A2%AD/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>基于 React 的富文本编辑器－－Braft Editor</title>
+        <link>http://example.org/posts/2021-01-07-%E5%9F%BA%E4%BA%8E_react_%E7%9A%84%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8braft_editor/</link>
+        <pubDate>Thu, 07 Jan 2021 20:46:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2021-01-07-%E5%9F%BA%E4%BA%8E_react_%E7%9A%84%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8braft_editor/</guid>
+        <description>A Hugo Site http://example.org/posts/2021-01-07-%E5%9F%BA%E4%BA%8E_react_%E7%9A%84%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8braft_editor/ -&lt;p&gt;最近发了很多关于 React 的文章，记录遇到的新技术点，以及在写代码过程中遇到的问题，希望可以帮助到和我遇到同样问题的同学。&lt;/p&gt;
+&lt;p&gt;今天分享的是一款基于 React 的富文本编辑器－－Braft Editor。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Braft Editor 官网：&lt;a href=&#34;https://braft.margox.cn&#34;&gt;https://braft.margox.cn&lt;/a&gt;
+Github 仓库地址：&lt;a href=&#34;https://github.com/margox/braft-editor&#34;&gt;https://github.com/margox/braft-editor&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这款插件非常方便，只需要下载然后引入即可直接使用，页面整体风格清新，符合绝大多数人的审美观，支持图片，音视频的插入。&lt;/p&gt;
+&lt;p&gt;按照官方的说法，假如你对它的功能还不够满意，不够使用，完全可以扩展它，自己写一个插件来强化他。&lt;/p&gt;
+&lt;p&gt;经过我的测试，功能绝对强大，可以满足市面上绝大多数的需求。接下来就说一下如何使用这款插件。&lt;/p&gt;
+&lt;h2 id=&#34;1安装&#34;&gt;1.安装&lt;/h2&gt;
+&lt;p&gt;在项目中直接通过 &lt;code&gt;npm&lt;/code&gt; 或者 &lt;code&gt;yarn&lt;/code&gt; 下载插件：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# 使用 npm 安装&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;npm install braft-editor --save
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;# 使用 yarn 安装&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;yarn add braft-editor
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;2使用&#34;&gt;2.使用&lt;/h2&gt;
+&lt;p&gt;新建一个组件 &lt;code&gt;EditorDemo.js&lt;/code&gt;，在里面写入下列代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;// EditorDemo.js
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; React from &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;react&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; BraftEditor from &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;braft-editor&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;braft-editor/dist/index.css&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;class&lt;/span&gt; PageDemo &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;extends&lt;/span&gt; React.Component {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  state = {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    editorState: BraftEditor.createEditorState(&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;null&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  render () {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &amp;lt;BraftEditor value={&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.state.editorState} onChange={&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.handleChange}/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  handleChange = (editorState) =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.setState({ editorState })
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后引入到 &lt;code&gt;index.js&lt;/code&gt; 中去。&lt;/p&gt;
+&lt;h2 id=&#34;3运行&#34;&gt;3.运行&lt;/h2&gt;
+&lt;p&gt;写完组件之后，&lt;code&gt;npm start&lt;/code&gt; 运行看看效果&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shuxhan-imgbed.oss-cn-hangzhou.aliyuncs.com/img/20210108143022.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;相当不错，页面很简洁，如果觉得样式不喜欢，完全可以自己重新定制风格，非常方便。&lt;/p&gt;
+&lt;h2 id=&#34;4文档&#34;&gt;4.文档&lt;/h2&gt;
+&lt;p&gt;如果想使用更多功能、方法，进入 &lt;a href=&#34;https://www.yuque.com/braft-editor/be/gz44tn&#34;&gt;Braft Editor 官方文档&lt;/a&gt;吧，还有更多关于它的讲解！&lt;/p&gt;
+&lt;p&gt;属性、方法、示例，一应俱全。&lt;/p&gt;
+- http://example.org/posts/2021-01-07-%E5%9F%BA%E4%BA%8E_react_%E7%9A%84%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8braft_editor/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>使用 React 与 Vue 创建同一款 App，差别究竟有多大？</title>
+        <link>http://example.org/posts/2021-01-06-%E4%BD%BF%E7%94%A8_react_%E4%B8%8E_vue_%E5%88%9B%E5%BB%BA%E5%90%8C%E4%B8%80%E6%AC%BE_app%E5%B7%AE%E5%88%AB%E7%A9%B6%E7%AB%9F%E6%9C%89%E5%A4%9A%E5%A4%A7/</link>
+        <pubDate>Wed, 06 Jan 2021 20:47:00 +0000</pubDate>
+        
+        <guid>http://example.org/posts/2021-01-06-%E4%BD%BF%E7%94%A8_react_%E4%B8%8E_vue_%E5%88%9B%E5%BB%BA%E5%90%8C%E4%B8%80%E6%AC%BE_app%E5%B7%AE%E5%88%AB%E7%A9%B6%E7%AB%9F%E6%9C%89%E5%A4%9A%E5%A4%A7/</guid>
+        <description>A Hugo Site http://example.org/posts/2021-01-06-%E4%BD%BF%E7%94%A8_react_%E4%B8%8E_vue_%E5%88%9B%E5%BB%BA%E5%90%8C%E4%B8%80%E6%AC%BE_app%E5%B7%AE%E5%88%AB%E7%A9%B6%E7%AB%9F%E6%9C%89%E5%A4%9A%E5%A4%A7/ -&lt;p&gt;关于 &lt;a href=&#34;https://react.docschina.org/&#34;&gt;React 框架&lt;/a&gt; 和 &lt;a href=&#34;https://cn.vuejs.org/&#34;&gt;Vue 框架&lt;/a&gt; 的对比，用两者写出同一个程序，对比其代码实现的过程，看看它们的差异究竟有多大？&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;转载于：https://blog.csdn.net/csdnnews/article/details/81880378
+原文：https://medium.com/javascript-in-plain-english/i-created-the-exact-same-app-in-react-and-vue-here-are-the-differences-e9a1ae8077fd 
+作者简介：Sunil Sandhu，一位 Web 全栈工程师 + 空想家。 
+译者：安翔，责编：屠敏&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;众所周知，Vue 和 React 都是目前非常著名的前端框架。我在工作中经常使用 Vue，因此我对它有很深入的了解。同时，我也对 React 充满了好奇，想要学习一下，一探究竟。&lt;/p&gt;
+&lt;p&gt;于是我阅读了 React 文档并观看了一些视频教程，虽然这些资料很不错，但是我真正想了解的是 React 与 Vue 之间的不同之处。所谓“不同之处”，我并非想知道它们是否都具有虚拟 DOMS 或者它们如何渲染页面，而是希望有人能够从代码的角度解释这两者之间的差异。我想找到一篇解释这些差异的文章，以便 Vue 或者 React 的初学者可以更好地理解它们两者之间的差异。&lt;/p&gt;
+&lt;p&gt;很遗憾，我并未找到一篇这样的文章。于是我意识到必须自己动手来比较 Vue 与 React 之间的异同。在我自力更生的过程中，我用这篇文章记录下了具体过程。&lt;/p&gt;
+&lt;h2 id=&#34;1目标&#34;&gt;1.目标&lt;/h2&gt;
+&lt;p&gt;我将会构建一个标准的待办事项应用程序，允许用户添加和删除列表中的项目。这两个应用程序都使用默认的 CLI（command-line interface，命令行界面） 构建，React 使用 create-react-app，Vue 使用 vue-cli。&lt;/p&gt;
+&lt;p&gt;两个应用程序的外观如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shuxhan-imgbed.oss-cn-hangzhou.aliyuncs.com/img/20210108143025.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;两个应用程序的 CSS 代码几乎一样，但这些代码的位置存在差异。考虑到这一点，我们来看看这两个应用程序的文件结构：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shuxhan-imgbed.oss-cn-hangzhou.aliyuncs.com/img/20210108143026.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;你会发现它们的结构几乎完全相同。唯一的区别在于 React App 拥有三个 CSS 文件，而 Vue App 中没有 CSS 文件。这是因为 React 的 create-react-app 组件需要一个附带文件来保存其样式，而 Vue CLI 采用全包方法，其样式在实际组件文件中声明。&lt;/p&gt;
+&lt;p&gt;两种不同的策略得到的结果是一样的，相信开发者很快能够掌握这两种不同的策略。开发者可以根据自己的偏好做出选择，你会听到开发社区关于如何构建 CSS 的大量讨论。以上，我们遵循两个 CLI 列出了代码结构。&lt;/p&gt;
+&lt;p&gt;在我们进一步讨论之前，先快速看一下典型的 Vue 和 React 组件的外观：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shuxhan-imgbed.oss-cn-hangzhou.aliyuncs.com/img/20210108143027.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;现在让我们正式开始，深入其中的细节！&lt;/p&gt;
+&lt;h2 id=&#34;2如何修改数据&#34;&gt;2.如何修改数据&lt;/h2&gt;
+&lt;p&gt;首先，我们需要明白“修改数据”的意思是什么。它听起来有些学术，但实际上很简单，就是把我们已经存储好的数据进行更改。比如，如果我们想把一个人的名字变量从“Jhon”改为“Mark”，我们就需要执行“修改数据”的操作。在这一点上，React 和 Vue 的处理方式有所区别。Vue 本质上会创建一个数据对象，其中的数据可以自由更改；React 则创建一个状态对象，更改数据需要一些额外的操作。React 之所以需要额外的操作有着自己的理由，稍后我会深入介绍。在此之前，我们先看看 Vue 中的数据对象和 React 中的状态对象：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;vue 数据对象&lt;/strong&gt;
+&lt;img src=&#34;https://shuxhan-imgbed.oss-cn-hangzhou.aliyuncs.com/img/20210108143028.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;React 状态对象&lt;/strong&gt;
+&lt;img src=&#34;https://shuxhan-imgbed.oss-cn-hangzhou.aliyuncs.com/img/20210108143029.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;从图中可以看出，我们传入了相同的数据，但它们的标记方法不同。因此，将初始数据传递到组件的方式非常相似。但正如我们提到的那样，在两个框架中更改数据的方式有所不同。&lt;/p&gt;
+&lt;p&gt;假设我们有一个名为 name: ‘Sunil’ 的数据元素。&lt;/p&gt;
+&lt;p&gt;在 Vue 中，我们通过调用 this.name 来引用它。我们也可以通过调用 this.name =&amp;lsquo;John&amp;rsquo; 来更新它。这样一来，名字就被成功改为了 “Jhon”。&lt;/p&gt;
+&lt;p&gt;在 React 中，我们通过调用 this.state.name 来引用同一段数据。现在关键的区别在于，我们不能简单地写成 this.state.name =&amp;lsquo;John&amp;rsquo;，因为 React 有限制机制，它会阻止这种简单的修改方式。在 React 中，我们需要这样写：this.setState({name：&amp;lsquo;John&amp;rsquo;})。&lt;/p&gt;
+&lt;p&gt;虽然这基本上与我们在 Vue 中实现的结果一样，但是 React 的操作更为繁琐，那是因为 Vue 在每次更新数据时默认组合了自己的 setState 版本。 简单来说就是，React 需要 setState，然后更新其内部数据，而对于 Vue 来说，当你更新数据对象的值时它就默认了你的更改意图。 那么为什么 React 没有进行简化，为什么需要 setState 呢？ Revanth Kumar 对此做出了解释：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“这是因为 React 希望在状态发生变化时重新运行某些生命周期 hook，比如 componentWillReceiveProps、shouldComponentUpdate、componentWillUpdate、render、componentDidUpdate。当你调用 setState 函数时，它知道状态已经改变。如果你直接改变状态，React 将需要做更多工作来跟踪更改以及运行生命周期 hook 等等。所以为了简单起见，React 使用 setState。&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://shuxhan-imgbed.oss-cn-hangzhou.aliyuncs.com/img/20210108143030.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3添加新的待办事项&#34;&gt;3.添加新的待办事项&lt;/h2&gt;
+&lt;h3 id=&#34;react-的实现方法&#34;&gt;React 的实现方法&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;createNewToDoItem = () =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.setState( ({ list, todo }) =&amp;gt; ({
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      list: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          ...list,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          todo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      todo: &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    })
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  );
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在 React 中，我们的输入字段有一个名为 value 的属性。这个 value 通过使用几个函数自动更新，这些函数绑定在一起以创建双向绑定。我们通过在输入字段上附加一个 onChange 事件监听器来创建这种形式的双向绑定。看看代码，一探究竟：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;type&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;       &lt;span style=&#34;color:#658b00&#34;&gt;value&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;{this.state.todo}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;       &lt;span style=&#34;color:#658b00&#34;&gt;onChange&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;{this.handleInput}/&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;只要输入字段的值发生更改，handleInput 函数就会运行。它通过将状态对象设置为输入字段中的任何内容来更新状态对象内的 todo。handleInput 函数如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;handleInput = e =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.setState({
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    todo: e.target.value
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;现在，只要用户按下页面上的 + 按钮添加新项目，createNewToDoItem 函数就会运行 this.setState 并向其传递一个函数。该函数有两个参数，第一个是来自状态对象的整个列表数组，第二个是由 handleInput 函数更新的todo。然后该函数返回一个新对象，该对象包含之前的整个列表，并在其末尾添加todo。整个列表是通过使用扩展运算符添加的。&lt;/p&gt;
+&lt;p&gt;最后，我们将 todo 设置为空字符串，它会自动更新输入字段中的 value。&lt;/p&gt;
+&lt;h3 id=&#34;vue-的实现方法&#34;&gt;Vue 的实现方法&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;createNewToDoItem() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.list.push(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;todo&amp;#39;&lt;/span&gt;: &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.todo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    );
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.todo = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在 Vue 中，我们的输入字段中有一个名为 v-model 的句柄。这实现了**双向绑定。输入字段代码如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;type&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;v-model&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;todo&amp;#34;&lt;/span&gt;/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;V-Model 将输入字段的内容绑定到名为 toDoItem 的数据对象的键（key）上。当页面加载时，我们将 toDoItem 设置为空字符串，比如：todo：&amp;rsquo; &amp;lsquo;。如果已经存在数据，例如 todo：&amp;lsquo;添加文本处&amp;rsquo;，输入字段将加载添加文本处的输入内容。无论如何，将其作为空字符串，我们在输入字段中键入的任何文本都会绑定到 todo。这实际上是双向绑定（输入字段可以更新数据对象，数据对象可以更新输入字段）。&lt;/p&gt;
+&lt;p&gt;因此，回顾前面的 createNewToDoItem() 代码块，我们将 todo 的内容存放到列表数组中 ，然后将 todo 改为空字符串。&lt;/p&gt;
+&lt;h2 id=&#34;4删除待办事项&#34;&gt;4.删除待办事项&lt;/h2&gt;
+&lt;h3 id=&#34;react-的实现方法-1&#34;&gt;React 的实现方法&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;deleteItem = indexToDelete =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.setState(({ list }) =&amp;gt; ({
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      list: list.filter((toDo, index) =&amp;gt; index !== indexToDelete)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }));
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;尽管 deleteItem 函数位于 ToDo.js 文件中，但是从 ToDoItem.js 文件中引用它也很容易，将 deleteItem() 函数作为 上的 prop 传递：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;ToDoItem deleteItem={&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.deleteItem.bind(&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;, key)}/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这会将该函数传递给子组件，使其可以访问。我们绑定了 this 并传递 key 参数，当用户点击删除项时，函数通过 key 区分用户点击的是哪一条 ToDoItem 。然后，在ToDoItem 组件内部，我们执行以下操作：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;className&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;”ToDoItem-Delete”&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;onClick&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;{this.props.deleteItem}&lt;/span&gt;&amp;gt;-&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;想要引用位于父组件内部的函数，只需引用 this.props.deleteItem 即可。&lt;/p&gt;
+&lt;h3 id=&#34;vue-的实现方法-1&#34;&gt;Vue 的实现方法&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;onDeleteItem(todo){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.list = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.list.filter(item =&amp;gt; item !== todo);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vue 的实现方法稍有不同，我们需要做到以下三点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先，在元素上调用函数：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;class&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;”ToDoItem-Delete”&lt;/span&gt; &lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;click&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;”deleteItem(todo)”&lt;/span&gt;&amp;gt;-&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;然后我们必须创建一个 emit 函数，将其作为子组件的内部方法（在本例中为ToDoItem.vue），如下所示：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;deleteItem(todo) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.$emit(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;delete&amp;#39;&lt;/span&gt;, todo)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;之后，你会发现，当我们添加 ToDo.vue的 ToDoItem.vue 时，实际上引用了一个函数：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;ToDoItem v-&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;for&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;todo in list&amp;#34;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	:todo=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;todo&amp;#34;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;delete&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;onDeleteItem&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#228b22&#34;&gt;// &amp;lt;-- this :)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;	:key=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;todo.id&amp;#34;&lt;/span&gt; /&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这就是所谓的自定义事件监听器。它会监听任何使用 &amp;lsquo;delete&amp;rsquo; 字符串的触发事件。一旦监听到事件，它会触发一个名为 onDeleteItem 的函数。此函数位于 ToDo.vue 内部，而不是 ToDoItem.vue。如前所述，该函数只是过滤数据对象内的 todo 数组 ，以删除被点击的待办事项。&lt;/p&gt;
+&lt;p&gt;在 Vue 示例中还需要注意的是，我们可以在 @click 侦听器中编写 $emit 部分，这样更加简单，如下所示：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;class&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;”ToDoItem-Delete”&lt;/span&gt; &lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;click&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;”$emit(‘delete’,&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;todo&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;)”&lt;/span&gt;&amp;gt;-&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果你喜欢，这样做可以把 3 步减少到 2 步。&lt;/p&gt;
+&lt;p&gt;React 中的子组件可以通过 this.props 访问父函数，而在 Vue 中，你需要从子组件中发出事件，父组件来收集事件。&lt;/p&gt;
+&lt;h2 id=&#34;5如何传递事件监听器&#34;&gt;5.如何传递事件监听器&lt;/h2&gt;
+&lt;h3 id=&#34;react-的实现方法-2&#34;&gt;React 的实现方法&lt;/h3&gt;
+&lt;p&gt;事件监听器处理简单事件（比如点击）非常直接。我们为待办事项创建了点击事件，用于创建新的待办事项，代码如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;className&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;”ToDo-Add”&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;onClick&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;{this.createNewToDoItem}&lt;/span&gt;&amp;gt;+&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;非常简单，就像使用 vanilla JS 处理内联 onClick 一样。正如前文所述，只要按下回车按钮，设置事件监听器就需要花费更长的时间。这需要输入标签处理 onKeyPress 事件，代码如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;type&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;”text”&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;onKeyPress&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;{this.handleKeyPress}/&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;该函数只要识别到&amp;rsquo;enter&amp;rsquo;键被按下，它就会触发 &lt;strong&gt;createNewToDoItem&lt;/strong&gt; 函数，代码如下所示：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;handleKeyPress = (e) =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; (e.key === &lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;‘&lt;/span&gt;Enter&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;’&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.createNewToDoItem();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;vue-的实现方法-2&#34;&gt;Vue 的实现方法&lt;/h3&gt;
+&lt;p&gt;Vue 的事件监听器更加直接。我们只需要使用一个简单的 @ 符号，就可以构建出我们想要的事件监听器。例如，想要添加 click 事件监听器，代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;class&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;”ToDo-Add”&lt;/span&gt; &lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;click&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;”createNewToDoItem()”&lt;/span&gt;&amp;gt;+&amp;lt;/&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;注意：@click 实际上是 v-on:click 的简写。Vue 事件监听器很强大，你可以为其选择属性，例如 .once 可以防止事件监听器被多次触发。此外，它还包含很多快捷方式。按下回车按钮时，React 就需要花费更长的时间来创建事件监听器，从而创建新的 ToDo 项目。在 Vue，代码如下：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;type&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;”text”&lt;/span&gt; &lt;span style=&#34;color:#658b00&#34;&gt;v-on:keyup&lt;/span&gt;&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#658b00&#34;&gt;enter&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;”createNewToDoItem”/&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;6如何将数据传递给子组件&#34;&gt;6.如何将数据传递给子组件&lt;/h2&gt;
+&lt;h3 id=&#34;react-的实现方法-3&#34;&gt;React 的实现方法&lt;/h3&gt;
+&lt;p&gt;在 React 中，我们将 props 传递到子组件的创建处。比如：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;ToDoItem key={key} item={todo} /&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;此处我们向 ToDoItem 组件传递了两个 prop。之后，我们可以在子组件中通过 this.props 引用它们。因此，想要访问 item.todo prop，我们只需调用this.props.item 。&lt;/p&gt;
+&lt;h3 id=&#34;vue-的实现方法-3&#34;&gt;Vue 的实现方法&lt;/h3&gt;
+&lt;p&gt;在 Vue 中，我们将 props 传递到子组件创建处的方式如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;ToDoItem v-&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;for&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;todo in list&amp;#34;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	:todo=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;todo&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	:key=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;todo.id&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;delete&lt;/span&gt;=&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;onDeleteItem&amp;#34;&lt;/span&gt; /&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我们将它们传递给子组件中的 props 数组，如：props：[&amp;lsquo;id&amp;rsquo;，&amp;rsquo;todo&amp;rsquo;]。然后可以在子组件中通过名字引用它们。&lt;/p&gt;
+&lt;h2 id=&#34;7如何将数据发送回父组件&#34;&gt;7.如何将数据发送回父组件&lt;/h2&gt;
+&lt;h3 id=&#34;react-的实现方法-4&#34;&gt;React 的实现方法&lt;/h3&gt;
+&lt;p&gt;我们首先将函数传递给子组件，方法是在我们调用子组件时将其引用为 prop。然后我们通过引用 this.props.whateverTheFunctionIsCalled，为子组件添加调用函数，例如 onClick。然后，这将触发父组件中的函数。删除待办事项一节中详细介绍了整个过程。&lt;/p&gt;
+&lt;h3 id=&#34;vue-的实现方法-4&#34;&gt;Vue 的实现方法&lt;/h3&gt;
+&lt;p&gt;在子组件中我们只需编写一个函数，将一个值发送回父函数。在父组件中编写一个函数来监听子组件何时发出该值的事件，监听到事件之后触发函数调用。同样，删除待办事项一节中详细介绍了整个过程。&lt;/p&gt;
+&lt;h2 id=&#34;8总结&#34;&gt;8.总结&lt;/h2&gt;
+&lt;p&gt;我们研究了添加、删除和更改数据，以 prop 形式从父组件到子组件传递数据，以及通过事件监听器的形式将数据从子组件发送到父组件。当然，React 和 Vue 之间存在一些小差异，希望本文的内容有助于理解这两个框架。&lt;/p&gt;
+&lt;p&gt;两个应用程序的 GitHub 地址：&lt;/p&gt;
+&lt;p&gt;**Vue ToDo：**&lt;a href=&#34;https://github.com/sunil-sandhu/vue-todo&#34;&gt;https://github.com/sunil-sandhu/vue-todo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;**React ToDo：**&lt;a href=&#34;https://github.com/sunil-sandhu/react-todo&#34;&gt;https://github.com/sunil-sandhu/react-todo&lt;/a&gt;&lt;/p&gt;
+- http://example.org/posts/2021-01-06-%E4%BD%BF%E7%94%A8_react_%E4%B8%8E_vue_%E5%88%9B%E5%BB%BA%E5%90%8C%E4%B8%80%E6%AC%BE_app%E5%B7%AE%E5%88%AB%E7%A9%B6%E7%AB%9F%E6%9C%89%E5%A4%9A%E5%A4%A7/ - This is a customized copyright.</description>
+        </item>
+    
+    
+  </channel>
+</rss> 

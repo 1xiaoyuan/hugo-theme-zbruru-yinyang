@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>docker on 不如吃茶去</title>
-    <link>https://zburu-hugo.vercel.app/tags/docker/</link>
-    <description>Recent content in docker on 不如吃茶去</description>
-    <image>
-      <url>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
+    <title>docker on A Hugo Site</title>
+    <link>http://example.org/tags/docker/</link>
+    <description>Recent content in docker on A Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 05 May 2022 09:33:00 +0000</lastBuildDate><atom:link href="https://zburu-hugo.vercel.app/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Thu, 05 May 2022 09:33:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>docker部署思源笔记</title>
-      <link>https://zburu-hugo.vercel.app/posts/2022-05-05-docker%E9%83%A8%E7%BD%B2%E6%80%9D%E6%BA%90%E7%AC%94%E8%AE%B0/</link>
+      <link>http://example.org/posts/2022-05-05-docker%E9%83%A8%E7%BD%B2%E6%80%9D%E6%BA%90%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Thu, 05 May 2022 09:33:00 +0000</pubDate>
       
-      <guid>https://zburu-hugo.vercel.app/posts/2022-05-05-docker%E9%83%A8%E7%BD%B2%E6%80%9D%E6%BA%90%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://example.org/posts/2022-05-05-docker%E9%83%A8%E7%BD%B2%E6%80%9D%E6%BA%90%E7%AC%94%E8%AE%B0/</guid>
       <description> 文章废弃
 部署 docker run --name siyuan -itd -p 6806:6806 -v /opt/my_siyuan_path:/opt/siyuan --restart always b3log/siyuan 备份 sudo su # 查看容器列表 docker ps -a # 制作备份 docker commit -p 7409ce6aae7b siyuan_backup # 其中 403e6db0c 是容器id, jenkins_backup是备份名称 # 查看备份是否成功 docker images # 将镜像制作成文件 docker save -o [filename] [image] docker save -o siyuan_backup.tar siyuan_backup ls # 在 /home/ubuntu/ 中可以看到制作后的压缩包 </description>
     </item>

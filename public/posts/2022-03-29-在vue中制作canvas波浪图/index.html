@@ -1,132 +1,528 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>在vue中制作canvas波浪图 | 不如吃茶去</title><meta name=keywords content="vue,canvas"><meta name=description content="新建组件 Canvas.vue 。
-// @/components/Canvas.vue <template> <div :style=&#34;{ height: waveAllHeight + 'px', background: bgColor }&#34; class=&#34;wave&#34;> <canvas id=&#34;wave1&#34;></canvas> <canvas id=&#34;wave2&#34;></canvas> <canvas id=&#34;wave3&#34;></canvas> </div> </template> <script> export default { name: &#34;Canvas&#34;, props: { bgColor: { default: &#34;none&#34;, }, // 背景色 waveAllHeight: { default: 160 }, // 波浪的整体高度 waveCount: { default: 2 }, // 波峰个数 waveHeight: { default: 50 }, // 波浪起伏高度 // 波浪颜色 waveColor: { default () { return [ &#34;#f3f3f3&#34;, &#34;#f3f3f3&#34;, &#34;#f3f3f3&#34;, ]; }, }, // 波浪速率 waveTime: { default () { return [4000, 4000, 4000]; }, }, }, data () { return {}; }, mounted () { this."><meta name=author content="Me"><link rel=canonical href=https://zburu-hugo.vercel.app/posts/2022-03-29-%E5%9C%A8vue%E4%B8%AD%E5%88%B6%E4%BD%9Ccanvas%E6%B3%A2%E6%B5%AA%E5%9B%BE/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.ba440c9e3234243e74b01a794e5be1e5ed2ea2b1b088b818edcb1bc5edd382fa.css integrity="sha256-ukQMnjI0JD50sBp5Tlvh5e0uorGwiLgY7csbxe3Tgvo=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG+9vmJ0cTS+ovo0FeA=" onload=hljs.initHighlightingOnLoad()></script>
-<link rel=icon href=https://img.zburu.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://img.zburu.com/favicon.ico><link rel=icon type=image/png sizes=32x32 href=https://img.zburu.com/favicon.ico><link rel=apple-touch-icon href=https://img.zburu.com/favicon.ico><link rel=mask-icon href=https://img.zburu.com/favicon.ico><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="在vue中制作canvas波浪图"><meta property="og:description" content="新建组件 Canvas.vue 。
-// @/components/Canvas.vue <template> <div :style=&#34;{ height: waveAllHeight + 'px', background: bgColor }&#34; class=&#34;wave&#34;> <canvas id=&#34;wave1&#34;></canvas> <canvas id=&#34;wave2&#34;></canvas> <canvas id=&#34;wave3&#34;></canvas> </div> </template> <script> export default { name: &#34;Canvas&#34;, props: { bgColor: { default: &#34;none&#34;, }, // 背景色 waveAllHeight: { default: 160 }, // 波浪的整体高度 waveCount: { default: 2 }, // 波峰个数 waveHeight: { default: 50 }, // 波浪起伏高度 // 波浪颜色 waveColor: { default () { return [ &#34;#f3f3f3&#34;, &#34;#f3f3f3&#34;, &#34;#f3f3f3&#34;, ]; }, }, // 波浪速率 waveTime: { default () { return [4000, 4000, 4000]; }, }, }, data () { return {}; }, mounted () { this."><meta property="og:type" content="article"><meta property="og:url" content="https://zburu-hugo.vercel.app/posts/2022-03-29-%E5%9C%A8vue%E4%B8%AD%E5%88%B6%E4%BD%9Ccanvas%E6%B3%A2%E6%B5%AA%E5%9B%BE/"><meta property="og:image" content="https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-03-29T13:08:00+00:00"><meta property="article:modified_time" content="2022-03-29T13:08:00+00:00"><meta property="og:site_name" content="ExampleSite"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://zburu-hugo.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="在vue中制作canvas波浪图"><meta name=twitter:description content="新建组件 Canvas.vue 。
-// @/components/Canvas.vue <template> <div :style=&#34;{ height: waveAllHeight + 'px', background: bgColor }&#34; class=&#34;wave&#34;> <canvas id=&#34;wave1&#34;></canvas> <canvas id=&#34;wave2&#34;></canvas> <canvas id=&#34;wave3&#34;></canvas> </div> </template> <script> export default { name: &#34;Canvas&#34;, props: { bgColor: { default: &#34;none&#34;, }, // 背景色 waveAllHeight: { default: 160 }, // 波浪的整体高度 waveCount: { default: 2 }, // 波峰个数 waveHeight: { default: 50 }, // 波浪起伏高度 // 波浪颜色 waveColor: { default () { return [ &#34;#f3f3f3&#34;, &#34;#f3f3f3&#34;, &#34;#f3f3f3&#34;, ]; }, }, // 波浪速率 waveTime: { default () { return [4000, 4000, 4000]; }, }, }, data () { return {}; }, mounted () { this."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://zburu-hugo.vercel.app/posts/"},{"@type":"ListItem","position":3,"name":"在vue中制作canvas波浪图","item":"https://zburu-hugo.vercel.app/posts/2022-03-29-%E5%9C%A8vue%E4%B8%AD%E5%88%B6%E4%BD%9Ccanvas%E6%B3%A2%E6%B5%AA%E5%9B%BE/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"在vue中制作canvas波浪图","name":"在vue中制作canvas波浪图","description":"新建组件 Canvas.vue 。\n// @/components/Canvas.vue \u0026lt;template\u0026gt; \u0026lt;div :style=\u0026#34;{ height: waveAllHeight + \u0026#39;px\u0026#39;, background: bgColor }\u0026#34; class=\u0026#34;wave\u0026#34;\u0026gt; \u0026lt;canvas id=\u0026#34;wave1\u0026#34;\u0026gt;\u0026lt;/canvas\u0026gt; \u0026lt;canvas id=\u0026#34;wave2\u0026#34;\u0026gt;\u0026lt;/canvas\u0026gt; \u0026lt;canvas id=\u0026#34;wave3\u0026#34;\u0026gt;\u0026lt;/canvas\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;/template\u0026gt; \u0026lt;script\u0026gt; export default { name: \u0026#34;Canvas\u0026#34;, props: { bgColor: { default: \u0026#34;none\u0026#34;, }, // 背景色 waveAllHeight: { default: 160 }, // 波浪的整体高度 waveCount: { default: 2 }, // 波峰个数 waveHeight: { default: 50 }, // 波浪起伏高度 // 波浪颜色 waveColor: { default () { return [ \u0026#34;#f3f3f3\u0026#34;, \u0026#34;#f3f3f3\u0026#34;, \u0026#34;#f3f3f3\u0026#34;, ]; }, }, // 波浪速率 waveTime: { default () { return [4000, 4000, 4000]; }, }, }, data () { return {}; }, mounted () { this.","keywords":["vue","canvas"],"articleBody":"新建组件 Canvas.vue 。\n// @/components/Canvas.vue \u003ctemplate\u003e \u003cdiv :style=\"{ height: waveAllHeight + 'px', background: bgColor }\" class=\"wave\"\u003e \u003ccanvas id=\"wave1\"\u003e\u003c/canvas\u003e \u003ccanvas id=\"wave2\"\u003e\u003c/canvas\u003e \u003ccanvas id=\"wave3\"\u003e\u003c/canvas\u003e \u003c/div\u003e \u003c/template\u003e \u003cscript\u003e export default { name: \"Canvas\", props: { bgColor: { default: \"none\", }, // 背景色 waveAllHeight: { default: 160 }, // 波浪的整体高度 waveCount: { default: 2 }, // 波峰个数 waveHeight: { default: 50 }, // 波浪起伏高度 // 波浪颜色 waveColor: { default () { return [ \"#f3f3f3\", \"#f3f3f3\", \"#f3f3f3\", ]; }, }, // 波浪速率 waveTime: { default () { return [4000, 4000, 4000]; }, }, }, data () { return {}; }, mounted () { this.wavePlay(\"wave1\", 140, this.waveColor[0], this.waveTime[0]); this.wavePlay(\"wave2\", 140, this.waveColor[1], this.waveTime[1]); this.wavePlay(\"wave3\", 140, this.waveColor[2], this.waveTime[2]); }, methods: { wavePlay ($canvasID, $progress, $maveColor, $time) { const that = this; let waveWidth = 3300, // 波浪长度 offset = 0, waveHeight = that.waveHeight, // 波浪起伏高度 waveCount = that.waveCount, // 波浪个数 startX = -1200, startY = 212, // canvas 高度 progress = $progress, // 波浪位置高度 d2 = waveWidth / waveCount, // 单个波浪的宽度 d = d2 / 2, hd = d / 2, c = document.getElementById($canvasID), ctx = c.getContext(\"2d\"); c.width = 1920; // 画布宽度 c.height = that.waveAllHeight; // 画布高度 function move () { offset -= 5; if (-1 * offset === d2) { offset = 0; } ctx.clearRect(0, 0, c.width, c.height); ctx.fillStyle = $maveColor; // 画布填充色 ctx.beginPath(); let offsetY = startY - progress; // 绘制贝塞尔曲线 ctx.moveTo(startX - offset, offsetY); // 开始点 for (let i = 0; i \u003c waveCount; i++) { let dx = i * d2; let offsetX = dx + startX - offset; ctx.quadraticCurveTo( offsetX + hd, offsetY + waveHeight, offsetX + d, offsetY ); ctx.quadraticCurveTo( offsetX + hd + d, offsetY - waveHeight, offsetX + d2, offsetY ); } ctx.lineTo(startX + waveWidth, 3000); ctx.lineTo(startX, 0); ctx.fill(); setTimeout(move, $time / 60); // 速度 } move(); }, }, }; \u003c/script\u003e \u003cstyle scoped lang=\"scss\"\u003e .wave { width: 100%; height: 100%; position: relative; top: 0; left: 0; margin-top: -8%; canvas { width: 100%; opacity: 1; position: absolute; top: 0; left: 0; } } @media (max-width: 900px) { .wave { display: none; } } \u003c/style\u003e ","wordCount":"343","inLanguage":"en","datePublished":"2022-03-29T13:08:00Z","dateModified":"2022-03-29T13:08:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://zburu-hugo.vercel.app/posts/2022-03-29-%E5%9C%A8vue%E4%B8%AD%E5%88%B6%E4%BD%9Ccanvas%E6%B3%A2%E6%B5%AA%E5%9B%BE/"},"publisher":{"@type":"Organization","name":"不如吃茶去","logo":{"@type":"ImageObject","url":"https://img.zburu.com/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://zburu-hugo.vercel.app accesskey=h title="Home (Alt + H)">Home</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://zburu-hugo.vercel.app/posts title=posts><span>posts</span></a></li><li><a href=https://zburu-hugo.vercel.app/categories title=categories><span>categories</span></a></li><li><a href=https://zburu-hugo.vercel.app/tags title=tags><span>tags</span></a></li><li><a href=https://zburu-hugo.vercel.app/search title="search (Alt + /)" accesskey=/><span>search</span></a></li><li><a href=https://zburu-hugo.vercel.app/about title=about><span>about</span></a></li><li><a href=https://github.com/zburu title=github><span>github</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://zburu-hugo.vercel.app>Home</a>&nbsp;»&nbsp;<a href=https://zburu-hugo.vercel.app/posts/>Posts</a></div><h1 class=post-title>在vue中制作canvas波浪图</h1><div class=post-meta><span title='2022-03-29 13:08:00 +0000 UTC'>March 29, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;343 words&nbsp;·&nbsp;Me&nbsp;|&nbsp;<a href=https://github.com/zburu/hugo-blog/blob/main/content/posts/2022-03-29-%e5%9c%a8vue%e4%b8%ad%e5%88%b6%e4%bd%9ccanvas%e6%b3%a2%e6%b5%aa%e5%9b%be.md rel="noopener noreferrer" target=_blank>Edit</a></div></header><div class=post-content><p>新建组件 <code>Canvas.vue</code> 。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// @/components/Canvas.vue
-</span></span></span><span class=line><span class=cl><span class=c1></span>
-</span></span><span class=line><span class=cl><span class=o>&lt;</span><span class=nx>template</span><span class=o>&gt;</span>
-</span></span><span class=line><span class=cl>  <span class=o>&lt;</span><span class=nx>div</span> <span class=o>:</span><span class=nx>style</span><span class=o>=</span><span class=s2>&#34;{ height: waveAllHeight + &#39;px&#39;, background: bgColor }&#34;</span> <span class=kr>class</span><span class=o>=</span><span class=s2>&#34;wave&#34;</span><span class=o>&gt;</span>
-</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>canvas</span> <span class=nx>id</span><span class=o>=</span><span class=s2>&#34;wave1&#34;</span><span class=o>&gt;&lt;</span><span class=err>/canvas&gt;</span>
-</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>canvas</span> <span class=nx>id</span><span class=o>=</span><span class=s2>&#34;wave2&#34;</span><span class=o>&gt;&lt;</span><span class=err>/canvas&gt;</span>
-</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>canvas</span> <span class=nx>id</span><span class=o>=</span><span class=s2>&#34;wave3&#34;</span><span class=o>&gt;&lt;</span><span class=err>/canvas&gt;</span>
-</span></span><span class=line><span class=cl>  <span class=o>&lt;</span><span class=err>/div&gt;</span>
-</span></span><span class=line><span class=cl><span class=o>&lt;</span><span class=err>/template&gt;</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=o>&lt;</span><span class=nx>script</span><span class=o>&gt;</span>
-</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>  <span class=nx>name</span><span class=o>:</span> <span class=s2>&#34;Canvas&#34;</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>  <span class=nx>props</span><span class=o>:</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=nx>bgColor</span><span class=o>:</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>      <span class=k>default</span><span class=o>:</span> <span class=s2>&#34;none&#34;</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>    <span class=p>},</span> <span class=c1>// 背景色
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>waveAllHeight</span><span class=o>:</span> <span class=p>{</span> <span class=k>default</span><span class=o>:</span> <span class=mi>160</span> <span class=p>},</span> <span class=c1>// 波浪的整体高度
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>waveCount</span><span class=o>:</span> <span class=p>{</span> <span class=k>default</span><span class=o>:</span> <span class=mi>2</span> <span class=p>},</span> <span class=c1>// 波峰个数
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>waveHeight</span><span class=o>:</span> <span class=p>{</span> <span class=k>default</span><span class=o>:</span> <span class=mi>50</span> <span class=p>},</span> <span class=c1>// 波浪起伏高度
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=c1>// 波浪颜色
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>waveColor</span><span class=o>:</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>      <span class=k>default</span> <span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=p>[</span>
-</span></span><span class=line><span class=cl>          <span class=s2>&#34;#f3f3f3&#34;</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>          <span class=s2>&#34;#f3f3f3&#34;</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>          <span class=s2>&#34;#f3f3f3&#34;</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>        <span class=p>];</span>
-</span></span><span class=line><span class=cl>      <span class=p>},</span>
-</span></span><span class=line><span class=cl>    <span class=p>},</span>
-</span></span><span class=line><span class=cl>    <span class=c1>// 波浪速率
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>waveTime</span><span class=o>:</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>      <span class=k>default</span> <span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=p>[</span><span class=mi>4000</span><span class=p>,</span> <span class=mi>4000</span><span class=p>,</span> <span class=mi>4000</span><span class=p>];</span>
-</span></span><span class=line><span class=cl>      <span class=p>},</span>
-</span></span><span class=line><span class=cl>    <span class=p>},</span>
-</span></span><span class=line><span class=cl>  <span class=p>},</span>
-</span></span><span class=line><span class=cl>  <span class=nx>data</span> <span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=p>{};</span>
-</span></span><span class=line><span class=cl>  <span class=p>},</span>
-</span></span><span class=line><span class=cl>  <span class=nx>mounted</span> <span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=k>this</span><span class=p>.</span><span class=nx>wavePlay</span><span class=p>(</span><span class=s2>&#34;wave1&#34;</span><span class=p>,</span> <span class=mi>140</span><span class=p>,</span> <span class=k>this</span><span class=p>.</span><span class=nx>waveColor</span><span class=p>[</span><span class=mi>0</span><span class=p>],</span> <span class=k>this</span><span class=p>.</span><span class=nx>waveTime</span><span class=p>[</span><span class=mi>0</span><span class=p>]);</span>
-</span></span><span class=line><span class=cl>    <span class=k>this</span><span class=p>.</span><span class=nx>wavePlay</span><span class=p>(</span><span class=s2>&#34;wave2&#34;</span><span class=p>,</span> <span class=mi>140</span><span class=p>,</span> <span class=k>this</span><span class=p>.</span><span class=nx>waveColor</span><span class=p>[</span><span class=mi>1</span><span class=p>],</span> <span class=k>this</span><span class=p>.</span><span class=nx>waveTime</span><span class=p>[</span><span class=mi>1</span><span class=p>]);</span>
-</span></span><span class=line><span class=cl>    <span class=k>this</span><span class=p>.</span><span class=nx>wavePlay</span><span class=p>(</span><span class=s2>&#34;wave3&#34;</span><span class=p>,</span> <span class=mi>140</span><span class=p>,</span> <span class=k>this</span><span class=p>.</span><span class=nx>waveColor</span><span class=p>[</span><span class=mi>2</span><span class=p>],</span> <span class=k>this</span><span class=p>.</span><span class=nx>waveTime</span><span class=p>[</span><span class=mi>2</span><span class=p>]);</span>
-</span></span><span class=line><span class=cl>  <span class=p>},</span>
-</span></span><span class=line><span class=cl>  <span class=nx>methods</span><span class=o>:</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=nx>wavePlay</span> <span class=p>(</span><span class=nx>$canvasID</span><span class=p>,</span> <span class=nx>$progress</span><span class=p>,</span> <span class=nx>$maveColor</span><span class=p>,</span> <span class=nx>$time</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>      <span class=kr>const</span> <span class=nx>that</span> <span class=o>=</span> <span class=k>this</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>      <span class=kd>let</span> <span class=nx>waveWidth</span> <span class=o>=</span> <span class=mi>3300</span><span class=p>,</span> <span class=c1>// 波浪长度
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=nx>offset</span> <span class=o>=</span> <span class=mi>0</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>        <span class=nx>waveHeight</span> <span class=o>=</span> <span class=nx>that</span><span class=p>.</span><span class=nx>waveHeight</span><span class=p>,</span> <span class=c1>// 波浪起伏高度
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=nx>waveCount</span> <span class=o>=</span> <span class=nx>that</span><span class=p>.</span><span class=nx>waveCount</span><span class=p>,</span> <span class=c1>// 波浪个数
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=nx>startX</span> <span class=o>=</span> <span class=o>-</span><span class=mi>1200</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>        <span class=nx>startY</span> <span class=o>=</span> <span class=mi>212</span><span class=p>,</span> <span class=c1>// canvas 高度
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=nx>progress</span> <span class=o>=</span> <span class=nx>$progress</span><span class=p>,</span> <span class=c1>// 波浪位置高度
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=nx>d2</span> <span class=o>=</span> <span class=nx>waveWidth</span> <span class=o>/</span> <span class=nx>waveCount</span><span class=p>,</span> <span class=c1>// 单个波浪的宽度
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=nx>d</span> <span class=o>=</span> <span class=nx>d2</span> <span class=o>/</span> <span class=mi>2</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>        <span class=nx>hd</span> <span class=o>=</span> <span class=nx>d</span> <span class=o>/</span> <span class=mi>2</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>        <span class=nx>c</span> <span class=o>=</span> <span class=nb>document</span><span class=p>.</span><span class=nx>getElementById</span><span class=p>(</span><span class=nx>$canvasID</span><span class=p>),</span>
-</span></span><span class=line><span class=cl>        <span class=nx>ctx</span> <span class=o>=</span> <span class=nx>c</span><span class=p>.</span><span class=nx>getContext</span><span class=p>(</span><span class=s2>&#34;2d&#34;</span><span class=p>);</span>
-</span></span><span class=line><span class=cl>      <span class=nx>c</span><span class=p>.</span><span class=nx>width</span> <span class=o>=</span> <span class=mi>1920</span><span class=p>;</span> <span class=c1>// 画布宽度
-</span></span></span><span class=line><span class=cl><span class=c1></span>      <span class=nx>c</span><span class=p>.</span><span class=nx>height</span> <span class=o>=</span> <span class=nx>that</span><span class=p>.</span><span class=nx>waveAllHeight</span><span class=p>;</span> <span class=c1>// 画布高度
-</span></span></span><span class=line><span class=cl><span class=c1></span>      <span class=kd>function</span> <span class=nx>move</span> <span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=nx>offset</span> <span class=o>-=</span> <span class=mi>5</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=o>-</span><span class=mi>1</span> <span class=o>*</span> <span class=nx>offset</span> <span class=o>===</span> <span class=nx>d2</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>          <span class=nx>offset</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>        <span class=p>}</span>
-</span></span><span class=line><span class=cl>        <span class=nx>ctx</span><span class=p>.</span><span class=nx>clearRect</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=nx>c</span><span class=p>.</span><span class=nx>width</span><span class=p>,</span> <span class=nx>c</span><span class=p>.</span><span class=nx>height</span><span class=p>);</span>
-</span></span><span class=line><span class=cl>        <span class=nx>ctx</span><span class=p>.</span><span class=nx>fillStyle</span> <span class=o>=</span> <span class=nx>$maveColor</span><span class=p>;</span> <span class=c1>// 画布填充色
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=nx>ctx</span><span class=p>.</span><span class=nx>beginPath</span><span class=p>();</span>
-</span></span><span class=line><span class=cl>        <span class=kd>let</span> <span class=nx>offsetY</span> <span class=o>=</span> <span class=nx>startY</span> <span class=o>-</span> <span class=nx>progress</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>        <span class=c1>// 绘制贝塞尔曲线
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=nx>ctx</span><span class=p>.</span><span class=nx>moveTo</span><span class=p>(</span><span class=nx>startX</span> <span class=o>-</span> <span class=nx>offset</span><span class=p>,</span> <span class=nx>offsetY</span><span class=p>);</span> <span class=c1>// 开始点
-</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=k>for</span> <span class=p>(</span><span class=kd>let</span> <span class=nx>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=nx>i</span> <span class=o>&lt;</span> <span class=nx>waveCount</span><span class=p>;</span> <span class=nx>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>          <span class=kd>let</span> <span class=nx>dx</span> <span class=o>=</span> <span class=nx>i</span> <span class=o>*</span> <span class=nx>d2</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>          <span class=kd>let</span> <span class=nx>offsetX</span> <span class=o>=</span> <span class=nx>dx</span> <span class=o>+</span> <span class=nx>startX</span> <span class=o>-</span> <span class=nx>offset</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>          <span class=nx>ctx</span><span class=p>.</span><span class=nx>quadraticCurveTo</span><span class=p>(</span>
-</span></span><span class=line><span class=cl>            <span class=nx>offsetX</span> <span class=o>+</span> <span class=nx>hd</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>            <span class=nx>offsetY</span> <span class=o>+</span> <span class=nx>waveHeight</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>            <span class=nx>offsetX</span> <span class=o>+</span> <span class=nx>d</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>            <span class=nx>offsetY</span>
-</span></span><span class=line><span class=cl>          <span class=p>);</span>
-</span></span><span class=line><span class=cl>          <span class=nx>ctx</span><span class=p>.</span><span class=nx>quadraticCurveTo</span><span class=p>(</span>
-</span></span><span class=line><span class=cl>            <span class=nx>offsetX</span> <span class=o>+</span> <span class=nx>hd</span> <span class=o>+</span> <span class=nx>d</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>            <span class=nx>offsetY</span> <span class=o>-</span> <span class=nx>waveHeight</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>            <span class=nx>offsetX</span> <span class=o>+</span> <span class=nx>d2</span><span class=p>,</span>
-</span></span><span class=line><span class=cl>            <span class=nx>offsetY</span>
-</span></span><span class=line><span class=cl>          <span class=p>);</span>
-</span></span><span class=line><span class=cl>        <span class=p>}</span>
-</span></span><span class=line><span class=cl>        <span class=nx>ctx</span><span class=p>.</span><span class=nx>lineTo</span><span class=p>(</span><span class=nx>startX</span> <span class=o>+</span> <span class=nx>waveWidth</span><span class=p>,</span> <span class=mi>3000</span><span class=p>);</span>
-</span></span><span class=line><span class=cl>        <span class=nx>ctx</span><span class=p>.</span><span class=nx>lineTo</span><span class=p>(</span><span class=nx>startX</span><span class=p>,</span> <span class=mi>0</span><span class=p>);</span>
-</span></span><span class=line><span class=cl>        <span class=nx>ctx</span><span class=p>.</span><span class=nx>fill</span><span class=p>();</span>
-</span></span><span class=line><span class=cl>        <span class=nx>setTimeout</span><span class=p>(</span><span class=nx>move</span><span class=p>,</span> <span class=nx>$time</span> <span class=o>/</span> <span class=mi>60</span><span class=p>);</span> <span class=c1>// 速度
-</span></span></span><span class=line><span class=cl><span class=c1></span>      <span class=p>}</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>      <span class=nx>move</span><span class=p>();</span>
-</span></span><span class=line><span class=cl>    <span class=p>},</span>
-</span></span><span class=line><span class=cl>  <span class=p>},</span>
-</span></span><span class=line><span class=cl><span class=p>};</span>
-</span></span><span class=line><span class=cl><span class=o>&lt;</span><span class=err>/script&gt;</span>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=o>&lt;</span><span class=nx>style</span> <span class=nx>scoped</span> <span class=nx>lang</span><span class=o>=</span><span class=s2>&#34;scss&#34;</span><span class=o>&gt;</span>
-</span></span><span class=line><span class=cl><span class=p>.</span><span class=nx>wave</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>  <span class=nx>width</span><span class=o>:</span> <span class=mi>100</span><span class=o>%</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>  <span class=nx>height</span><span class=o>:</span> <span class=mi>100</span><span class=o>%</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>  <span class=nx>position</span><span class=o>:</span> <span class=nx>relative</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>  <span class=nx>top</span><span class=o>:</span> <span class=mi>0</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>  <span class=nx>left</span><span class=o>:</span> <span class=mi>0</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>  <span class=nx>margin</span><span class=o>-</span><span class=nx>top</span><span class=o>:</span> <span class=o>-</span><span class=mi>8</span><span class=o>%</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>  <span class=nx>canvas</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=nx>width</span><span class=o>:</span> <span class=mi>100</span><span class=o>%</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>    <span class=nx>opacity</span><span class=o>:</span> <span class=mi>1</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>    <span class=nx>position</span><span class=o>:</span> <span class=nx>absolute</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>    <span class=nx>top</span><span class=o>:</span> <span class=mi>0</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>    <span class=nx>left</span><span class=o>:</span> <span class=mi>0</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span><span class=line><span class=cl><span class=err>@</span><span class=nx>media</span> <span class=p>(</span><span class=nx>max</span><span class=o>-</span><span class=nx>width</span><span class=o>:</span> <span class=mi>900</span><span class=nx>px</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>  <span class=p>.</span><span class=nx>wave</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=nx>display</span><span class=o>:</span> <span class=nx>none</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span><span class=line><span class=cl><span class=o>&lt;</span><span class=err>/style&gt;</span>
-</span></span></code></pre></div></div><footer class=post-footer><ul class=post-tags><li><a href=https://zburu-hugo.vercel.app/tags/vue/>vue</a></li><li><a href=https://zburu-hugo.vercel.app/tags/canvas/>canvas</a></li></ul><nav class=paginav><a class=prev href=https://zburu-hugo.vercel.app/posts/2022-04-01-%E5%9C%A8nuxt%E4%B8%AD%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E6%94%BE%E5%A4%A7%E9%A2%84%E8%A7%88%E5%8A%9F%E8%83%BD/><span class=title>« Prev</span><br><span>在nuxt中实现图片放大预览功能</span></a>
-<a class=next href=https://zburu-hugo.vercel.app/posts/2022-03-25-%E5%A2%9E%E5%8A%A0%E4%BA%86%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/><span class=title>Next »</span><br><span>增加了站内搜索功能</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2022 <a href=https://zburu-hugo.vercel.app>不如吃茶去</a></span>
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+<!DOCTYPE html>
+<html><head>
+<title>在vue中制作canvas波浪图</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="在vue中制作canvas波浪图" />
+<meta property="og:description" content="新建组件 Canvas.vue 。
+// @/components/Canvas.vue &lt;template&gt; &lt;div :style=&#34;{ height: waveAllHeight &#43; &#39;px&#39;, background: bgColor }&#34; class=&#34;wave&#34;&gt; &lt;canvas id=&#34;wave1&#34;&gt;&lt;/canvas&gt; &lt;canvas id=&#34;wave2&#34;&gt;&lt;/canvas&gt; &lt;canvas id=&#34;wave3&#34;&gt;&lt;/canvas&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; export default { name: &#34;Canvas&#34;, props: { bgColor: { default: &#34;none&#34;, }, // 背景色 waveAllHeight: { default: 160 }, // 波浪的整体高度 waveCount: { default: 2 }, // 波峰个数 waveHeight: { default: 50 }, // 波浪起伏高度 // 波浪颜色 waveColor: { default () { return [ &#34;#f3f3f3&#34;, &#34;#f3f3f3&#34;, &#34;#f3f3f3&#34;, ]; }, }, // 波浪速率 waveTime: { default () { return [4000, 4000, 4000]; }, }, }, data () { return {}; }, mounted () { this." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/2022-03-29-%E5%9C%A8vue%E4%B8%AD%E5%88%B6%E4%BD%9Ccanvas%E6%B3%A2%E6%B5%AA%E5%9B%BE/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-29T13:08:00+00:00" />
+<meta property="article:modified_time" content="2022-03-29T13:08:00+00:00" /><meta property="og:site_name" content="My Blog" />
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="在vue中制作canvas波浪图"/>
+<meta name="twitter:description" content="新建组件 Canvas.vue 。
+// @/components/Canvas.vue &lt;template&gt; &lt;div :style=&#34;{ height: waveAllHeight &#43; &#39;px&#39;, background: bgColor }&#34; class=&#34;wave&#34;&gt; &lt;canvas id=&#34;wave1&#34;&gt;&lt;/canvas&gt; &lt;canvas id=&#34;wave2&#34;&gt;&lt;/canvas&gt; &lt;canvas id=&#34;wave3&#34;&gt;&lt;/canvas&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; export default { name: &#34;Canvas&#34;, props: { bgColor: { default: &#34;none&#34;, }, // 背景色 waveAllHeight: { default: 160 }, // 波浪的整体高度 waveCount: { default: 2 }, // 波峰个数 waveHeight: { default: 50 }, // 波浪起伏高度 // 波浪颜色 waveColor: { default () { return [ &#34;#f3f3f3&#34;, &#34;#f3f3f3&#34;, &#34;#f3f3f3&#34;, ]; }, }, // 波浪速率 waveTime: { default () { return [4000, 4000, 4000]; }, }, }, data () { return {}; }, mounted () { this."/>
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/journal.min.0f46f98b723f2aad4b02d9370bb6aa7848b5c2b2a5579642014082283683d2d8.css" integrity="sha256-D0b5i3I/Kq1LAtk3C7aqeEi1wrKlV5ZCAUCCKDaD0tg=" media="screen">
+
+
+
+<link rel="stylesheet" href="/scss/dark-mode.min.79c34391dbcff20df8b4dac718e2606701efcbfdb9f3b08447ac39ac9dc7b463.css" integrity="sha256-ecNDkdvP8g34tNrHGOJgZwHvy/2587CER6w5rJ3HtGM=" media="screen">
+
+
+<script src="/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/js/toc.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/vendor/js/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+  clientID: 'your client id',
+  clientSecret: 'your client secret',
+  repo: 'repo name',
+  owner: 'user',
+  admin: ['user'],
+  id: md5(location.pathname),
+  distractionFreeMode: 'false'
+  });
+  window.onload = function () {
+        gitalk.render('gitalk-container')
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://example.org/">
+    
+        <div class="nav-title">
+            A Hugo Site
+        </div>
+        
+        <div class="nav-subtitle">
+            Themed by Diary.
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                Archive
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                Categories
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                Tags
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/index.xml">
+                RSS Feed
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    Archive
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    Categories
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    Tags
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/index.xml">
+                    RSS Feed
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="http://example.org/">
+            A Hugo Site
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://example.org/">
+        <div class="single-column-header-title">A Hugo Site</div>
+        
+        <div class="single-column-header-subtitle">Themed by Diary.</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    在vue中制作canvas波浪图
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2022-03-29 13:08
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/">[技术]</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/vue">vue</a>
+                                &nbsp;
+                            
+                                <a href="/tags/canvas">canvas</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p>新建组件 <code>Canvas.vue</code> 。</p>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#228b22">// @/components/Canvas.vue
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>
+</span></span><span style="display:flex;"><span>&lt;template&gt;
+</span></span><span style="display:flex;"><span>  &lt;div :style=<span style="color:#cd5555">&#34;{ height: waveAllHeight + &#39;px&#39;, background: bgColor }&#34;</span> <span style="color:#8b008b;font-weight:bold">class</span>=<span style="color:#cd5555">&#34;wave&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;canvas id=<span style="color:#cd5555">&#34;wave1&#34;</span>&gt;&lt;<span style="color:#a61717;background-color:#e3d2d2">/canvas&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;canvas id=<span style="color:#cd5555">&#34;wave2&#34;</span>&gt;&lt;<span style="color:#a61717;background-color:#e3d2d2">/canvas&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;canvas id=<span style="color:#cd5555">&#34;wave3&#34;</span>&gt;&lt;<span style="color:#a61717;background-color:#e3d2d2">/canvas&gt;</span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#a61717;background-color:#e3d2d2">/div&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#a61717;background-color:#e3d2d2">/template&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;script&gt;
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">export</span> <span style="color:#8b008b;font-weight:bold">default</span> {
+</span></span><span style="display:flex;"><span>  name: <span style="color:#cd5555">&#34;Canvas&#34;</span>,
+</span></span><span style="display:flex;"><span>  props: {
+</span></span><span style="display:flex;"><span>    bgColor: {
+</span></span><span style="display:flex;"><span>      <span style="color:#8b008b;font-weight:bold">default</span>: <span style="color:#cd5555">&#34;none&#34;</span>,
+</span></span><span style="display:flex;"><span>    }, <span style="color:#228b22">// 背景色
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>    waveAllHeight: { <span style="color:#8b008b;font-weight:bold">default</span>: <span style="color:#b452cd">160</span> }, <span style="color:#228b22">// 波浪的整体高度
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>    waveCount: { <span style="color:#8b008b;font-weight:bold">default</span>: <span style="color:#b452cd">2</span> }, <span style="color:#228b22">// 波峰个数
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>    waveHeight: { <span style="color:#8b008b;font-weight:bold">default</span>: <span style="color:#b452cd">50</span> }, <span style="color:#228b22">// 波浪起伏高度
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>    <span style="color:#228b22">// 波浪颜色
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>    waveColor: {
+</span></span><span style="display:flex;"><span>      <span style="color:#8b008b;font-weight:bold">default</span> () {
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">return</span> [
+</span></span><span style="display:flex;"><span>          <span style="color:#cd5555">&#34;#f3f3f3&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#cd5555">&#34;#f3f3f3&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#cd5555">&#34;#f3f3f3&#34;</span>,
+</span></span><span style="display:flex;"><span>        ];
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">// 波浪速率
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>    waveTime: {
+</span></span><span style="display:flex;"><span>      <span style="color:#8b008b;font-weight:bold">default</span> () {
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">return</span> [<span style="color:#b452cd">4000</span>, <span style="color:#b452cd">4000</span>, <span style="color:#b452cd">4000</span>];
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  data () {
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">return</span> {};
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  mounted () {
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">this</span>.wavePlay(<span style="color:#cd5555">&#34;wave1&#34;</span>, <span style="color:#b452cd">140</span>, <span style="color:#8b008b;font-weight:bold">this</span>.waveColor[<span style="color:#b452cd">0</span>], <span style="color:#8b008b;font-weight:bold">this</span>.waveTime[<span style="color:#b452cd">0</span>]);
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">this</span>.wavePlay(<span style="color:#cd5555">&#34;wave2&#34;</span>, <span style="color:#b452cd">140</span>, <span style="color:#8b008b;font-weight:bold">this</span>.waveColor[<span style="color:#b452cd">1</span>], <span style="color:#8b008b;font-weight:bold">this</span>.waveTime[<span style="color:#b452cd">1</span>]);
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">this</span>.wavePlay(<span style="color:#cd5555">&#34;wave3&#34;</span>, <span style="color:#b452cd">140</span>, <span style="color:#8b008b;font-weight:bold">this</span>.waveColor[<span style="color:#b452cd">2</span>], <span style="color:#8b008b;font-weight:bold">this</span>.waveTime[<span style="color:#b452cd">2</span>]);
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  methods: {
+</span></span><span style="display:flex;"><span>    wavePlay ($canvasID, $progress, $maveColor, $time) {
+</span></span><span style="display:flex;"><span>      <span style="color:#8b008b;font-weight:bold">const</span> that = <span style="color:#8b008b;font-weight:bold">this</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#8b008b;font-weight:bold">let</span> waveWidth = <span style="color:#b452cd">3300</span>, <span style="color:#228b22">// 波浪长度
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>        offset = <span style="color:#b452cd">0</span>,
+</span></span><span style="display:flex;"><span>        waveHeight = that.waveHeight, <span style="color:#228b22">// 波浪起伏高度
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>        waveCount = that.waveCount, <span style="color:#228b22">// 波浪个数
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>        startX = -<span style="color:#b452cd">1200</span>,
+</span></span><span style="display:flex;"><span>        startY = <span style="color:#b452cd">212</span>, <span style="color:#228b22">// canvas 高度
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>        progress = $progress, <span style="color:#228b22">// 波浪位置高度
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>        d2 = waveWidth / waveCount, <span style="color:#228b22">// 单个波浪的宽度
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>        d = d2 / <span style="color:#b452cd">2</span>,
+</span></span><span style="display:flex;"><span>        hd = d / <span style="color:#b452cd">2</span>,
+</span></span><span style="display:flex;"><span>        c = <span style="color:#658b00">document</span>.getElementById($canvasID),
+</span></span><span style="display:flex;"><span>        ctx = c.getContext(<span style="color:#cd5555">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>      c.width = <span style="color:#b452cd">1920</span>; <span style="color:#228b22">// 画布宽度
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>      c.height = that.waveAllHeight; <span style="color:#228b22">// 画布高度
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>      <span style="color:#8b008b;font-weight:bold">function</span> move () {
+</span></span><span style="display:flex;"><span>        offset -= <span style="color:#b452cd">5</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">if</span> (-<span style="color:#b452cd">1</span> * offset === d2) {
+</span></span><span style="display:flex;"><span>          offset = <span style="color:#b452cd">0</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        ctx.clearRect(<span style="color:#b452cd">0</span>, <span style="color:#b452cd">0</span>, c.width, c.height);
+</span></span><span style="display:flex;"><span>        ctx.fillStyle = $maveColor; <span style="color:#228b22">// 画布填充色
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>        ctx.beginPath();
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">let</span> offsetY = startY - progress;
+</span></span><span style="display:flex;"><span>        <span style="color:#228b22">// 绘制贝塞尔曲线
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>        ctx.moveTo(startX - offset, offsetY); <span style="color:#228b22">// 开始点
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>        <span style="color:#8b008b;font-weight:bold">for</span> (<span style="color:#8b008b;font-weight:bold">let</span> i = <span style="color:#b452cd">0</span>; i &lt; waveCount; i++) {
+</span></span><span style="display:flex;"><span>          <span style="color:#8b008b;font-weight:bold">let</span> dx = i * d2;
+</span></span><span style="display:flex;"><span>          <span style="color:#8b008b;font-weight:bold">let</span> offsetX = dx + startX - offset;
+</span></span><span style="display:flex;"><span>          ctx.quadraticCurveTo(
+</span></span><span style="display:flex;"><span>            offsetX + hd,
+</span></span><span style="display:flex;"><span>            offsetY + waveHeight,
+</span></span><span style="display:flex;"><span>            offsetX + d,
+</span></span><span style="display:flex;"><span>            offsetY
+</span></span><span style="display:flex;"><span>          );
+</span></span><span style="display:flex;"><span>          ctx.quadraticCurveTo(
+</span></span><span style="display:flex;"><span>            offsetX + hd + d,
+</span></span><span style="display:flex;"><span>            offsetY - waveHeight,
+</span></span><span style="display:flex;"><span>            offsetX + d2,
+</span></span><span style="display:flex;"><span>            offsetY
+</span></span><span style="display:flex;"><span>          );
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        ctx.lineTo(startX + waveWidth, <span style="color:#b452cd">3000</span>);
+</span></span><span style="display:flex;"><span>        ctx.lineTo(startX, <span style="color:#b452cd">0</span>);
+</span></span><span style="display:flex;"><span>        ctx.fill();
+</span></span><span style="display:flex;"><span>        setTimeout(move, $time / <span style="color:#b452cd">60</span>); <span style="color:#228b22">// 速度
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>      }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      move();
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#a61717;background-color:#e3d2d2">/script&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;style scoped lang=<span style="color:#cd5555">&#34;scss&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>.wave {
+</span></span><span style="display:flex;"><span>  width: <span style="color:#b452cd">100</span>%;
+</span></span><span style="display:flex;"><span>  height: <span style="color:#b452cd">100</span>%;
+</span></span><span style="display:flex;"><span>  position: relative;
+</span></span><span style="display:flex;"><span>  top: <span style="color:#b452cd">0</span>;
+</span></span><span style="display:flex;"><span>  left: <span style="color:#b452cd">0</span>;
+</span></span><span style="display:flex;"><span>  margin-top: -<span style="color:#b452cd">8</span>%;
+</span></span><span style="display:flex;"><span>  canvas {
+</span></span><span style="display:flex;"><span>    width: <span style="color:#b452cd">100</span>%;
+</span></span><span style="display:flex;"><span>    opacity: <span style="color:#b452cd">1</span>;
+</span></span><span style="display:flex;"><span>    position: absolute;
+</span></span><span style="display:flex;"><span>    top: <span style="color:#b452cd">0</span>;
+</span></span><span style="display:flex;"><span>    left: <span style="color:#b452cd">0</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">@</span>media (max-width: <span style="color:#b452cd">900</span>px) {
+</span></span><span style="display:flex;"><span>  .wave {
+</span></span><span style="display:flex;"><span>    display: none;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#a61717;background-color:#e3d2d2">/style&gt;</span>
+</span></span></code></pre></div>
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">Last modified on 2022-03-29</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="/posts/2022-04-01-%E5%9C%A8nuxt%E4%B8%AD%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E6%94%BE%E5%A4%A7%E9%A2%84%E8%A7%88%E5%8A%9F%E8%83%BD/">
+			Next<br>在nuxt中实现图片放大预览功能
+                </a>
+                
+                
+                
+                <a class="older-posts" href="/posts/2022-03-25-%E5%A2%9E%E5%8A%A0%E4%BA%86%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/">
+			Previous<br>增加了站内搜索功能
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+<div id="gitalk-container"></div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+</div>
+            </div>
+    
+    <script src="/js/journal.js"></script>
+    </body>
+</html>
