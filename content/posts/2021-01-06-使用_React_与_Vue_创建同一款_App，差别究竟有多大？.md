@@ -1,8 +1,8 @@
 ---
+cid: 43
 title: 使用 React 与 Vue 创建同一款 App，差别究竟有多大？
 date: 2021-01-06 20:47:00
 updated: 2021-12-01 08:53:31
-author: 
 categories: 
   - 技术
 tags: 

@@ -1,8 +1,8 @@
 ---
+cid: 75
 title:  npm install 报错和取消本地代理的问题
 date: 2021-08-19 11:15:00
 updated: 2021-12-01 14:24:42
-author: 
 categories: 
   - 技术
 tags: 

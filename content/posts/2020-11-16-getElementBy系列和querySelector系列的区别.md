@@ -1,8 +1,8 @@
 ---
+cid: 19
 title: getElementBy系列和querySelector系列的区别
 date: 2020-11-16 12:59:00
 updated: 2021-11-29 15:06:31
-author: 
 categories: 
   - 技术
 tags: 

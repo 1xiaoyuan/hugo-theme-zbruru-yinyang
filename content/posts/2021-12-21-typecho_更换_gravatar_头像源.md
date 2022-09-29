@@ -1,8 +1,8 @@
 ---
+cid: 92
 title: typecho 更换 gravatar 头像源
 date: 2021-12-21 10:11:00
 updated: 2022-04-19 09:36:58
-author: 
 categories: 
   - 技术
 tags: 
@@ -15,7 +15,7 @@ tags:
 
 <!-- more -->
 
-![](https://img.zburu.com/i/2022/01/05/3e5e307b9fb3ba048fdc9f7b5351d7b9.png)
+![](https://oss.zburu.com/i/2022/01/05/3e5e307b9fb3ba048fdc9f7b5351d7b9.png)
 
 ```php
 define('__TYPECHO_GRAVATAR_PREFIX__', 'https://sdn.geekzu.org/avatar/');

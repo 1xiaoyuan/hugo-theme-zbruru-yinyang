@@ -1,8 +1,8 @@
 ---
+cid: 13
 title: javascript——函数、变量和方法
 date: 2020-11-04 21:12:00
 updated: 2021-11-29 13:08:55
-author: 
 categories: 
   - 技术
 tags: 
