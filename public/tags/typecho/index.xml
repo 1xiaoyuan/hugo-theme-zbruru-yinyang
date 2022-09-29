@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>typecho on A Hugo Site</title>
-    <link>http://example.org/tags/typecho/</link>
-    <description>Recent content in typecho on A Hugo Site</description>
+    <title>typecho on 子舒的博客</title>
+    <link>https://zburu.vercel.app/tags/typecho/</link>
+    <description>Recent content in typecho on 子舒的博客</description>
+    <image>
+      <url>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
-    <copyright>This is a customized copyright.</copyright>
-    <lastBuildDate>Tue, 07 Jun 2022 10:35:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/typecho/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jun 2022 10:35:00 +0000</lastBuildDate><atom:link href="https://zburu.vercel.app/tags/typecho/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>typecho 评论回复艾特评论人</title>
-      <link>http://example.org/posts/2022-06-07-typecho_%E8%AF%84%E8%AE%BA%E5%9B%9E%E5%A4%8D%E8%89%BE%E7%89%B9%E8%AF%84%E8%AE%BA%E4%BA%BA/</link>
+      <link>https://zburu.vercel.app/20220607/</link>
       <pubDate>Tue, 07 Jun 2022 10:35:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2022-06-07-typecho_%E8%AF%84%E8%AE%BA%E5%9B%9E%E5%A4%8D%E8%89%BE%E7%89%B9%E8%AF%84%E8%AE%BA%E4%BA%BA/</guid>
+      <guid>https://zburu.vercel.app/20220607/</guid>
       <description>typecho 在评论时默认是没有 @ 评论人的功能，可以用代码加一下。
 在 functions.php 中：
 /* * 评论回复时 @ 评论人 */ function get_comment_at($coid) { $db = Typecho_Db::get(); $prow = $db-&amp;gt;fetchRow($db-&amp;gt;select(&amp;#39;parent,status&amp;#39;)-&amp;gt;from(&amp;#39;table.comments&amp;#39;) -&amp;gt;where(&amp;#39;coid = ?&amp;#39;, $coid)); $mail = &amp;#34;&amp;#34;; $parent = @$prow[&amp;#39;parent&amp;#39;]; if ($parent != &amp;#34;0&amp;#34;) { $arow = $db-&amp;gt;fetchRow($db-&amp;gt;select(&amp;#39;author,status,mail&amp;#39;)-&amp;gt;from(&amp;#39;table.comments&amp;#39;) -&amp;gt;where(&amp;#39;coid = ?&amp;#39;, $parent)); @$author = @$arow[&amp;#39;author&amp;#39;]; $mail = @$arow[&amp;#39;mail&amp;#39;]; if(@$author &amp;amp;&amp;amp; $arow[&amp;#39;status&amp;#39;] == &amp;#34;approved&amp;#34;){ if (@$prow[&amp;#39;status&amp;#39;] == &amp;#34;waiting&amp;#34;){ echo &amp;#39;&amp;lt;p class=&amp;#34;commentReview&amp;#34;&amp;gt;（评论审核中）)&amp;lt;/p&amp;gt;&amp;#39;; } echo &amp;#39;&amp;lt;a href=&amp;#34;#comment-&amp;#39; . $parent . &amp;#39;&amp;#34;&amp;gt;@&amp;#39; .</description>
@@ -21,10 +23,10 @@
     
     <item>
       <title>typecho 更换 gravatar 头像源</title>
-      <link>http://example.org/posts/2021-12-21-typecho_%E6%9B%B4%E6%8D%A2_gravatar_%E5%A4%B4%E5%83%8F%E6%BA%90/</link>
+      <link>https://zburu.vercel.app/20211221/</link>
       <pubDate>Tue, 21 Dec 2021 10:11:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-12-21-typecho_%E6%9B%B4%E6%8D%A2_gravatar_%E5%A4%B4%E5%83%8F%E6%BA%90/</guid>
+      <guid>https://zburu.vercel.app/20211221/</guid>
       <description>找到根目录下 config.inc.php 文件，在最前面加入下面的代码。
 define(&amp;#39;__TYPECHO_GRAVATAR_PREFIX__&amp;#39;, &amp;#39;https://sdn.geekzu.org/avatar/&amp;#39;); 其中 https://sdn.geekzu.org/avatar/ 是一个国内源链接，这个是我目前找到的比较稳定的源。
 如果这个源不能用了，可以更换其他的源，直接搜其他的相关国内源就可以了。
@@ -34,10 +36,10 @@ https://cravatar.cn/avatar/ https://sdn.geekzu.org/avatar/</description>
     
     <item>
       <title>Typecho博客搭建及优化教程(详细)</title>
-      <link>http://example.org/posts/2021-05-11-typecho%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BC%98%E5%8C%96%E6%95%99%E7%A8%8B%E8%AF%A6%E7%BB%86/</link>
+      <link>https://zburu.vercel.app/20210511/</link>
       <pubDate>Tue, 11 May 2021 22:29:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-05-11-typecho%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BC%98%E5%8C%96%E6%95%99%E7%A8%8B%E8%AF%A6%E7%BB%86/</guid>
+      <guid>https://zburu.vercel.app/20210511/</guid>
       <description>1.前言 本文从Typecho 简介开始讲解，其中包括服务器的选择，以及域名注册，服务器系统选择 ，宝塔安装，环境配置，Typecho安装包括中间的防采坑注意事项，为您提供完整的保姆级搭建流程，请珍惜哦！
 如果不喜欢前面的啰嗦讲解，请跳过，直接从宝塔安装开始。
 不喜勿喷，谢谢！
@@ -77,10 +79,10 @@ Linux系统的话，本文使用Centos 8系统讲解。
     
     <item>
       <title>typecho 博客小表情无法显示问题</title>
-      <link>http://example.org/posts/2021-02-04-typecho_%E5%8D%9A%E5%AE%A2%E5%B0%8F%E8%A1%A8%E6%83%85%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</link>
+      <link>https://zburu.vercel.app/20210204/</link>
       <pubDate>Thu, 04 Feb 2021 19:47:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-02-04-typecho_%E5%8D%9A%E5%AE%A2%E5%B0%8F%E8%A1%A8%E6%83%85%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://zburu.vercel.app/20210204/</guid>
       <description>typecho 博客建立完成之后，会发现如果插入一些小表情，页面渲染完之后，表情不会显示，并且表情之后的内容全部消失，导致体验感很差。
 表情无法显示的原因是 uft-8 编码的问题，无法识别小表情，需要将其改成 utf8mb4
 第一步，进入数据库 首先登陆博客后台的数据库，然后点击 sql ，输入下列代码：

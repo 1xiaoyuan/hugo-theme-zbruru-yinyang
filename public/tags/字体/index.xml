@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>字体 on A Hugo Site</title>
-    <link>http://example.org/tags/%E5%AD%97%E4%BD%93/</link>
-    <description>Recent content in 字体 on A Hugo Site</description>
+    <title>字体 on 子舒的博客</title>
+    <link>https://zburu.vercel.app/tags/%E5%AD%97%E4%BD%93/</link>
+    <description>Recent content in 字体 on 子舒的博客</description>
+    <image>
+      <url>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
-    <copyright>This is a customized copyright.</copyright>
-    <lastBuildDate>Tue, 24 May 2022 14:28:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/%E5%AD%97%E4%BD%93/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 May 2022 14:28:00 +0000</lastBuildDate><atom:link href="https://zburu.vercel.app/tags/%E5%AD%97%E4%BD%93/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一个优雅的字体压缩解决方案 ---fonttools</title>
-      <link>http://example.org/posts/2022-05-24-%E4%B8%80%E4%B8%AA%E4%BC%98%E9%9B%85%E7%9A%84%E5%AD%97%E4%BD%93%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88_---fonttools/</link>
+      <link>https://zburu.vercel.app/20220524/</link>
       <pubDate>Tue, 24 May 2022 14:28:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2022-05-24-%E4%B8%80%E4%B8%AA%E4%BC%98%E9%9B%85%E7%9A%84%E5%AD%97%E4%BD%93%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88_---fonttools/</guid>
+      <guid>https://zburu.vercel.app/20220524/</guid>
       <description>分享一个 python 的库 &amp;mdash;fonttools，针对字体文件进行处理非常方便。
 下载 需要先在电脑上下载 python 环境，这个就不多说了。
 然后在本地命令行输入：

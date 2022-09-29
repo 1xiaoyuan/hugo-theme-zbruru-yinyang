@@ -1,19 +1,98 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>随笔 on A Hugo Site</title>
-    <link>http://example.org/tags/%E9%9A%8F%E7%AC%94/</link>
-    <description>Recent content in 随笔 on A Hugo Site</description>
+    <title>随笔 on 子舒的博客</title>
+    <link>https://zburu.vercel.app/tags/%E9%9A%8F%E7%AC%94/</link>
+    <description>Recent content in 随笔 on 子舒的博客</description>
+    <image>
+      <url>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
-    <copyright>This is a customized copyright.</copyright>
-    <lastBuildDate>Tue, 21 Jun 2022 12:22:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Sep 2022 19:26:00 +0000</lastBuildDate><atom:link href="https://zburu.vercel.app/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第3期：关于密码的一些想法</title>
+      <link>https://zburu.vercel.app/20220921/</link>
+      <pubDate>Wed, 21 Sep 2022 19:26:00 +0000</pubDate>
+      
+      <guid>https://zburu.vercel.app/20220921/</guid>
+      <description>七日谈，说说我的心里话。
+第3期：关于密码的一些想法
+今天在坐地铁的过程中，突然想要一个问题，一个安全稳定，便于记忆的密码时什么样子的。是否要包括字母大小写，数字，以及特殊符号？
+如何设置并存储？ 我想这是必须的，但是密码如果太过复杂，就不便于记忆。而想要记忆就必须有自己的规律，可一旦有了规律，别人在破解的时候就有了更多的思路，安全性相对来说就下降了。
+不论怎么想，这两者是冲突的，很难让它们统一起来。
+然后就和朋友讨论关于密码的问题，他们也有着自己独特的方法，给了我很多扩展的思路，比如记忆一个公式，圆周率第多少位，拼音+数字等等，这样既能够记忆，也拥有足够的混淆性。你不知道它的位置下标，就不能够找到对应的密码字符，安全性比通用一套密码又高了很多。
+也有朋友表示自己在使用密码管理软件，比如 1password，bitwarden，KeePass 等，通过算法可以自动生成各种高复杂度的密码字符串。但是在述说的过程中，他们表示了对密码管理软件的担忧。如果软件遇到破解或者勒索，主密码丢失等，那么所有密码就不复存在，尽管这种可能性很少，但是前段事件就发生了这样的事情。
+而且大的软件商持有更多的用户，一旦遇到问题，产生的影响就更大，用户只能寄希望于厂商有足够的攻防能力。所有密码在云上都有备份，这本身就是一个致命的缺陷，如果云端数据被攻破，后果不堪设想。
+扩展说说 个人习惯使然，让我很难百分百的信任各种云，可能是被害妄想症吧，总觉得不好，把所有数据扔到云上保存对我来说是一件极其难受的事情。所以我一般都是三处备份，本地肯定要留一份在硬盘中，服务器保存一份，然后在oss桶中再备份一些不太重要的数据。成本不算高，但是需要持续维护这些数据，相对于我来说，还算是比较轻松的，并且我也乐在其中。</description>
+    </item>
+    
+    <item>
+      <title>第2期：你是否想过成为一名作家？</title>
+      <link>https://zburu.vercel.app/20220914/</link>
+      <pubDate>Wed, 14 Sep 2022 17:59:00 +0000</pubDate>
+      
+      <guid>https://zburu.vercel.app/20220914/</guid>
+      <description>第2期：你是否想过成为一名作家？
+https://poets.org/poem/so-you-want-be-writer
+这是曾经询问过自己的一个问题，我想很多人在年少时期可能都会有过这样的经历，渴望将自己的文字带给更多人。
+这件事情大多发生在高中时期吧，如果我没记错的话。忽然想起来那个年轻段的人都有些中二，看了不少玄幻和悬疑小说，心中泛起了写小说的念头，于是动笔。但最终也没有坚持很久，草草写了几万字，只在几个朋友中传阅。
+可惜在高考结束后一些残留的手稿都丢失了，每每想到这件事情都暗自懊恼，也算是一个回忆吧。现在再让我写根本没有那个精力，但我也曾涌起过当一名作家的想法，好像文科生都曾这样。
+我有个朋友喜欢写诗，现在看起来语义不那么通顺，不太符合诗词规范，但是他并不在意，很是乐于此道，我也给了他很大的鼓励，虽然文字中伤春悲秋，“为赋新词强说愁”。
+持续写作是一个好的习惯，从前是为了抒发情感，现在是为了输出自己的思考。大同小异，归根结底还是对自我的一种输出。
+so you want to be a writer?
+Charles Bukowski - 1920-1994
+if it doesn&amp;rsquo;t come bursting out of you in spite of everything, don&amp;rsquo;t do it. unless it comes unasked out of your heart and your mind and your mouth and your gut, don&amp;rsquo;t do it. if you have to sit for hours staring at your computer screen or hunched over your typewriter searching for words, don&amp;rsquo;t do it.</description>
+    </item>
+    
+    <item>
+      <title>第1期：文档和视频，你更喜欢哪种学习方式？</title>
+      <link>https://zburu.vercel.app/20220907/</link>
+      <pubDate>Wed, 07 Sep 2022 22:21:00 +0000</pubDate>
+      
+      <guid>https://zburu.vercel.app/20220907/</guid>
+      <description>内容很枯燥，有营养但不多。纯粹为了锻炼写作和思考能力，所以每周打算写一个话题，周一到周日之间不定时发布
+如题，这是我今天思考的话题。灵感来源于我在dev.to网站上看到的一个帖子。对于 learning 的方式，更倾向于看文档还是视频？我觉得可以从多个维度进行分析。
+学习进度，也可以说是过程 行业领域 后天应该养成什么样的习惯呢？ 1.学习进度 学习进度应该是对学习方式影响最大的因素了。
+学习的初始阶段以看视频为主，应该对这个领域不熟悉，一直在行内人看起来随手就能做很简单的操作，新人往往不能够很好的了解它，所以最开始的阶段最好是以视频教材为主。
+打个比方，上学时老师都是手把手的教学，因为你什么都不会，必须口口相传，这是对待新人的方式，如果让他自己一直干看，一学期下来估计也看不懂几页书。（当然了，天才除外，这不在讨论的范围，大家90%都是普通人。）然后到后期的时候一般都是自习因为该教的基础都是都教了，需要学生自己研究琢磨，不然根本不能融会贯通。
+从这个角度看，自学似乎是学习方式的终点。
+2.行业领域 拿我自己打比方我更倾向于看文档，视频的话偶尔看看，但是看的不多。因为我觉得看视频很难一眼看出里面的内容是否是我所需要的，
+看文档的话，通过关键词搜索以及其他方式，我可以在可控的，短时间内找到自己想要的内容，不管学习还是工作都是极其方便的。
+看代码的话文档是最清晰可辨的，但是就在我进行思考的时候问了对象一句，“你平时学习更倾向于什么方式呢，看视频还是看文章？”
+答：“肯定是看视频啊，不然你看我买那么多视频课程。”
+我恍然大悟，将原来没有思考到的方向补充了一下，行业对人学习方式的影响，女朋友做的是视频后期，一般用到的软件是C4D，pr等，曾扫了一眼，密密麻麻的功能一排排在那里放着，看得我有些头皮发麻。
+我自己也就拿photoshop处理一下图像，pp图或者水印之类的，没想到做视频处理那么复杂，所以如果不看视频学习的话，我估计连软件的功能都摸不懂。
+这就是另一个比较重要的因素了。
+3.扩展说说 如果培养好的learning习惯呢？
+其实不论是看视频还是看文档，我们的初衷都是为了提高自己的能力和知识水平。但似乎学习是一件很枯燥的事情，从小到大我们都被灌输着“好好学习，天天向上”的概念，一切都是以提高成绩为目的，教育资源地域区别非常大。因为经济发展不平衡这点也是不可避免，学习是唯一能走出落后的途径。
+扯的有点远，讲讲learning，始终保持学习状态的人群很少，时间和精力是一方便，还有就是方法，这也是大家老生常谈的问题。我认识要从兴趣爱好入手，在需要学习的领域培养出自己的兴趣爱好，然后围绕着这个方向360度扩展，个人认为这是一种非常好的方案。
+我最开始做网站几乎一窍不通，但是对此还是比较感兴趣的，凭借着仅有的前端知识开始摸索，慢慢了解了各大网站平台，github，vercel，cf等，玩的多了慢慢开始了解php，运维等领域，磕磕绊绊的学习简单的知识。
+期间结识了很多朋友，给予我帮助，在相关技术上慢慢进步。同时我也会在自己的领域给他们提供技术支持，这好像也算是开源精神吧，没有闭门造车，大家一起讨论各种各种的内容。
+久而久之就发现自己相比较之前，知识好像丰富了那么一些，这就是一种正确的learning方式。所以我认为在兴趣爱好中学习，不失为一种积极且充满劲头的一种方式。
+聊聊你的learning方式，留言或者给我发邮件一起探讨！</description>
+    </item>
+    
+    <item>
+      <title>随想录 (9)</title>
+      <link>https://zburu.vercel.app/20220807/</link>
+      <pubDate>Sun, 07 Aug 2022 18:47:00 +0000</pubDate>
+      
+      <guid>https://zburu.vercel.app/20220807/</guid>
+      <description>落霞与孤鹜齐飞，秋水共长天一色。
+放个图防止抑郁。
+昨天看了一个帖子很有感触，土生土长的城市本地人很难体会每隔一段时间要重新建立社会关系的难受，从小到大，每到一个地方上学，从陌生变为熟悉，中间总有有一段难熬的时间。很多随父母打工而四处的求学的小孩，特别能有这种体会，因此也就有很多人厌恶上学，他们不理解为什么总是要四处奔波，父母也不理解小孩为什么不喜欢学习，两者误会，家庭矛盾也因此诞生了。当然我说的很片面，这只是其中一个原因。
+我也只是想让自己牢记，原来艰苦的生活不但让身心变得疲惫，还能带来精神上的贫穷，让自己明白原来还有这种只有四处奔波的人才能体会。说一下我的经历，小学二年级之前在老家乡下读书，然后辗转在厦门上的小学，初中和高中又回到县城读书，大学是在郑州读书，工作后又来到杭州。 看着这个时间段，很难有一个朋友可以从小到大陪着你，大多数人都是这样，悲哀又现实。
+踏入工作之后，应该是更能体会，一个人在陌生的城市，除了工作好像也没有其他事可以做，对于社恐来说更是一种严重的环境。而我应该算是比较幸运的，在一个陌生的城市还有家人和恋人，减缓了那种焦虑感，但我认识的一些人确是情绪受到很大影响，包括压力太大而离开这座城市。
+写博客并不是为了贩卖焦虑，而且觉得有些话不吐不为快，在文字中发泄情绪也是一种良好的方法，为了明天的生活慢慢加油。</description>
+    </item>
+    
     <item>
       <title>usb 接口的三面性</title>
-      <link>http://example.org/posts/2022-06-21-usb_%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%B8%89%E9%9D%A2%E6%80%A7/</link>
+      <link>https://zburu.vercel.app/20220621/</link>
       <pubDate>Tue, 21 Jun 2022 12:22:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2022-06-21-usb_%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%B8%89%E9%9D%A2%E6%80%A7/</guid>
+      <guid>https://zburu.vercel.app/20220621/</guid>
       <description>传统的 usb 接口是一个神奇的物品，当你插入第一次的时候肯定是反方向的，所以你要反过来插第二次，但是结果仍然是插不进去。这个时候你就会发现，它存在第三面，所以当你再次反过来的时候就可以正常插进接口了。
 这就是 usb 接口的三面性 😐。
 所以为了保护精神和心理不受伤害，请离开传统的 usb ，投入 type-c 的怀抱吧！</description>
@@ -21,10 +100,10 @@
     
     <item>
       <title>关于我选择笔记系统这件小事</title>
-      <link>http://example.org/posts/2022-04-28-%E5%85%B3%E4%BA%8E%E6%88%91%E9%80%89%E6%8B%A9%E7%AC%94%E8%AE%B0%E7%B3%BB%E7%BB%9F%E8%BF%99%E4%BB%B6%E5%B0%8F%E4%BA%8B/</link>
+      <link>https://zburu.vercel.app/20220428/</link>
       <pubDate>Thu, 28 Apr 2022 22:43:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2022-04-28-%E5%85%B3%E4%BA%8E%E6%88%91%E9%80%89%E6%8B%A9%E7%AC%94%E8%AE%B0%E7%B3%BB%E7%BB%9F%E8%BF%99%E4%BB%B6%E5%B0%8F%E4%BA%8B/</guid>
+      <guid>https://zburu.vercel.app/20220428/</guid>
       <description>受年龄增长以及生活影响，人接触到的新事物和知识将会越来越多，大脑就显得有些混乱了，我也不敢保证自己的思维会始终保持一个高强度的在线状态。
 因此决定整理个人知识库， 将大脑中的片段和思想整理出来。以笔记和文字的形式将他记录下来，但是最近一直在寻求这样的工具，多方对比，也没有一款能真正满足我的需求的工具。
 最好是自建的笔记，因为我今天在语雀写了一篇私密笔记，或许因为内容略带敏感吧，然后就被审查了，说我违规。
@@ -56,10 +135,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>好久不做饭，突然上手倒也说得过去</title>
-      <link>http://example.org/posts/2022-03-21-%E5%A5%BD%E4%B9%85%E4%B8%8D%E5%81%9A%E9%A5%AD%E7%AA%81%E7%84%B6%E4%B8%8A%E6%89%8B%E5%80%92%E4%B9%9F%E8%AF%B4%E5%BE%97%E8%BF%87%E5%8E%BB/</link>
+      <link>https://zburu.vercel.app/20220321/</link>
       <pubDate>Mon, 21 Mar 2022 17:36:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2022-03-21-%E5%A5%BD%E4%B9%85%E4%B8%8D%E5%81%9A%E9%A5%AD%E7%AA%81%E7%84%B6%E4%B8%8A%E6%89%8B%E5%80%92%E4%B9%9F%E8%AF%B4%E5%BE%97%E8%BF%87%E5%8E%BB/</guid>
+      <guid>https://zburu.vercel.app/20220321/</guid>
       <description>故事前景参照上上篇文章 《小区封锁下的生活》。不想订外卖，打工人觉得饭菜太贵，并且好像味道也就那样，所以和对象打算自己动手，丰衣足食。
 在美团买了一些菜，肉，水果等，可以放到小区门口，报上门牌号，会有工作人员帮忙送进来，也挺方便。唯一不好的就是这两天断断续续的下雨，辛苦工作人员和医护人员一直在采样核酸。（写下这篇之前，刚去做过核酸。）
 用简单的食材做出了味道还不错的饭，只能称之为饭，而不是美食，因为我们俩的手艺还在进步中。
@@ -72,10 +151,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>小区封锁下的生活</title>
-      <link>http://example.org/posts/2022-03-20-%E5%B0%8F%E5%8C%BA%E5%B0%81%E9%94%81%E4%B8%8B%E7%9A%84%E7%94%9F%E6%B4%BB/</link>
+      <link>https://zburu.vercel.app/20220320/</link>
       <pubDate>Sun, 20 Mar 2022 00:15:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2022-03-20-%E5%B0%8F%E5%8C%BA%E5%B0%81%E9%94%81%E4%B8%8B%E7%9A%84%E7%94%9F%E6%B4%BB/</guid>
+      <guid>https://zburu.vercel.app/20220320/</guid>
       <description>2022年3月19日，坐标杭州，很不巧，是我最近几年经历的第一次疫情封锁小区。
 小区里出现一个密切接触者，询问过医护人员，可能是疑似感染新冠病毒。来的有些突然，不过倒也在意料之中，前段时间已经在余杭区爆发过一场大规模的疫情，我所在的地方紧挨着余杭区的边缘，说不好因为什么原因传播，已经尽力做好防护。
 而我是今天刚搬来这里住的，和对象租房子找到这个小区。租房之旅已经够辛苦，中午收拾完东西准备躺着休息一下，然后下午收到通知，小区即将封锁。然后赶紧出门，买菜和生活用品，屯够了一周的物品，也够生活了，没什么大问题。
@@ -88,10 +167,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>2022新春快乐</title>
-      <link>http://example.org/posts/2022-01-31-2022%E6%96%B0%E6%98%A5%E5%BF%AB%E4%B9%90/</link>
+      <link>https://zburu.vercel.app/20220131/</link>
       <pubDate>Mon, 31 Jan 2022 13:22:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2022-01-31-2022%E6%96%B0%E6%98%A5%E5%BF%AB%E4%B9%90/</guid>
+      <guid>https://zburu.vercel.app/20220131/</guid>
       <description>万物更新，旧疾当愈，长安常安。
 今日是除夕，极目不见故土，抬头却是一片星空。
 今年也是在杭州过的第三个新年，因为疫情的缘故，支持国家防疫政策。
@@ -102,20 +181,20 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>网易云音乐年度报告分享</title>
-      <link>http://example.org/posts/2021-12-27-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%E5%88%86%E4%BA%AB/</link>
+      <link>https://zburu.vercel.app/20211227/</link>
       <pubDate>Mon, 27 Dec 2021 15:50:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-12-27-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%E5%88%86%E4%BA%AB/</guid>
+      <guid>https://zburu.vercel.app/20211227/</guid>
       <description>我真的老了吗？看看我的网易云音乐年度报告分享吧！
 图片 图片 </description>
     </item>
     
     <item>
       <title>有关 cdn.jsdelivr.net 证书错误的一些想法</title>
-      <link>http://example.org/posts/2021-12-20-%E6%9C%89%E5%85%B3_cdn.jsdelivr.net_%E8%AF%81%E4%B9%A6%E9%94%99%E8%AF%AF%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/</link>
+      <link>https://zburu.vercel.app/20211220/</link>
       <pubDate>Mon, 20 Dec 2021 14:25:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-12-20-%E6%9C%89%E5%85%B3_cdn.jsdelivr.net_%E8%AF%81%E4%B9%A6%E9%94%99%E8%AF%AF%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/</guid>
+      <guid>https://zburu.vercel.app/20211220/</guid>
       <description>记录一次不大不小的事件，2021年12月20日，cdn.jsdelivr.net 国内ip全面崩盘，说是证书出错了，然后所有使用cdn.jsdelivr.net进行加速的资源全部404。
 我也是在朋友圈看到的这个消息，上线一看果然全部显示丢失。
 对国外资源没有影响，所以这是一次只出现在国内的问题，jsd官网都还在，估计是cdn配置出错，应该很快就可以修复了。
@@ -130,10 +209,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>闲谈2021</title>
-      <link>http://example.org/posts/2021-12-17-%E9%97%B2%E8%B0%882021/</link>
+      <link>https://zburu.vercel.app/20211217/</link>
       <pubDate>Fri, 17 Dec 2021 16:39:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-12-17-%E9%97%B2%E8%B0%882021/</guid>
+      <guid>https://zburu.vercel.app/20211217/</guid>
       <description>2021，不知不觉，又过去一年了。
 因为最近也比较忙，所以一直拖到了中旬末，现在闲下心准备闲谈一下。 该说不说，坚持写博客也有500多天了，大概是我的水平有限，产出的技术文章也是寥寥无几，大多是一些笔记和一些生活中的琐碎事。
 认识了几个一起玩博客的新朋友，优化了一下自己网站，然后帮助别人解决一些力所能及的问题，大家都很友善。
@@ -144,10 +223,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>关于人际交往的礼节感触</title>
-      <link>http://example.org/posts/2021-11-24-%E5%85%B3%E4%BA%8E%E4%BA%BA%E9%99%85%E4%BA%A4%E5%BE%80%E7%9A%84%E7%A4%BC%E8%8A%82%E6%84%9F%E8%A7%A6/</link>
+      <link>https://zburu.vercel.app/20211124/</link>
       <pubDate>Wed, 24 Nov 2021 12:37:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-11-24-%E5%85%B3%E4%BA%8E%E4%BA%BA%E9%99%85%E4%BA%A4%E5%BE%80%E7%9A%84%E7%A4%BC%E8%8A%82%E6%84%9F%E8%A7%A6/</guid>
+      <guid>https://zburu.vercel.app/20211124/</guid>
       <description>因为一件小事有感而发，在人际交往的过程中，我们通常都会关注一些细节，从而影响对一个人印象。这是一个作为人很正常的行为。
 打个比方，两个人聊天，其中一个人不停拿起手机查看，就很给人一种很没有礼貌的印象。假如说有工作要忙，或者其他要处理的事项，这当然另当别论。换个思维，如果真的有那么忙，也不会发生此次社会交互行为活动。所以这是一个悖论了。基本上不存在忙的要命的情况。
 我们在社会交往中，大多抱着一种善意的目的，希望从别人那里获得一些“利益”，这里的利益更多指代一中虚拟的情绪，比如开心，愉快，满足等。所以我在平时跟朋友社交，包括并不限于聚餐，出行游玩等，都是将重心放在此次活动中，如果有其他的事情，我都会提前处理安排好，不会影响活动进行。
@@ -161,19 +240,19 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>网易云摸鱼，测测你的听歌流量</title>
-      <link>http://example.org/posts/2021-11-18-%E7%BD%91%E6%98%93%E4%BA%91%E6%91%B8%E9%B1%BC%E6%B5%8B%E6%B5%8B%E4%BD%A0%E7%9A%84%E5%90%AC%E6%AD%8C%E6%B5%81%E9%87%8F/</link>
+      <link>https://zburu.vercel.app/20211118/</link>
       <pubDate>Thu, 18 Nov 2021 15:37:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-11-18-%E7%BD%91%E6%98%93%E4%BA%91%E6%91%B8%E9%B1%BC%E6%B5%8B%E6%B5%8B%E4%BD%A0%E7%9A%84%E5%90%AC%E6%AD%8C%E6%B5%81%E9%87%8F/</guid>
+      <guid>https://zburu.vercel.app/20211118/</guid>
       <description>格局刚好。</description>
     </item>
     
     <item>
       <title>这两天的碎碎念</title>
-      <link>http://example.org/posts/2021-11-11-%E8%BF%99%E4%B8%A4%E5%A4%A9%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/</link>
+      <link>https://zburu.vercel.app/20211111/</link>
       <pubDate>Thu, 11 Nov 2021 10:14:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-11-11-%E8%BF%99%E4%B8%A4%E5%A4%A9%E7%9A%84%E7%A2%8E%E7%A2%8E%E5%BF%B5/</guid>
+      <guid>https://zburu.vercel.app/20211111/</guid>
       <description>这段时间双十一，发现没有了往年那种囤货淘宝的欲望了，翻来翻去不知道买什么，包括那些活动，有好多朋友给我发链接助力我都没怎么弄，可能是生活的打磨让我对它没兴趣了吧~~
 唯一的消费活动就是买了一台服务器，腾讯云正在做双十一特惠活动，一台2h4g6m的服务器，三年才一百多，个人感觉还是比较划算的，以后可以放一些脚本，跑跑服务啥的，还可以把我的博客挂在上面。
 并且购买了一个新的域名 xiabanlo.cn，不过最近正在备案，通过之后就会使用了。坚持，不忘初心！
@@ -186,10 +265,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>许嵩的歌又一次被抄袭！</title>
-      <link>http://example.org/posts/2021-01-16-%E8%AE%B8%E5%B5%A9%E7%9A%84%E6%AD%8C%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A2%AB%E6%8A%84%E8%A2%AD/</link>
+      <link>https://zburu.vercel.app/20210116/</link>
       <pubDate>Sat, 16 Jan 2021 20:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-01-16-%E8%AE%B8%E5%B5%A9%E7%9A%84%E6%AD%8C%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A2%AB%E6%8A%84%E8%A2%AD/</guid>
+      <guid>https://zburu.vercel.app/20210116/</guid>
       <description>最新网上爆出风风火火的一件事，许嵩的《有何不可》被抄袭，抄袭者为罗聪，《简单的幸福》。
 我从14年开始听许嵩的歌，一直到现在，许多年过去了，他的歌依旧脍炙人口，从之前的抒情浪漫情歌，批判社会的思想，一直到现在具体哲学内涵，中华传统思想。大部分都是包揽作词作曲为一身，真的很有才华。
 因为太有才华了，所以被“碰瓷”抄袭。这也算是一场闹剧了。据说嵩哥本人对此没有发表什么看法和言论，一直都是粉丝和公司在发声。
@@ -204,10 +283,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>吐槽－－控制好自己的情绪</title>
-      <link>http://example.org/posts/2020-12-13-%E5%90%90%E6%A7%BD%E6%8E%A7%E5%88%B6%E5%A5%BD%E8%87%AA%E5%B7%B1%E7%9A%84%E6%83%85%E7%BB%AA/</link>
+      <link>https://zburu.vercel.app/20201213/</link>
       <pubDate>Sun, 13 Dec 2020 13:11:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2020-12-13-%E5%90%90%E6%A7%BD%E6%8E%A7%E5%88%B6%E5%A5%BD%E8%87%AA%E5%B7%B1%E7%9A%84%E6%83%85%E7%BB%AA/</guid>
+      <guid>https://zburu.vercel.app/20201213/</guid>
       <description>缘于一些小事，本想发在朋友圈里，但是熟人挺多，不方便发，就在博客里吐槽一下
 一个正常的人际交往应该是互相传递出好的情绪，开心的事情，这样不但有利于两个人之间的交往，而且对个人对身心健康也是有帮助的
 正面的情绪绝对有助于自己的身体和心理健康，反观整体郁郁寡欢，跟别人说自己多不顺，和别人吵架，不好的情绪就传达给另一个人了

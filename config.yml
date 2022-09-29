@@ -8,6 +8,9 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+permalinks:
+  posts: /:year:month:day
+
 googleAnalytics: UA-123-45
 
 minify:
@@ -16,8 +19,8 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: 不如吃茶去
-  description: "不如吃茶去"
+  title: 子舒的博客
+  description: "子舒的博客"
   keywords: [Blog, Portfolio, PaperMod]
   author: Me
   # author: ["Me", "You"] # multiple authors

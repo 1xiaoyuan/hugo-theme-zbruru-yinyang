@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>css on A Hugo Site</title>
-    <link>http://example.org/tags/css/</link>
-    <description>Recent content in css on A Hugo Site</description>
+    <title>css on 子舒的博客</title>
+    <link>https://zburu.vercel.app/tags/css/</link>
+    <description>Recent content in css on 子舒的博客</description>
+    <image>
+      <url>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
-    <copyright>This is a customized copyright.</copyright>
-    <lastBuildDate>Thu, 12 May 2022 13:46:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 May 2022 13:46:00 +0000</lastBuildDate><atom:link href="https://zburu.vercel.app/tags/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>分享一款自用的 v2ex 主题样式</title>
-      <link>http://example.org/posts/2022-05-12-%E5%88%86%E4%BA%AB%E4%B8%80%E6%AC%BE%E8%87%AA%E7%94%A8%E7%9A%84_v2ex_%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F/</link>
+      <link>https://zburu.vercel.app/20220512/</link>
       <pubDate>Thu, 12 May 2022 13:46:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2022-05-12-%E5%88%86%E4%BA%AB%E4%B8%80%E6%AC%BE%E8%87%AA%E7%94%A8%E7%9A%84_v2ex_%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F/</guid>
+      <guid>https://zburu.vercel.app/20220512/</guid>
       <description>起因是因为觉得 v2ex 网站主题略有拥挤，阅读体验不好，而正好网站支持自定义 css，所以就在参考其他人的基础上，修改了一套比较美观的样式。
 本来是自用的，但是看到有人发帖分享主题，我也索性将它分享出来了。
 v2ex 帖子: https://www.v2ex.com/t/851735
@@ -24,10 +26,10 @@ Github 仓库: https://github.com/zburu/v2ex_theme
     
     <item>
       <title>css 中 fixed 定位属性和动画的冲突问题及解决方法</title>
-      <link>http://example.org/posts/2021-05-27-css_%E4%B8%AD_fixed_%E5%AE%9A%E4%BD%8D%E5%B1%9E%E6%80%A7%E5%92%8C%E5%8A%A8%E7%94%BB%E7%9A%84%E5%86%B2%E7%AA%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
+      <link>https://zburu.vercel.app/20210527/</link>
       <pubDate>Thu, 27 May 2021 21:42:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-05-27-css_%E4%B8%AD_fixed_%E5%AE%9A%E4%BD%8D%E5%B1%9E%E6%80%A7%E5%92%8C%E5%8A%A8%E7%94%BB%E7%9A%84%E5%86%B2%E7%AA%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://zburu.vercel.app/20210527/</guid>
       <description>1.问题 css 中使用动画属性会和同标签下的fixed属性冲突，导致定位失效，那么该如何解决他呢？
 2.分析 简单说一下问题产生的背景，昨天夜里我想给我的博客页面做一个简单的动画，浏览器刷新的时候从下往上渐现的效果，代码如下：
 /* index-container类名是页面的主体部分 */ .index-container { opacity: 0; animation-name: index; animation-duration: 0.7s; animation-fill-mode: forwards; } /* 一个简单的动画实现 */ @keyframes index { 0% { transform: translateY(100px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } } 运行之后发现，动画可以很好的显示，但是当我翻阅文章详情的时候发现，目录固定失效了。
@@ -45,10 +47,10 @@ Github 仓库: https://github.com/zburu/v2ex_theme
     
     <item>
       <title>网站引入iframe视频，如何实现高度自适应?</title>
-      <link>http://example.org/posts/2021-05-09-%E7%BD%91%E7%AB%99%E5%BC%95%E5%85%A5iframe%E8%A7%86%E9%A2%91%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E9%AB%98%E5%BA%A6%E8%87%AA%E9%80%82%E5%BA%94_/</link>
+      <link>https://zburu.vercel.app/20210509/</link>
       <pubDate>Sun, 09 May 2021 18:50:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-05-09-%E7%BD%91%E7%AB%99%E5%BC%95%E5%85%A5iframe%E8%A7%86%E9%A2%91%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E9%AB%98%E5%BA%A6%E8%87%AA%E9%80%82%E5%BA%94_/</guid>
+      <guid>https://zburu.vercel.app/20210509/</guid>
       <description>我想很多小伙伴在写博客的时候都能遇到一个令人头疼的问题，某一篇文章想用 iframe 引入一个外链视频，但是大小总是有问题，宽度可以固定到 100% ，但是高度比如用实际高度来表示，比如 100px, 200px，诸如此类。
 但是问题来了，在不同的页面宽度下，视频的高度是一致的，就会导致一个很麻烦的问题,
 看下面两个图，
@@ -65,10 +67,10 @@ $(&amp;#39;iframe&amp;#39;).wrap(&amp;#39;&amp;lt;p class=&amp;#34;iframe&amp;#3
     
     <item>
       <title>IE10下`,`符号不能留白</title>
-      <link>http://example.org/posts/2021-03-16-ie10%E4%B8%8B%E7%AC%A6%E5%8F%B7%E4%B8%8D%E8%83%BD%E7%95%99%E7%99%BD/</link>
+      <link>https://zburu.vercel.app/20210316/</link>
       <pubDate>Tue, 16 Mar 2021 10:29:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-03-16-ie10%E4%B8%8B%E7%AC%A6%E5%8F%B7%E4%B8%8D%E8%83%BD%E7%95%99%E7%99%BD/</guid>
+      <guid>https://zburu.vercel.app/20210316/</guid>
       <description>$(&amp;#34;#test&amp;#34;).click(function () { $(&amp;#39;html,body&amp;#39;).animate({ &amp;#39;scrollTop&amp;#39;: &amp;#39;0&amp;#39; }, 500,) }) 这行代码使用的是jquery的写法，一个500毫秒的动画，这样写在Chrome浏览器等没问题，可以正常运行。
 但是今天在写项目的过程中，要求代码兼容到IE10，没办法，被迫在IE浏览器下运行，结果发现这行代码会报错。这是怎么回事呢？
 简单分析一下，这有点类似js中定时器的写法，setimeout，两个参数，分别代表指定的时间，和定时时间。
@@ -79,10 +81,10 @@ $(&amp;#39;iframe&amp;#39;).wrap(&amp;#39;&amp;lt;p class=&amp;#34;iframe&amp;#3
     
     <item>
       <title>怎么让 css3 里面的动画属性看起来更流畅?</title>
-      <link>http://example.org/posts/2021-03-14-%E6%80%8E%E4%B9%88%E8%AE%A9_css3_%E9%87%8C%E9%9D%A2%E7%9A%84%E5%8A%A8%E7%94%BB%E5%B1%9E%E6%80%A7%E7%9C%8B%E8%B5%B7%E6%9D%A5%E6%9B%B4%E6%B5%81%E7%95%85_/</link>
+      <link>https://zburu.vercel.app/20210314/</link>
       <pubDate>Sun, 14 Mar 2021 07:31:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-03-14-%E6%80%8E%E4%B9%88%E8%AE%A9_css3_%E9%87%8C%E9%9D%A2%E7%9A%84%E5%8A%A8%E7%94%BB%E5%B1%9E%E6%80%A7%E7%9C%8B%E8%B5%B7%E6%9D%A5%E6%9B%B4%E6%B5%81%E7%95%85_/</guid>
+      <guid>https://zburu.vercel.app/20210314/</guid>
       <description>ps：先说点题外话，因为工作的原因很久没更新博客了，最近也是告一段落，处理一了一些事情之后可以安心坐下来，把我的博客重新整理一下。
 今天要讲的是 css3 的一个新属性 animation，也算是一个回顾吧，我只是将平时如何使用，以及一些技巧分享出来。如果想学习更基础的内容，可以点击链接：https://www.runoob.com/css3/css3-animations.html，网上类似的教程还是蛮多的。
 这篇文章并不细讲动画的基础属性，而是稍微扩展一个话题：怎么让 css3 里面的动画属性看起来更流畅？
@@ -98,10 +100,10 @@ animation 属性 animation 属性有下面几个值：
     
     <item>
       <title>chrome浏览器无法显示12px以下的字体</title>
-      <link>http://example.org/posts/2021-02-26-chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA12px%E4%BB%A5%E4%B8%8B%E7%9A%84%E5%AD%97%E4%BD%93/</link>
+      <link>https://zburu.vercel.app/20210226/</link>
       <pubDate>Fri, 26 Feb 2021 22:38:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-02-26-chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA12px%E4%BB%A5%E4%B8%8B%E7%9A%84%E5%AD%97%E4%BD%93/</guid>
+      <guid>https://zburu.vercel.app/20210226/</guid>
       <description>最近正在面试，遇到了很多有意思的东西，比如今天，在面试前先做了一套面试题，其中有这么一道题，觉得挺有意思，之前也没见过，就打算记录下来：
 &amp;lt;!-- chrome浏览器12px字体大小以下无法显示，均显示为12px，应该怎么解决。 --&amp;gt; 我确实有点蒙，在之前写代码的时候，没有遇到过这样的情况，不过既然这样问了，就得想出解决的办法。
 首先我想到之前的一个问题，0.5px 的边框该如何实现，通过 scale(0.5) 可以实现，这是 css3 新属性。
@@ -116,10 +118,10 @@ animation 属性 animation 属性有下面几个值：
     
     <item>
       <title>掘金个人主页头像旋转效果</title>
-      <link>http://example.org/posts/2021-02-03-%E6%8E%98%E9%87%91%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E5%A4%B4%E5%83%8F%E6%97%8B%E8%BD%AC%E6%95%88%E6%9E%9C/</link>
+      <link>https://zburu.vercel.app/20210203/</link>
       <pubDate>Wed, 03 Feb 2021 19:43:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2021-02-03-%E6%8E%98%E9%87%91%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E5%A4%B4%E5%83%8F%E6%97%8B%E8%BD%AC%E6%95%88%E6%9E%9C/</guid>
+      <guid>https://zburu.vercel.app/20210203/</guid>
       <description>在浏览掘金社区的时候，发现一个很有意思的小彩蛋，在个人主页将鼠标悬浮在头像上，会不停的加速旋转，我感觉挺有意思，f12 看看这个样式怎么写的，发现用到了 css3 的相关技术。
 下面是具体代码，img 是头像元素，直接写在 hover 中即可。
 img:hover { transform: rotate(666turn); transition-delay: 1s; transition-property: all; transition-duration: 59s; transition-timing-function: cubic-bezier(.34,0,.84,1); } ps：今天是2021年2月4号，农历腊月二十三，传统的小年，祝朋友们小年愉快。不知不觉，快过年了。</description>
@@ -127,10 +129,10 @@ img:hover { transform: rotate(666turn); transition-delay: 1s; transition-propert
     
     <item>
       <title>文字溢出隐藏以及和flex冲突的问题</title>
-      <link>http://example.org/posts/2020-08-03-%E6%96%87%E5%AD%97%E6%BA%A2%E5%87%BA%E9%9A%90%E8%97%8F%E4%BB%A5%E5%8F%8A%E5%92%8Cflex%E5%86%B2%E7%AA%81%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <link>https://zburu.vercel.app/20200803/</link>
       <pubDate>Mon, 03 Aug 2020 21:08:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/2020-08-03-%E6%96%87%E5%AD%97%E6%BA%A2%E5%87%BA%E9%9A%90%E8%97%8F%E4%BB%A5%E5%8F%8A%E5%92%8Cflex%E5%86%B2%E7%AA%81%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://zburu.vercel.app/20200803/</guid>
       <description>在某些段落中，页面要求文字只显示一行，但是width固定，而文字过长，就会出现一个需求，超过长度限制的文字被隐藏且显示省略号，css 支持这样的属性。
 单行文本溢出隐藏
 div{ overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } 多行文本溢出隐藏
