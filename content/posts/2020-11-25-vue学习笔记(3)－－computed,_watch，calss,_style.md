@@ -1,5 +1,5 @@
 ---
-cid: 29
+slug: 29
 title: vue学习笔记(3)－－computed, watch，calss, style
 date: 2020-11-25 13:05:00
 updated: 2021-11-29 16:18:18

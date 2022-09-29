@@ -9,7 +9,7 @@ buildFuture: false
 buildExpired: false
 
 permalinks:
-  posts: /:year:month:day
+  posts: /posts/:slug.html
 
 googleAnalytics: UA-123-45
 

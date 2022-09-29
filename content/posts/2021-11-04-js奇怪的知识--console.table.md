@@ -1,5 +1,5 @@
 ---
-cid: 81
+slug: 81
 title: js奇怪的知识--console.table
 date: 2021-11-04 14:16:00
 updated: 2021-12-01 14:36:51

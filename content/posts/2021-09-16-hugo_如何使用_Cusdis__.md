@@ -1,5 +1,5 @@
 ---
-cid: 77
+slug: 77
 title: hugo 如何使用 Cusdis ?
 date: 2021-09-16 13:14:00
 updated: 2021-12-01 14:25:53

@@ -1,5 +1,5 @@
 ---
-cid: 92
+slug: 92
 title: typecho 更换 gravatar 头像源
 date: 2021-12-21 10:11:00
 updated: 2022-04-19 09:36:58

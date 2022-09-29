@@ -1,5 +1,5 @@
 ---
-cid: 8
+slug: 8
 title: chrome浏览器中对autoplay的一些处理技巧
 date: 2020-09-11 21:08:00
 updated: 2021-11-29 11:52:45
