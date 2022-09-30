@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>七日谈 on 子舒的博客</title>
-    <link>https://blog.zburu.com/tags/%E4%B8%83%E6%97%A5%E8%B0%88/</link>
+    <link>http://zburu.vercel.app/tags/%E4%B8%83%E6%97%A5%E8%B0%88/</link>
     <description>Recent content in 七日谈 on 子舒的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Sep 2022 19:26:00 +0000</lastBuildDate><atom:link href="https://blog.zburu.com/tags/%E4%B8%83%E6%97%A5%E8%B0%88/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Sep 2022 19:26:00 +0000</lastBuildDate><atom:link href="http://zburu.vercel.app/tags/%E4%B8%83%E6%97%A5%E8%B0%88/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>#3 关于密码的一些想法</title>
-      <link>https://blog.zburu.com/posts/167/</link>
+      <link>http://zburu.vercel.app/posts/167/</link>
       <pubDate>Wed, 21 Sep 2022 19:26:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/167/</guid>
+      <guid>http://zburu.vercel.app/posts/167/</guid>
       <description>七日谈，说说我的心里话。
 第3期：关于密码的一些想法
 今天在坐地铁的过程中，突然想要一个问题，一个安全稳定，便于记忆的密码时什么样子的。是否要包括字母大小写，数字，以及特殊符号？
@@ -26,10 +26,10 @@
     
     <item>
       <title>#2 你是否想过成为一名作家？</title>
-      <link>https://blog.zburu.com/posts/166/</link>
+      <link>http://zburu.vercel.app/posts/166/</link>
       <pubDate>Wed, 14 Sep 2022 17:59:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/166/</guid>
+      <guid>http://zburu.vercel.app/posts/166/</guid>
       <description>第2期：你是否想过成为一名作家？
 https://poets.org/poem/so-you-want-be-writer
 这是曾经询问过自己的一个问题，我想很多人在年少时期可能都会有过这样的经历，渴望将自己的文字带给更多人。
@@ -44,10 +44,10 @@ if it doesn&amp;rsquo;t come bursting out of you in spite of everything, don&amp
     
     <item>
       <title>#1 文档和视频，你更喜欢哪种学习方式？</title>
-      <link>https://blog.zburu.com/posts/165/</link>
+      <link>http://zburu.vercel.app/posts/165/</link>
       <pubDate>Wed, 07 Sep 2022 22:21:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/165/</guid>
+      <guid>http://zburu.vercel.app/posts/165/</guid>
       <description>内容很枯燥，有营养但不多。纯粹为了锻炼写作和思考能力，所以每周打算写一个话题，周一到周日之间不定时发布
 如题，这是我今天思考的话题。灵感来源于我在dev.to网站上看到的一个帖子。对于 learning 的方式，更倾向于看文档还是视频？我觉得可以从多个维度进行分析。
 学习进度，也可以说是过程 行业领域 后天应该养成什么样的习惯呢？ 1.学习进度 学习进度应该是对学习方式影响最大的因素了。

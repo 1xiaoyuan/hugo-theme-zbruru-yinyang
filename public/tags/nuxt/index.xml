@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nuxt on 子舒的博客</title>
-    <link>https://blog.zburu.com/tags/nuxt/</link>
+    <link>http://zburu.vercel.app/tags/nuxt/</link>
     <description>Recent content in Nuxt on 子舒的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Apr 2022 13:28:00 +0000</lastBuildDate><atom:link href="https://blog.zburu.com/tags/nuxt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Apr 2022 13:28:00 +0000</lastBuildDate><atom:link href="http://zburu.vercel.app/tags/nuxt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在nuxt中实现图片放大预览功能</title>
-      <link>https://blog.zburu.com/posts/112/</link>
+      <link>http://zburu.vercel.app/posts/112/</link>
       <pubDate>Fri, 01 Apr 2022 13:28:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/112/</guid>
+      <guid>http://zburu.vercel.app/posts/112/</guid>
       <description>v-viewer 基于vue的一个插件，可以实现图片放大，缩小，旋转，拖拽，预览等各种功能，效果还是很棒的。这是我在Github摸鱼时发现的一个仓库，感觉很有用，就分享一下使用过程。
 Github: https://github.com/mirari/v-viewer
 1.安装 npm install v-viewer 2.用法 在 plugins 中新建 viewer.js 文件。
@@ -22,10 +22,10 @@ Github: https://github.com/mirari/v-viewer
     
     <item>
       <title>Nuxt 项目中如何引入百度统计？</title>
-      <link>https://blog.zburu.com/posts/96/</link>
+      <link>http://zburu.vercel.app/posts/96/</link>
       <pubDate>Mon, 17 Jan 2022 15:49:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/96/</guid>
+      <guid>http://zburu.vercel.app/posts/96/</guid>
       <description>在部署一个网站之后，我们最关心的事情无异于是访问量，以及对它的分析。国内的百度统计是一个不错的选择，基本的功能都是免费的。
 只需要在head中引入一串 javascript 代码即可。
 &amp;lt;!-- &amp;lt;script&amp;gt; var _hmt = _hmt || []; (function() { var hm = document.createElement(&amp;#34;script&amp;#34;); hm.src = &amp;#34;https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxx&amp;#34;; var s = document.getElementsByTagName(&amp;#34;script&amp;#34;)[0]; s.parentNode.insertBefore(hm, s); })(); &amp;lt;/script&amp;gt; --&amp;gt; 上面是百度提供的统计代码，需要放在 &amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;中。

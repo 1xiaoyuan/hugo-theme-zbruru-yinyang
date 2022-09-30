@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>掘金 on 子舒的博客</title>
-    <link>https://blog.zburu.com/tags/%E6%8E%98%E9%87%91/</link>
+    <link>http://zburu.vercel.app/tags/%E6%8E%98%E9%87%91/</link>
     <description>Recent content in 掘金 on 子舒的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jun 2022 09:01:00 +0000</lastBuildDate><atom:link href="https://blog.zburu.com/tags/%E6%8E%98%E9%87%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Jun 2022 09:01:00 +0000</lastBuildDate><atom:link href="http://zburu.vercel.app/tags/%E6%8E%98%E9%87%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>掘金抽奖脚本</title>
-      <link>https://blog.zburu.com/posts/143/</link>
+      <link>http://zburu.vercel.app/posts/143/</link>
       <pubDate>Wed, 22 Jun 2022 09:01:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/143/</guid>
+      <guid>http://zburu.vercel.app/posts/143/</guid>
       <description>分享一个掘金抽奖的油猴脚本，可以一键签到，抽奖，梭哈。
 攒多一点矿石，体验买彩票的感觉。
 (async function () { &amp;lsquo;use strict&amp;rsquo;;

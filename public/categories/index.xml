@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 子舒的博客</title>
-    <link>https://blog.zburu.com/categories/</link>
+    <link>http://zburu.vercel.app/categories/</link>
     <description>Recent content in Categories on 子舒的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.zburu.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://zburu.vercel.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>技术</title>
-      <link>https://blog.zburu.com/categories/%E6%8A%80%E6%9C%AF/</link>
+      <link>http://zburu.vercel.app/categories/%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/categories/%E6%8A%80%E6%9C%AF/</guid>
+      <guid>http://zburu.vercel.app/categories/%E6%8A%80%E6%9C%AF/</guid>
       <description></description>
     </item>
     
     <item>
       <title>随笔</title>
-      <link>https://blog.zburu.com/categories/%E9%9A%8F%E7%AC%94/</link>
+      <link>http://zburu.vercel.app/categories/%E9%9A%8F%E7%AC%94/</link>
       <pubDate>Wed, 21 Sep 2022 19:26:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/categories/%E9%9A%8F%E7%AC%94/</guid>
+      <guid>http://zburu.vercel.app/categories/%E9%9A%8F%E7%AC%94/</guid>
       <description></description>
     </item>
     
