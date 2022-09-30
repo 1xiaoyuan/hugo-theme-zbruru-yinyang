@@ -4,7 +4,7 @@ title: 关于
 ---
 
 
-![me.png](https://oss.zburu.com/i/2022/07/06/62c546e0d0480.png)
+![zburu](https://count.getloli.com/get/@zburu?theme=rule34)
 
 ### 个人说明
 
