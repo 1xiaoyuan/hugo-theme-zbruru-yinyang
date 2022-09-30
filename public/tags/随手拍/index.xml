@@ -1,49 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>随手拍 on 子舒的博客</title>
     <link>https://zburu.vercel.app/tags/%E9%9A%8F%E6%89%8B%E6%8B%8D/</link>
     <description>Recent content in 随手拍 on 子舒的博客</description>
-    <image>
-      <url>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Sat, 03 Sep 2022 20:22:00 +0000</lastBuildDate><atom:link href="https://zburu.vercel.app/tags/%E9%9A%8F%E6%89%8B%E6%8B%8D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>浴鹄湾游记</title>
-      <link>https://zburu.vercel.app/posts/164.html/</link>
+      <link>https://zburu.vercel.app/posts/164/</link>
       <pubDate>Sat, 03 Sep 2022 20:22:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/164.html/</guid>
+      <guid>https://zburu.vercel.app/posts/164/</guid>
       <description>浴鹄湾，东靠杨公堤，西临三台山路，北至三台梦迹景区，南到赤山埠。</description>
     </item>
     
     <item>
       <title>水利博物馆照片</title>
-      <link>https://zburu.vercel.app/posts/162.html/</link>
+      <link>https://zburu.vercel.app/posts/162/</link>
       <pubDate>Mon, 22 Aug 2022 19:54:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/162.html/</guid>
+      <guid>https://zburu.vercel.app/posts/162/</guid>
       <description>公司团建，随手拍两张照片。
 白居易诗。</description>
     </item>
     
     <item>
       <title>火烧云</title>
-      <link>https://zburu.vercel.app/posts/159.html/</link>
+      <link>https://zburu.vercel.app/posts/159/</link>
       <pubDate>Fri, 12 Aug 2022 19:36:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/159.html/</guid>
-      <description> </description>
+      <guid>https://zburu.vercel.app/posts/159/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>随想录 (9)</title>
-      <link>https://zburu.vercel.app/posts/157.html/</link>
+      <link>https://zburu.vercel.app/posts/157/</link>
       <pubDate>Sun, 07 Aug 2022 18:47:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/157.html/</guid>
+      <guid>https://zburu.vercel.app/posts/157/</guid>
       <description>落霞与孤鹜齐飞，秋水共长天一色。
 放个图防止抑郁。
 昨天看了一个帖子很有感触，土生土长的城市本地人很难体会每隔一段时间要重新建立社会关系的难受，从小到大，每到一个地方上学，从陌生变为熟悉，中间总有有一段难熬的时间。很多随父母打工而四处的求学的小孩，特别能有这种体会，因此也就有很多人厌恶上学，他们不理解为什么总是要四处奔波，父母也不理解小孩为什么不喜欢学习，两者误会，家庭矛盾也因此诞生了。当然我说的很片面，这只是其中一个原因。
@@ -54,10 +51,10 @@
     
     <item>
       <title>好久没看到这么蓝的天</title>
-      <link>https://zburu.vercel.app/posts/147.html/</link>
+      <link>https://zburu.vercel.app/posts/147/</link>
       <pubDate>Sat, 02 Jul 2022 14:11:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/147.html/</guid>
+      <guid>https://zburu.vercel.app/posts/147/</guid>
       <description>手机像素一般，更主要的是拍照手法不行，拍不出优美的感觉。</description>
     </item>
     

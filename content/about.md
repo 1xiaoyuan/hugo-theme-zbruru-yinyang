@@ -1,11 +1,6 @@
 ---
 slug: 2
 title: 关于
-date: 2021-11-29 10:56:00
-updated: 2022-09-08 21:20:12
-categories: 
-tags: 
-imgurl: 
 ---
 
 

@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>电影 on 子舒的博客</title>
     <link>https://zburu.vercel.app/tags/%E7%94%B5%E5%BD%B1/</link>
     <description>Recent content in 电影 on 子舒的博客</description>
-    <image>
-      <url>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Sat, 24 Apr 2021 11:47:00 +0000</lastBuildDate><atom:link href="https://zburu.vercel.app/tags/%E7%94%B5%E5%BD%B1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>基耶斯洛夫斯基和他的现实</title>
-      <link>https://zburu.vercel.app/posts/64.html/</link>
+      <link>https://zburu.vercel.app/posts/64/</link>
       <pubDate>Sat, 24 Apr 2021 11:47:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/64.html/</guid>
+      <guid>https://zburu.vercel.app/posts/64/</guid>
       <description>文章作者: 江江_Jan
 文章链接: https://blog.jannns.com/posts/Kieslowski-and-his-reality/
 版权声明: 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 4.0 许可协议。转载请注明来自 江卮可乐！

@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>笔记 on 子舒的博客</title>
     <link>https://zburu.vercel.app/tags/%E7%AC%94%E8%AE%B0/</link>
     <description>Recent content in 笔记 on 子舒的博客</description>
-    <image>
-      <url>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Tue, 12 Jul 2022 14:59:00 +0000</lastBuildDate><atom:link href="https://zburu.vercel.app/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>笔记:vue 中使用 axios 调用数据并渲染</title>
-      <link>https://zburu.vercel.app/posts/151.html/</link>
+      <link>https://zburu.vercel.app/posts/151/</link>
       <pubDate>Tue, 12 Jul 2022 14:59:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/151.html/</guid>
+      <guid>https://zburu.vercel.app/posts/151/</guid>
       <description>示例如下。
 &amp;lt;template&amp;gt; &amp;lt;div class=&amp;#34;posts&amp;#34;&amp;gt; &amp;lt;div v-for=&amp;#34;item in list&amp;#34; :key=&amp;#34;item.cid&amp;#34; &amp;gt; {{ item.title }} &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; import Axios from &amp;#39;axios&amp;#39;; export default { name: &amp;#39;index&amp;#39;, data () { return { list: [] } }, methods: { getData () { var api = &amp;#39;https://zburu.com/api/posts.php&amp;#39;; Axios.get(api).then((response) =&amp;gt; { this.list = response.data; console.log(response.data) }).catch((error) =&amp;gt; { console.log(error); }) } }, mounted () { this.getData(); }, } &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; &amp;lt;/style&amp;gt; </description>
     </item>
     
     <item>
       <title>obsidian:如何使用坚果云进行多端同步?</title>
-      <link>https://zburu.vercel.app/posts/146.html/</link>
+      <link>https://zburu.vercel.app/posts/146/</link>
       <pubDate>Mon, 27 Jun 2022 13:53:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/146.html/</guid>
+      <guid>https://zburu.vercel.app/posts/146/</guid>
       <description>接上篇文章 《关于我选择笔记系统这件小事》 ，obsidian 的个人体验很棒，我也打算长久使用作为个人知识库。
 但是它有一个弊端，就是本地离线化导致同步是个问题，官方的同步服务很贵，给我劝退了，因此我寻求了其他的同步备份方案，就是今天我要分享的坚果云+ obsidian 。
 注册账号 在坚果云官网注册一个账号，选择个人用户，创建账号之后登陆。
@@ -40,10 +37,10 @@ pc端同步 接下来需要将电脑本地的文件和坚果云的文件夹相�
     
     <item>
       <title>关于我选择笔记系统这件小事</title>
-      <link>https://zburu.vercel.app/posts/121.html/</link>
+      <link>https://zburu.vercel.app/posts/121/</link>
       <pubDate>Thu, 28 Apr 2022 22:43:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/121.html/</guid>
+      <guid>https://zburu.vercel.app/posts/121/</guid>
       <description>受年龄增长以及生活影响，人接触到的新事物和知识将会越来越多，大脑就显得有些混乱了，我也不敢保证自己的思维会始终保持一个高强度的在线状态。
 因此决定整理个人知识库， 将大脑中的片段和思想整理出来。以笔记和文字的形式将他记录下来，但是最近一直在寻求这样的工具，多方对比，也没有一款能真正满足我的需求的工具。
 最好是自建的笔记，因为我今天在语雀写了一篇私密笔记，或许因为内容略带敏感吧，然后就被审查了，说我违规。
@@ -75,20 +72,20 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>【笔记】使用php写接口文件调用数据</title>
-      <link>https://zburu.vercel.app/posts/103.html/</link>
+      <link>https://zburu.vercel.app/posts/103/</link>
       <pubDate>Tue, 22 Feb 2022 17:12:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/103.html/</guid>
+      <guid>https://zburu.vercel.app/posts/103/</guid>
       <description>如何使用 php 写一个接口，然后将数据以 json 文件格式调用。
 &amp;lt;?php header(&amp;#39;Content-Type:application/json; charset=utf-8&amp;#39;); header(&amp;#34;Access-Control-Allow-Origin:*&amp;#34;); $servername = &amp;#34;localhost&amp;#34;; $username = &amp;#34;数据库账号&amp;#34;; $password = &amp;#34;数据库密码&amp;#34;; $dbname = &amp;#34;数据库名称&amp;#34;; // 创建连接 $conn = new mysqli($servername, $username, $password, $dbname); // 检测连接 if ($conn-&amp;gt;connect_error) { die(&amp;#34;连接失败: &amp;#34; . $conn-&amp;gt;connect_error); } $sql = &amp;#34;select slug,title,created,text from typecho_contents&amp;#34;; $result = $conn-&amp;gt;query($sql); if ($result-&amp;gt;num_rows &amp;gt; 0) { // 输出数据 while($row = $result-&amp;gt;fetch_assoc()) { $data[]=$row; } $json = json_encode($data,JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT);//把数据转换为JSON数据. exit($json) ; } else { echo &amp;#34;未查询到结果！&amp;#34;; } $conn-&amp;gt;close(); ?</description>
     </item>
     
     <item>
       <title>我的 python 学习笔记</title>
-      <link>https://zburu.vercel.app/posts/61.html/</link>
+      <link>https://zburu.vercel.app/posts/61/</link>
       <pubDate>Thu, 01 Apr 2021 16:21:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/61.html/</guid>
+      <guid>https://zburu.vercel.app/posts/61/</guid>
       <description>之所以学习 Python ，本意是想写一些脚本之类的程序，用来在浏览器爬一些自己想要的文字，图片等资料，这些程序其实 GitHub 蛮多的，但奈何我对后端的语言一窍不通，直接拿过来给我用我都不会。
 因此就萌生了先学习 Python 基础知识的想法，一直听说廖雪峰的 Python 教程写的不错，这次趁着这个机会要好好研读一番。也没想说用的多牛逼，至少希望能为自己浅薄的技术栈再增加一点光彩，毕竟我也曾梦想成为一个全栈开发。
 下载安装完 Python 环境,就开始学习吧！
@@ -103,10 +100,10 @@ x = 1 x = x + 2 print(x) # 3 其实很多计算机语言都是如此，比如我
     
     <item>
       <title>React 学习笔记（三）</title>
-      <link>https://zburu.vercel.app/posts/39.html/</link>
+      <link>https://zburu.vercel.app/posts/39/</link>
       <pubDate>Tue, 29 Dec 2020 13:26:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/39.html/</guid>
+      <guid>https://zburu.vercel.app/posts/39/</guid>
       <description>来源于：https://react.docschina.org/docs/forms.html
 一、表单 在 React 中，html 表单元素的工作方式和其他的 DOM 元素不太一样，因为表单内部通常会保持一些内部的 state，比如下面这个纯 html 表单只接受一个名称：
 &amp;lt;form&amp;gt; &amp;lt;label&amp;gt; 名字: &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;name&amp;#34; /&amp;gt; &amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;提交&amp;#34; /&amp;gt; &amp;lt;/form&amp;gt; 这个表单具有默认的 html 表单行为，即在用户提交表单之后自动刷新页面。如果你在 React 中执行相同的代码，它仍然有效。
@@ -119,10 +116,10 @@ class NameForm extends React.Component { constructor(props) { super(props); this
     
     <item>
       <title>vue学习笔记(3)－－computed, watch，calss, style</title>
-      <link>https://zburu.vercel.app/posts/29.html/</link>
+      <link>https://zburu.vercel.app/posts/29/</link>
       <pubDate>Wed, 25 Nov 2020 13:05:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/29.html/</guid>
+      <guid>https://zburu.vercel.app/posts/29/</guid>
       <description>一、计算属性computed 1.例子 &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;div&amp;gt;{{message}}&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;{{revermessage}}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; var vm = new Vue({ el: &amp;#39;#app&amp;#39;, data: { message: &amp;#39;hello,wolrd&amp;#39; }, computed: { revermessage: function() { return this.message.split(&amp;#39;&amp;#39;).reverse().join(&amp;#39;&amp;#39;) } } }) &amp;lt;/script&amp;gt; 声明一个计算属性severmessage，在computed中被指向对message进行一些方法操作后的返回值
 此时vm.severmessage依赖于vm.message的变化，对message改变数据，会引起severmessage的更新
 2.计算属性缓存和方法 还可以通过在表达式中调用方法来达到想要的效果
@@ -135,10 +132,10 @@ class NameForm extends React.Component { constructor(props) { super(props); this
     
     <item>
       <title>vue学习笔记(2)－－vue实例和模板语法</title>
-      <link>https://zburu.vercel.app/posts/28.html/</link>
+      <link>https://zburu.vercel.app/posts/28/</link>
       <pubDate>Tue, 24 Nov 2020 13:05:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/28.html/</guid>
+      <guid>https://zburu.vercel.app/posts/28/</guid>
       <description>一、vue实例 1.创建vue实例 一个vue实例应该通过new Vue来创建根实例，所有的 vue 组件其实都是 vue 实例
 var vm = new Vue({ ... }) 当一个实例被创建时，data对象中的 property 都被加入到vue的响应式系统中，当值发生改变时，试图也会改变
 var data = {a: 1} var vm = new Vue({ data: data }) 此时在控制台输入vm.a == data.a会返回true，变量data已经被赋给vue实例中的data对象了
@@ -152,10 +149,10 @@ Object.freeze() 方法可以冻结一个对象。一个被冻结的对象再也�
     
     <item>
       <title>vue学习笔记(1)－－什么是vue?</title>
-      <link>https://zburu.vercel.app/posts/27.html/</link>
+      <link>https://zburu.vercel.app/posts/27/</link>
       <pubDate>Mon, 23 Nov 2020 13:04:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/27.html/</guid>
+      <guid>https://zburu.vercel.app/posts/27/</guid>
       <description>一、什么是vue? 练习时使用，最新版本
 &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 生产时使用，明确版本号的版本，避免造成不可预见的问题
 &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/vue@2.6.12&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; hello world
@@ -168,10 +165,10 @@ vue官网例子：
     
     <item>
       <title>事件监听函数，以及事件的捕获和冒泡机制</title>
-      <link>https://zburu.vercel.app/posts/21.html/</link>
+      <link>https://zburu.vercel.app/posts/21/</link>
       <pubDate>Tue, 17 Nov 2020 13:00:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/21.html/</guid>
+      <guid>https://zburu.vercel.app/posts/21/</guid>
       <description>事件一般是用于浏览器和用户操作之间的交互，当用户执行某些特殊的操作时，浏览器给予反应，触发绑定的事件，事件流，事件发生时会在元素节点和根节点之间按照约定的顺序传播，事件经过的所有节点都会受到事件的影响，这个传播过程被称为DOM事件流
 函数事件 事件一般是用于浏览器和用户操作之间的交互，当用户执行某些特殊的操作时，浏览器给予反应，触发绑定的事件
 事件流，事件发生时会在元素节点和根节点之间按照约定的顺序传播，事件经过的所有节点都会受到事件的影响，这个传播过程被称为DOM事件流
@@ -185,10 +182,10 @@ true是捕获，false是冒泡，默认为冒泡事件
     
     <item>
       <title>getElementBy系列和querySelector系列的区别</title>
-      <link>https://zburu.vercel.app/posts/19.html/</link>
+      <link>https://zburu.vercel.app/posts/19/</link>
       <pubDate>Mon, 16 Nov 2020 12:59:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/19.html/</guid>
+      <guid>https://zburu.vercel.app/posts/19/</guid>
       <description>querySelector和querySelectorAll的用法和getElementBy大致一样，获取的时候带上符号，getElementBy获取的是元素的动态集合，querySelector获取的是元素的静态集合。
 但是需要注意：getElementBy系列和querySelector系列的区别
 比如，我们写一个for循环，每次获取li标签的时候，ul生成一个li子元素
@@ -200,10 +197,10 @@ conosle.log(li.length) // 6 重新用querySelector获取一遍元素
     
     <item>
       <title>DOM－－文档对象模型</title>
-      <link>https://zburu.vercel.app/posts/18.html/</link>
+      <link>https://zburu.vercel.app/posts/18/</link>
       <pubDate>Sun, 15 Nov 2020 12:58:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/18.html/</guid>
+      <guid>https://zburu.vercel.app/posts/18/</guid>
       <description>DOM中文名文档对象模型，英文名Document Object Model，我们简称为DOM，是针对html和xml文档的一种API，将html以一种树状结构呈现出来，可以更直观去研究文档结构，我们将这种树状文档结构称为－－DOM树，或者节点树，一样的概念
 一、什么是DOM？ DOM中文名文档对象模型，英文名Document Object Model，我们简称为DOM，是针对html和xml文档的一种API，将html以一种树状结构呈现出来，可以更直观去研究文档结构，我们将这种树状文档结构称为－－DOM树，或者节点树，一样的概念
 js通过dom节点，可以对文档的html标签，属性，css样式，以及具体的内容做出修改，并对页面中的所有事件进行响应
@@ -212,10 +209,10 @@ js通过dom节点，可以对文档的html标签，属性，css样式，以及�
     
     <item>
       <title>有关js函数，方法的一些补充总结</title>
-      <link>https://zburu.vercel.app/posts/17.html/</link>
+      <link>https://zburu.vercel.app/posts/17/</link>
       <pubDate>Sat, 14 Nov 2020 12:57:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/17.html/</guid>
+      <guid>https://zburu.vercel.app/posts/17/</guid>
       <description>数据类型，构造函数，原型和原型链的一些讲解补充
 一、数据类型 1.5个基本类型 string number boolean undefined 未定义 null 值为空 symbol 表示一个符号，符号类型是唯一的并且是不可修改的
 最常见的还是前三种，字符串，数字，布尔值
@@ -229,10 +226,10 @@ js通过dom节点，可以对文档的html标签，属性，css样式，以及�
     
     <item>
       <title>javascript——函数、变量和方法</title>
-      <link>https://zburu.vercel.app/posts/13.html/</link>
+      <link>https://zburu.vercel.app/posts/13/</link>
       <pubDate>Wed, 04 Nov 2020 21:12:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/13.html/</guid>
+      <guid>https://zburu.vercel.app/posts/13/</guid>
       <description>当代码出现有规律的重复之后，可以利用函数，定义变量，调用方法，不用去重复的改动代码，只需要进行函数的修改。基本上所有的高级语言都支持函数，javascript也不例外，它可以像变量一样被使用，方便且强大，因此本文对js函数进行系统的学习，并在学习过程中做了详细的笔记以及样例。
 一、函数的定义和调用 1.定义函数 function abs(x) { if(x = 0) { return x; } else { return -x; } } function()指出这是一个函数定义 abs是函数的代码 (x)里面的内容是函数的参数 {...}的内容是函数体，可以包括若干语句，甚至可以没有任何语句 函数体中，必须以return结尾，才可以把结果返回，如果不用return结尾的话，就会返回undefined
 也可以直接定义一个对象，这个对象也可以写成函数的方式
@@ -246,10 +243,10 @@ function abs(x) { // 检查参数x是否为数字 if (typeof x !== &amp;#39;numb
     
     <item>
       <title>HTML事件属性--DOM</title>
-      <link>https://zburu.vercel.app/posts/12.html/</link>
+      <link>https://zburu.vercel.app/posts/12/</link>
       <pubDate>Thu, 29 Oct 2020 21:12:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/12.html/</guid>
+      <guid>https://zburu.vercel.app/posts/12/</guid>
       <description>研究html的对象，事件和方法，从js的角度来思考，这个标签的属性是通过什么方法，触发什么事件来实现的
 键盘鼠标事件 页面窗口事件 表单事件 一、window事件属性 针对window对象触发的事件，在&amp;lt;body&amp;gt;中执行
 1.onbeforeprint／onafterprint 在浏览器打印之间/后触发
@@ -272,10 +269,10 @@ demo查看
     
     <item>
       <title>js基本语法</title>
-      <link>https://zburu.vercel.app/posts/11.html/</link>
+      <link>https://zburu.vercel.app/posts/11/</link>
       <pubDate>Wed, 21 Oct 2020 21:11:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/11.html/</guid>
+      <guid>https://zburu.vercel.app/posts/11/</guid>
       <description>在学习js基本语法的过程中，把遇见的知识点和问题记录喜下来，以便未来复习和参考。
 数据类型有：数据，字符串，数组，数字，布尔值等。
 一、数据类型 1.number 2.布尔值 只有true和false两种，可以直接用true和false来表达，比如：

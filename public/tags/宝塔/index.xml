@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>宝塔 on 子舒的博客</title>
     <link>https://zburu.vercel.app/tags/%E5%AE%9D%E5%A1%94/</link>
     <description>Recent content in 宝塔 on 子舒的博客</description>
-    <image>
-      <url>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Mon, 18 Jul 2022 11:51:00 +0000</lastBuildDate><atom:link href="https://zburu.vercel.app/tags/%E5%AE%9D%E5%A1%94/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>出错了，面板运行时发生错误！</title>
-      <link>https://zburu.vercel.app/posts/152.html/</link>
+      <link>https://zburu.vercel.app/posts/152/</link>
       <pubDate>Mon, 18 Jul 2022 11:51:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/152.html/</guid>
+      <guid>https://zburu.vercel.app/posts/152/</guid>
       <description># 删除之前无法使用的面板环境 rm -rf /www/server/panel/pyenv #重新获取新的面板环境和更新包 curl http://download.bt.cn/install/update_panel.sh|bash </description>
     </item>
     
     <item>
       <title>宝塔自动备份网站到邮箱教程</title>
-      <link>https://zburu.vercel.app/posts/130.html/</link>
+      <link>https://zburu.vercel.app/posts/130/</link>
       <pubDate>Wed, 25 May 2022 17:27:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/130.html/</guid>
+      <guid>https://zburu.vercel.app/posts/130/</guid>
       <description>前言 网站经常备份好处就是遇到问题以后可以迅速的恢复，不那么被动，防止信息丢失，操作性很大。虽然搭建一个网站非常容易，但为了应对网络上各种各样的意外情况，避免自己的网站付诸东流，做好网站备份是非常有必要的。
 现在邮箱接收都支持附件文件，将网站文件和数据库文件备份到我们自己的邮箱也是一种很好地备份方式，也防止备份文件丢失。
 邮箱接收附件文件大小，取决于使用的邮箱服务。一般来说个人博客网站源文件，数据库文件不大，常见邮箱服务都是可以使用的。
@@ -45,10 +42,10 @@ Error in certificate: Peer&#39;s certificate issuer has been marked as not trust
     
     <item>
       <title>在宝塔中使用青龙面板代挂京豆</title>
-      <link>https://zburu.vercel.app/posts/116.html/</link>
+      <link>https://zburu.vercel.app/posts/116/</link>
       <pubDate>Fri, 15 Apr 2022 13:57:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/116.html/</guid>
+      <guid>https://zburu.vercel.app/posts/116/</guid>
       <description>如题所述，想要在闲置的服务器中跑一些服务，青龙面板代挂京豆现存很多开源的脚本，安全性已经经过很多人验证，可以放心使用。
 因此我也安排了一个脚本，成功部署之后，就写这篇不算教程的笔记来记录一下整个过程。
 Github: https://github.com/6dylan6/jdpro 作者会更新一些部署的指令，如果安装不成功可以对照文档中的指令。
@@ -74,10 +71,10 @@ Github: https://github.com/6dylan6/jdpro 作者会更新一些部署的指令，
     
     <item>
       <title>宝塔如何实现进程守护？</title>
-      <link>https://zburu.vercel.app/posts/70.html/</link>
+      <link>https://zburu.vercel.app/posts/70/</link>
       <pubDate>Sun, 30 May 2021 11:37:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/70.html/</guid>
+      <guid>https://zburu.vercel.app/posts/70/</guid>
       <description>为了方便写一些东西，pc端和手机端都可以同步，我用leanote搭建了一个在线笔记，但是必须在服务器后台运行一个指令
 base run.sh 不然就访问不了端口，我也不可能时刻在终端保持指令运行，所以就需要把指令放在服务器后台，让它自己保持运行，刚好有这么一插件 Supervisor管理器 2.2 。
 是一款免费的Python插件，点击下载即可，然后进入设置。

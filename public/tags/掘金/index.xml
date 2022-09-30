@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>掘金 on 子舒的博客</title>
     <link>https://zburu.vercel.app/tags/%E6%8E%98%E9%87%91/</link>
     <description>Recent content in 掘金 on 子舒的博客</description>
-    <image>
-      <url>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Wed, 22 Jun 2022 09:01:00 +0000</lastBuildDate><atom:link href="https://zburu.vercel.app/tags/%E6%8E%98%E9%87%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>掘金抽奖脚本</title>
-      <link>https://zburu.vercel.app/posts/143.html/</link>
+      <link>https://zburu.vercel.app/posts/143/</link>
       <pubDate>Wed, 22 Jun 2022 09:01:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/143.html/</guid>
+      <guid>https://zburu.vercel.app/posts/143/</guid>
       <description>分享一个掘金抽奖的油猴脚本，可以一键签到，抽奖，梭哈。
 攒多一点矿石，体验买彩票的感觉。
 (async function () { &amp;lsquo;use strict&amp;rsquo;;

@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 子舒的博客</title>
     <link>https://zburu.vercel.app/posts/</link>
     <description>Recent content in Posts on 子舒的博客</description>
-    <image>
-      <url>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://zburu.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Mon, 26 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zburu.vercel.app/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>将数组中多个对象的同名属性值取出合并成新数组</title>
-      <link>https://zburu.vercel.app/posts/168.html/</link>
+      <link>https://zburu.vercel.app/posts/168/</link>
       <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/168.html/</guid>
+      <guid>https://zburu.vercel.app/posts/168/</guid>
       <description>业务中需求的方法，接口返回一个数组，里面包含了大量的对象，具有同名的属性名，比较常见。但是需要将其中参数为name的属性值全部取出，合并成数组。
 const num = [ { id: 1, name: &amp;#39;abc&amp;#39;, }, { id: 2, name: &amp;#39;xyz&amp;#39;, } ] function getFields(arrnum, field) { const resnum = []; for (let i = 0; i &amp;lt; arrnum.length; ++i) resnum.push(arrnum[i][field]); return resnum; } const result = getFields(num, &amp;#34;name&amp;#34;); console.log(result); // [&amp;#39;abc&amp;#39;, &amp;#39;xyz&amp;#39;] console.log(result.join(&amp;#39; &amp;#39;)); // &amp;#34;abc xyz&amp;#34; </description>
     </item>
     
     <item>
       <title>第3期：关于密码的一些想法</title>
-      <link>https://zburu.vercel.app/posts/167.html/</link>
+      <link>https://zburu.vercel.app/posts/167/</link>
       <pubDate>Wed, 21 Sep 2022 19:26:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/167.html/</guid>
+      <guid>https://zburu.vercel.app/posts/167/</guid>
       <description>七日谈，说说我的心里话。
 第3期：关于密码的一些想法
 今天在坐地铁的过程中，突然想要一个问题，一个安全稳定，便于记忆的密码时什么样子的。是否要包括字母大小写，数字，以及特殊符号？
@@ -39,10 +36,10 @@ const num = [ { id: 1, name: &amp;#39;abc&amp;#39;, }, { id: 2, name: &amp;#39;x
     
     <item>
       <title>第2期：你是否想过成为一名作家？</title>
-      <link>https://zburu.vercel.app/posts/166.html/</link>
+      <link>https://zburu.vercel.app/posts/166/</link>
       <pubDate>Wed, 14 Sep 2022 17:59:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/166.html/</guid>
+      <guid>https://zburu.vercel.app/posts/166/</guid>
       <description>第2期：你是否想过成为一名作家？
 https://poets.org/poem/so-you-want-be-writer
 这是曾经询问过自己的一个问题，我想很多人在年少时期可能都会有过这样的经历，渴望将自己的文字带给更多人。
@@ -57,10 +54,10 @@ if it doesn&amp;rsquo;t come bursting out of you in spite of everything, don&amp
     
     <item>
       <title>第1期：文档和视频，你更喜欢哪种学习方式？</title>
-      <link>https://zburu.vercel.app/posts/165.html/</link>
+      <link>https://zburu.vercel.app/posts/165/</link>
       <pubDate>Wed, 07 Sep 2022 22:21:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/165.html/</guid>
+      <guid>https://zburu.vercel.app/posts/165/</guid>
       <description>内容很枯燥，有营养但不多。纯粹为了锻炼写作和思考能力，所以每周打算写一个话题，周一到周日之间不定时发布
 如题，这是我今天思考的话题。灵感来源于我在dev.to网站上看到的一个帖子。对于 learning 的方式，更倾向于看文档还是视频？我觉得可以从多个维度进行分析。
 学习进度，也可以说是过程 行业领域 后天应该养成什么样的习惯呢？ 1.学习进度 学习进度应该是对学习方式影响最大的因素了。
@@ -85,47 +82,47 @@ if it doesn&amp;rsquo;t come bursting out of you in spite of everything, don&amp
     
     <item>
       <title>浴鹄湾游记</title>
-      <link>https://zburu.vercel.app/posts/164.html/</link>
+      <link>https://zburu.vercel.app/posts/164/</link>
       <pubDate>Sat, 03 Sep 2022 20:22:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/164.html/</guid>
+      <guid>https://zburu.vercel.app/posts/164/</guid>
       <description>浴鹄湾，东靠杨公堤，西临三台山路，北至三台梦迹景区，南到赤山埠。</description>
     </item>
     
     <item>
       <title>水利博物馆照片</title>
-      <link>https://zburu.vercel.app/posts/162.html/</link>
+      <link>https://zburu.vercel.app/posts/162/</link>
       <pubDate>Mon, 22 Aug 2022 19:54:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/162.html/</guid>
+      <guid>https://zburu.vercel.app/posts/162/</guid>
       <description>公司团建，随手拍两张照片。
 白居易诗。</description>
     </item>
     
     <item>
       <title>火烧云</title>
-      <link>https://zburu.vercel.app/posts/159.html/</link>
+      <link>https://zburu.vercel.app/posts/159/</link>
       <pubDate>Fri, 12 Aug 2022 19:36:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/159.html/</guid>
-      <description> </description>
+      <guid>https://zburu.vercel.app/posts/159/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>一些容易遗漏的点</title>
-      <link>https://zburu.vercel.app/posts/158.html/</link>
+      <link>https://zburu.vercel.app/posts/158/</link>
       <pubDate>Wed, 10 Aug 2022 17:48:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/158.html/</guid>
+      <guid>https://zburu.vercel.app/posts/158/</guid>
       <description> 监听对象时如果值是null会报错，默认值设置为{}； for in 只能遍历对象 i in 4是错误的写法； 动态获取数组-拼接传参 var arr = [ &amp;#34;单位1&amp;#34;, &amp;#34;单位2&amp;#34;, &amp;#34;单位3&amp;#34;, &amp;#34;单位4&amp;#34;, &amp;#34;单位5&amp;#34; ] // 1.数组[] for (var i = 0; i &amp;lt; arr.length; i++) { this.defaultData.hostUnitList.push({ [arr[i]]: this.defaultData[arr[i]] }); } // 2.对象{} for (var i = 0; i &amp;lt; arr.length; i++) { this.defaultData.hostUnitList[arr[i]] = this.defaultData[arr[i]] } </description>
     </item>
     
     <item>
       <title>随想录 (9)</title>
-      <link>https://zburu.vercel.app/posts/157.html/</link>
+      <link>https://zburu.vercel.app/posts/157/</link>
       <pubDate>Sun, 07 Aug 2022 18:47:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/157.html/</guid>
+      <guid>https://zburu.vercel.app/posts/157/</guid>
       <description>落霞与孤鹜齐飞，秋水共长天一色。
 放个图防止抑郁。
 昨天看了一个帖子很有感触，土生土长的城市本地人很难体会每隔一段时间要重新建立社会关系的难受，从小到大，每到一个地方上学，从陌生变为熟悉，中间总有有一段难熬的时间。很多随父母打工而四处的求学的小孩，特别能有这种体会，因此也就有很多人厌恶上学，他们不理解为什么总是要四处奔波，父母也不理解小孩为什么不喜欢学习，两者误会，家庭矛盾也因此诞生了。当然我说的很片面，这只是其中一个原因。
@@ -136,19 +133,19 @@ if it doesn&amp;rsquo;t come bursting out of you in spite of everything, don&amp
     
     <item>
       <title>随想录 (8)</title>
-      <link>https://zburu.vercel.app/posts/156.html/</link>
+      <link>https://zburu.vercel.app/posts/156/</link>
       <pubDate>Thu, 04 Aug 2022 10:29:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/156.html/</guid>
+      <guid>https://zburu.vercel.app/posts/156/</guid>
       <description>来自一位朋友的意难平。</description>
     </item>
     
     <item>
       <title>win11 使用 10版本的鼠标右键设置</title>
-      <link>https://zburu.vercel.app/posts/155.html/</link>
+      <link>https://zburu.vercel.app/posts/155/</link>
       <pubDate>Tue, 02 Aug 2022 16:39:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/155.html/</guid>
+      <guid>https://zburu.vercel.app/posts/155/</guid>
       <description>实测好用，没有坑。
 管理员权限下打开终端，输入。
 reg add &amp;#34;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32&amp;#34; /f /ve 随后重新启动资源管理器即可
@@ -158,10 +155,10 @@ reg delete &amp;#34;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905b
     
     <item>
       <title>Anghunk 主题如何在后台评论列表解析表情？</title>
-      <link>https://zburu.vercel.app/posts/154.html/</link>
+      <link>https://zburu.vercel.app/posts/154/</link>
       <pubDate>Sat, 30 Jul 2022 20:11:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/154.html/</guid>
+      <guid>https://zburu.vercel.app/posts/154/</guid>
       <description>本文专为 Anghunk 主题开发文档而写。 https://github.com/98fuel/Anghunk
 方案是在梦繁星的协助下完成的。
 介绍 Anghunk 评论携带很多精美的表情，但是正常情况下 Typecho 后台是没办法正常解析这些表情的。如下图；
@@ -172,10 +169,10 @@ reg delete &amp;#34;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905b
     
     <item>
       <title>随想录 (7) --- 随便写的别当真</title>
-      <link>https://zburu.vercel.app/posts/153.html/</link>
+      <link>https://zburu.vercel.app/posts/153/</link>
       <pubDate>Fri, 29 Jul 2022 17:11:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/153.html/</guid>
+      <guid>https://zburu.vercel.app/posts/153/</guid>
       <description>好像很久没有写随笔了，最近发生的事很多，却不是件件如人心意。上午烈日当空，下午乌云密布，也已经是常事。当然我说的是天气。
 生活只是尽量让自己过的更好，喂自己一口毒鸡汤，艰难前行。
 &amp;ldquo;定个小目标，先瘦他个十斤！&amp;rdquo; 子舒狠狠的咬下一块鸡肉发出豪言壮语。
@@ -185,48 +182,48 @@ reg delete &amp;#34;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905b
     
     <item>
       <title>出错了，面板运行时发生错误！</title>
-      <link>https://zburu.vercel.app/posts/152.html/</link>
+      <link>https://zburu.vercel.app/posts/152/</link>
       <pubDate>Mon, 18 Jul 2022 11:51:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/152.html/</guid>
+      <guid>https://zburu.vercel.app/posts/152/</guid>
       <description># 删除之前无法使用的面板环境 rm -rf /www/server/panel/pyenv #重新获取新的面板环境和更新包 curl http://download.bt.cn/install/update_panel.sh|bash </description>
     </item>
     
     <item>
       <title>笔记:vue 中使用 axios 调用数据并渲染</title>
-      <link>https://zburu.vercel.app/posts/151.html/</link>
+      <link>https://zburu.vercel.app/posts/151/</link>
       <pubDate>Tue, 12 Jul 2022 14:59:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/151.html/</guid>
+      <guid>https://zburu.vercel.app/posts/151/</guid>
       <description>示例如下。
 &amp;lt;template&amp;gt; &amp;lt;div class=&amp;#34;posts&amp;#34;&amp;gt; &amp;lt;div v-for=&amp;#34;item in list&amp;#34; :key=&amp;#34;item.cid&amp;#34; &amp;gt; {{ item.title }} &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; import Axios from &amp;#39;axios&amp;#39;; export default { name: &amp;#39;index&amp;#39;, data () { return { list: [] } }, methods: { getData () { var api = &amp;#39;https://zburu.com/api/posts.php&amp;#39;; Axios.get(api).then((response) =&amp;gt; { this.list = response.data; console.log(response.data) }).catch((error) =&amp;gt; { console.log(error); }) } }, mounted () { this.getData(); }, } &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; &amp;lt;/style&amp;gt; </description>
     </item>
     
     <item>
       <title>新闻:2022年7月8日安倍晋三遭枪击</title>
-      <link>https://zburu.vercel.app/posts/148.html/</link>
+      <link>https://zburu.vercel.app/posts/148/</link>
       <pubDate>Fri, 08 Jul 2022 13:04:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/148.html/</guid>
+      <guid>https://zburu.vercel.app/posts/148/</guid>
       <description>2022年7月8日，安倍晋三在街头发表演讲时遭枪击。据奈良市消防局称，遇袭的安倍晋三目前失去意识，心肺停止。嫌疑人41岁男子山上彻也（现住奈良市）随后被控制。
 相关报道: https://www.sohu.com/a/565207100_121425542 https://new.qq.com/omn/20220708/20220708A03YIA00.html</description>
     </item>
     
     <item>
       <title>好久没看到这么蓝的天</title>
-      <link>https://zburu.vercel.app/posts/147.html/</link>
+      <link>https://zburu.vercel.app/posts/147/</link>
       <pubDate>Sat, 02 Jul 2022 14:11:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/147.html/</guid>
+      <guid>https://zburu.vercel.app/posts/147/</guid>
       <description>手机像素一般，更主要的是拍照手法不行，拍不出优美的感觉。</description>
     </item>
     
     <item>
       <title>obsidian:如何使用坚果云进行多端同步?</title>
-      <link>https://zburu.vercel.app/posts/146.html/</link>
+      <link>https://zburu.vercel.app/posts/146/</link>
       <pubDate>Mon, 27 Jun 2022 13:53:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/146.html/</guid>
+      <guid>https://zburu.vercel.app/posts/146/</guid>
       <description>接上篇文章 《关于我选择笔记系统这件小事》 ，obsidian 的个人体验很棒，我也打算长久使用作为个人知识库。
 但是它有一个弊端，就是本地离线化导致同步是个问题，官方的同步服务很贵，给我劝退了，因此我寻求了其他的同步备份方案，就是今天我要分享的坚果云+ obsidian 。
 注册账号 在坚果云官网注册一个账号，选择个人用户，创建账号之后登陆。
@@ -241,20 +238,20 @@ pc端同步 接下来需要将电脑本地的文件和坚果云的文件夹相�
     
     <item>
       <title>人民币小写转大写</title>
-      <link>https://zburu.vercel.app/posts/145.html/</link>
+      <link>https://zburu.vercel.app/posts/145/</link>
       <pubDate>Fri, 24 Jun 2022 15:53:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/145.html/</guid>
+      <guid>https://zburu.vercel.app/posts/145/</guid>
       <description>一个有趣的demo
 this.smalltoBIG(43533534.78)); //肆仟叁佰伍拾叁万叁仟伍佰叁拾肆元柒角捌分 smalltoBIG (n) { var fraction = [&amp;#39;角&amp;#39;, &amp;#39;分&amp;#39;]; var digit = [&amp;#39;零&amp;#39;, &amp;#39;壹&amp;#39;, &amp;#39;贰&amp;#39;, &amp;#39;叁&amp;#39;, &amp;#39;肆&amp;#39;, &amp;#39;伍&amp;#39;, &amp;#39;陆&amp;#39;, &amp;#39;柒&amp;#39;, &amp;#39;捌&amp;#39;, &amp;#39;玖&amp;#39;]; var unit = [ [&amp;#39;元&amp;#39;, &amp;#39;万&amp;#39;, &amp;#39;亿&amp;#39;],[&amp;#39;&amp;#39;, &amp;#39;拾&amp;#39;, &amp;#39;佰&amp;#39;, &amp;#39;仟&amp;#39;] ]; var head = n &amp;lt; 0 ? &amp;#39;欠&amp;#39; : &amp;#39;&amp;#39;; n = Math.abs(n); var s = &amp;#39;&amp;#39;; for (var i = 0; i &amp;lt; fraction.length; i++) { s += (digit[Math.floor(n * 10 * Math.pow(10, i)) % 10] + fraction[i]).</description>
     </item>
     
     <item>
       <title>掘金抽奖脚本</title>
-      <link>https://zburu.vercel.app/posts/143.html/</link>
+      <link>https://zburu.vercel.app/posts/143/</link>
       <pubDate>Wed, 22 Jun 2022 09:01:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/143.html/</guid>
+      <guid>https://zburu.vercel.app/posts/143/</guid>
       <description>分享一个掘金抽奖的油猴脚本，可以一键签到，抽奖，梭哈。
 攒多一点矿石，体验买彩票的感觉。
 (async function () { &amp;lsquo;use strict&amp;rsquo;;
@@ -265,10 +262,10 @@ const root = document.createElement(&amp;lsquo;div&amp;rsquo;); root.class = &am
     
     <item>
       <title>usb 接口的三面性</title>
-      <link>https://zburu.vercel.app/posts/142.html/</link>
+      <link>https://zburu.vercel.app/posts/142/</link>
       <pubDate>Tue, 21 Jun 2022 12:22:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/142.html/</guid>
+      <guid>https://zburu.vercel.app/posts/142/</guid>
       <description>传统的 usb 接口是一个神奇的物品，当你插入第一次的时候肯定是反方向的，所以你要反过来插第二次，但是结果仍然是插不进去。这个时候你就会发现，它存在第三面，所以当你再次反过来的时候就可以正常插进接口了。
 这就是 usb 接口的三面性 😐。
 所以为了保护精神和心理不受伤害，请离开传统的 usb ，投入 type-c 的怀抱吧！</description>
@@ -276,10 +273,10 @@ const root = document.createElement(&amp;lsquo;div&amp;rsquo;); root.class = &am
     
     <item>
       <title>无题</title>
-      <link>https://zburu.vercel.app/posts/134.html/</link>
+      <link>https://zburu.vercel.app/posts/134/</link>
       <pubDate>Sat, 18 Jun 2022 13:32:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/134.html/</guid>
+      <guid>https://zburu.vercel.app/posts/134/</guid>
       <description>当情绪破防的时候， 任何事情都是最后一根稻草。
 尘埃落定。
 &amp;mdash;2022/06/23</description>
@@ -287,10 +284,10 @@ const root = document.createElement(&amp;lsquo;div&amp;rsquo;); root.class = &am
     
     <item>
       <title>随想录 (6)</title>
-      <link>https://zburu.vercel.app/posts/133.html/</link>
+      <link>https://zburu.vercel.app/posts/133/</link>
       <pubDate>Fri, 10 Jun 2022 12:29:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/133.html/</guid>
+      <guid>https://zburu.vercel.app/posts/133/</guid>
       <description>随着年龄的增长，越发感觉自我想象力的缺失。
 最近迷上了科幻小说，遂找到刘慈欣的小说集，大概二十多篇，花上一周时间研读完毕，只有一种惊艳的感觉，不论是文笔还是世界观架构，都令我着迷。
 而大刘作为理工生，将充满浪漫色彩的想象力和严谨的物理学知识相结合，我很佩服。
@@ -302,10 +299,10 @@ const root = document.createElement(&amp;lsquo;div&amp;rsquo;); root.class = &am
     
     <item>
       <title>typecho 评论回复艾特评论人</title>
-      <link>https://zburu.vercel.app/posts/132.html/</link>
+      <link>https://zburu.vercel.app/posts/132/</link>
       <pubDate>Tue, 07 Jun 2022 10:35:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/132.html/</guid>
+      <guid>https://zburu.vercel.app/posts/132/</guid>
       <description>typecho 在评论时默认是没有 @ 评论人的功能，可以用代码加一下。
 在 functions.php 中：
 /* * 评论回复时 @ 评论人 */ function get_comment_at($coid) { $db = Typecho_Db::get(); $prow = $db-&amp;gt;fetchRow($db-&amp;gt;select(&amp;#39;parent,status&amp;#39;)-&amp;gt;from(&amp;#39;table.comments&amp;#39;) -&amp;gt;where(&amp;#39;coid = ?&amp;#39;, $coid)); $mail = &amp;#34;&amp;#34;; $parent = @$prow[&amp;#39;parent&amp;#39;]; if ($parent != &amp;#34;0&amp;#34;) { $arow = $db-&amp;gt;fetchRow($db-&amp;gt;select(&amp;#39;author,status,mail&amp;#39;)-&amp;gt;from(&amp;#39;table.comments&amp;#39;) -&amp;gt;where(&amp;#39;coid = ?&amp;#39;, $parent)); @$author = @$arow[&amp;#39;author&amp;#39;]; $mail = @$arow[&amp;#39;mail&amp;#39;]; if(@$author &amp;amp;&amp;amp; $arow[&amp;#39;status&amp;#39;] == &amp;#34;approved&amp;#34;){ if (@$prow[&amp;#39;status&amp;#39;] == &amp;#34;waiting&amp;#34;){ echo &amp;#39;&amp;lt;p class=&amp;#34;commentReview&amp;#34;&amp;gt;（评论审核中）)&amp;lt;/p&amp;gt;&amp;#39;; } echo &amp;#39;&amp;lt;a href=&amp;#34;#comment-&amp;#39; . $parent . &amp;#39;&amp;#34;&amp;gt;@&amp;#39; .</description>
@@ -313,10 +310,10 @@ const root = document.createElement(&amp;lsquo;div&amp;rsquo;); root.class = &am
     
     <item>
       <title>随想录 (5)</title>
-      <link>https://zburu.vercel.app/posts/131.html/</link>
+      <link>https://zburu.vercel.app/posts/131/</link>
       <pubDate>Thu, 02 Jun 2022 08:54:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/131.html/</guid>
+      <guid>https://zburu.vercel.app/posts/131/</guid>
       <description>抽空看完了爱死机第三季，个人感受比第二季优秀，但是还是不如第一季。太过追求三者的结合，科幻与死亡的元素，不够灵活。
 但是其中的剧情还是比较精彩的，比如邪神那一集，估计只有了解克苏鲁的人才能看懂，结局也比较贴合剧情走向。女子挖去了眼睛和耳朵，听不到邪神的喃语，才免受精神污染，活着走出危机。（2022/05/26）
 bootcss4是一个轻量前端ui框架，最近的项目中用到了它，使用体验还不错，不过功能倒是与element相比弱了一些（2022/05/27）
@@ -326,10 +323,10 @@ bootcss4是一个轻量前端ui框架，最近的项目中用到了它，使用�
     
     <item>
       <title>宝塔自动备份网站到邮箱教程</title>
-      <link>https://zburu.vercel.app/posts/130.html/</link>
+      <link>https://zburu.vercel.app/posts/130/</link>
       <pubDate>Wed, 25 May 2022 17:27:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/130.html/</guid>
+      <guid>https://zburu.vercel.app/posts/130/</guid>
       <description>前言 网站经常备份好处就是遇到问题以后可以迅速的恢复，不那么被动，防止信息丢失，操作性很大。虽然搭建一个网站非常容易，但为了应对网络上各种各样的意外情况，避免自己的网站付诸东流，做好网站备份是非常有必要的。
 现在邮箱接收都支持附件文件，将网站文件和数据库文件备份到我们自己的邮箱也是一种很好地备份方式，也防止备份文件丢失。
 邮箱接收附件文件大小，取决于使用的邮箱服务。一般来说个人博客网站源文件，数据库文件不大，常见邮箱服务都是可以使用的。
@@ -350,10 +347,10 @@ Error in certificate: Peer&#39;s certificate issuer has been marked as not trust
     
     <item>
       <title>一个优雅的字体压缩解决方案 ---fonttools</title>
-      <link>https://zburu.vercel.app/posts/106.html/</link>
+      <link>https://zburu.vercel.app/posts/106/</link>
       <pubDate>Tue, 24 May 2022 14:28:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/106.html/</guid>
+      <guid>https://zburu.vercel.app/posts/106/</guid>
       <description>分享一个 python 的库 &amp;mdash;fonttools，针对字体文件进行处理非常方便。
 下载 需要先在电脑上下载 python 环境，这个就不多说了。
 然后在本地命令行输入：
@@ -364,10 +361,10 @@ pip install fonttools 字体库 本地新建一个文件夹，取名为 fonts �
     
     <item>
       <title>随想录 (4)</title>
-      <link>https://zburu.vercel.app/posts/127.html/</link>
+      <link>https://zburu.vercel.app/posts/127/</link>
       <pubDate>Fri, 13 May 2022 10:37:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/127.html/</guid>
+      <guid>https://zburu.vercel.app/posts/127/</guid>
       <description>好事和坏事总是接踵而至，你永远不知道下一秒会发生什么。但是总有解决的办法，不是吗？但实际上我也不确定。
 昨天很晚才睡，想了很多，乱七八糟的。生活哪有容易的事情，就跟摸石头过河一样，跌跌拌拌，最后才找到适合自己生活的模式。（2020/05/09）
 coding构建部署同步github好像有bug，搞了半天最后重新刷新 GitHub.com OAuth 认证就好了。（2020/05/10）
@@ -383,10 +380,10 @@ coding构建部署同步github好像有bug，搞了半天最后重新刷新 GitH
     
     <item>
       <title>分享一款自用的 v2ex 主题样式</title>
-      <link>https://zburu.vercel.app/posts/128.html/</link>
+      <link>https://zburu.vercel.app/posts/128/</link>
       <pubDate>Thu, 12 May 2022 13:46:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/128.html/</guid>
+      <guid>https://zburu.vercel.app/posts/128/</guid>
       <description>起因是因为觉得 v2ex 网站主题略有拥挤，阅读体验不好，而正好网站支持自定义 css，所以就在参考其他人的基础上，修改了一套比较美观的样式。
 本来是自用的，但是看到有人发帖分享主题，我也索性将它分享出来了。
 v2ex 帖子: https://www.v2ex.com/t/851735
@@ -397,10 +394,10 @@ Github 仓库: https://github.com/zburu/v2ex_theme
     
     <item>
       <title>随想录 (3)</title>
-      <link>https://zburu.vercel.app/posts/125.html/</link>
+      <link>https://zburu.vercel.app/posts/125/</link>
       <pubDate>Fri, 06 May 2022 13:23:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/125.html/</guid>
+      <guid>https://zburu.vercel.app/posts/125/</guid>
       <description>五一假期回老家处理一些事情，收拾东西的时候，从角落里翻出来几张老照片，很有怀念意义。（2022/05/03）
 好事和坏事总是接踵而至，你永远不知道下一秒会发生什么。但是总有解决的办法，不是吗？（2022/05/05）
 整理了一下个人书单，发现读过的书太少了，打算做一个阅读计划，保证持续阅读。
@@ -409,20 +406,20 @@ ps: 这周碎碎念很少，因为五一有事出去了，身体和心灵都没�
     
     <item>
       <title>docker部署思源笔记</title>
-      <link>https://zburu.vercel.app/posts/124.html/</link>
+      <link>https://zburu.vercel.app/posts/124/</link>
       <pubDate>Thu, 05 May 2022 09:33:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/124.html/</guid>
+      <guid>https://zburu.vercel.app/posts/124/</guid>
       <description> 文章废弃
 部署 docker run --name siyuan -itd -p 6806:6806 -v /opt/my_siyuan_path:/opt/siyuan --restart always b3log/siyuan 备份 sudo su # 查看容器列表 docker ps -a # 制作备份 docker commit -p 7409ce6aae7b siyuan_backup # 其中 403e6db0c 是容器id, jenkins_backup是备份名称 # 查看备份是否成功 docker images # 将镜像制作成文件 docker save -o [filename] [image] docker save -o siyuan_backup.tar siyuan_backup ls # 在 /home/ubuntu/ 中可以看到制作后的压缩包 </description>
     </item>
     
     <item>
       <title>随想录 (2)</title>
-      <link>https://zburu.vercel.app/posts/122.html/</link>
+      <link>https://zburu.vercel.app/posts/122/</link>
       <pubDate>Fri, 29 Apr 2022 09:48:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/122.html/</guid>
+      <guid>https://zburu.vercel.app/posts/122/</guid>
       <description>今天醒的很早，原来以为是失眠，结果是早起，这两天发生的有点多，导致情绪都有些低落，精神萎靡。希望风波赶紧过去，太影响生活了。
 （2022/04/25）
 很喜欢雨后的阴天，骑着车，微凉的空气扑面而来，清新而舒适，本来早上有些困倦的大脑清醒了很多。
@@ -436,10 +433,10 @@ ps: 这周碎碎念很少，因为五一有事出去了，身体和心灵都没�
     
     <item>
       <title>关于我选择笔记系统这件小事</title>
-      <link>https://zburu.vercel.app/posts/121.html/</link>
+      <link>https://zburu.vercel.app/posts/121/</link>
       <pubDate>Thu, 28 Apr 2022 22:43:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/121.html/</guid>
+      <guid>https://zburu.vercel.app/posts/121/</guid>
       <description>受年龄增长以及生活影响，人接触到的新事物和知识将会越来越多，大脑就显得有些混乱了，我也不敢保证自己的思维会始终保持一个高强度的在线状态。
 因此决定整理个人知识库， 将大脑中的片段和思想整理出来。以笔记和文字的形式将他记录下来，但是最近一直在寻求这样的工具，多方对比，也没有一款能真正满足我的需求的工具。
 最好是自建的笔记，因为我今天在语雀写了一篇私密笔记，或许因为内容略带敏感吧，然后就被审查了，说我违规。
@@ -471,10 +468,10 @@ obsidian 是一堆小文件集合在一起形成的笔记架构，这和一般�
     
     <item>
       <title>浏览器收藏夹一键填写博客评论信息</title>
-      <link>https://zburu.vercel.app/posts/120.html/</link>
+      <link>https://zburu.vercel.app/posts/120/</link>
       <pubDate>Tue, 26 Apr 2022 14:08:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/120.html/</guid>
+      <guid>https://zburu.vercel.app/posts/120/</guid>
       <description>先点击收藏一个页面，然后右键它，选择修改，在网址输入框复制下面的js代码，就可以一键填入了。
 将其中的昵称，邮箱，网址修改成自己的信息。
 目前支持绝大多数主流博客平台和系统，如果发现没有起作用，可以在下面代码里面修改增加一下input的属性。
@@ -484,10 +481,10 @@ javascript:void function(){var lauthor=[&amp;#34;#author&amp;#34;,&amp;#34;input
     
     <item>
       <title>随想录 (1)</title>
-      <link>https://zburu.vercel.app/posts/119.html/</link>
+      <link>https://zburu.vercel.app/posts/119/</link>
       <pubDate>Sun, 24 Apr 2022 09:29:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/119.html/</guid>
+      <guid>https://zburu.vercel.app/posts/119/</guid>
       <description>正式启动一周碎碎念计划，起因是无意中发现了一个网站，古天乐的博客 。看完之后震撼了，虽然每天都是很简短的一句话，但是一个习惯坚持了12年。
 因为我决定仿效他的做法，看看自己是否能坚持足够长的时间。碎片化一些记录，然后通过语雀小记进行记录，最后在每周最后一天工作日总结一下，发布到博客。
 （2022/04/20）
@@ -505,10 +502,10 @@ javascript:void function(){var lauthor=[&amp;#34;#author&amp;#34;,&amp;#34;input
     
     <item>
       <title>在宝塔中使用青龙面板代挂京豆</title>
-      <link>https://zburu.vercel.app/posts/116.html/</link>
+      <link>https://zburu.vercel.app/posts/116/</link>
       <pubDate>Fri, 15 Apr 2022 13:57:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/116.html/</guid>
+      <guid>https://zburu.vercel.app/posts/116/</guid>
       <description>如题所述，想要在闲置的服务器中跑一些服务，青龙面板代挂京豆现存很多开源的脚本，安全性已经经过很多人验证，可以放心使用。
 因此我也安排了一个脚本，成功部署之后，就写这篇不算教程的笔记来记录一下整个过程。
 Github: https://github.com/6dylan6/jdpro 作者会更新一些部署的指令，如果安装不成功可以对照文档中的指令。
@@ -534,10 +531,10 @@ Github: https://github.com/6dylan6/jdpro 作者会更新一些部署的指令，
     
     <item>
       <title>2022 清明出游</title>
-      <link>https://zburu.vercel.app/posts/113.html/</link>
+      <link>https://zburu.vercel.app/posts/113/</link>
       <pubDate>Thu, 07 Apr 2022 10:21:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/113.html/</guid>
+      <guid>https://zburu.vercel.app/posts/113/</guid>
       <description>清明过去两天了，由于出去玩了两天，身体很累等原因，再加上工作忙碌所以没有来得及记录。今天略有闲时间，整理一下随笔。
 爬山&amp;mdash;杭州半山森林公园 相比于西湖等景点，半山已经算是人非常少的呢，因为疫情原因也不敢去外地太远的地方，万一给隔离就完蛋了，所以就在市内景点挑人少没去过的地方玩了一下。
 西溪&amp;mdash;花朝节 &amp;ldquo;迟日江山丽,春风花草香。&amp;rdquo; 一年一度的西溪花朝节，虽然说平时也都经常去，但是借着这个假期和女朋友出来闲逛，也挺舒服，刚好也不热穿着卫衣，漫步在花丛中，别有一番风味。
@@ -546,10 +543,10 @@ Github: https://github.com/6dylan6/jdpro 作者会更新一些部署的指令，
     
     <item>
       <title>在nuxt中实现图片放大预览功能</title>
-      <link>https://zburu.vercel.app/posts/112.html/</link>
+      <link>https://zburu.vercel.app/posts/112/</link>
       <pubDate>Fri, 01 Apr 2022 13:28:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/112.html/</guid>
+      <guid>https://zburu.vercel.app/posts/112/</guid>
       <description>v-viewer 基于vue的一个插件，可以实现图片放大，缩小，旋转，拖拽，预览等各种功能，效果还是很棒的。这是我在Github摸鱼时发现的一个仓库，感觉很有用，就分享一下使用过程。
 Github: https://github.com/mirari/v-viewer
 1.安装 npm install v-viewer 2.用法 在 plugins 中新建 viewer.js 文件。
@@ -559,20 +556,20 @@ Github: https://github.com/mirari/v-viewer
     
     <item>
       <title>在vue中制作canvas波浪图</title>
-      <link>https://zburu.vercel.app/posts/111.html/</link>
+      <link>https://zburu.vercel.app/posts/111/</link>
       <pubDate>Tue, 29 Mar 2022 13:08:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/111.html/</guid>
+      <guid>https://zburu.vercel.app/posts/111/</guid>
       <description>新建组件 Canvas.vue 。
 // @/components/Canvas.vue &amp;lt;template&amp;gt; &amp;lt;div :style=&amp;#34;{ height: waveAllHeight + &amp;#39;px&amp;#39;, background: bgColor }&amp;#34; class=&amp;#34;wave&amp;#34;&amp;gt; &amp;lt;canvas id=&amp;#34;wave1&amp;#34;&amp;gt;&amp;lt;/canvas&amp;gt; &amp;lt;canvas id=&amp;#34;wave2&amp;#34;&amp;gt;&amp;lt;/canvas&amp;gt; &amp;lt;canvas id=&amp;#34;wave3&amp;#34;&amp;gt;&amp;lt;/canvas&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; export default { name: &amp;#34;Canvas&amp;#34;, props: { bgColor: { default: &amp;#34;none&amp;#34;, }, // 背景色 waveAllHeight: { default: 160 }, // 波浪的整体高度 waveCount: { default: 2 }, // 波峰个数 waveHeight: { default: 50 }, // 波浪起伏高度 // 波浪颜色 waveColor: { default () { return [ &amp;#34;#f3f3f3&amp;#34;, &amp;#34;#f3f3f3&amp;#34;, &amp;#34;#f3f3f3&amp;#34;, ]; }, }, // 波浪速率 waveTime: { default () { return [4000, 4000, 4000]; }, }, }, data () { return {}; }, mounted () { this.</description>
     </item>
     
     <item>
       <title>增加了站内搜索功能</title>
-      <link>https://zburu.vercel.app/posts/110.html/</link>
+      <link>https://zburu.vercel.app/posts/110/</link>
       <pubDate>Fri, 25 Mar 2022 11:43:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/110.html/</guid>
+      <guid>https://zburu.vercel.app/posts/110/</guid>
       <description>如题，我花了一个多小时，参照nuxt文档，把搜索功能给加上了，url地址 /search ，记录一下相关代码。
 可以选择放在 components/&amp;lt;Search /&amp;gt; 里面，然后引入到 head 模板，也可以单独创建一个页面，我选择的是后者。
 新建一个页面模板 /pages/search.vue 。
@@ -581,10 +578,10 @@ Github: https://github.com/mirari/v-viewer
     
     <item>
       <title>好久不做饭，突然上手倒也说得过去</title>
-      <link>https://zburu.vercel.app/posts/109.html/</link>
+      <link>https://zburu.vercel.app/posts/109/</link>
       <pubDate>Mon, 21 Mar 2022 17:36:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/109.html/</guid>
+      <guid>https://zburu.vercel.app/posts/109/</guid>
       <description>故事前景参照上上篇文章 《小区封锁下的生活》。不想订外卖，打工人觉得饭菜太贵，并且好像味道也就那样，所以和对象打算自己动手，丰衣足食。
 在美团买了一些菜，肉，水果等，可以放到小区门口，报上门牌号，会有工作人员帮忙送进来，也挺方便。唯一不好的就是这两天断断续续的下雨，辛苦工作人员和医护人员一直在采样核酸。（写下这篇之前，刚去做过核酸。）
 用简单的食材做出了味道还不错的饭，只能称之为饭，而不是美食，因为我们俩的手艺还在进步中。
@@ -597,10 +594,10 @@ Github: https://github.com/mirari/v-viewer
     
     <item>
       <title>小区封锁下的生活</title>
-      <link>https://zburu.vercel.app/posts/108.html/</link>
+      <link>https://zburu.vercel.app/posts/108/</link>
       <pubDate>Sun, 20 Mar 2022 00:15:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/108.html/</guid>
+      <guid>https://zburu.vercel.app/posts/108/</guid>
       <description>2022年3月19日，坐标杭州，很不巧，是我最近几年经历的第一次疫情封锁小区。
 小区里出现一个密切接触者，询问过医护人员，可能是疑似感染新冠病毒。来的有些突然，不过倒也在意料之中，前段时间已经在余杭区爆发过一场大规模的疫情，我所在的地方紧挨着余杭区的边缘，说不好因为什么原因传播，已经尽力做好防护。
 而我是今天刚搬来这里住的，和对象租房子找到这个小区。租房之旅已经够辛苦，中午收拾完东西准备躺着休息一下，然后下午收到通知，小区即将封锁。然后赶紧出门，买菜和生活用品，屯够了一周的物品，也够生活了，没什么大问题。
@@ -613,10 +610,10 @@ Github: https://github.com/mirari/v-viewer
     
     <item>
       <title>sql中时间戳转日期</title>
-      <link>https://zburu.vercel.app/posts/107.html/</link>
+      <link>https://zburu.vercel.app/posts/107/</link>
       <pubDate>Thu, 10 Mar 2022 17:33:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/107.html/</guid>
+      <guid>https://zburu.vercel.app/posts/107/</guid>
       <description>需求: 我将博客和 typecho 后台结合起来，打算做一个在线说说的功能，在 typecho 中输入内容，然后调用接口，实现在我的博客查看说说功能的功能。是不是有点绕？我也这么觉得，但是折腾一下也挺好的。
 typecho 导出的数据默认是时间戳格式，那我在前端调用的时候就很麻烦，所以选择在 sql 查询时直接转换，created 是表里面的参数。
 // 时间转换语句 FROM_UNIXTIME(created) // 数据库查询语句 $sql = &amp;#34;select FROM_UNIXTIME(created),text from ... order by created desc&amp;#34;; 这里导出的数据就是下面这个样子。
@@ -627,10 +624,10 @@ $sql = &amp;#34;select FROM_UNIXTIME(created) as created,text from ... order by 
     
     <item>
       <title>时隔六年我终于换电脑了</title>
-      <link>https://zburu.vercel.app/posts/105.html/</link>
+      <link>https://zburu.vercel.app/posts/105/</link>
       <pubDate>Thu, 03 Mar 2022 16:56:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/105.html/</guid>
+      <guid>https://zburu.vercel.app/posts/105/</guid>
       <description>迫于我之前的电脑已经服役了六年，还是高考结束后购买的，一直陪伴我度过了整个青春 ?。 大学时写论文，作业都是通过它。
 但是最近越来越严重，主要是屏幕的色域出现了一些问题，大面积发白，很伤眼睛。
 其次显卡配置等，虽然凑合一下还能用，但也是很多年前的产物了。显卡、cpu也是不能满足我目前的使用了（主要是现在的游戏太吃配置了），综合考虑我决定让它退休? 。然后在我精挑细选下，选择了惠普暗影精灵7。
@@ -647,10 +644,10 @@ $sql = &amp;#34;select FROM_UNIXTIME(created) as created,text from ... order by 
     
     <item>
       <title>“不如吃茶去”</title>
-      <link>https://zburu.vercel.app/posts/104.html/</link>
+      <link>https://zburu.vercel.app/posts/104/</link>
       <pubDate>Thu, 24 Feb 2022 10:29:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/104.html/</guid>
+      <guid>https://zburu.vercel.app/posts/104/</guid>
       <description>想了很久，也算是结合自己的心境吧，打算正式起一个博客名称，以前子舒的博客，也就是挂着自己的名字，总觉得差点意思。所以现在决定更名为 &amp;lsquo;不如吃茶去&amp;rsquo;。其中含义，听我娓娓道来&amp;hellip;
 我是从中学开始接触音乐的，当时喜欢唱歌，会听很多当时流行的歌曲。那时候比较火的最多的还是周杰伦的歌，还有就是林俊杰等歌手。
 然后再到初入高中，准确的说应该是初三，开始听许嵩的歌，最开始是《自定义》专辑，每天都听，节奏很有旋律感。为此还专门买了一个mp4，带着一块小屏幕的那种，下载了许嵩的歌，上学放学路上经常会听，包括在上晚自习的时候，也会一边听，一边写作业。
@@ -664,20 +661,20 @@ $sql = &amp;#34;select FROM_UNIXTIME(created) as created,text from ... order by 
     
     <item>
       <title>【笔记】使用php写接口文件调用数据</title>
-      <link>https://zburu.vercel.app/posts/103.html/</link>
+      <link>https://zburu.vercel.app/posts/103/</link>
       <pubDate>Tue, 22 Feb 2022 17:12:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/103.html/</guid>
+      <guid>https://zburu.vercel.app/posts/103/</guid>
       <description>如何使用 php 写一个接口，然后将数据以 json 文件格式调用。
 &amp;lt;?php header(&amp;#39;Content-Type:application/json; charset=utf-8&amp;#39;); header(&amp;#34;Access-Control-Allow-Origin:*&amp;#34;); $servername = &amp;#34;localhost&amp;#34;; $username = &amp;#34;数据库账号&amp;#34;; $password = &amp;#34;数据库密码&amp;#34;; $dbname = &amp;#34;数据库名称&amp;#34;; // 创建连接 $conn = new mysqli($servername, $username, $password, $dbname); // 检测连接 if ($conn-&amp;gt;connect_error) { die(&amp;#34;连接失败: &amp;#34; . $conn-&amp;gt;connect_error); } $sql = &amp;#34;select slug,title,created,text from typecho_contents&amp;#34;; $result = $conn-&amp;gt;query($sql); if ($result-&amp;gt;num_rows &amp;gt; 0) { // 输出数据 while($row = $result-&amp;gt;fetch_assoc()) { $data[]=$row; } $json = json_encode($data,JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT);//把数据转换为JSON数据. exit($json) ; } else { echo &amp;#34;未查询到结果！&amp;#34;; } $conn-&amp;gt;close(); ?</description>
     </item>
     
     <item>
       <title>Nuxt.js如何部署Artalk和遇到的问题</title>
-      <link>https://zburu.vercel.app/posts/102.html/</link>
+      <link>https://zburu.vercel.app/posts/102/</link>
       <pubDate>Fri, 18 Feb 2022 13:48:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/102.html/</guid>
+      <guid>https://zburu.vercel.app/posts/102/</guid>
       <description>花了两天时间，终于把 Artalk 部署好了，一款数据自托管带后端的评论程序，非常适合我。这篇文章就介绍一下我部署的流程，以及我在部署过程中遇到的一些问题，将它记录一下，以便之后研究，顺便对使用 Nuxt.js 搭建博客的伙伴提供一些参考价值。
 Artalk 地址: https://artalk.js.org/
 这篇文章我将分为三个部分，后端部署、前端部署、问题研究。
@@ -697,10 +694,10 @@ docker run -d \ --name artalk-go \ -p 0.</description>
     
     <item>
       <title>2022新春快乐</title>
-      <link>https://zburu.vercel.app/posts/99.html/</link>
+      <link>https://zburu.vercel.app/posts/99/</link>
       <pubDate>Mon, 31 Jan 2022 13:22:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/99.html/</guid>
+      <guid>https://zburu.vercel.app/posts/99/</guid>
       <description>万物更新，旧疾当愈，长安常安。
 今日是除夕，极目不见故土，抬头却是一片星空。
 今年也是在杭州过的第三个新年，因为疫情的缘故，支持国家防疫政策。
@@ -711,10 +708,10 @@ docker run -d \ --name artalk-go \ -p 0.</description>
     
     <item>
       <title>如何使用谷歌插件为网站注入代码</title>
-      <link>https://zburu.vercel.app/posts/100.html/</link>
+      <link>https://zburu.vercel.app/posts/100/</link>
       <pubDate>Wed, 26 Jan 2022 14:20:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/100.html/</guid>
+      <guid>https://zburu.vercel.app/posts/100/</guid>
       <description>在浏览网站时，受限于网站的缺陷，我们通常都会写一些脚本和插件来进行扩展，常规方法有油猴和谷歌插件两种，油猴也是一种插件，使用起来很方便，今天要讲的是如何通过谷歌插件进行注入。
 按照结构生成下面几个文件
 |chrome-plugin|---manifest.json|---script.js|---favicon.ico 在 manifest.json 中写入代码，这是一个入口文件，声明了插件的基本信息。
@@ -727,10 +724,10 @@ default_icon 是插件的图标 matches 是使用的网站，在该域名下的�
     
     <item>
       <title>使用Love主题的数据库</title>
-      <link>https://zburu.vercel.app/posts/101.html/</link>
+      <link>https://zburu.vercel.app/posts/101/</link>
       <pubDate>Tue, 25 Jan 2022 11:39:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/101.html/</guid>
+      <guid>https://zburu.vercel.app/posts/101/</guid>
       <description>基于typecho中的LOVE主题备份的一个数据库文件，因为需要写一百个文章，将名字一一打字进去，非常耗时间和精力，所以我做了这个数据库，可以直接使用。
 作者没有贴Github地址，就直接指向主题列表说明了，这是主题地址
 数据库的仓库地址: https://github.com/zburu/love-sql
@@ -742,10 +739,10 @@ default_icon 是插件的图标 matches 是使用的网站，在该域名下的�
     
     <item>
       <title>《夜幕》</title>
-      <link>https://zburu.vercel.app/posts/98.html/</link>
+      <link>https://zburu.vercel.app/posts/98/</link>
       <pubDate>Fri, 21 Jan 2022 12:00:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/98.html/</guid>
+      <guid>https://zburu.vercel.app/posts/98/</guid>
       <description>0. 引言 如果再来一次的话，我不敢保证还会再做出这样的选择。
 “悲剧是一种特殊的，无与伦比的喜剧。任何一种事物走到极端时，都会不可避免的朝着反方向前进。所以正确的方法应该是在随着时间的推移中，通过自身的动力以及外在的压力双重作用下，不断修正自己，那句话怎么说来着，是一种缓慢但稳定的螺旋式上升。” 男子响亮而坚定的声音在天花板下回荡。​
 1. 悲剧 “威廉·莎士比亚对人性的缺陷有着自己独到的理解和表达方式，这种思想最典型的表现是在戏剧《哈姆雷特》中..”
@@ -805,10 +802,10 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>读一读柏拉图的《理想国》</title>
-      <link>https://zburu.vercel.app/posts/97.html/</link>
+      <link>https://zburu.vercel.app/posts/97/</link>
       <pubDate>Wed, 19 Jan 2022 15:10:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/97.html/</guid>
+      <guid>https://zburu.vercel.app/posts/97/</guid>
       <description>最近在读柏拉图的《理想国》，源于罗翔老师的推荐，让我也有一些冲动。也抱着对自己灵魂有一丝净化的作用。让浮躁的内心安静下来。
 但是通书有一点诡辩的色彩，所以还是要认真分辨的。不可掉入设置的“陷阱”，就像是生活一般，做事都要对其认识分析，不可一概而信。人都是主观的，每个人读到的内容都是不一样的。
 当一个人知道自己将要死亡的时候，会有一种恐慌和忧虑在他的脑子里久久不散，即来世会受到今世所做之恶的惩罚。
@@ -830,10 +827,10 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>Nuxt 项目中如何引入百度统计？</title>
-      <link>https://zburu.vercel.app/posts/96.html/</link>
+      <link>https://zburu.vercel.app/posts/96/</link>
       <pubDate>Mon, 17 Jan 2022 15:49:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/96.html/</guid>
+      <guid>https://zburu.vercel.app/posts/96/</guid>
       <description>在部署一个网站之后，我们最关心的事情无异于是访问量，以及对它的分析。国内的百度统计是一个不错的选择，基本的功能都是免费的。
 只需要在head中引入一串 javascript 代码即可。
 &amp;lt;!-- &amp;lt;script&amp;gt; var _hmt = _hmt || []; (function() { var hm = document.createElement(&amp;#34;script&amp;#34;); hm.src = &amp;#34;https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxx&amp;#34;; var s = document.getElementsByTagName(&amp;#34;script&amp;#34;)[0]; s.parentNode.insertBefore(hm, s); })(); &amp;lt;/script&amp;gt; --&amp;gt; 上面是百度提供的统计代码，需要放在 &amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;中。
@@ -843,20 +840,20 @@ Gerechtigkeit，一款国外开发的软件，意为德语中的“正义公道�
     
     <item>
       <title>网易云音乐年度报告分享</title>
-      <link>https://zburu.vercel.app/posts/95.html/</link>
+      <link>https://zburu.vercel.app/posts/95/</link>
       <pubDate>Mon, 27 Dec 2021 15:50:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/95.html/</guid>
+      <guid>https://zburu.vercel.app/posts/95/</guid>
       <description>我真的老了吗？看看我的网易云音乐年度报告分享吧！
 图片 图片 </description>
     </item>
     
     <item>
       <title>typecho 更换 gravatar 头像源</title>
-      <link>https://zburu.vercel.app/posts/92.html/</link>
+      <link>https://zburu.vercel.app/posts/92/</link>
       <pubDate>Tue, 21 Dec 2021 10:11:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/92.html/</guid>
+      <guid>https://zburu.vercel.app/posts/92/</guid>
       <description>找到根目录下 config.inc.php 文件，在最前面加入下面的代码。
 define(&amp;#39;__TYPECHO_GRAVATAR_PREFIX__&amp;#39;, &amp;#39;https://sdn.geekzu.org/avatar/&amp;#39;); 其中 https://sdn.geekzu.org/avatar/ 是一个国内源链接，这个是我目前找到的比较稳定的源。
 如果这个源不能用了，可以更换其他的源，直接搜其他的相关国内源就可以了。
@@ -866,10 +863,10 @@ https://cravatar.cn/avatar/ https://sdn.geekzu.org/avatar/</description>
     
     <item>
       <title>有关 cdn.jsdelivr.net 证书错误的一些想法</title>
-      <link>https://zburu.vercel.app/posts/91.html/</link>
+      <link>https://zburu.vercel.app/posts/91/</link>
       <pubDate>Mon, 20 Dec 2021 14:25:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/91.html/</guid>
+      <guid>https://zburu.vercel.app/posts/91/</guid>
       <description>记录一次不大不小的事件，2021年12月20日，cdn.jsdelivr.net 国内ip全面崩盘，说是证书出错了，然后所有使用cdn.jsdelivr.net进行加速的资源全部404。
 我也是在朋友圈看到的这个消息，上线一看果然全部显示丢失。
 对国外资源没有影响，所以这是一次只出现在国内的问题，jsd官网都还在，估计是cdn配置出错，应该很快就可以修复了。
@@ -884,10 +881,10 @@ https://cravatar.cn/avatar/ https://sdn.geekzu.org/avatar/</description>
     
     <item>
       <title>闲谈2021</title>
-      <link>https://zburu.vercel.app/posts/90.html/</link>
+      <link>https://zburu.vercel.app/posts/90/</link>
       <pubDate>Fri, 17 Dec 2021 16:39:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/90.html/</guid>
+      <guid>https://zburu.vercel.app/posts/90/</guid>
       <description>2021，不知不觉，又过去一年了。
 因为最近也比较忙，所以一直拖到了中旬末，现在闲下心准备闲谈一下。 该说不说，坚持写博客也有500多天了，大概是我的水平有限，产出的技术文章也是寥寥无几，大多是一些笔记和一些生活中的琐碎事。
 认识了几个一起玩博客的新朋友，优化了一下自己网站，然后帮助别人解决一些力所能及的问题，大家都很友善。
@@ -898,10 +895,10 @@ https://cravatar.cn/avatar/ https://sdn.geekzu.org/avatar/</description>
     
     <item>
       <title>实现图片灯箱功能</title>
-      <link>https://zburu.vercel.app/posts/88.html/</link>
+      <link>https://zburu.vercel.app/posts/88/</link>
       <pubDate>Tue, 07 Dec 2021 16:55:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/88.html/</guid>
+      <guid>https://zburu.vercel.app/posts/88/</guid>
       <description>写博客必不可少的一个功能就是图片灯箱功能，也就是点击放大查看。但是不同程序的博客所使用的插件也都不一样，我这里研究出一套可以满足绝大部分程序的灯箱插件。已经测试过hexo, hugo, typecho 均无问题。
 引入文件 首先引入我们关键的两个文件分别是 zoom.css 和 zoom.js 。
 &amp;lt;!-- head头部 --&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.imhan.cn/list/zoom.css&amp;#34;&amp;gt; &amp;lt;!-- body底部 --&amp;gt; &amp;lt;!-- 如果已经有jq文件了，就不要引入jquery --&amp;gt; &amp;lt;script src=&amp;#34;https://cdn.imhan.cn/list/jquery3.6.0.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;!--图片灯箱--&amp;gt; &amp;lt;img src=&amp;#34;&amp;#34; alt=&amp;#34;&amp;#34; class=&amp;#34;bigimg&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;mask&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;script src=&amp;#34;https://cdn.imhan.cn/list/zoom.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 因为这个文件是放在我自己服务器上的，所以不敢保证以后还是这个路径，建议在浏览器打开，然后把里面的代码复制到本地使用。
@@ -913,10 +910,10 @@ $(function(){ $(&amp;#39;.post-content img&amp;#39;).addClass(&amp;#39;smallimg&
     
     <item>
       <title>关于人际交往的礼节感触</title>
-      <link>https://zburu.vercel.app/posts/4.html/</link>
+      <link>https://zburu.vercel.app/posts/4/</link>
       <pubDate>Wed, 24 Nov 2021 12:37:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/4.html/</guid>
+      <guid>https://zburu.vercel.app/posts/4/</guid>
       <description>因为一件小事有感而发，在人际交往的过程中，我们通常都会关注一些细节，从而影响对一个人印象。这是一个作为人很正常的行为。
 打个比方，两个人聊天，其中一个人不停拿起手机查看，就很给人一种很没有礼貌的印象。假如说有工作要忙，或者其他要处理的事项，这当然另当别论。换个思维，如果真的有那么忙，也不会发生此次社会交互行为活动。所以这是一个悖论了。基本上不存在忙的要命的情况。
 我们在社会交往中，大多抱着一种善意的目的，希望从别人那里获得一些“利益”，这里的利益更多指代一中虚拟的情绪，比如开心，愉快，满足等。所以我在平时跟朋友社交，包括并不限于聚餐，出行游玩等，都是将重心放在此次活动中，如果有其他的事情，我都会提前处理安排好，不会影响活动进行。
@@ -930,19 +927,19 @@ $(function(){ $(&amp;#39;.post-content img&amp;#39;).addClass(&amp;#39;smallimg&
     
     <item>
       <title>网易云摸鱼，测测你的听歌流量</title>
-      <link>https://zburu.vercel.app/posts/84.html/</link>
+      <link>https://zburu.vercel.app/posts/84/</link>
       <pubDate>Thu, 18 Nov 2021 15:37:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/84.html/</guid>
+      <guid>https://zburu.vercel.app/posts/84/</guid>
       <description>格局刚好。</description>
     </item>
     
     <item>
       <title>这两天的碎碎念</title>
-      <link>https://zburu.vercel.app/posts/83.html/</link>
+      <link>https://zburu.vercel.app/posts/83/</link>
       <pubDate>Thu, 11 Nov 2021 10:14:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/83.html/</guid>
+      <guid>https://zburu.vercel.app/posts/83/</guid>
       <description>这段时间双十一，发现没有了往年那种囤货淘宝的欲望了，翻来翻去不知道买什么，包括那些活动，有好多朋友给我发链接助力我都没怎么弄，可能是生活的打磨让我对它没兴趣了吧~~
 唯一的消费活动就是买了一台服务器，腾讯云正在做双十一特惠活动，一台2h4g6m的服务器，三年才一百多，个人感觉还是比较划算的，以后可以放一些脚本，跑跑服务啥的，还可以把我的博客挂在上面。
 并且购买了一个新的域名 xiabanlo.cn，不过最近正在备案，通过之后就会使用了。坚持，不忘初心！
@@ -955,10 +952,10 @@ $(function(){ $(&amp;#39;.post-content img&amp;#39;).addClass(&amp;#39;smallimg&
     
     <item>
       <title>揭秘箭头函数</title>
-      <link>https://zburu.vercel.app/posts/82.html/</link>
+      <link>https://zburu.vercel.app/posts/82/</link>
       <pubDate>Fri, 05 Nov 2021 12:16:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/82.html/</guid>
+      <guid>https://zburu.vercel.app/posts/82/</guid>
       <description>英文地址: https://javascript.plainenglish.io/demystifying-javascript-arrow-functions-7b2a0908a2b3
 通过掘金翻译计划活动进行翻译
 箭头函数是函数表达式的替代方法，但在语法上有所不同，不能在所有情况下使用。如果您还没有阅读 JavaScript 中的函数表达式，我建议您在继续阅读之前先阅读这篇文章。
@@ -969,10 +966,10 @@ $(function(){ $(&amp;#39;.post-content img&amp;#39;).addClass(&amp;#39;smallimg&
     
     <item>
       <title>js奇怪的知识--console.table</title>
-      <link>https://zburu.vercel.app/posts/81.html/</link>
+      <link>https://zburu.vercel.app/posts/81/</link>
       <pubDate>Thu, 04 Nov 2021 14:16:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/81.html/</guid>
+      <guid>https://zburu.vercel.app/posts/81/</guid>
       <description>这个属性对我来说还真有些陌生，无意中发现的，查询过 MDN 之后听得挺有意思的，就记录一下。
 根据字面意思就是“将数据以表格的形式显示”。这个方法需要一个必须参数 data，data 必须是一个数组或者是一个对象；还可以使用一个可选参数 columns。
 表格的第一列是 index。如果数据 data 是一个数组，那么这一列的单元格的值就是数组的索引。 如果数据是一个对象，那么它们的值就是各对象的属性名称。 注意（在 FireFox 中）console.table 被限制为只显示1000行（第一行是被标记的索引）。
@@ -984,10 +981,10 @@ function Fun(title, date) { this.title = title this.date = date } const one = ne
     
     <item>
       <title>通过 getTimezoneOffset() 方法判断当前时区是否为夏令时</title>
-      <link>https://zburu.vercel.app/posts/80.html/</link>
+      <link>https://zburu.vercel.app/posts/80/</link>
       <pubDate>Fri, 22 Oct 2021 11:16:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/80.html/</guid>
+      <guid>https://zburu.vercel.app/posts/80/</guid>
       <description>getTimezoneOffset() 方法 方法返回 UTC 时间和本地时间之间的时差，以分钟为单位。
 世界协调时间 (UTC) 是世界时间标准设定的时间, UTC 时间与 GMT 时间（格林威治时间）相同。
 测一下我所在时区和标准时区的时间差
@@ -998,10 +995,10 @@ const time1 = new Date(2021, 0, 1); const time2 = new Date(2021, 6, 1); if (time
     
     <item>
       <title>有关国庆出行的感想</title>
-      <link>https://zburu.vercel.app/posts/79.html/</link>
+      <link>https://zburu.vercel.app/posts/79/</link>
       <pubDate>Thu, 07 Oct 2021 06:15:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/79.html/</guid>
+      <guid>https://zburu.vercel.app/posts/79/</guid>
       <description>好长时间没回老家了，这次本想借着国庆七天回家一趟，顺便处理一些其他的事情。所以我从9月30日晚，与家人一同驾车回家。
 艰难的回家之路 刚上高速跑得很快，原以为已经错开出行高峰期，结果发现是我想多了，不出意外的堵在高速上。
 导航呢，这时候也是推荐不走高速，直接从国道走（真的是后悔），然后我们就下了高速，结果这个导航给我整的有点蒙，在临安绕来绕去，11点从杭州出发，凌晨3点还在临安出不去，国道都在堵车，然后没办法只能就地休息，困得实在不行了，其实睡也睡不舒服，跑夜车都是这个样子。
@@ -1020,10 +1017,10 @@ const time1 = new Date(2021, 0, 1); const time2 = new Date(2021, 6, 1); if (time
     
     <item>
       <title>使用js随机生成背景颜色</title>
-      <link>https://zburu.vercel.app/posts/78.html/</link>
+      <link>https://zburu.vercel.app/posts/78/</link>
       <pubDate>Wed, 29 Sep 2021 13:15:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/78.html/</guid>
+      <guid>https://zburu.vercel.app/posts/78/</guid>
       <description>先写一个简单的 html 页面出来
 &amp;lt;style&amp;gt; /* ... */ &amp;lt;/style&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;html&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;css&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;js&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; 通过 Math.random() 属性可以随机生成一个数字，然后通过转化为十六进制的方法进行处理，下面就是随机生成 6 位数字的代码，并进行转化的代码。
 const randomHex = () =&amp;gt; `#${Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, &amp;#34;0&amp;#34;)}`; 可以在控制台输出看一下结果，随机生成了一个结果 #62113b。
@@ -1034,10 +1031,10 @@ var li = document.getElementsByTagName(&amp;#34;li&amp;#34;); for (var i = 0; i 
     
     <item>
       <title>hugo 如何使用 Cusdis ?</title>
-      <link>https://zburu.vercel.app/posts/77.html/</link>
+      <link>https://zburu.vercel.app/posts/77/</link>
       <pubDate>Thu, 16 Sep 2021 13:14:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/77.html/</guid>
+      <guid>https://zburu.vercel.app/posts/77/</guid>
       <description>Cusdis 是一个界面清爽、注重隐私的轻量级 (~5kb gzip) 评论系统，可以很方便地与 React、Vue 或其他博客系统结合，并且还提供了一个后台来管理所有的评论。
 由于 Cusdis 自称是 Disqus 的替代方案，因此它还支持一键从 Disqus 导入、支持邮件通知等功能。
 官方地址: https://cusdis.com/
@@ -1053,10 +1050,10 @@ data-app-id 是注册时自动生成的，注意保密，每个人都不一样�
     
     <item>
       <title>使用jq做一个数字递增效果</title>
-      <link>https://zburu.vercel.app/posts/76.html/</link>
+      <link>https://zburu.vercel.app/posts/76/</link>
       <pubDate>Tue, 14 Sep 2021 15:42:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/76.html/</guid>
+      <guid>https://zburu.vercel.app/posts/76/</guid>
       <description>数字递增，顾名思义就是数字不断增加，数字递增的效果就是要一定时间内，让数字有一个增加的特效，一般用于强调某个内容。
 用 jquery 也很好处理，大概就是下面这些。
 data-to 属性代表最后想要递增到的数值 data-speed 代表数值想要递增的过程时间 class=&amp;quot;num-ber&amp;quot; 和 id=&amp;quot;count-number&amp;quot; 按照这个填入。
@@ -1066,10 +1063,10 @@ $.fn.countTo = function (a) { a = a || {}; return $(this).each(function () { var
     
     <item>
       <title>npm install 报错和取消本地代理的问题</title>
-      <link>https://zburu.vercel.app/posts/75.html/</link>
+      <link>https://zburu.vercel.app/posts/75/</link>
       <pubDate>Thu, 19 Aug 2021 11:15:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/75.html/</guid>
+      <guid>https://zburu.vercel.app/posts/75/</guid>
       <description>npm install下载依赖包的时候出现下面错误，请求失败。
 npm ERR! FetchError: request to https://registry.npm.taobao.org/cnpm failed, reason: connect ECONNREFUSED 127.0.0.1:1181 调试过后发现是本地代理的问题，取消它。
 npm config delete proxy npm config delete https-proxy npm install 成功运行，完毕。</description>
@@ -1077,10 +1074,10 @@ npm config delete proxy npm config delete https-proxy npm install 成功运行�
     
     <item>
       <title>关于我为什么要写博客？</title>
-      <link>https://zburu.vercel.app/posts/74.html/</link>
+      <link>https://zburu.vercel.app/posts/74/</link>
       <pubDate>Wed, 21 Jul 2021 11:16:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/74.html/</guid>
+      <guid>https://zburu.vercel.app/posts/74/</guid>
       <description>关于这个博客的构成 这个就放在最前面吗，算是起到一个统计整理的作用。
 博客基础的框架使用是 hugo, 前端样式是自己慢慢构思的，可能是因为没有设计师的天分吧，构思出来的 UI 就很奇怪。
 我也尽量将色彩往黑白上靠，就是为了避免色彩的冲突造成阅读的不适，以文字为主体，也可以将我的重心转移到写文章上来。
@@ -1110,10 +1107,10 @@ Gayhub: 又名，Github. 全球最大的同性交友网站，在这里你可以�
     
     <item>
       <title>将数据库中的图片信息导出并调用</title>
-      <link>https://zburu.vercel.app/posts/73.html/</link>
+      <link>https://zburu.vercel.app/posts/73/</link>
       <pubDate>Fri, 09 Jul 2021 21:03:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/73.html/</guid>
+      <guid>https://zburu.vercel.app/posts/73/</guid>
       <description>接口链接：http://121.196.166.173/img/img.php 展示demo：http://121.196.166.173/img
 前言 为了写博客以及其他的一些用途，我使用服务器搭建了一个连接 github 仓库的上传网页，并且在数据库中记录上传的信息，比如缩略名、时间戳和图片链接。分别对应 GitHub 仓库中的图片，但是后期我发现在 GitHub 查看图片非常别扭，因此我打算写一个可展示图片的网页，把 GitHub 仓库中的图片通过链接展示出来，当然我们不可能一张张复制，还好有数据库。
 看一下具体内容
@@ -1123,10 +1120,10 @@ Gayhub: 又名，Github. 全球最大的同性交友网站，在这里你可以�
     
     <item>
       <title>冷知识世界新增一个大洋变成五大洋</title>
-      <link>https://zburu.vercel.app/posts/72.html/</link>
+      <link>https://zburu.vercel.app/posts/72/</link>
       <pubDate>Thu, 10 Jun 2021 15:39:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/72.html/</guid>
+      <guid>https://zburu.vercel.app/posts/72/</guid>
       <description>从6月8日世界海洋日开始，南大洋将被认定为世界第五大洋。世界上就有七大洲，五大洋啦！中学课文需要改一改了。
 美国国家地理学会宣布，南极洲周围海域将被称为南大洋，并正式承认南大洋为地球第五大洋。
 南大洋是海洋生态系统的重要家园，也是南半球的焦点。它直接包围着南极洲，从大陆的海岸线一直延伸到南纬 60 度。
@@ -1135,10 +1132,10 @@ Gayhub: 又名，Github. 全球最大的同性交友网站，在这里你可以�
     
     <item>
       <title>在 vue 中使用 axios 调用数据</title>
-      <link>https://zburu.vercel.app/posts/71.html/</link>
+      <link>https://zburu.vercel.app/posts/71/</link>
       <pubDate>Tue, 08 Jun 2021 21:02:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/71.html/</guid>
+      <guid>https://zburu.vercel.app/posts/71/</guid>
       <description>如何在 vue 中完成一次接口的调用？首选就是 axios，方便快捷又好用，支持各种 api ,封装也很方便。
 先用 node 安装一下。
 npm install axios 然后在 main.js 文件中引入。
@@ -1148,10 +1145,10 @@ import axios from &amp;#39;axios&amp;#39; import VueAxios from &amp;#39;vue-axio
     
     <item>
       <title>宝塔如何实现进程守护？</title>
-      <link>https://zburu.vercel.app/posts/70.html/</link>
+      <link>https://zburu.vercel.app/posts/70/</link>
       <pubDate>Sun, 30 May 2021 11:37:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/70.html/</guid>
+      <guid>https://zburu.vercel.app/posts/70/</guid>
       <description>为了方便写一些东西，pc端和手机端都可以同步，我用leanote搭建了一个在线笔记，但是必须在服务器后台运行一个指令
 base run.sh 不然就访问不了端口，我也不可能时刻在终端保持指令运行，所以就需要把指令放在服务器后台，让它自己保持运行，刚好有这么一插件 Supervisor管理器 2.2 。
 是一款免费的Python插件，点击下载即可，然后进入设置。
@@ -1163,10 +1160,10 @@ base run.sh 不然就访问不了端口，我也不可能时刻在终端保持�
     
     <item>
       <title>css 中 fixed 定位属性和动画的冲突问题及解决方法</title>
-      <link>https://zburu.vercel.app/posts/69.html/</link>
+      <link>https://zburu.vercel.app/posts/69/</link>
       <pubDate>Thu, 27 May 2021 21:42:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/69.html/</guid>
+      <guid>https://zburu.vercel.app/posts/69/</guid>
       <description>1.问题 css 中使用动画属性会和同标签下的fixed属性冲突，导致定位失效，那么该如何解决他呢？
 2.分析 简单说一下问题产生的背景，昨天夜里我想给我的博客页面做一个简单的动画，浏览器刷新的时候从下往上渐现的效果，代码如下：
 /* index-container类名是页面的主体部分 */ .index-container { opacity: 0; animation-name: index; animation-duration: 0.7s; animation-fill-mode: forwards; } /* 一个简单的动画实现 */ @keyframes index { 0% { transform: translateY(100px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } } 运行之后发现，动画可以很好的显示，但是当我翻阅文章详情的时候发现，目录固定失效了。
@@ -1184,10 +1181,10 @@ base run.sh 不然就访问不了端口，我也不可能时刻在终端保持�
     
     <item>
       <title>Oracle数据库安装教程（超详细）</title>
-      <link>https://zburu.vercel.app/posts/68.html/</link>
+      <link>https://zburu.vercel.app/posts/68/</link>
       <pubDate>Thu, 13 May 2021 14:51:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/68.html/</guid>
+      <guid>https://zburu.vercel.app/posts/68/</guid>
       <description>转载自：https://www.moeor.com/26.html
 前言 本教程讲解Oracle Database Express Edition (XE) Release 11.2.0.2.0 (11gR2)版本的下载安装教程！
 该版本是一个便携式安装版本，直接安装，就可以了，非常方便。
@@ -1216,10 +1213,10 @@ base run.sh 不然就访问不了端口，我也不可能时刻在终端保持�
     
     <item>
       <title>Typecho博客搭建及优化教程(详细)</title>
-      <link>https://zburu.vercel.app/posts/67.html/</link>
+      <link>https://zburu.vercel.app/posts/67/</link>
       <pubDate>Tue, 11 May 2021 22:29:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/67.html/</guid>
+      <guid>https://zburu.vercel.app/posts/67/</guid>
       <description>1.前言 本文从Typecho 简介开始讲解，其中包括服务器的选择，以及域名注册，服务器系统选择 ，宝塔安装，环境配置，Typecho安装包括中间的防采坑注意事项，为您提供完整的保姆级搭建流程，请珍惜哦！
 如果不喜欢前面的啰嗦讲解，请跳过，直接从宝塔安装开始。
 不喜勿喷，谢谢！
@@ -1259,10 +1256,10 @@ Linux系统的话，本文使用Centos 8系统讲解。
     
     <item>
       <title>网站引入iframe视频，如何实现高度自适应?</title>
-      <link>https://zburu.vercel.app/posts/66.html/</link>
+      <link>https://zburu.vercel.app/posts/66/</link>
       <pubDate>Sun, 09 May 2021 18:50:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/66.html/</guid>
+      <guid>https://zburu.vercel.app/posts/66/</guid>
       <description>我想很多小伙伴在写博客的时候都能遇到一个令人头疼的问题，某一篇文章想用 iframe 引入一个外链视频，但是大小总是有问题，宽度可以固定到 100% ，但是高度比如用实际高度来表示，比如 100px, 200px，诸如此类。
 但是问题来了，在不同的页面宽度下，视频的高度是一致的，就会导致一个很麻烦的问题,
 看下面两个图，
@@ -1279,10 +1276,10 @@ $(&amp;#39;iframe&amp;#39;).wrap(&amp;#39;&amp;lt;p class=&amp;#34;iframe&amp;#3
     
     <item>
       <title>呼吸之野</title>
-      <link>https://zburu.vercel.app/posts/65.html/</link>
+      <link>https://zburu.vercel.app/posts/65/</link>
       <pubDate>Fri, 07 May 2021 21:48:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/65.html/</guid>
+      <guid>https://zburu.vercel.app/posts/65/</guid>
       <description>2021许嵩第8张全创作专辑《呼吸之野》首支曲目《乌鸦》5月7日正式发行。
 《乌鸦》 我们都曾领受过误解、怀疑、孤立，都品尝过爱而不得或种种挫败的滋味，都有过觉得“一切都糟透了”的时候……但感伤过后，却还是会相信“一切都会好起来的”，还是会为了反转剧情而振作前行——也许是为了心里最在乎的人，也许是因为心底笃定的信念。被生活不断刮蹭的脆弱羽翼之下，有着强韧的骨架。许嵩以从未讨喜的乌鸦为第一视角，飞抵呼吸之野。
 人生不过一场呼吸。呼吸不停，则生命与思考不止。当人们习惯于蒙上口罩生活，畅快呼吸日渐成为一种奢侈。比这更为奢侈的，是袒露真心的酣畅对谈，是呼吸于野，吐纳心声。《呼吸之野》从冷色调里起笔，以自如沉着的笔触，描摹情感与境遇。十首音乐，如十场呼吸冥想般令人全神贯注。许嵩在想象与写实的互照里，在温柔与凛冽的交汇处，在浪漫与生猛的切换中，记述着生活与思考。
@@ -1313,10 +1310,10 @@ $(&amp;#39;iframe&amp;#39;).wrap(&amp;#39;&amp;lt;p class=&amp;#34;iframe&amp;#3
     
     <item>
       <title>基耶斯洛夫斯基和他的现实</title>
-      <link>https://zburu.vercel.app/posts/64.html/</link>
+      <link>https://zburu.vercel.app/posts/64/</link>
       <pubDate>Sat, 24 Apr 2021 11:47:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/64.html/</guid>
+      <guid>https://zburu.vercel.app/posts/64/</guid>
       <description>文章作者: 江江_Jan
 文章链接: https://blog.jannns.com/posts/Kieslowski-and-his-reality/
 版权声明: 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 4.0 许可协议。转载请注明来自 江卮可乐！
@@ -1359,10 +1356,10 @@ $(&amp;#39;iframe&amp;#39;).wrap(&amp;#39;&amp;lt;p class=&amp;#34;iframe&amp;#3
     
     <item>
       <title>基于 docsify 搭建一个文档</title>
-      <link>https://zburu.vercel.app/posts/63.html/</link>
+      <link>https://zburu.vercel.app/posts/63/</link>
       <pubDate>Wed, 21 Apr 2021 20:19:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/63.html/</guid>
+      <guid>https://zburu.vercel.app/posts/63/</guid>
       <description>一、搭建 docsify 是一个类似 vuepress, gitbook 等静态文档程序，但是对比之前，个人还是喜欢 docsify 的风格和源码。不想要那么多附带的功能，能满足写文章，目录的功能就行了。
 点击查看demo.
 打开终端输入指令，把本地环境搭建起来：
@@ -1382,20 +1379,20 @@ README.md 主页
     
     <item>
       <title>清明时节雨纷纷</title>
-      <link>https://zburu.vercel.app/posts/62.html/</link>
+      <link>https://zburu.vercel.app/posts/62/</link>
       <pubDate>Sat, 03 Apr 2021 16:13:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/62.html/</guid>
+      <guid>https://zburu.vercel.app/posts/62/</guid>
       <description>清明时节雨纷纷，路上行人欲断魂。
 云栖竹径 </description>
     </item>
     
     <item>
       <title>我的 python 学习笔记</title>
-      <link>https://zburu.vercel.app/posts/61.html/</link>
+      <link>https://zburu.vercel.app/posts/61/</link>
       <pubDate>Thu, 01 Apr 2021 16:21:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/61.html/</guid>
+      <guid>https://zburu.vercel.app/posts/61/</guid>
       <description>之所以学习 Python ，本意是想写一些脚本之类的程序，用来在浏览器爬一些自己想要的文字，图片等资料，这些程序其实 GitHub 蛮多的，但奈何我对后端的语言一窍不通，直接拿过来给我用我都不会。
 因此就萌生了先学习 Python 基础知识的想法，一直听说廖雪峰的 Python 教程写的不错，这次趁着这个机会要好好研读一番。也没想说用的多牛逼，至少希望能为自己浅薄的技术栈再增加一点光彩，毕竟我也曾梦想成为一个全栈开发。
 下载安装完 Python 环境,就开始学习吧！
@@ -1410,10 +1407,10 @@ x = 1 x = x + 2 print(x) # 3 其实很多计算机语言都是如此，比如我
     
     <item>
       <title>实时监听页面的变化</title>
-      <link>https://zburu.vercel.app/posts/60.html/</link>
+      <link>https://zburu.vercel.app/posts/60/</link>
       <pubDate>Fri, 26 Mar 2021 14:24:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/60.html/</guid>
+      <guid>https://zburu.vercel.app/posts/60/</guid>
       <description>问题产生于需求，因为项目需要适配pc和移动端多套布局，所以某些元素在特定的宽度下会产生错位的现象。
 如果是在css中，可以很好的判断，使用媒体查询可以实时检测页面的宽度，从而给予标签不同的属性。
 @media (max-width:768px){ ... } 在js下可以使用下面这种方法
@@ -1422,10 +1419,10 @@ window.addEventListener(&amp;#39;load&amp;#39;, function() { window.addEventList
     
     <item>
       <title>ajax 和 js 事件的执行顺序</title>
-      <link>https://zburu.vercel.app/posts/58.html/</link>
+      <link>https://zburu.vercel.app/posts/58/</link>
       <pubDate>Tue, 23 Mar 2021 15:12:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/58.html/</guid>
+      <guid>https://zburu.vercel.app/posts/58/</guid>
       <description>有一个需求，滚轮滚动到相应位置的时候执行当前的动画，这个动画在footer里面，而网页的主体通过ajax进行渲染，我在js里面调用ajax渲染数据，然后再获取主体的高度，滚动到该高度的时候执行动画。
 本地测试了一下没什么问题，该有的效果都有了。放在服务器上测试发现无论怎么写，都是先获取主体的高度，然后才进行数据的渲染。那么必然高度是一个极小的值，不符合我想要的属性。
 我大致想了两种解决办法，均以失败告终，本地是ajax先执行，服务器是js先执行。
@@ -1436,10 +1433,10 @@ async: false, 我在ajax里面写了async这个方法，false 意思是将其默
     
     <item>
       <title>ajax拼接模版字符串的几种方法</title>
-      <link>https://zburu.vercel.app/posts/59.html/</link>
+      <link>https://zburu.vercel.app/posts/59/</link>
       <pubDate>Mon, 22 Mar 2021 14:54:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/59.html/</guid>
+      <guid>https://zburu.vercel.app/posts/59/</guid>
       <description>起因是因为IE10不兼容es6，所以引发了一系列的问题。
 一 使用ajax拼接字符串有很多方法，最简单的莫过于使用es6的语法中的关键符号，
 str += `&amp;lt;li class=&amp;#34;wrap-item&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;pic-wrap&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;pic&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;pic-son&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34; ` + item.link + `&amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;&amp;lt;img src=&amp;#34; ` + item.pic+ `&amp;#34; alt=&amp;#34;缩略图&amp;#34;&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;pic-main&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;pic-title&amp;#34;&amp;gt; &amp;lt;span&amp;gt;编号：&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt; ` + item.title + ` &amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;pic-guide&amp;#34;&amp;gt; ` + item.guide + ` &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;pic-link&amp;#34; id=&amp;#34;picLink&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34; ` + item.link + ` &amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;预览&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/li&amp;gt; ` 可以很快的把模版字符串写好，但是正因为它是es6的新特性，因此对于低版本的浏览器兼容性不太好，报错无效字符。
@@ -1448,10 +1445,10 @@ str += `&amp;lt;li class=&amp;#34;wrap-item&amp;#34;&amp;gt; &amp;lt;div class=&
     
     <item>
       <title>用ajax请求获取数据</title>
-      <link>https://zburu.vercel.app/posts/57.html/</link>
+      <link>https://zburu.vercel.app/posts/57/</link>
       <pubDate>Fri, 19 Mar 2021 13:01:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/57.html/</guid>
+      <guid>https://zburu.vercel.app/posts/57/</guid>
       <description>通过jquery进行ajax请求数据是一种较为简便的方式，我简单写了一个本地的data.json文件，然后用get请求数据，下面是部分代码
 // ajax 请求获取数据 function picShow(){ var str = &amp;#39;&amp;#39;; $.ajax({ url:&amp;#39;./js/data.json&amp;#39;, type:&amp;#39;get&amp;#39;, dataType:&amp;#39;json&amp;#39;, success:function(data){ console.log(&amp;#39;success&amp;#39;) }, error: function() { console.log(&amp;#39;error&amp;#39;) } }) } picShow(); 但是这样做有一个弊端，无法在本地预览，因为浏览器禁止客户端直接获取本地数据，这也算一个跨域问题了，不过这也是为了保证用户的安全。当然这对前端来说很不爽！
 其实解决的方法也很简单，通过node服务，用live server在本地跑一下，就可以让ajax获取数据，当然还有其他更好的解决方法，或者直接在服务器跑，通过jsonp等等。
@@ -1460,10 +1457,10 @@ live server 不明白的可以百度看看，也是一个技巧。</description>
     
     <item>
       <title>IE10的兼容性处理</title>
-      <link>https://zburu.vercel.app/posts/56.html/</link>
+      <link>https://zburu.vercel.app/posts/56/</link>
       <pubDate>Thu, 18 Mar 2021 22:15:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/56.html/</guid>
+      <guid>https://zburu.vercel.app/posts/56/</guid>
       <description>IE10不支持箭头函数，写js的时候慎用。
 IE10下对js的语法要求严格，正常参数后如果没有多余的代码，写个,会报错，如果加了删掉就OK，Chrome下不会产生影响。
 zoom属性能不用，尽量别用。我在Chrome使用zoom进行大小调整，放到IE10运行，整个页面都错位了，找半天才想起来之前给一个容器设置了zoom: 1.1;，真是让人头大。
@@ -1475,10 +1472,10 @@ IE10不兼容es6新语法。</description>
     
     <item>
       <title>window.scroll 方法只能存在一次该如何解决？</title>
-      <link>https://zburu.vercel.app/posts/55.html/</link>
+      <link>https://zburu.vercel.app/posts/55/</link>
       <pubDate>Wed, 17 Mar 2021 21:55:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/55.html/</guid>
+      <guid>https://zburu.vercel.app/posts/55/</guid>
       <description>页面监听是我们经常用的一个功能，下面两个段代码表示两个事件，分别在页面滚动500px和1000px的时候触发，在代码中使用了箭头函数。
 window.addEventListener(&amp;#39;scroll&amp;#39;, () =&amp;gt; { var scrollTop = document.documentElement.scrollTop if (scrollTop &amp;gt; 500) { console.log(&amp;#39;滚动了500px&amp;#39;) } }) window.addEventListener(&amp;#39;scroll&amp;#39;, () =&amp;gt; { var scrollTop = document.documentElement.scrollTop if (scrollTop &amp;gt; 1000) { console.log(&amp;#39;滚动了1000px&amp;#39;) } }) 但是后面又要求代码兼容到IE10，就不能采用这种写法了。然后我就想使用原生的function写法。
 window.onscroll = function() { // ... } 在用的过程中我发现，如果只有一个window.scroll没有任何问题，但是如果有多个window.scroll，后面的就不会生效。
@@ -1489,10 +1486,10 @@ function addEvent(type, toDo) { if (window.attachEvent) { window.attachEvent(&am
     
     <item>
       <title>IE10下`,`符号不能留白</title>
-      <link>https://zburu.vercel.app/posts/54.html/</link>
+      <link>https://zburu.vercel.app/posts/54/</link>
       <pubDate>Tue, 16 Mar 2021 10:29:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/54.html/</guid>
+      <guid>https://zburu.vercel.app/posts/54/</guid>
       <description>$(&amp;#34;#test&amp;#34;).click(function () { $(&amp;#39;html,body&amp;#39;).animate({ &amp;#39;scrollTop&amp;#39;: &amp;#39;0&amp;#39; }, 500,) }) 这行代码使用的是jquery的写法，一个500毫秒的动画，这样写在Chrome浏览器等没问题，可以正常运行。
 但是今天在写项目的过程中，要求代码兼容到IE10，没办法，被迫在IE浏览器下运行，结果发现这行代码会报错。这是怎么回事呢？
 简单分析一下，这有点类似js中定时器的写法，setimeout，两个参数，分别代表指定的时间，和定时时间。
@@ -1503,10 +1500,10 @@ function addEvent(type, toDo) { if (window.attachEvent) { window.attachEvent(&am
     
     <item>
       <title>怎么让 css3 里面的动画属性看起来更流畅?</title>
-      <link>https://zburu.vercel.app/posts/53.html/</link>
+      <link>https://zburu.vercel.app/posts/53/</link>
       <pubDate>Sun, 14 Mar 2021 07:31:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/53.html/</guid>
+      <guid>https://zburu.vercel.app/posts/53/</guid>
       <description>ps：先说点题外话，因为工作的原因很久没更新博客了，最近也是告一段落，处理一了一些事情之后可以安心坐下来，把我的博客重新整理一下。
 今天要讲的是 css3 的一个新属性 animation，也算是一个回顾吧，我只是将平时如何使用，以及一些技巧分享出来。如果想学习更基础的内容，可以点击链接：https://www.runoob.com/css3/css3-animations.html，网上类似的教程还是蛮多的。
 这篇文章并不细讲动画的基础属性，而是稍微扩展一个话题：怎么让 css3 里面的动画属性看起来更流畅？
@@ -1522,10 +1519,10 @@ animation 属性 animation 属性有下面几个值：
     
     <item>
       <title>chrome浏览器无法显示12px以下的字体</title>
-      <link>https://zburu.vercel.app/posts/52.html/</link>
+      <link>https://zburu.vercel.app/posts/52/</link>
       <pubDate>Fri, 26 Feb 2021 22:38:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/52.html/</guid>
+      <guid>https://zburu.vercel.app/posts/52/</guid>
       <description>最近正在面试，遇到了很多有意思的东西，比如今天，在面试前先做了一套面试题，其中有这么一道题，觉得挺有意思，之前也没见过，就打算记录下来：
 &amp;lt;!-- chrome浏览器12px字体大小以下无法显示，均显示为12px，应该怎么解决。 --&amp;gt; 我确实有点蒙，在之前写代码的时候，没有遇到过这样的情况，不过既然这样问了，就得想出解决的办法。
 首先我想到之前的一个问题，0.5px 的边框该如何实现，通过 scale(0.5) 可以实现，这是 css3 新属性。
@@ -1540,10 +1537,10 @@ animation 属性 animation 属性有下面几个值：
     
     <item>
       <title>使用宝塔面板安装 autoPicCdn 图床工具</title>
-      <link>https://zburu.vercel.app/posts/51.html/</link>
+      <link>https://zburu.vercel.app/posts/51/</link>
       <pubDate>Thu, 25 Feb 2021 22:41:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/51.html/</guid>
+      <guid>https://zburu.vercel.app/posts/51/</guid>
       <description>很多小伙伴在做个人网站或者博客时，总能用到各种各样的图床工具，毕竟在写文章的时候需要插入一些图片，我也不例外，来盘点一下之前用的工具，
 最开始是找一些免费的图床网站，比如sm.ms等，但是后来为了安全性和稳定性考虑放弃了这种。 然后是在 github，gitee 仓库存储的（缺点就是github访问速度有些尴尬，gitee其实挺好的，但时用起来怪怪的） 阿里云oss储存桶（挺好使的，搭配picgo软件，一年也才9.9，但是链接很尴尬，直接下载，无法右键访问图片，搜过了解决办法，嫌太麻烦就搁置了，至今在那放着） 后来在自己的服务器建一个网站，把图片放进去，使用的时候直接引用链接（缺点就是上传太麻烦，然后就是图片太占内存了，影响服务器的性能） 然后就是今天的重头戏，autoPicCdn ，一款开源软件 也是基于github实现图床功能，后来才知道可以用 jsdelivr 给资源进行加速，autoPicCdn 就是基于这样的功能实现。
 今天就讲讲用宝塔面板配置 autoPicCdn 的流程吧！
@@ -1557,10 +1554,10 @@ animation 属性 animation 属性有下面几个值：
     
     <item>
       <title>typecho 博客小表情无法显示问题</title>
-      <link>https://zburu.vercel.app/posts/50.html/</link>
+      <link>https://zburu.vercel.app/posts/50/</link>
       <pubDate>Thu, 04 Feb 2021 19:47:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/50.html/</guid>
+      <guid>https://zburu.vercel.app/posts/50/</guid>
       <description>typecho 博客建立完成之后，会发现如果插入一些小表情，页面渲染完之后，表情不会显示，并且表情之后的内容全部消失，导致体验感很差。
 表情无法显示的原因是 uft-8 编码的问题，无法识别小表情，需要将其改成 utf8mb4
 第一步，进入数据库 首先登陆博客后台的数据库，然后点击 sql ，输入下列代码：
@@ -1569,10 +1566,10 @@ alter table typecho_comments convert to character set utf8mb4 collate utf8mb4_un
     
     <item>
       <title>掘金个人主页头像旋转效果</title>
-      <link>https://zburu.vercel.app/posts/49.html/</link>
+      <link>https://zburu.vercel.app/posts/49/</link>
       <pubDate>Wed, 03 Feb 2021 19:43:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/49.html/</guid>
+      <guid>https://zburu.vercel.app/posts/49/</guid>
       <description>在浏览掘金社区的时候，发现一个很有意思的小彩蛋，在个人主页将鼠标悬浮在头像上，会不停的加速旋转，我感觉挺有意思，f12 看看这个样式怎么写的，发现用到了 css3 的相关技术。
 下面是具体代码，img 是头像元素，直接写在 hover 中即可。
 img:hover { transform: rotate(666turn); transition-delay: 1s; transition-property: all; transition-duration: 59s; transition-timing-function: cubic-bezier(.34,0,.84,1); } ps：今天是2021年2月4号，农历腊月二十三，传统的小年，祝朋友们小年愉快。不知不觉，快过年了。</description>
@@ -1580,10 +1577,10 @@ img:hover { transform: rotate(666turn); transition-delay: 1s; transition-propert
     
     <item>
       <title>ES5 和 ES6 的区别？</title>
-      <link>https://zburu.vercel.app/posts/48.html/</link>
+      <link>https://zburu.vercel.app/posts/48/</link>
       <pubDate>Wed, 20 Jan 2021 19:58:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/48.html/</guid>
+      <guid>https://zburu.vercel.app/posts/48/</guid>
       <description>一、javascript 由三部分组成 1.ECMAScript（核心） 它规定了语言的组成部分：法语，类型，语句，关键字，操作符等等。
 2.DOM（文档对象模型） DOM 把整个页面映射为一个多层节点结果，开发人员可借助DOM提供的API，轻松地删除、添加、替换或修改任何节点。
 3.BOM（浏览器对象模型） 支持可以访问和操作浏览器窗口的浏览器对象模型，开发人员可以控制浏览器显示的页面以外的部分。
@@ -1601,19 +1598,19 @@ var obj = { // __proto__ __proto__: theProtoObj, // Shorthand for ‘handler: ha
     
     <item>
       <title>webpack 的核心概念和构建流程</title>
-      <link>https://zburu.vercel.app/posts/47.html/</link>
+      <link>https://zburu.vercel.app/posts/47/</link>
       <pubDate>Mon, 18 Jan 2021 19:59:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/47.html/</guid>
+      <guid>https://zburu.vercel.app/posts/47/</guid>
       <description>1.webpack 的核心概念 entry（入口）：一个可执行模块或者库的入口。定义了打包后的入口文件。 output（出口）：指示 webpack 如何去输出，以及在哪里输出。 path: 打包文件存放的绝对路径 publicPath: 网站运行时的访问路径 filename: 打包后的文件名 module（模块）：在 webpack 里，一切皆模块，一个模块对应一个文件。webpack 会从配置的 entry 中开始递归找出所有依赖的模块。 chunk（代码块）：一个 chunk 由多个 模块 组合而成。可以将可执行的模块和他所依赖的模块组合成一个 chunk ，这就是打包。 loader（模块转换器）：用于把一个模块原内容按照需求转换成新的内容。例如：es6 转换为 es5，scss 转换为 css 等。 plugin（扩展）：扩展webpack功能的插件。在webpack构建的生命周期节点上加入扩展hook，添加功能。 2.webpack 构建流程 初始化参数：解析 webpack 的配置参数，合并 shell 传入和 webpack.config.js 文件配置的参数，形成最后的配置结果。 开始编译：上一步得到的参数初始化 compiler 对象，注册所有配置的插件，插件监听 webpack 构建生命周期的事件节点，做出相应的反应，执行对象的 run 方法开始执行编译。 确定入口：其配置的 entry 入口，开始解析文件构建的 AST 语法树，找出依赖，递归下去。 编译模块：根据文件类型和 loader 配置，调用所有配置的 loader 对文件进行转换，再找出该模块依赖的模块，再递归本步骤知道所有入口依赖的文件都经过了本步骤的处理。 完成模块编译并输出：递归完后，得到每个文件结果，包含了每个模块及她们之间的依赖关系，根据 entry 配置生成代码块 chunk 。 输出完成：输出所有的 chunk 到文件系统。 3.有哪些常见的 loader ？ babel-loader：把es6转成es5； css-loader：加载css，支持模块化，压缩，文件导入等特性； style-loader：把css代码注入到js中，通过dom操作去加载css； eslint-loader：通过Eslint检查js代码； image-loader：加载并且压缩图片晚间； file-loader：文件输出到一个文件夹中，在代码中通过相对url去引用输出的文件； url-loader：和file-loader类似，文件很小的时候可以base64方式吧文件内容注入到代码中。 source-map-loader：加载额外的source map文件，方便调试。 4.</description>
     </item>
     
     <item>
       <title>小张厨房日记（二）</title>
-      <link>https://zburu.vercel.app/posts/46.html/</link>
+      <link>https://zburu.vercel.app/posts/46/</link>
       <pubDate>Sun, 17 Jan 2021 19:59:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/46.html/</guid>
+      <guid>https://zburu.vercel.app/posts/46/</guid>
       <description>自从上次更新厨房日记之后，好像过了两个月多，实际上我一直在进阶我的厨艺，为什么没有更新我的厨房日记呢？因为实际在做的过程中我发现，每种菜的组合太多了，没必要组合一次就写一篇攻略，那样就有些做无用功了，没有太大的意义。
 思来想去，我决定了，不再更新做菜的步骤攻略，我想这些攻略网上一抓一大把。把内容着重放在做菜中遇到的一些问题，细节，这样不但可以让我记忆的深刻，还能分享出更多有意思的东西让小伙伴们开心。
 今天做了一道菜，红烧茄子，我在茄子的时候发现皮挺硬的，就在想要不要去皮（不要笑我，因为之前没做过茄子）。想了一会没想出个所以然，直接百度一番，“烧茄子要不要去皮？”，第一条搜索结果是这样说的，
@@ -1627,10 +1624,10 @@ var obj = { // __proto__ __proto__: theProtoObj, // Shorthand for ‘handler: ha
     
     <item>
       <title>许嵩的歌又一次被抄袭！</title>
-      <link>https://zburu.vercel.app/posts/45.html/</link>
+      <link>https://zburu.vercel.app/posts/45/</link>
       <pubDate>Sat, 16 Jan 2021 20:00:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/45.html/</guid>
+      <guid>https://zburu.vercel.app/posts/45/</guid>
       <description>最新网上爆出风风火火的一件事，许嵩的《有何不可》被抄袭，抄袭者为罗聪，《简单的幸福》。
 我从14年开始听许嵩的歌，一直到现在，许多年过去了，他的歌依旧脍炙人口，从之前的抒情浪漫情歌，批判社会的思想，一直到现在具体哲学内涵，中华传统思想。大部分都是包揽作词作曲为一身，真的很有才华。
 因为太有才华了，所以被“碰瓷”抄袭。这也算是一场闹剧了。据说嵩哥本人对此没有发表什么看法和言论，一直都是粉丝和公司在发声。
@@ -1645,10 +1642,10 @@ var obj = { // __proto__ __proto__: theProtoObj, // Shorthand for ‘handler: ha
     
     <item>
       <title>基于 React 的富文本编辑器－－Braft Editor</title>
-      <link>https://zburu.vercel.app/posts/44.html/</link>
+      <link>https://zburu.vercel.app/posts/44/</link>
       <pubDate>Thu, 07 Jan 2021 20:46:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/44.html/</guid>
+      <guid>https://zburu.vercel.app/posts/44/</guid>
       <description>最近发了很多关于 React 的文章，记录遇到的新技术点，以及在写代码过程中遇到的问题，希望可以帮助到和我遇到同样问题的同学。
 今天分享的是一款基于 React 的富文本编辑器－－Braft Editor。
 Braft Editor 官网：https://braft.margox.cn Github 仓库地址：https://github.com/margox/braft-editor
@@ -1662,10 +1659,10 @@ Braft Editor 官网：https://braft.margox.cn Github 仓库地址：https://gith
     
     <item>
       <title>使用 React 与 Vue 创建同一款 App，差别究竟有多大？</title>
-      <link>https://zburu.vercel.app/posts/43.html/</link>
+      <link>https://zburu.vercel.app/posts/43/</link>
       <pubDate>Wed, 06 Jan 2021 20:47:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/43.html/</guid>
+      <guid>https://zburu.vercel.app/posts/43/</guid>
       <description>关于 React 框架 和 Vue 框架 的对比，用两者写出同一个程序，对比其代码实现的过程，看看它们的差异究竟有多大？
 转载于：https://blog.csdn.net/csdnnews/article/details/81880378 原文：https://medium.com/javascript-in-plain-english/i-created-the-exact-same-app-in-react-and-vue-here-are-the-differences-e9a1ae8077fd 作者简介：Sunil Sandhu，一位 Web 全栈工程师 + 空想家。 译者：安翔，责编：屠敏
 众所周知，Vue 和 React 都是目前非常著名的前端框架。我在工作中经常使用 Vue，因此我对它有很深入的了解。同时，我也对 React 充满了好奇，想要学习一下，一探究竟。
@@ -1679,10 +1676,10 @@ Braft Editor 官网：https://braft.margox.cn Github 仓库地址：https://gith
     
     <item>
       <title>React 脚手架项目打包时的路径问题</title>
-      <link>https://zburu.vercel.app/posts/42.html/</link>
+      <link>https://zburu.vercel.app/posts/42/</link>
       <pubDate>Tue, 05 Jan 2021 20:54:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/42.html/</guid>
+      <guid>https://zburu.vercel.app/posts/42/</guid>
       <description>create-react-app 脚手架指令可以生成 React 项目，在项目完成之后执行打包命令 npm run build，文件夹内生成 build文件夹，就是打包后的文件，在浏览器运行 index.html 发现页面空白，打开控制台有报错，css 和 js 文件的引用路径有问题。
 浏览 index.html 代码可以发现：
 &amp;lt;!-- index.html --&amp;gt; &amp;lt;!doctype html&amp;gt; &amp;lt;html lang=&amp;#34;zh&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34; /&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width,initial-scale=1&amp;#34; /&amp;gt; &amp;lt;meta name=&amp;#34;theme-color&amp;#34; content=&amp;#34;#000000&amp;#34; /&amp;gt; &amp;lt;meta name=&amp;#34;description&amp;#34; content=&amp;#34;Web site created using create-react-app&amp;#34; /&amp;gt; &amp;lt;title&amp;gt;React App&amp;lt;/title&amp;gt; &amp;lt;link href=&amp;#34;/static/css/main.3394d54e.chunk.css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt;&amp;lt;noscript&amp;gt;You need to enable JavaScript to run this app.&amp;lt;/noscript&amp;gt; &amp;lt;div id=&amp;#34;root&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt;!function (e) { function r(r) { for (var n, l, f = r[0], i = r[1], a = r[2], c = 0, s = []; c &amp;lt; f.</description>
@@ -1690,10 +1687,10 @@ Braft Editor 官网：https://braft.margox.cn Github 仓库地址：https://gith
     
     <item>
       <title>如何在 React 中引入 less？</title>
-      <link>https://zburu.vercel.app/posts/41.html/</link>
+      <link>https://zburu.vercel.app/posts/41/</link>
       <pubDate>Mon, 04 Jan 2021 20:50:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/41.html/</guid>
+      <guid>https://zburu.vercel.app/posts/41/</guid>
       <description>本文主要写如何在 React 中引入 less 。因为 less 和 css 非常像，因此很容易学习。而且 less 仅对 css 语言增加了少许方便的扩展，这就是 less 如此易学的原因之一。
 1.安装 less npm install less less-loader --save-dev 2.暴露 webpack 文件 利用 npx create-react-app 搭建的 React 项目，默认隐藏 webpack 配置文件，引入 less 需要修改 webpack 配置文件，因此我们需要执行命令暴露 webpack 配置文件。
 这里需要注意，一旦暴露，无法回退。
@@ -1706,10 +1703,10 @@ git add . git commit -m &amp;#34;init&amp;#34; 然后再执行 npm run eject
     
     <item>
       <title>为什么 key 是必须的？</title>
-      <link>https://zburu.vercel.app/posts/40.html/</link>
+      <link>https://zburu.vercel.app/posts/40/</link>
       <pubDate>Fri, 01 Jan 2021 20:48:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/40.html/</guid>
+      <guid>https://zburu.vercel.app/posts/40/</guid>
       <description>之前有说到，在 React 中渲染列表的时候，要给每一个数据加一个 key 值，赋予一个确定的标示，而且也详细描述了如何给一个标示，方法知道了，那么为什么要这么做呢？
 在 React 中如何渲染列表？
 在默认条件下，当递归 DOM 节点的子元素时，React 会同时遍历两个子元素的列表；当产生差异时，生成一个 mutation。
@@ -1724,10 +1721,10 @@ key
     
     <item>
       <title>React 学习笔记（三）</title>
-      <link>https://zburu.vercel.app/posts/39.html/</link>
+      <link>https://zburu.vercel.app/posts/39/</link>
       <pubDate>Tue, 29 Dec 2020 13:26:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/39.html/</guid>
+      <guid>https://zburu.vercel.app/posts/39/</guid>
       <description>来源于：https://react.docschina.org/docs/forms.html
 一、表单 在 React 中，html 表单元素的工作方式和其他的 DOM 元素不太一样，因为表单内部通常会保持一些内部的 state，比如下面这个纯 html 表单只接受一个名称：
 &amp;lt;form&amp;gt; &amp;lt;label&amp;gt; 名字: &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;name&amp;#34; /&amp;gt; &amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;提交&amp;#34; /&amp;gt; &amp;lt;/form&amp;gt; 这个表单具有默认的 html 表单行为，即在用户提交表单之后自动刷新页面。如果你在 React 中执行相同的代码，它仍然有效。
@@ -1740,10 +1737,10 @@ class NameForm extends React.Component { constructor(props) { super(props); this
     
     <item>
       <title>2020年度总结</title>
-      <link>https://zburu.vercel.app/posts/38.html/</link>
+      <link>https://zburu.vercel.app/posts/38/</link>
       <pubDate>Fri, 25 Dec 2020 13:25:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/38.html/</guid>
+      <guid>https://zburu.vercel.app/posts/38/</guid>
       <description>年度总结这个东西很有意思（我觉得），可以静下心来好好回顾一下这一年做了些什么事情，希望我能养成这个好习惯，多总结。
 这个博客是我在年中搭建起来了，到现在也将近半年了，没怎么做过seo优化，也没怎么想过推广，就简简单单的写一些自己的东西。更大的原因是我的文笔太拙劣，不敢让人发现，哈哈哈。
 大学四年过的还算充实，学到了自己感兴趣的东西，培养的业余兴趣爱好，旅游爬山等，但有名的大山目前只爬了嵩山（河南境内），因为在郑州读的大学。更远的山也没怎么去过，我给自己定个计划，在两年内爬一次泰山，因为工作太忙咯，不敢说短期内一定有时间。想体会一下&amp;quot;会当凌绝顶，一览众山小&amp;quot;的感觉。
@@ -1763,10 +1760,10 @@ class NameForm extends React.Component { constructor(props) { super(props); this
     
     <item>
       <title>React －－万物皆可组件</title>
-      <link>https://zburu.vercel.app/posts/37.html/</link>
+      <link>https://zburu.vercel.app/posts/37/</link>
       <pubDate>Mon, 21 Dec 2020 13:19:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/37.html/</guid>
+      <guid>https://zburu.vercel.app/posts/37/</guid>
       <description>一、React 组件是什么？ 组件，从概念上类似于 javascript 函数，他接受任意入参（props），并返回作用于描述页面展示内容的 React 元素。
 组件允许你将 UI 拆分为独立可复用的代码片段，并对每个片段进行独立构思。
 1.创建一个组件 // 函数组件 function Welcome(props) { return &amp;lt;h1&amp;gt;Hello, {props.name}&amp;lt;/h1&amp;gt;; } // class组件 class Welcome extends React.Component { render() { return &amp;lt;h1&amp;gt;Hello, {this.props.name}&amp;lt;/h1&amp;gt;; } } 2.渲染组件 class Welcome extends React.Component { render() { return &amp;lt;h1&amp;gt;Hello, {this.props.name}&amp;lt;/h1&amp;gt;; } } ReactDOM.render( &amp;lt;Welcome /&amp;gt;, document.getElementById(&amp;#39;root&amp;#39;) ); 3.组件 React的基础原则有三条，分别是：
@@ -1776,10 +1773,10 @@ React 一大核心就是－－万物皆可组件</description>
     
     <item>
       <title>javascript 进阶问题</title>
-      <link>https://zburu.vercel.app/posts/36.html/</link>
+      <link>https://zburu.vercel.app/posts/36/</link>
       <pubDate>Sat, 19 Dec 2020 13:17:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/36.html/</guid>
+      <guid>https://zburu.vercel.app/posts/36/</guid>
       <description>Github：https://github.com/lydiahallie/javascript-questions
 相当不错的一个 Github 仓库，javascript questions ，作者每周都会发布一些有关 javascript 的题目，虽然不难但是考察细节，刷了一会，其实一些很简单的问题，结果因为细节思考不到位直接出错。
 引用作者的话：我在我的 Instagram 上每天都会发布 JavaScript 的多选问题，并且同时也会在这个仓库中发布。
@@ -1788,10 +1785,10 @@ React 一大核心就是－－万物皆可组件</description>
     
     <item>
       <title>React 学习笔记（二）</title>
-      <link>https://zburu.vercel.app/posts/35.html/</link>
+      <link>https://zburu.vercel.app/posts/35/</link>
       <pubDate>Wed, 16 Dec 2020 13:15:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/35.html/</guid>
+      <guid>https://zburu.vercel.app/posts/35/</guid>
       <description>React 元素的事件处理和 DOM 元素的很相似，但是有一点语法上的不同
 React 事件的命名采用小驼峰式（camelCase），而不是纯小写
 使用 JSX 语法时你需要传入一个函数作为事件处理函数，而不是一个字符串
@@ -1806,10 +1803,10 @@ class Demo extends React.Component { render() { // 事件函数 function myfun()
     
     <item>
       <title>吐槽－－控制好自己的情绪</title>
-      <link>https://zburu.vercel.app/posts/34.html/</link>
+      <link>https://zburu.vercel.app/posts/34/</link>
       <pubDate>Sun, 13 Dec 2020 13:11:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/34.html/</guid>
+      <guid>https://zburu.vercel.app/posts/34/</guid>
       <description>缘于一些小事，本想发在朋友圈里，但是熟人挺多，不方便发，就在博客里吐槽一下
 一个正常的人际交往应该是互相传递出好的情绪，开心的事情，这样不但有利于两个人之间的交往，而且对个人对身心健康也是有帮助的
 正面的情绪绝对有助于自己的身体和心理健康，反观整体郁郁寡欢，跟别人说自己多不顺，和别人吵架，不好的情绪就传达给另一个人了
@@ -1823,10 +1820,10 @@ class Demo extends React.Component { render() { // 事件函数 function myfun()
     
     <item>
       <title>React 中的占位符 Fragment</title>
-      <link>https://zburu.vercel.app/posts/33.html/</link>
+      <link>https://zburu.vercel.app/posts/33/</link>
       <pubDate>Sat, 12 Dec 2020 13:10:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/33.html/</guid>
+      <guid>https://zburu.vercel.app/posts/33/</guid>
       <description>在 React 项目中， render 方法只能有一个根元素，一般都是 &amp;lt;div&amp;gt; &amp;lt;div/&amp;gt; ，然后在里面写上我们的组件，渲染到浏览器一看，除了我们想要显示的组件，外面还套着一层 div ，如果在写项目的时候，套了很多曾组件，那么每一层都会多出来一个父级元素 div ，不美观，而且在调整样式的时候会有些麻烦
 因此， React 提供了一个占位符 Fragment，写法是：
 // index.js import React, { Component,Fragment } from &amp;#39;react&amp;#39; export default class index extends Component { render() { return ( &amp;lt;Fragment&amp;gt; &amp;lt;h2&amp;gt;hello,wolrd&amp;lt;/h2&amp;gt; &amp;lt;/Fragment&amp;gt; ) } } 在引入 React 的时候，增加一个属性 Fragment ，然后 render()方法下唯一的根元素我们用 &amp;lt;Fragment&amp;gt; &amp;lt;/Fragment&amp;gt; 来代替，这时候再看浏览器，就不会显示多余的标签了，直接显示 &amp;lt;h2&amp;gt;标签</description>
@@ -1834,10 +1831,10 @@ class Demo extends React.Component { render() { // 事件函数 function myfun()
     
     <item>
       <title>为什么不可变性在 React 中那么重要？</title>
-      <link>https://zburu.vercel.app/posts/32.html/</link>
+      <link>https://zburu.vercel.app/posts/32/</link>
       <pubDate>Wed, 02 Dec 2020 13:09:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/32.html/</guid>
+      <guid>https://zburu.vercel.app/posts/32/</guid>
       <description>根据官网文档来解释，为什么不可变性的概念在 React 中非常重要的原因，一般来说，有两种改变数据的方式。第一种方式是直接修改变量的值，第二种方式是使用新的一份数据替换旧数据
 React 文档
 一般来说，有两种改变数据的方式。第一种方式是直接修改变量的值，第二种方式是使用新的一份数据替换旧数据
@@ -1849,10 +1846,10 @@ React 文档
     
     <item>
       <title>关于react的一份学习计划</title>
-      <link>https://zburu.vercel.app/posts/31.html/</link>
+      <link>https://zburu.vercel.app/posts/31/</link>
       <pubDate>Fri, 27 Nov 2020 13:08:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/31.html/</guid>
+      <guid>https://zburu.vercel.app/posts/31/</guid>
       <description>有关react框架的学习计划，除了之前推荐的react开源作者写的学习建议，我还参考了阮一峰的react实例教程，写的通俗易懂，又难易并进，可以很快的掌握react的核心要点
 之前说了，为了公司的项目决定学习react框架，看了一份react.js开源作者的一份学习计划，react学习路径－－怎么学习react？个人感觉还是不错，但是需要看的文档比较多且官方文档没有那么详细的讲解，只说个原理，有些难以参透。
 在网络上浏览很久，发现大家对阮一峰的react教程风评不错，就去看了一下。
@@ -1868,10 +1865,10 @@ github &amp;raquo;&amp;gt; ruanyf/react-demos
     
     <item>
       <title>webpack安装配置指令</title>
-      <link>https://zburu.vercel.app/posts/30.html/</link>
+      <link>https://zburu.vercel.app/posts/30/</link>
       <pubDate>Thu, 26 Nov 2020 13:08:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/30.html/</guid>
+      <guid>https://zburu.vercel.app/posts/30/</guid>
       <description>进行重新加载编译。实际就是将浏览器不认识的语法编译成浏览器认识的语法。比如less编译成css，ES6 语法 转成 ES5等等。
 减少io请求,通常我们在请求后，会返回一个html到浏览器。这时，我们如果打开控制台，就会发现在html页面通过script,link等标签引用的静态资源， 浏览器会再次发出请求去获取这些资源。但是webpack的打包，将所有的静态资源都合并好了，减少了io请求。
 # 安装webpack npm install --save-dev webpack # 安装webpack-cli依赖 npm install --save-dev webpack-cli # 创建新项目 mkdir demo # cd项目 cd demo # 初始化 npm init -y # 安装开发版本cli npm install webpack webpack-cli --save-dev 新建一个html文件和一个js文件，工程目录如下
@@ -1881,10 +1878,10 @@ function component() { var element = document.createElement(&amp;#39;div&amp;#39
     
     <item>
       <title>vue学习笔记(3)－－computed, watch，calss, style</title>
-      <link>https://zburu.vercel.app/posts/29.html/</link>
+      <link>https://zburu.vercel.app/posts/29/</link>
       <pubDate>Wed, 25 Nov 2020 13:05:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/29.html/</guid>
+      <guid>https://zburu.vercel.app/posts/29/</guid>
       <description>一、计算属性computed 1.例子 &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;div&amp;gt;{{message}}&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;{{revermessage}}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; var vm = new Vue({ el: &amp;#39;#app&amp;#39;, data: { message: &amp;#39;hello,wolrd&amp;#39; }, computed: { revermessage: function() { return this.message.split(&amp;#39;&amp;#39;).reverse().join(&amp;#39;&amp;#39;) } } }) &amp;lt;/script&amp;gt; 声明一个计算属性severmessage，在computed中被指向对message进行一些方法操作后的返回值
 此时vm.severmessage依赖于vm.message的变化，对message改变数据，会引起severmessage的更新
 2.计算属性缓存和方法 还可以通过在表达式中调用方法来达到想要的效果
@@ -1897,10 +1894,10 @@ function component() { var element = document.createElement(&amp;#39;div&amp;#39
     
     <item>
       <title>vue学习笔记(2)－－vue实例和模板语法</title>
-      <link>https://zburu.vercel.app/posts/28.html/</link>
+      <link>https://zburu.vercel.app/posts/28/</link>
       <pubDate>Tue, 24 Nov 2020 13:05:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/28.html/</guid>
+      <guid>https://zburu.vercel.app/posts/28/</guid>
       <description>一、vue实例 1.创建vue实例 一个vue实例应该通过new Vue来创建根实例，所有的 vue 组件其实都是 vue 实例
 var vm = new Vue({ ... }) 当一个实例被创建时，data对象中的 property 都被加入到vue的响应式系统中，当值发生改变时，试图也会改变
 var data = {a: 1} var vm = new Vue({ data: data }) 此时在控制台输入vm.a == data.a会返回true，变量data已经被赋给vue实例中的data对象了
@@ -1914,10 +1911,10 @@ Object.freeze() 方法可以冻结一个对象。一个被冻结的对象再也�
     
     <item>
       <title>vue学习笔记(1)－－什么是vue?</title>
-      <link>https://zburu.vercel.app/posts/27.html/</link>
+      <link>https://zburu.vercel.app/posts/27/</link>
       <pubDate>Mon, 23 Nov 2020 13:04:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/27.html/</guid>
+      <guid>https://zburu.vercel.app/posts/27/</guid>
       <description>一、什么是vue? 练习时使用，最新版本
 &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 生产时使用，明确版本号的版本，避免造成不可预见的问题
 &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/vue@2.6.12&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; hello world
@@ -1930,19 +1927,19 @@ vue官网例子：
     
     <item>
       <title>React 学习笔记（一）</title>
-      <link>https://zburu.vercel.app/posts/26.html/</link>
+      <link>https://zburu.vercel.app/posts/26/</link>
       <pubDate>Sun, 22 Nov 2020 13:02:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/26.html/</guid>
+      <guid>https://zburu.vercel.app/posts/26/</guid>
       <description>an</description>
     </item>
     
     <item>
       <title>对象，类和接口之间的关系</title>
-      <link>https://zburu.vercel.app/posts/25.html/</link>
+      <link>https://zburu.vercel.app/posts/25/</link>
       <pubDate>Sat, 21 Nov 2020 13:01:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/25.html/</guid>
+      <guid>https://zburu.vercel.app/posts/25/</guid>
       <description>类是对的类型，类是具有相同属性和方法的一组集合，一个类可以对应多个对象，对象通过他们公开的方法来定义他们与外界的交互行为，而方法就形成了与外界交互的接口
 类，对象和接口 1.类和对象 区别：
 对象是类的一个实例。就比如一个人，他有具体的属性，身高，体重，姓名等状态，跑步，跳舞等行为 类是抽象的概念，代表一类事物的模版。对一类对象的行为和状态进行描述，抽离出其共性，形成类 关系：
@@ -1960,10 +1957,10 @@ vue官网例子：
     
     <item>
       <title>vue使用cli脚手架构建项目工程</title>
-      <link>https://zburu.vercel.app/posts/24.html/</link>
+      <link>https://zburu.vercel.app/posts/24/</link>
       <pubDate>Fri, 20 Nov 2020 13:03:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/24.html/</guid>
+      <guid>https://zburu.vercel.app/posts/24/</guid>
       <description>vue使用cli脚手架构建项目工程，执行的命令以及遇到的相关的问题
 1.下载安装node 测试一下是否成功安装，
 $ node -v // 返回下载的版本号 2.安装webpack环境 $ npm install webpack -g // 如果失败，可能是因为用户没有权限 // 使用下面这种，管理员权限 $ sudo npm install webpack -g 如果返回版本号代表成功，如果没有，则需要输入下面的命令
@@ -1977,10 +1974,10 @@ $ vue init webpack vuedemo // 名字自己根据要求起,vuedemo Project name (
     
     <item>
       <title>react学习路径－－怎么学习react？</title>
-      <link>https://zburu.vercel.app/posts/23.html/</link>
+      <link>https://zburu.vercel.app/posts/23/</link>
       <pubDate>Thu, 19 Nov 2020 13:02:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/23.html/</guid>
+      <guid>https://zburu.vercel.app/posts/23/</guid>
       <description>转载于:https://github.com/petehunt/react-howto，react开源作者对于react框架的一个学习路径的建议，个人感觉还是相当不错的学习路线
 如何学习React? 如果你是一个 React (或者前端) 新手, 出于以下的原因, 你可能会对这个生态圈感到困惑:
 React 的目标群体历来是喜欢尝试新事物的开发者和前端专家. Facebook 开源的内容是应用在他们的实际应用中, 因此他们没有关注那些比 Facebook 小的工程需求. 现有的 React 指引水平参差不齐. 在本文中, 我会假设你已有使用 HTML, CSS 和 JavaScript 开发网页的基础.
@@ -1994,10 +1991,10 @@ React npm JavaScript “打包工具” ES6 Routing Flux 你不需要把这些�
     
     <item>
       <title>在js中运算不能随便把value属性定义成变量</title>
-      <link>https://zburu.vercel.app/posts/22.html/</link>
+      <link>https://zburu.vercel.app/posts/22/</link>
       <pubDate>Wed, 18 Nov 2020 13:00:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/22.html/</guid>
+      <guid>https://zburu.vercel.app/posts/22/</guid>
       <description>在写一个小demo的时候，无意中发现定义变量的时候直接写入value，会导致获取不到数据，或者获取的不是我们想要的内容，在js中运算不能随便把value属性定义成变量
 先看一段代码
 &amp;lt;input type=&amp;#34;text&amp;#34;&amp;#34; id=&amp;#34;a&amp;#34;&amp;gt; &amp;lt;span&amp;gt;*&amp;lt;/span&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;b&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;button&amp;#34; value=&amp;#34;=&amp;#34; onclick=&amp;#34;beto()&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;sub&amp;#34; disabled&amp;gt; &amp;lt;script&amp;gt; function beto() { var a = document.getElementById(&amp;#39;a&amp;#39;).value var b = document.getElementById(&amp;#39;b&amp;#39;).value var sub = document.getElementById(&amp;#39;sub&amp;#39;).value sub = a + b } &amp;lt;/script&amp;gt; 就这么一看，逻辑貌似没有问题，获取a和b的value，乘法运算，然后输出sub
@@ -2011,10 +2008,10 @@ React npm JavaScript “打包工具” ES6 Routing Flux 你不需要把这些�
     
     <item>
       <title>事件监听函数，以及事件的捕获和冒泡机制</title>
-      <link>https://zburu.vercel.app/posts/21.html/</link>
+      <link>https://zburu.vercel.app/posts/21/</link>
       <pubDate>Tue, 17 Nov 2020 13:00:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/21.html/</guid>
+      <guid>https://zburu.vercel.app/posts/21/</guid>
       <description>事件一般是用于浏览器和用户操作之间的交互，当用户执行某些特殊的操作时，浏览器给予反应，触发绑定的事件，事件流，事件发生时会在元素节点和根节点之间按照约定的顺序传播，事件经过的所有节点都会受到事件的影响，这个传播过程被称为DOM事件流
 函数事件 事件一般是用于浏览器和用户操作之间的交互，当用户执行某些特殊的操作时，浏览器给予反应，触发绑定的事件
 事件流，事件发生时会在元素节点和根节点之间按照约定的顺序传播，事件经过的所有节点都会受到事件的影响，这个传播过程被称为DOM事件流
@@ -2028,10 +2025,10 @@ true是捕获，false是冒泡，默认为冒泡事件
     
     <item>
       <title>getElementBy系列和querySelector系列的区别</title>
-      <link>https://zburu.vercel.app/posts/19.html/</link>
+      <link>https://zburu.vercel.app/posts/19/</link>
       <pubDate>Mon, 16 Nov 2020 12:59:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/19.html/</guid>
+      <guid>https://zburu.vercel.app/posts/19/</guid>
       <description>querySelector和querySelectorAll的用法和getElementBy大致一样，获取的时候带上符号，getElementBy获取的是元素的动态集合，querySelector获取的是元素的静态集合。
 但是需要注意：getElementBy系列和querySelector系列的区别
 比如，我们写一个for循环，每次获取li标签的时候，ul生成一个li子元素
@@ -2043,10 +2040,10 @@ conosle.log(li.length) // 6 重新用querySelector获取一遍元素
     
     <item>
       <title>DOM－－文档对象模型</title>
-      <link>https://zburu.vercel.app/posts/18.html/</link>
+      <link>https://zburu.vercel.app/posts/18/</link>
       <pubDate>Sun, 15 Nov 2020 12:58:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/18.html/</guid>
+      <guid>https://zburu.vercel.app/posts/18/</guid>
       <description>DOM中文名文档对象模型，英文名Document Object Model，我们简称为DOM，是针对html和xml文档的一种API，将html以一种树状结构呈现出来，可以更直观去研究文档结构，我们将这种树状文档结构称为－－DOM树，或者节点树，一样的概念
 一、什么是DOM？ DOM中文名文档对象模型，英文名Document Object Model，我们简称为DOM，是针对html和xml文档的一种API，将html以一种树状结构呈现出来，可以更直观去研究文档结构，我们将这种树状文档结构称为－－DOM树，或者节点树，一样的概念
 js通过dom节点，可以对文档的html标签，属性，css样式，以及具体的内容做出修改，并对页面中的所有事件进行响应
@@ -2055,10 +2052,10 @@ js通过dom节点，可以对文档的html标签，属性，css样式，以及�
     
     <item>
       <title>有关js函数，方法的一些补充总结</title>
-      <link>https://zburu.vercel.app/posts/17.html/</link>
+      <link>https://zburu.vercel.app/posts/17/</link>
       <pubDate>Sat, 14 Nov 2020 12:57:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/17.html/</guid>
+      <guid>https://zburu.vercel.app/posts/17/</guid>
       <description>数据类型，构造函数，原型和原型链的一些讲解补充
 一、数据类型 1.5个基本类型 string number boolean undefined 未定义 null 值为空 symbol 表示一个符号，符号类型是唯一的并且是不可修改的
 最常见的还是前三种，字符串，数字，布尔值
@@ -2072,10 +2069,10 @@ js通过dom节点，可以对文档的html标签，属性，css样式，以及�
     
     <item>
       <title>为什么getTime()返回1970年至今的毫秒？</title>
-      <link>https://zburu.vercel.app/posts/16.html/</link>
+      <link>https://zburu.vercel.app/posts/16/</link>
       <pubDate>Fri, 13 Nov 2020 12:56:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/16.html/</guid>
+      <guid>https://zburu.vercel.app/posts/16/</guid>
       <description>今天在写new Date()时候，无意中发现了一个很有意思的方法，getTime()，百度了一下，有人说是计算从1970年1月1日至今的毫秒数
 为什么要是1970年呢？
 new Date().getTime(); // xxxxxxxxxxx 这个起源于unix的诞生，因为Unix在1969年被开发出来，1971年正式发布，在这之前没有机器会需要来表示1970-01-01-00:00:00之前的时间，后面的语言很多就沿用了这一习惯，js只是也沿用了这种习惯而已。
@@ -2100,10 +2097,10 @@ Integer在JAVA内用32位表示，因此32位能表示的最大值是2147483647�
     
     <item>
       <title>面向对象编程</title>
-      <link>https://zburu.vercel.app/posts/15.html/</link>
+      <link>https://zburu.vercel.app/posts/15/</link>
       <pubDate>Thu, 12 Nov 2020 12:58:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/15.html/</guid>
+      <guid>https://zburu.vercel.app/posts/15/</guid>
       <description>面向对象把构成问题的transaction分解成各个对象，而建立对象的目的也不是为了完成一个个步骤，而是为了描述某个事物在解决整个问题的过程中所发生的行为，意在写出通用代码，加强代码重用，屏蔽差异性。
 一、什么是面向对象编程 js是基于原型的，基于面向对象编程
 面向对象就是把数据和对数据的操作方法放在一起，作为一个整体——对象。对同类对象抽象出其共性，形成类
@@ -2119,10 +2116,10 @@ Integer在JAVA内用32位表示，因此32位能表示的最大值是2147483647�
     
     <item>
       <title>小张厨房日记（更新中...）</title>
-      <link>https://zburu.vercel.app/posts/14.html/</link>
+      <link>https://zburu.vercel.app/posts/14/</link>
       <pubDate>Mon, 09 Nov 2020 21:13:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/14.html/</guid>
+      <guid>https://zburu.vercel.app/posts/14/</guid>
       <description>厨房日记，记录我的&amp;rsquo;高光&amp;rsquo;时刻
 今日菜谱
 莴笋炒肉 准备食材：两根莴笋，一块猪肉，两只青椒
@@ -2138,10 +2135,10 @@ Integer在JAVA内用32位表示，因此32位能表示的最大值是2147483647�
     
     <item>
       <title>javascript——函数、变量和方法</title>
-      <link>https://zburu.vercel.app/posts/13.html/</link>
+      <link>https://zburu.vercel.app/posts/13/</link>
       <pubDate>Wed, 04 Nov 2020 21:12:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/13.html/</guid>
+      <guid>https://zburu.vercel.app/posts/13/</guid>
       <description>当代码出现有规律的重复之后，可以利用函数，定义变量，调用方法，不用去重复的改动代码，只需要进行函数的修改。基本上所有的高级语言都支持函数，javascript也不例外，它可以像变量一样被使用，方便且强大，因此本文对js函数进行系统的学习，并在学习过程中做了详细的笔记以及样例。
 一、函数的定义和调用 1.定义函数 function abs(x) { if(x = 0) { return x; } else { return -x; } } function()指出这是一个函数定义 abs是函数的代码 (x)里面的内容是函数的参数 {...}的内容是函数体，可以包括若干语句，甚至可以没有任何语句 函数体中，必须以return结尾，才可以把结果返回，如果不用return结尾的话，就会返回undefined
 也可以直接定义一个对象，这个对象也可以写成函数的方式
@@ -2155,10 +2152,10 @@ function abs(x) { // 检查参数x是否为数字 if (typeof x !== &amp;#39;numb
     
     <item>
       <title>HTML事件属性--DOM</title>
-      <link>https://zburu.vercel.app/posts/12.html/</link>
+      <link>https://zburu.vercel.app/posts/12/</link>
       <pubDate>Thu, 29 Oct 2020 21:12:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/12.html/</guid>
+      <guid>https://zburu.vercel.app/posts/12/</guid>
       <description>研究html的对象，事件和方法，从js的角度来思考，这个标签的属性是通过什么方法，触发什么事件来实现的
 键盘鼠标事件 页面窗口事件 表单事件 一、window事件属性 针对window对象触发的事件，在&amp;lt;body&amp;gt;中执行
 1.onbeforeprint／onafterprint 在浏览器打印之间/后触发
@@ -2181,10 +2178,10 @@ demo查看
     
     <item>
       <title>js基本语法</title>
-      <link>https://zburu.vercel.app/posts/11.html/</link>
+      <link>https://zburu.vercel.app/posts/11/</link>
       <pubDate>Wed, 21 Oct 2020 21:11:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/11.html/</guid>
+      <guid>https://zburu.vercel.app/posts/11/</guid>
       <description>在学习js基本语法的过程中，把遇见的知识点和问题记录喜下来，以便未来复习和参考。
 数据类型有：数据，字符串，数组，数字，布尔值等。
 一、数据类型 1.number 2.布尔值 只有true和false两种，可以直接用true和false来表达，比如：
@@ -2206,10 +2203,10 @@ new Array(1,2,3)	//[1,2,3] 数组的索引
     
     <item>
       <title>对全栈的一些思考</title>
-      <link>https://zburu.vercel.app/posts/10.html/</link>
+      <link>https://zburu.vercel.app/posts/10/</link>
       <pubDate>Fri, 18 Sep 2020 21:10:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/10.html/</guid>
+      <guid>https://zburu.vercel.app/posts/10/</guid>
       <description>这里我要推荐一本书，叫做《Web全栈工程师的自我修养》，在看的过程中，自己也代入进去进行分析，然后写了这篇笔记。
 “全栈工程师正在成为IT行业的新秀，无论是在上市互联网公司还是在创业公司，都对全栈工程师青睐有加。本书作者是腾讯公 司高级工程师，在前端、后端和APP开发方面都有丰富的经验，在本书中分享了全栈工程师的技能与要求、核心竞争力、未来发 展方向、对移动端的思考。除此之外，本书还详细记录了作者从零开始、学习心得。本书内容全面、客观务实适合互联网行业新人 、程序员。以及期待技术转型的从业者阅读参考。”
 作者余果毕业于西安点击科技大学软件工程学院，曾任腾讯社交用户体验设计部高级UI工程师、前端开发负责人，负责多个项目的产品设计，以自身的经历为模板撰写了这本书。
@@ -2232,10 +2229,10 @@ new Array(1,2,3)	//[1,2,3] 数组的索引
     
     <item>
       <title>chrome浏览器中对autoplay的一些处理技巧</title>
-      <link>https://zburu.vercel.app/posts/8.html/</link>
+      <link>https://zburu.vercel.app/posts/8/</link>
       <pubDate>Fri, 11 Sep 2020 21:08:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/8.html/</guid>
+      <guid>https://zburu.vercel.app/posts/8/</guid>
       <description>我在写博客的时候，想给博客网页添加自己喜欢的音乐，这样我在写作和阅读的时候，心情也会比较愉悦，这个时候，我们就需要用到audio这个标签。
 &amp;lt;audio src=&amp;#34;&amp;#34;&amp;gt;&amp;lt;/audio&amp;gt; 同时audio标签还带有很多实用的属性，常用的有以下几个：
 src &amp;ndash; 这个就不说了，懂的都懂 autoplay &amp;ndash; 如果出现该属性，音频在就绪后马上播放 controls &amp;ndash; 网页中显示音频控件 loop &amp;ndash; 循环播放 muted &amp;ndash; 默认静音 但是我在设置 autoplay 的时候发现，chrome对自动播放深恶痛绝，直接从根源上限制了这个属性的开启，意思是说，这个属性直接禁用，在打开网页没有交互的情况下，不允许自动播放。
@@ -2247,10 +2244,10 @@ src &amp;ndash; 这个就不说了，懂的都懂 autoplay &amp;ndash; 如果出
     
     <item>
       <title>推荐书籍《CSS世界》</title>
-      <link>https://zburu.vercel.app/posts/7.html/</link>
+      <link>https://zburu.vercel.app/posts/7/</link>
       <pubDate>Tue, 11 Aug 2020 21:09:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/7.html/</guid>
+      <guid>https://zburu.vercel.app/posts/7/</guid>
       <description>本书从前端开发人员的需求出发，以“流”为线索，从结构、内容到美化装饰灯方面，全面且深入地讲解前端开发人员必须了解和掌握的大量的CSS知识点。同时，作者结合多年的从业经验，通过大量的实战案例，详尽解析CSS的相关知识与常见问题。
 作者还为本书开发了专门的配套网站，进行实例展示。问题答疑。作为一本CSS深度学习的书，书中介绍大量许多前端开发人员都不知道的CSS知识点。通过阅读本书，读者会对CSS世界的深度和广度有一个全新的认识。
 这本书作者采用口语化的方式，讲述在css中遇到的一些有意思的问题，循序渐进，引人入胜，对有前端基础的人来说，读这本书还是很有意思的。我经常在闲余时间看看这本书，会给我一些启发。</description>
@@ -2258,10 +2255,10 @@ src &amp;ndash; 这个就不说了，懂的都懂 autoplay &amp;ndash; 如果出
     
     <item>
       <title>文字溢出隐藏以及和flex冲突的问题</title>
-      <link>https://zburu.vercel.app/posts/6.html/</link>
+      <link>https://zburu.vercel.app/posts/6/</link>
       <pubDate>Mon, 03 Aug 2020 21:08:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/6.html/</guid>
+      <guid>https://zburu.vercel.app/posts/6/</guid>
       <description>在某些段落中，页面要求文字只显示一行，但是width固定，而文字过长，就会出现一个需求，超过长度限制的文字被隐藏且显示省略号，css 支持这样的属性。
 单行文本溢出隐藏
 div{ overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } 多行文本溢出隐藏
@@ -2276,10 +2273,10 @@ flex布局是前端写代码经常使用的一种布局方式，简单便捷且�
     
     <item>
       <title>vue生命周期</title>
-      <link>https://zburu.vercel.app/posts/5.html/</link>
+      <link>https://zburu.vercel.app/posts/5/</link>
       <pubDate>Fri, 19 Jun 2020 21:07:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/5.html/</guid>
+      <guid>https://zburu.vercel.app/posts/5/</guid>
       <description>学习vue中一个非常重要的领域，就是生命周期，它包含了很多的内容。每个vue实例在被创建的时候都要经历一系列的初始化过程，这个过程就是vue的生命周期。
 每个vue实例在被创建的时候都要经过一系列的初始化过程——例如，需要把设置数据监听、编译模板、将实例挂载到DOM并在数据变化时更新DOM等，我们要把这一系列的过程称为组件的生命周期（组件从注册到销毁的整个过程）。我们有时候需要在组件生命周期的某个过程中，执行某些代码，基于此，vue提供了生命周期钩子函数，给了用户在不同阶段添加自己的代码的机会。
 但是在此之前，我们要详细的介绍下组件的生命周期，以及生命后期中每个阶段组件完成和未完成的部分。
@@ -2303,10 +2300,10 @@ mounted: function () { console.log(&amp;#39;mounted:&amp;#39;,document.getElemen
     
     <item>
       <title>hello, world</title>
-      <link>https://zburu.vercel.app/posts/1.html/</link>
+      <link>https://zburu.vercel.app/posts/1/</link>
       <pubDate>Sun, 14 Jun 2020 20:57:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/1.html/</guid>
+      <guid>https://zburu.vercel.app/posts/1/</guid>
       <description>2020年6月14日
 我的博客正式建立。
 愿一切安好。</description>
