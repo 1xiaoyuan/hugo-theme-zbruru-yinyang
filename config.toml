@@ -1,4 +1,4 @@
-baseURL = "http://zburu.vercel.app"
+baseURL = "https://zburu.vercel.app"
 languageCode = "en-us"
 title = "子舒的博客"
 theme = "yinyang"
