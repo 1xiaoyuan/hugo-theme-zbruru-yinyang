@@ -1,5 +1,5 @@
 cd e:
-cd hugo-blog
+cd /site-code/hugo-blog
 
 hugo
 

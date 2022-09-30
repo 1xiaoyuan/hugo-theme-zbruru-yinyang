@@ -1,4 +1,4 @@
-baseURL = "https://zburu.vercel.app"
+baseURL = "https://blog.zburu.com"
 languageCode = "en-us"
 title = "子舒的博客"
 theme = "yinyang"
@@ -20,5 +20,10 @@ name = "RSS"
 link = "/index.xml"
 
 [[params.socials]]
-name = "About"
-link = "/"
+name = "周刊"
+link = "/161"
+
+
+[[params.socials]]
+name = "关于"
+link = "/2"

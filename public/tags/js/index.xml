@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>js on 子舒的博客</title>
-    <link>https://zburu.vercel.app/tags/js/</link>
+    <link>https://blog.zburu.com/tags/js/</link>
     <description>Recent content in js on 子舒的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zburu.vercel.app/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.zburu.com/tags/js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>将数组中多个对象的同名属性值取出合并成新数组</title>
-      <link>https://zburu.vercel.app/posts/168/</link>
+      <link>https://blog.zburu.com/posts/168/</link>
       <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/168/</guid>
+      <guid>https://blog.zburu.com/posts/168/</guid>
       <description>业务中需求的方法，接口返回一个数组，里面包含了大量的对象，具有同名的属性名，比较常见。但是需要将其中参数为name的属性值全部取出，合并成数组。
 const num = [ { id: 1, name: &amp;#39;abc&amp;#39;, }, { id: 2, name: &amp;#39;xyz&amp;#39;, } ] function getFields(arrnum, field) { const resnum = []; for (let i = 0; i &amp;lt; arrnum.length; ++i) resnum.push(arrnum[i][field]); return resnum; } const result = getFields(num, &amp;#34;name&amp;#34;); console.log(result); // [&amp;#39;abc&amp;#39;, &amp;#39;xyz&amp;#39;] console.log(result.join(&amp;#39; &amp;#39;)); // &amp;#34;abc xyz&amp;#34; </description>
     </item>
     
     <item>
       <title>人民币小写转大写</title>
-      <link>https://zburu.vercel.app/posts/145/</link>
+      <link>https://blog.zburu.com/posts/145/</link>
       <pubDate>Fri, 24 Jun 2022 15:53:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/145/</guid>
+      <guid>https://blog.zburu.com/posts/145/</guid>
       <description>一个有趣的demo
 this.smalltoBIG(43533534.78)); //肆仟叁佰伍拾叁万叁仟伍佰叁拾肆元柒角捌分 smalltoBIG (n) { var fraction = [&amp;#39;角&amp;#39;, &amp;#39;分&amp;#39;]; var digit = [&amp;#39;零&amp;#39;, &amp;#39;壹&amp;#39;, &amp;#39;贰&amp;#39;, &amp;#39;叁&amp;#39;, &amp;#39;肆&amp;#39;, &amp;#39;伍&amp;#39;, &amp;#39;陆&amp;#39;, &amp;#39;柒&amp;#39;, &amp;#39;捌&amp;#39;, &amp;#39;玖&amp;#39;]; var unit = [ [&amp;#39;元&amp;#39;, &amp;#39;万&amp;#39;, &amp;#39;亿&amp;#39;],[&amp;#39;&amp;#39;, &amp;#39;拾&amp;#39;, &amp;#39;佰&amp;#39;, &amp;#39;仟&amp;#39;] ]; var head = n &amp;lt; 0 ? &amp;#39;欠&amp;#39; : &amp;#39;&amp;#39;; n = Math.abs(n); var s = &amp;#39;&amp;#39;; for (var i = 0; i &amp;lt; fraction.length; i++) { s += (digit[Math.floor(n * 10 * Math.pow(10, i)) % 10] + fraction[i]).</description>
     </item>
     
     <item>
       <title>浏览器收藏夹一键填写博客评论信息</title>
-      <link>https://zburu.vercel.app/posts/120/</link>
+      <link>https://blog.zburu.com/posts/120/</link>
       <pubDate>Tue, 26 Apr 2022 14:08:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/120/</guid>
+      <guid>https://blog.zburu.com/posts/120/</guid>
       <description>先点击收藏一个页面，然后右键它，选择修改，在网址输入框复制下面的js代码，就可以一键填入了。
 将其中的昵称，邮箱，网址修改成自己的信息。
 目前支持绝大多数主流博客平台和系统，如果发现没有起作用，可以在下面代码里面修改增加一下input的属性。
@@ -42,10 +42,10 @@ javascript:void function(){var lauthor=[&amp;#34;#author&amp;#34;,&amp;#34;input
     
     <item>
       <title>揭秘箭头函数</title>
-      <link>https://zburu.vercel.app/posts/82/</link>
+      <link>https://blog.zburu.com/posts/82/</link>
       <pubDate>Fri, 05 Nov 2021 12:16:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/82/</guid>
+      <guid>https://blog.zburu.com/posts/82/</guid>
       <description>英文地址: https://javascript.plainenglish.io/demystifying-javascript-arrow-functions-7b2a0908a2b3
 通过掘金翻译计划活动进行翻译
 箭头函数是函数表达式的替代方法，但在语法上有所不同，不能在所有情况下使用。如果您还没有阅读 JavaScript 中的函数表达式，我建议您在继续阅读之前先阅读这篇文章。
@@ -56,10 +56,10 @@ javascript:void function(){var lauthor=[&amp;#34;#author&amp;#34;,&amp;#34;input
     
     <item>
       <title>js奇怪的知识--console.table</title>
-      <link>https://zburu.vercel.app/posts/81/</link>
+      <link>https://blog.zburu.com/posts/81/</link>
       <pubDate>Thu, 04 Nov 2021 14:16:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/81/</guid>
+      <guid>https://blog.zburu.com/posts/81/</guid>
       <description>这个属性对我来说还真有些陌生，无意中发现的，查询过 MDN 之后听得挺有意思的，就记录一下。
 根据字面意思就是“将数据以表格的形式显示”。这个方法需要一个必须参数 data，data 必须是一个数组或者是一个对象；还可以使用一个可选参数 columns。
 表格的第一列是 index。如果数据 data 是一个数组，那么这一列的单元格的值就是数组的索引。 如果数据是一个对象，那么它们的值就是各对象的属性名称。 注意（在 FireFox 中）console.table 被限制为只显示1000行（第一行是被标记的索引）。
@@ -71,10 +71,10 @@ function Fun(title, date) { this.title = title this.date = date } const one = ne
     
     <item>
       <title>通过 getTimezoneOffset() 方法判断当前时区是否为夏令时</title>
-      <link>https://zburu.vercel.app/posts/80/</link>
+      <link>https://blog.zburu.com/posts/80/</link>
       <pubDate>Fri, 22 Oct 2021 11:16:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/80/</guid>
+      <guid>https://blog.zburu.com/posts/80/</guid>
       <description>getTimezoneOffset() 方法 方法返回 UTC 时间和本地时间之间的时差，以分钟为单位。
 世界协调时间 (UTC) 是世界时间标准设定的时间, UTC 时间与 GMT 时间（格林威治时间）相同。
 测一下我所在时区和标准时区的时间差
@@ -85,10 +85,10 @@ const time1 = new Date(2021, 0, 1); const time2 = new Date(2021, 6, 1); if (time
     
     <item>
       <title>使用js随机生成背景颜色</title>
-      <link>https://zburu.vercel.app/posts/78/</link>
+      <link>https://blog.zburu.com/posts/78/</link>
       <pubDate>Wed, 29 Sep 2021 13:15:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/78/</guid>
+      <guid>https://blog.zburu.com/posts/78/</guid>
       <description>先写一个简单的 html 页面出来
 &amp;lt;style&amp;gt; /* ... */ &amp;lt;/style&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;html&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;css&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;js&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; 通过 Math.random() 属性可以随机生成一个数字，然后通过转化为十六进制的方法进行处理，下面就是随机生成 6 位数字的代码，并进行转化的代码。
 const randomHex = () =&amp;gt; `#${Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, &amp;#34;0&amp;#34;)}`; 可以在控制台输出看一下结果，随机生成了一个结果 #62113b。
@@ -99,10 +99,10 @@ var li = document.getElementsByTagName(&amp;#34;li&amp;#34;); for (var i = 0; i 
     
     <item>
       <title>实时监听页面的变化</title>
-      <link>https://zburu.vercel.app/posts/60/</link>
+      <link>https://blog.zburu.com/posts/60/</link>
       <pubDate>Fri, 26 Mar 2021 14:24:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/60/</guid>
+      <guid>https://blog.zburu.com/posts/60/</guid>
       <description>问题产生于需求，因为项目需要适配pc和移动端多套布局，所以某些元素在特定的宽度下会产生错位的现象。
 如果是在css中，可以很好的判断，使用媒体查询可以实时检测页面的宽度，从而给予标签不同的属性。
 @media (max-width:768px){ ... } 在js下可以使用下面这种方法
@@ -111,10 +111,10 @@ window.addEventListener(&amp;#39;load&amp;#39;, function() { window.addEventList
     
     <item>
       <title>用ajax请求获取数据</title>
-      <link>https://zburu.vercel.app/posts/57/</link>
+      <link>https://blog.zburu.com/posts/57/</link>
       <pubDate>Fri, 19 Mar 2021 13:01:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/57/</guid>
+      <guid>https://blog.zburu.com/posts/57/</guid>
       <description>通过jquery进行ajax请求数据是一种较为简便的方式，我简单写了一个本地的data.json文件，然后用get请求数据，下面是部分代码
 // ajax 请求获取数据 function picShow(){ var str = &amp;#39;&amp;#39;; $.ajax({ url:&amp;#39;./js/data.json&amp;#39;, type:&amp;#39;get&amp;#39;, dataType:&amp;#39;json&amp;#39;, success:function(data){ console.log(&amp;#39;success&amp;#39;) }, error: function() { console.log(&amp;#39;error&amp;#39;) } }) } picShow(); 但是这样做有一个弊端，无法在本地预览，因为浏览器禁止客户端直接获取本地数据，这也算一个跨域问题了，不过这也是为了保证用户的安全。当然这对前端来说很不爽！
 其实解决的方法也很简单，通过node服务，用live server在本地跑一下，就可以让ajax获取数据，当然还有其他更好的解决方法，或者直接在服务器跑，通过jsonp等等。
@@ -123,10 +123,10 @@ live server 不明白的可以百度看看，也是一个技巧。</description>
     
     <item>
       <title>ES5 和 ES6 的区别？</title>
-      <link>https://zburu.vercel.app/posts/48/</link>
+      <link>https://blog.zburu.com/posts/48/</link>
       <pubDate>Wed, 20 Jan 2021 19:58:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/48/</guid>
+      <guid>https://blog.zburu.com/posts/48/</guid>
       <description>一、javascript 由三部分组成 1.ECMAScript（核心） 它规定了语言的组成部分：法语，类型，语句，关键字，操作符等等。
 2.DOM（文档对象模型） DOM 把整个页面映射为一个多层节点结果，开发人员可借助DOM提供的API，轻松地删除、添加、替换或修改任何节点。
 3.BOM（浏览器对象模型） 支持可以访问和操作浏览器窗口的浏览器对象模型，开发人员可以控制浏览器显示的页面以外的部分。
@@ -144,19 +144,19 @@ var obj = { // __proto__ __proto__: theProtoObj, // Shorthand for ‘handler: ha
     
     <item>
       <title>webpack 的核心概念和构建流程</title>
-      <link>https://zburu.vercel.app/posts/47/</link>
+      <link>https://blog.zburu.com/posts/47/</link>
       <pubDate>Mon, 18 Jan 2021 19:59:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/47/</guid>
+      <guid>https://blog.zburu.com/posts/47/</guid>
       <description>1.webpack 的核心概念 entry（入口）：一个可执行模块或者库的入口。定义了打包后的入口文件。 output（出口）：指示 webpack 如何去输出，以及在哪里输出。 path: 打包文件存放的绝对路径 publicPath: 网站运行时的访问路径 filename: 打包后的文件名 module（模块）：在 webpack 里，一切皆模块，一个模块对应一个文件。webpack 会从配置的 entry 中开始递归找出所有依赖的模块。 chunk（代码块）：一个 chunk 由多个 模块 组合而成。可以将可执行的模块和他所依赖的模块组合成一个 chunk ，这就是打包。 loader（模块转换器）：用于把一个模块原内容按照需求转换成新的内容。例如：es6 转换为 es5，scss 转换为 css 等。 plugin（扩展）：扩展webpack功能的插件。在webpack构建的生命周期节点上加入扩展hook，添加功能。 2.webpack 构建流程 初始化参数：解析 webpack 的配置参数，合并 shell 传入和 webpack.config.js 文件配置的参数，形成最后的配置结果。 开始编译：上一步得到的参数初始化 compiler 对象，注册所有配置的插件，插件监听 webpack 构建生命周期的事件节点，做出相应的反应，执行对象的 run 方法开始执行编译。 确定入口：其配置的 entry 入口，开始解析文件构建的 AST 语法树，找出依赖，递归下去。 编译模块：根据文件类型和 loader 配置，调用所有配置的 loader 对文件进行转换，再找出该模块依赖的模块，再递归本步骤知道所有入口依赖的文件都经过了本步骤的处理。 完成模块编译并输出：递归完后，得到每个文件结果，包含了每个模块及她们之间的依赖关系，根据 entry 配置生成代码块 chunk 。 输出完成：输出所有的 chunk 到文件系统。 3.有哪些常见的 loader ？ babel-loader：把es6转成es5； css-loader：加载css，支持模块化，压缩，文件导入等特性； style-loader：把css代码注入到js中，通过dom操作去加载css； eslint-loader：通过Eslint检查js代码； image-loader：加载并且压缩图片晚间； file-loader：文件输出到一个文件夹中，在代码中通过相对url去引用输出的文件； url-loader：和file-loader类似，文件很小的时候可以base64方式吧文件内容注入到代码中。 source-map-loader：加载额外的source map文件，方便调试。 4.</description>
     </item>
     
     <item>
       <title>javascript 进阶问题</title>
-      <link>https://zburu.vercel.app/posts/36/</link>
+      <link>https://blog.zburu.com/posts/36/</link>
       <pubDate>Sat, 19 Dec 2020 13:17:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/36/</guid>
+      <guid>https://blog.zburu.com/posts/36/</guid>
       <description>Github：https://github.com/lydiahallie/javascript-questions
 相当不错的一个 Github 仓库，javascript questions ，作者每周都会发布一些有关 javascript 的题目，虽然不难但是考察细节，刷了一会，其实一些很简单的问题，结果因为细节思考不到位直接出错。
 引用作者的话：我在我的 Instagram 上每天都会发布 JavaScript 的多选问题，并且同时也会在这个仓库中发布。
@@ -165,10 +165,10 @@ var obj = { // __proto__ __proto__: theProtoObj, // Shorthand for ‘handler: ha
     
     <item>
       <title>在js中运算不能随便把value属性定义成变量</title>
-      <link>https://zburu.vercel.app/posts/22/</link>
+      <link>https://blog.zburu.com/posts/22/</link>
       <pubDate>Wed, 18 Nov 2020 13:00:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/22/</guid>
+      <guid>https://blog.zburu.com/posts/22/</guid>
       <description>在写一个小demo的时候，无意中发现定义变量的时候直接写入value，会导致获取不到数据，或者获取的不是我们想要的内容，在js中运算不能随便把value属性定义成变量
 先看一段代码
 &amp;lt;input type=&amp;#34;text&amp;#34;&amp;#34; id=&amp;#34;a&amp;#34;&amp;gt; &amp;lt;span&amp;gt;*&amp;lt;/span&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;b&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;button&amp;#34; value=&amp;#34;=&amp;#34; onclick=&amp;#34;beto()&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;sub&amp;#34; disabled&amp;gt; &amp;lt;script&amp;gt; function beto() { var a = document.getElementById(&amp;#39;a&amp;#39;).value var b = document.getElementById(&amp;#39;b&amp;#39;).value var sub = document.getElementById(&amp;#39;sub&amp;#39;).value sub = a + b } &amp;lt;/script&amp;gt; 就这么一看，逻辑貌似没有问题，获取a和b的value，乘法运算，然后输出sub
@@ -182,10 +182,10 @@ var obj = { // __proto__ __proto__: theProtoObj, // Shorthand for ‘handler: ha
     
     <item>
       <title>事件监听函数，以及事件的捕获和冒泡机制</title>
-      <link>https://zburu.vercel.app/posts/21/</link>
+      <link>https://blog.zburu.com/posts/21/</link>
       <pubDate>Tue, 17 Nov 2020 13:00:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/21/</guid>
+      <guid>https://blog.zburu.com/posts/21/</guid>
       <description>事件一般是用于浏览器和用户操作之间的交互，当用户执行某些特殊的操作时，浏览器给予反应，触发绑定的事件，事件流，事件发生时会在元素节点和根节点之间按照约定的顺序传播，事件经过的所有节点都会受到事件的影响，这个传播过程被称为DOM事件流
 函数事件 事件一般是用于浏览器和用户操作之间的交互，当用户执行某些特殊的操作时，浏览器给予反应，触发绑定的事件
 事件流，事件发生时会在元素节点和根节点之间按照约定的顺序传播，事件经过的所有节点都会受到事件的影响，这个传播过程被称为DOM事件流
@@ -199,10 +199,10 @@ true是捕获，false是冒泡，默认为冒泡事件
     
     <item>
       <title>有关js函数，方法的一些补充总结</title>
-      <link>https://zburu.vercel.app/posts/17/</link>
+      <link>https://blog.zburu.com/posts/17/</link>
       <pubDate>Sat, 14 Nov 2020 12:57:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/17/</guid>
+      <guid>https://blog.zburu.com/posts/17/</guid>
       <description>数据类型，构造函数，原型和原型链的一些讲解补充
 一、数据类型 1.5个基本类型 string number boolean undefined 未定义 null 值为空 symbol 表示一个符号，符号类型是唯一的并且是不可修改的
 最常见的还是前三种，字符串，数字，布尔值
@@ -216,10 +216,10 @@ true是捕获，false是冒泡，默认为冒泡事件
     
     <item>
       <title>面向对象编程</title>
-      <link>https://zburu.vercel.app/posts/15/</link>
+      <link>https://blog.zburu.com/posts/15/</link>
       <pubDate>Thu, 12 Nov 2020 12:58:00 +0000</pubDate>
       
-      <guid>https://zburu.vercel.app/posts/15/</guid>
+      <guid>https://blog.zburu.com/posts/15/</guid>
       <description>面向对象把构成问题的transaction分解成各个对象，而建立对象的目的也不是为了完成一个个步骤，而是为了描述某个事物在解决整个问题的过程中所发生的行为，意在写出通用代码，加强代码重用，屏蔽差异性。
 一、什么是面向对象编程 js是基于原型的，基于面向对象编程
 面向对象就是把数据和对数据的操作方法放在一起，作为一个整体——对象。对同类对象抽象出其共性，形成类
