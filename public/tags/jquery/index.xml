@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 14 Sep 2021 15:42:00 +0000</lastBuildDate><atom:link href="http://zburu.vercel.app/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用jq做一个数字递增效果</title>
-      <link>http://zburu.vercel.app/posts/76/</link>
+      <link>http://zburu.vercel.app/posts/76.html/</link>
       <pubDate>Tue, 14 Sep 2021 15:42:00 +0000</pubDate>
       
-      <guid>http://zburu.vercel.app/posts/76/</guid>
+      <guid>http://zburu.vercel.app/posts/76.html/</guid>
       <description>数字递增，顾名思义就是数字不断增加，数字递增的效果就是要一定时间内，让数字有一个增加的特效，一般用于强调某个内容。
 用 jquery 也很好处理，大概就是下面这些。
 data-to 属性代表最后想要递增到的数值 data-speed 代表数值想要递增的过程时间 class=&amp;quot;num-ber&amp;quot; 和 id=&amp;quot;count-number&amp;quot; 按照这个填入。

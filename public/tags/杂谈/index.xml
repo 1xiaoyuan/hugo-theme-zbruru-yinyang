@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 13 Nov 2020 12:56:00 +0000</lastBuildDate><atom:link href="http://zburu.vercel.app/tags/%E6%9D%82%E8%B0%88/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>为什么getTime()返回1970年至今的毫秒？</title>
-      <link>http://zburu.vercel.app/posts/16/</link>
+      <link>http://zburu.vercel.app/posts/16.html/</link>
       <pubDate>Fri, 13 Nov 2020 12:56:00 +0000</pubDate>
       
-      <guid>http://zburu.vercel.app/posts/16/</guid>
+      <guid>http://zburu.vercel.app/posts/16.html/</guid>
       <description>今天在写new Date()时候，无意中发现了一个很有意思的方法，getTime()，百度了一下，有人说是计算从1970年1月1日至今的毫秒数
 为什么要是1970年呢？
 new Date().getTime(); // xxxxxxxxxxx 这个起源于unix的诞生，因为Unix在1969年被开发出来，1971年正式发布，在这之前没有机器会需要来表示1970-01-01-00:00:00之前的时间，后面的语言很多就沿用了这一习惯，js只是也沿用了这种习惯而已。

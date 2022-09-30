@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="zburu" />
+  <meta property="og:url" content="http://zburu.vercel.app/posts/130.html/" />
+  <link rel="canonical" href="http://zburu.vercel.app/posts/130.html/" /><link rel="alternate" type="application/atom+xml" href="http://zburu.vercel.appindex.xml" title="子舒的博客">
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "http:\/\/zburu.vercel.app"
+      },
+      "articleSection" : "posts",
+      "name" : "宝塔自动备份网站到邮箱教程",
+      "headline" : "宝塔自动备份网站到邮箱教程",
+      "description" : "前言 网站经常备份好处就是遇到问题以后可以迅速的恢复，不那么被动，防止信息丢失，操作性很大。虽然搭建一个网站非常容易，但为了应对网络上各种各样的意外情况，避免自己的网站付诸东流，做好网站备份是非常有必要的。\n现在邮箱接收都支持附件文件，将网站文件和数据库文件备份到我们自己的邮箱也是一种很好地备份方式，也防止备份文件丢失。\n邮箱接收附件文件大小，取决于使用的邮箱服务。一般来说个人博客网站源文件，数据库文件不大，常见邮箱服务都是可以使用的。\n下面开始教程，宝塔安装教程可去宝塔官网查看安装教程。\n系统环境：CentOS 7.9.2009 x86_64（其他系统可参考方式，命令安装自行解决）\n宝塔面板：7.9.0\n安装mailx 浏览器登录进入宝塔面板，左侧-》终端。首次使用宝塔终端，需要登录服务器，填写root用户密码后登录。\n在终端中输入以下mailx安装命令，回车安装。\nyum install -y mailx 编辑配置文件 安装完成后，编辑邮箱服务的相关配置文件。 在终端输入以下命令，然后回车进入编辑文件界面。\nvim \/etc\/mail.rc 使用键盘上下键，找到大约69行位置，按‘i’键输入，添加以下配置。\nset from=发件人@qq.com #发送邮件后显示的邮件发送方 需要修改 set smtp=smtps:\/\/smtp.qq.com:465 #SMTP服务器的网址及端口 需要修改 set smtp-auth-user=发件人@qq.com #发送邮箱 需要修改 set smtp-auth-password=邮箱密码\/SMTP授权码 #设置的邮箱密码，SMTP授权密码 需要修改 set smtp-auth=login #动作、登录 无需修改 set ssl-verify=ignore #ssl验证忽略 无需修改 set nss-config-dir=\/etc\/pki\/nssdb #证书存放目录 无需修改 请将配置按要求修改为自己所使用的邮箱服务配置。服务器需要开启465端口。\n配置修改完成后，按Esc键，输入:wq回车保存退出编辑界面。\n测试发送邮件 在终端输入发送测试邮件命令，需要修改收件人邮箱，回车执行。\necho \u0026#34;这是一封测试邮件\u0026#34; | mail -s \u0026#34;邮件主题\u0026#34; 收件人@qq.com 查看邮箱是否收到测试邮件。\n如果发现终端报以下错误（但没有影响收件），没有错误请跳过。\nError in certificate: Peer\u0027s certificate issuer has been marked as not trusted by the.",
+      "inLanguage" : "en-US",
+      "author" : "zburu",
+      "creator" : "zburu",
+      "publisher": "zburu",
+      "accountablePerson" : "zburu",
+      "copyrightHolder" : "zburu",
+      "copyrightYear" : "2022",
+      "datePublished": "2022-05-25 17:27:00 \u002b0000 UTC",
+      "dateModified" : "2022-05-25 17:27:00 \u002b0000 UTC",
+      "url" : "http:\/\/zburu.vercel.app\/posts\/130.html\/",
+      "keywords" : [ "宝塔","备份","邮箱", ]
+  }
+</script>
+<title>宝塔自动备份网站到邮箱教程</title>
+  <meta property="og:title" content="宝塔自动备份网站到邮箱教程" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="前言 网站经常备份好处就是遇到问题以后可以迅速的恢复，不那么被动，防止信息丢失，操作性很大。虽然搭建一个网站非常容易，但为了应对网络上各种各样的意外情况，避免自己的网站付诸东流，做好网站备份是非常有必要的。
+现在邮箱接收都支持附件文件，将网站文件和数据库文件备份到我们自己的邮箱也是一种很好地备份方式，也防止备份文件丢失。
+邮箱接收附件文件大小，取决于使用的邮箱服务。一般来说个人博客网站源文件，数据库文件不大，常见邮箱服务都是可以使用的。
+下面开始教程，宝塔安装教程可去宝塔官网查看安装教程。
+系统环境：CentOS 7.9.2009 x86_64（其他系统可参考方式，命令安装自行解决）
+宝塔面板：7.9.0
+安装mailx 浏览器登录进入宝塔面板，左侧-》终端。首次使用宝塔终端，需要登录服务器，填写root用户密码后登录。
+在终端中输入以下mailx安装命令，回车安装。
+yum install -y mailx 编辑配置文件 安装完成后，编辑邮箱服务的相关配置文件。 在终端输入以下命令，然后回车进入编辑文件界面。
+vim /etc/mail.rc 使用键盘上下键，找到大约69行位置，按‘i’键输入，添加以下配置。
+set from=发件人@qq.com #发送邮件后显示的邮件发送方 需要修改 set smtp=smtps://smtp.qq.com:465 #SMTP服务器的网址及端口 需要修改 set smtp-auth-user=发件人@qq.com #发送邮箱 需要修改 set smtp-auth-password=邮箱密码/SMTP授权码 #设置的邮箱密码，SMTP授权密码 需要修改 set smtp-auth=login #动作、登录 无需修改 set ssl-verify=ignore #ssl验证忽略 无需修改 set nss-config-dir=/etc/pki/nssdb #证书存放目录 无需修改 请将配置按要求修改为自己所使用的邮箱服务配置。服务器需要开启465端口。
+配置修改完成后，按Esc键，输入:wq回车保存退出编辑界面。
+测试发送邮件 在终端输入发送测试邮件命令，需要修改收件人邮箱，回车执行。
+echo &amp;#34;这是一封测试邮件&amp;#34; | mail -s &amp;#34;邮件主题&amp;#34; 收件人@qq.com 查看邮箱是否收到测试邮件。
+如果发现终端报以下错误（但没有影响收件），没有错误请跳过。
+Error in certificate: Peer&#39;s certificate issuer has been marked as not trusted by the." />
+  <meta name="description" content="前言 网站经常备份好处就是遇到问题以后可以迅速的恢复，不那么被动，防止信息丢失，操作性很大。虽然搭建一个网站非常容易，但为了应对网络上各种各样的意外情况，避免自己的网站付诸东流，做好网站备份是非常有必要的。
+现在邮箱接收都支持附件文件，将网站文件和数据库文件备份到我们自己的邮箱也是一种很好地备份方式，也防止备份文件丢失。
+邮箱接收附件文件大小，取决于使用的邮箱服务。一般来说个人博客网站源文件，数据库文件不大，常见邮箱服务都是可以使用的。
+下面开始教程，宝塔安装教程可去宝塔官网查看安装教程。
+系统环境：CentOS 7.9.2009 x86_64（其他系统可参考方式，命令安装自行解决）
+宝塔面板：7.9.0
+安装mailx 浏览器登录进入宝塔面板，左侧-》终端。首次使用宝塔终端，需要登录服务器，填写root用户密码后登录。
+在终端中输入以下mailx安装命令，回车安装。
+yum install -y mailx 编辑配置文件 安装完成后，编辑邮箱服务的相关配置文件。 在终端输入以下命令，然后回车进入编辑文件界面。
+vim /etc/mail.rc 使用键盘上下键，找到大约69行位置，按‘i’键输入，添加以下配置。
+set from=发件人@qq.com #发送邮件后显示的邮件发送方 需要修改 set smtp=smtps://smtp.qq.com:465 #SMTP服务器的网址及端口 需要修改 set smtp-auth-user=发件人@qq.com #发送邮箱 需要修改 set smtp-auth-password=邮箱密码/SMTP授权码 #设置的邮箱密码，SMTP授权密码 需要修改 set smtp-auth=login #动作、登录 无需修改 set ssl-verify=ignore #ssl验证忽略 无需修改 set nss-config-dir=/etc/pki/nssdb #证书存放目录 无需修改 请将配置按要求修改为自己所使用的邮箱服务配置。服务器需要开启465端口。
+配置修改完成后，按Esc键，输入:wq回车保存退出编辑界面。
+测试发送邮件 在终端输入发送测试邮件命令，需要修改收件人邮箱，回车执行。
+echo &amp;#34;这是一封测试邮件&amp;#34; | mail -s &amp;#34;邮件主题&amp;#34; 收件人@qq.com 查看邮箱是否收到测试邮件。
+如果发现终端报以下错误（但没有影响收件），没有错误请跳过。
+Error in certificate: Peer&#39;s certificate issuer has been marked as not trusted by the." />
+  <meta property="og:locale" content="en-us" /><meta property="og:image" content="" />
+  
+
+  
+    <style>body{font-family:bree serif,sans-serif;-webkit-font-smoothing:antialiased;margin:0 20px}article{max-width:800px;margin-left:auto;margin-right:auto}a{color:#000;text-decoration:none}a:hover{font-weight:600;text-decoration:underline}.post-ads{margin:50px 0}.markdown-body{font-size:18px;max-width:100%}.markdown-body a{text-decoration:underline;text-decoration-color:#000}.markdown-body blockquote{margin:0;padding:0 1em;color:#57606a;border-left:.25em solid #d0d7de}.markdown-body pre{padding:16px;overflow:auto;border-radius:10px}.markdown-body code{padding:.2em .4em;font-size:85%;background-color:#f6f8fa;border-radius:6px}.markdown-body pre>code{padding:0;font-size:100%;background-color:inherit;border:0}.Chinese .markdown-body{line-height:200%}.site-date-catalog{font-size:2rem}.header-title{font-size:2rem;font-weight:700;margin-top:32px;font-family:bungee shade,sans-serif}.header-title a{text-decoration:none}.header-subtitle{color:#666}.header-items{margin:10px 0}.header-item{margin:0 5px}.header-line{width:100%;border-width:2px;border-color:#482936;border-style:solid none none none}.lang-switch{font-weight:600}#posts-list{min-height:600px}.posts-line{font-size:1.2rem;margin:12px 0}.posts-categories{font-size:.8rem;margin:auto;text-align:center}.posts-category{padding:3px 0;border:#000 2px solid;border-radius:5px}.site-footer{margin-top:50px}.site-footer-item{margin-right:12px}.post-content img{max-width:100%;display:block;margin-right:auto;margin-top:12px}.post-header{margin-bottom:50px}.post-title{font-size:2rem;font-weight:600}.post-tags{display:inline;font-weight:600;padding:2px 5px;margin-right:6px;border:#000 2px solid;border-radius:5px}.post-date{font-weight:800;font-style:italic}.post-author{float:right;font-weight:600}.page-content{min-height:60%}.post-content{margin-bottom:50px}.post-content p{hyphens:auto;line-height:1.8;text-justify:ideographic;margin-bottom:1em}.related-content{border-width:3px;border-style:solid;border-color:#000;padding:0 10px;margin-bottom:50px;margin-top:100px}.related-content li{margin:5px 0}.taxonomy-term{font-size:3rem}.gallery-img{text-align:center}.gallery-img span{text-align:center}.gallery-img-desc{font-size:.8em;font-weight:800}#disqus_thread{position:relative}#disqus_thread:after{content:"";display:block;height:55px;width:100%;position:absolute;bottom:0;background:#fff}@media screen and (max-width:600px){.header-title,.header-subtitle,.header-items{text-align:center}.posts-line{font-size:16px}.markdown-body{font-size:16px}.post-title{font-size:2rem}.post-content p{letter-spacing:.05em}}@media screen and (max-width:48em){.posts-category{display:none}}</style>
+  
+  
+    <style>.container,.container-fluid{margin-right:auto;margin-left:auto}.container-fluid{padding-right:2rem;padding-left:2rem}.row{box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex:0 1 auto;flex:initial;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-.5rem;margin-left:-.5rem}.row.reverse{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}.col.reverse{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.col-xs,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-offset-0,.col-xs-offset-1,.col-xs-offset-10,.col-xs-offset-11,.col-xs-offset-12,.col-xs-offset-2,.col-xs-offset-3,.col-xs-offset-4,.col-xs-offset-5,.col-xs-offset-6,.col-xs-offset-7,.col-xs-offset-8,.col-xs-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-xs{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-xs-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-xs-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-xs-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-xs-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-xs-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-xs-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-xs-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-xs-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-xs-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-xs-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-xs-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-xs-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-xs-offset-0{margin-left:0}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-11{margin-left:91.66666667%}.start-xs{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-xs{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-xs{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-xs{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-xs{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-xs{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-xs{-ms-flex-pack:distribute;justify-content:space-around}.between-xs{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-xs{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-xs{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}@media only screen and (min-width:48em){.container{width:49rem}.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-offset-0,.col-sm-offset-1,.col-sm-offset-10,.col-sm-offset-11,.col-sm-offset-12,.col-sm-offset-2,.col-sm-offset-3,.col-sm-offset-4,.col-sm-offset-5,.col-sm-offset-6,.col-sm-offset-7,.col-sm-offset-8,.col-sm-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-sm{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-sm-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-sm-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-sm-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-sm-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-sm-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-sm-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-sm-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-sm-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-sm-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-sm-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-sm-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-sm-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-sm-offset-0{margin-left:0}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-11{margin-left:91.66666667%}.start-sm{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-sm{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-sm{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-sm{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-sm{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-sm{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-sm{-ms-flex-pack:distribute;justify-content:space-around}.between-sm{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-sm{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-sm{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}@media only screen and (min-width:64em){.container{width:65rem}.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-offset-0,.col-md-offset-1,.col-md-offset-10,.col-md-offset-11,.col-md-offset-12,.col-md-offset-2,.col-md-offset-3,.col-md-offset-4,.col-md-offset-5,.col-md-offset-6,.col-md-offset-7,.col-md-offset-8,.col-md-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-md{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-md-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-md-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-md-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-md-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-md-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-md-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-md-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-md-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-md-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-md-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-md-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-md-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-md-offset-0{margin-left:0}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-3{margin-left:25%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-6{margin-left:50%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-9{margin-left:75%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-11{margin-left:91.66666667%}.start-md{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-md{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-md{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-md{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-md{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-md{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-md{-ms-flex-pack:distribute;justify-content:space-around}.between-md{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-md{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-md{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}@media only screen and (min-width:75em){.container{width:76rem}.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-offset-0,.col-lg-offset-1,.col-lg-offset-10,.col-lg-offset-11,.col-lg-offset-12,.col-lg-offset-2,.col-lg-offset-3,.col-lg-offset-4,.col-lg-offset-5,.col-lg-offset-6,.col-lg-offset-7,.col-lg-offset-8,.col-lg-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-lg{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-lg-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-lg-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-lg-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-lg-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-lg-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-lg-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-lg-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-lg-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-lg-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-lg-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-lg-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-lg-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-lg-offset-0{margin-left:0}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-11{margin-left:91.66666667%}.start-lg{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-lg{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-lg{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-lg{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-lg{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-lg{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-lg{-ms-flex-pack:distribute;justify-content:space-around}.between-lg{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-lg{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-lg{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}</style>
+  
+
+  
+
+  <link href="/index.xml" rel="alternate" type="application/rss+xml"
+    title="子舒的博客">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
+  
+  
+
+  
+  
+</head>
+
+
+<body>
+  <article class="post Chinese" id="article">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="site-header">
+          
+<header>
+  <div class="header-title">
+    <a href="/"
+      >zburu</a
+    >
+  </div>
+  <div class="header-subtitle"></div>
+</header>
+<div class="row end-md center-xs header-items">
+  
+  <div class="header-item">
+    <a href="/index.xml">RSS</a>
+  </div>
+  
+  <div class="header-item">
+    <a href="/weekly">周刊</a>
+  </div>
+  
+  <div class="header-item">
+    <a href="/about">关于</a>
+  </div>
+  
+</div>
+<div class="row end-xs">
+   
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">宝塔自动备份网站到邮箱教程</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2022-05-25 17:27:00 UTC">
+                25 May 2022
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+              <div class="post-author">
+                <a target="_blank" href="/">@zburu</a>
+              </div>
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <h3 id="前言">前言</h3>
+<p>网站经常备份好处就是遇到问题以后可以迅速的恢复，不那么被动，防止信息丢失，操作性很大。虽然搭建一个网站非常容易，但为了应对网络上各种各样的意外情况，避免自己的网站付诸东流，做好网站备份是非常有必要的。</p>
+<p>现在邮箱接收都支持附件文件，将网站文件和数据库文件备份到我们自己的邮箱也是一种很好地备份方式，也防止备份文件丢失。</p>
+<p>邮箱接收附件文件大小，取决于使用的邮箱服务。一般来说个人博客网站源文件，数据库文件不大，常见邮箱服务都是可以使用的。</p>
+<p>下面开始教程，宝塔安装教程可去<a href="https://bt.cn/new/product.html">宝塔官网</a>查看安装教程。</p>
+<p>系统环境：CentOS 7.9.2009 x86_64（其他系统可参考方式，命令安装自行解决）</p>
+<p>宝塔面板：7.9.0</p>
+<h3 id="安装mailx">安装mailx</h3>
+<p>浏览器登录进入宝塔面板，左侧-》<strong>终端</strong>。首次使用宝塔终端，需要登录服务器，填写root用户密码后登录。</p>
+<p><img src="https://img.emoao.com/post-img/2022-05-13/53c6eca1cfb4eef40e63c916a59fa44b.webp" alt="13-1.webp"></p>
+<p>在终端中输入以下mailx安装命令，回车安装。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yum install -y mailx
+</span></span></code></pre></div><p><img src="https://img.emoao.com/post-img/2022-05-13/30bec003dc2046e71c18494c305b21cc.webp" alt="13-2.webp"></p>
+<h3 id="编辑配置文件">编辑配置文件</h3>
+<p>安装完成后，编辑邮箱服务的相关配置文件。
+在终端输入以下命令，然后回车进入编辑文件界面。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim /etc/mail.rc
+</span></span></code></pre></div><p><img src="https://img.emoao.com/post-img/2022-05-13/56989b03520d4abd7823fe5283d2b519.webp" alt="13-3.webp"></p>
+<p>使用键盘上下键，找到大约69行位置，按‘i’键输入，添加以下配置。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>set from<span style="color:#f92672">=</span>发件人@qq.com <span style="color:#75715e">#发送邮件后显示的邮件发送方 需要修改</span>
+</span></span><span style="display:flex;"><span>set smtp<span style="color:#f92672">=</span>smtps://smtp.qq.com:465 <span style="color:#75715e">#SMTP服务器的网址及端口 需要修改</span>
+</span></span><span style="display:flex;"><span>set smtp-auth-user<span style="color:#f92672">=</span>发件人@qq.com <span style="color:#75715e">#发送邮箱 需要修改</span>
+</span></span><span style="display:flex;"><span>set smtp-auth-password<span style="color:#f92672">=</span>邮箱密码/SMTP授权码 <span style="color:#75715e">#设置的邮箱密码，SMTP授权密码 需要修改</span>
+</span></span><span style="display:flex;"><span>set smtp-auth<span style="color:#f92672">=</span>login <span style="color:#75715e">#动作、登录 无需修改</span>
+</span></span><span style="display:flex;"><span>set ssl-verify<span style="color:#f92672">=</span>ignore <span style="color:#75715e">#ssl验证忽略 无需修改</span>
+</span></span><span style="display:flex;"><span>set nss-config-dir<span style="color:#f92672">=</span>/etc/pki/nssdb <span style="color:#75715e">#证书存放目录 无需修改</span>
+</span></span></code></pre></div><p><strong>请将配置按要求修改为自己所使用的邮箱服务配置。服务器需要开启465端口。</strong></p>
+<p><img src="https://img.emoao.com/post-img/2022-05-13/e7c11a400bb3d30c2a81293f732d84fe.webp" alt="13-4.webp"></p>
+<p><img src="https://img.emoao.com/post-img/2022-05-13/acde4506e7a574d1baf6588f7f5b178d.webp" alt="13-5.webp"></p>
+<p>配置修改完成后，按Esc键，输入<code>:wq</code>回车保存退出编辑界面。</p>
+<h3 id="测试发送邮件">测试发送邮件</h3>
+<p>在终端输入发送测试邮件命令，需要修改收件人邮箱，回车执行。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;这是一封测试邮件&#34;</span> | mail -s <span style="color:#e6db74">&#34;邮件主题&#34;</span> 收件人@qq.com
+</span></span></code></pre></div><p><img src="https://img.emoao.com/post-img/2022-05-13/e5192c7240feebf85e2f8dc5e4858e5e.webp" alt="13-6.webp"></p>
+<p>查看邮箱是否收到测试邮件。</p>
+<p><img src="https://img.emoao.com/post-img/2022-05-13/47dcafa9c8b6307406aec0f12712872b.webp" alt="13-7.webp"></p>
+<p>如果发现终端报以下错误（但没有影响收件），没有错误请跳过。</p>
+<p><code>Error in certificate: Peer's certificate issuer has been marked as not trusted by the.</code></p>
+<p><img src="https://img.emoao.com/post-img/2022-05-13/8db1d9c84d292df3841c535ef8ad724b.webp" alt="13-8.webp"></p>
+<p><code>Ctrl+C</code>结束命令后，修改邮箱服务配置文件，将<code>set ssl-verify=ignore</code>修改为<code>set ssl-verify=strict</code>后保存退出（编辑方法同上）。</p>
+<p><img src="https://img.emoao.com/post-img/2022-05-13/c12d5ffecf4e6e48061bdc495d7570ff.webp" alt="13-9.webp"></p>
+<p>修改完成后在终端输入以下命令。</p>
+<p>获取邮件服务器证书</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo   -n <span style="color:#e6db74">&#34; &#34;</span> |  openssl s_client -connect smtp.qq.com:465 | sed -ne  <span style="color:#e6db74">&#39;/-BEGIN CERTIFICATE-/,/-END CERTIFIICATE-/p&#39;</span>  &gt;  /etc/pki/nssdb/qq.crt
+</span></span></code></pre></div><p>把证书添加到受信任表</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>certutil    -A    -n   <span style="color:#e6db74">&#39;yeah&#39;</span>    -t    <span style="color:#e6db74">&#34;P,P,P&#34;</span>    -d    /etc/pki/nssdb    -i    /etc/pki/nssdb/qq.crt
+</span></span></code></pre></div><p><strong>注：如果是163或者其他邮箱服务器请将<code>smtp.qq.com</code>改为<code>smtp.163.com</code>，<code>qq.crt</code>改为<code>163.crt</code> 以此类推。</strong></p>
+<p>命令执行完成后，重新执行发送测试邮件命令，不在报错。</p>
+<p><img src="https://img.emoao.com/post-img/2022-05-13/3252062ac53690690f832dd73d0863aa.webp" alt="13-10.webp"></p>
+<h3 id="宝塔定时任务">宝塔定时任务</h3>
+<p>左侧-》<strong>计划任务</strong></p>
+<p>首先按自己需求（计划任务执行时间，保留文件数量等）添加网站和数据库源文件备份任务。</p>
+<p><img src="https://img.emoao.com/post-img/2022-05-13/4968cb73cd43ee6ece060bb011feef8d.webp" alt="13-11.webp"></p>
+<p><strong>然后添加</strong><code>shell</code>脚本任务，在脚本内容中添加以下脚本命令，修改收件人为自己的邮箱。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>cd /www/backup/site
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> file in <span style="color:#66d9ef">$(</span>ls *<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  str<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>str<span style="color:#e6db74">}</span><span style="color:#e6db74"> -a </span><span style="color:#e6db74">${</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;主人，今天的网站备份又到了哦，请注意查收！&#34;</span> | mail -s <span style="color:#e6db74">&#34;网站备份&#34;</span> $str 2502393029@qq.com
+</span></span></code></pre></div><p><img src="https://img.emoao.com/post-img/2022-05-13/89e2ce5cfc848ae5688021f650415776.webp" alt="13-12.webp"></p>
+<p>执行时间可按需求，晚于网站，数据库备份任务执行时间。</p>
+<p>数据库备份和网站备份一样需要再添加一次计划任务，将<code>cd /www/backup/site </code>修改为<code>cd /www/backup/database</code>数据库备份文件所在目录即可，参考改一下邮件主题，和内容信息。</p>
+<p>计划任务添加完成后，可先执行网站，数据库源文件备份任务，再执行网站，数据库邮箱<code>shell</code>脚本备份任务，然后前往邮箱查看文件是否收到，文件过大，邮件会有延迟。</p>
+<p><img src="https://img.emoao.com/post-img/2022-05-13/deb9c05584f5bc00013188daa3e758b0.webp" alt="13-13.webp"></p>
+<p><img src="https://img.emoao.com/post-img/2022-05-13/1564dc76c2f6b94299a153d25d9d15d9.webp" alt="13-14.webp"></p>
+<p><strong>注：如果有报错或收不到邮件情况，请仔细检查命令，配置文件是否有误，或者查看脚本执行日志进行排查。</strong></p>
+<blockquote>
+<p>转载自梦繁星博客: <a href="https://blog.emoao.com/13.html">https://blog.emoao.com/13.html</a></p>
+</blockquote>
+<p>如果问题请在评论区留言。</p>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+            <div class="post-tags">
+              <a href="/tags/%E5%AE%9D%E5%A1%94/">
+                宝塔
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/%E5%A4%87%E4%BB%BD/">
+                备份
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/%E9%82%AE%E7%AE%B1/">
+                邮箱
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+<div class="related-content">
+  <h3>Related Posts</h3>
+  <ul>
+    
+    <li><a href="/posts/116.html/">在宝塔中使用青龙面板代挂京豆</a></li>
+    
+    <li><a href="/posts/70.html/">宝塔如何实现进程守护？</a></li>
+    
+  </ul>
+</div>
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          <div class="post-comments">
+            <script src="https://giscus.app/client.js"
+  data-repo="zburu/hugo-blog"
+  data-repo-id="R_kgDOHwNIPQ"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOHwNIPc4CRsQ1"
+  data-mapping="title"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="1"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="zh-CN"
+  data-loading="lazy"
+  crossorigin="anonymous"
+  async>
+</script>
+          </div>
+        
+
+        <div class="site-footer">
+  
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  
+
+<script>
+  
+  
+    
+    
+  
+</script>
+
+  
+
+</body>
+
+</html>

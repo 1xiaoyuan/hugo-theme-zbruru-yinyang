@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 20 Jan 2021 19:58:00 +0000</lastBuildDate><atom:link href="http://zburu.vercel.app/tags/es6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ES5 和 ES6 的区别？</title>
-      <link>http://zburu.vercel.app/posts/48/</link>
+      <link>http://zburu.vercel.app/posts/48.html/</link>
       <pubDate>Wed, 20 Jan 2021 19:58:00 +0000</pubDate>
       
-      <guid>http://zburu.vercel.app/posts/48/</guid>
+      <guid>http://zburu.vercel.app/posts/48.html/</guid>
       <description>一、javascript 由三部分组成 1.ECMAScript（核心） 它规定了语言的组成部分：法语，类型，语句，关键字，操作符等等。
 2.DOM（文档对象模型） DOM 把整个页面映射为一个多层节点结果，开发人员可借助DOM提供的API，轻松地删除、添加、替换或修改任何节点。
 3.BOM（浏览器对象模型） 支持可以访问和操作浏览器窗口的浏览器对象模型，开发人员可以控制浏览器显示的页面以外的部分。

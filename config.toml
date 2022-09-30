@@ -21,9 +21,12 @@ link = "/index.xml"
 
 [[params.socials]]
 name = "周刊"
-link = "/161"
+link = "/weekly"
 
 
 [[params.socials]]
 name = "关于"
-link = "/2"
+link = "/about"
+
+[permalinks]
+  posts = "/posts/:slug.html"

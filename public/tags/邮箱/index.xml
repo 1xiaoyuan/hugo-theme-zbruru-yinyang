@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 25 May 2022 17:27:00 +0000</lastBuildDate><atom:link href="http://zburu.vercel.app/tags/%E9%82%AE%E7%AE%B1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>宝塔自动备份网站到邮箱教程</title>
-      <link>http://zburu.vercel.app/posts/130/</link>
+      <link>http://zburu.vercel.app/posts/130.html/</link>
       <pubDate>Wed, 25 May 2022 17:27:00 +0000</pubDate>
       
-      <guid>http://zburu.vercel.app/posts/130/</guid>
+      <guid>http://zburu.vercel.app/posts/130.html/</guid>
       <description>前言 网站经常备份好处就是遇到问题以后可以迅速的恢复，不那么被动，防止信息丢失，操作性很大。虽然搭建一个网站非常容易，但为了应对网络上各种各样的意外情况，避免自己的网站付诸东流，做好网站备份是非常有必要的。
 现在邮箱接收都支持附件文件，将网站文件和数据库文件备份到我们自己的邮箱也是一种很好地备份方式，也防止备份文件丢失。
 邮箱接收附件文件大小，取决于使用的邮箱服务。一般来说个人博客网站源文件，数据库文件不大，常见邮箱服务都是可以使用的。

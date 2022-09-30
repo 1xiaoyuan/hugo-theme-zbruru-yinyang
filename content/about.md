@@ -1,5 +1,5 @@
 ---
-slug: 2
+slug: about
 title: 关于
 ---
 

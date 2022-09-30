@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 17 Dec 2021 16:39:00 +0000</lastBuildDate><atom:link href="http://zburu.vercel.app/tags/%E6%80%BB%E7%BB%93/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>闲谈2021</title>
-      <link>http://zburu.vercel.app/posts/90/</link>
+      <link>http://zburu.vercel.app/posts/90.html/</link>
       <pubDate>Fri, 17 Dec 2021 16:39:00 +0000</pubDate>
       
-      <guid>http://zburu.vercel.app/posts/90/</guid>
+      <guid>http://zburu.vercel.app/posts/90.html/</guid>
       <description>2021，不知不觉，又过去一年了。
 因为最近也比较忙，所以一直拖到了中旬末，现在闲下心准备闲谈一下。 该说不说，坚持写博客也有500多天了，大概是我的水平有限，产出的技术文章也是寥寥无几，大多是一些笔记和一些生活中的琐碎事。
 认识了几个一起玩博客的新朋友，优化了一下自己网站，然后帮助别人解决一些力所能及的问题，大家都很友善。
@@ -23,10 +23,10 @@
     
     <item>
       <title>关于我为什么要写博客？</title>
-      <link>http://zburu.vercel.app/posts/74/</link>
+      <link>http://zburu.vercel.app/posts/74.html/</link>
       <pubDate>Wed, 21 Jul 2021 11:16:00 +0000</pubDate>
       
-      <guid>http://zburu.vercel.app/posts/74/</guid>
+      <guid>http://zburu.vercel.app/posts/74.html/</guid>
       <description>关于这个博客的构成 这个就放在最前面吗，算是起到一个统计整理的作用。
 博客基础的框架使用是 hugo, 前端样式是自己慢慢构思的，可能是因为没有设计师的天分吧，构思出来的 UI 就很奇怪。
 我也尽量将色彩往黑白上靠，就是为了避免色彩的冲突造成阅读的不适，以文字为主体，也可以将我的重心转移到写文章上来。
@@ -56,10 +56,10 @@ Gayhub: 又名，Github. 全球最大的同性交友网站，在这里你可以�
     
     <item>
       <title>2020年度总结</title>
-      <link>http://zburu.vercel.app/posts/38/</link>
+      <link>http://zburu.vercel.app/posts/38.html/</link>
       <pubDate>Fri, 25 Dec 2020 13:25:00 +0000</pubDate>
       
-      <guid>http://zburu.vercel.app/posts/38/</guid>
+      <guid>http://zburu.vercel.app/posts/38.html/</guid>
       <description>年度总结这个东西很有意思（我觉得），可以静下心来好好回顾一下这一年做了些什么事情，希望我能养成这个好习惯，多总结。
 这个博客是我在年中搭建起来了，到现在也将近半年了，没怎么做过seo优化，也没怎么想过推广，就简简单单的写一些自己的东西。更大的原因是我的文笔太拙劣，不敢让人发现，哈哈哈。
 大学四年过的还算充实，学到了自己感兴趣的东西，培养的业余兴趣爱好，旅游爬山等，但有名的大山目前只爬了嵩山（河南境内），因为在郑州读的大学。更远的山也没怎么去过，我给自己定个计划，在两年内爬一次泰山，因为工作太忙咯，不敢说短期内一定有时间。想体会一下&amp;quot;会当凌绝顶，一览众山小&amp;quot;的感觉。
