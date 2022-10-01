@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "子舒的博客"
 theme = "yinyang"
 DefaultContentLanguage = "cn"
+[Params]
+  favicon = "https://oss.zburu.com/favicon.ico"
 
 [author]
   name = "zburu"
