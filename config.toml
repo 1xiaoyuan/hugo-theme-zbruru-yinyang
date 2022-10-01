@@ -2,7 +2,6 @@ baseURL = "https://blog.zburu.com"
 languageCode = "en-us"
 title = "子舒的博客"
 theme = "yinyang"
-DefaultContentLanguage = "cn"
 
 [params]
   title = "子舒的博客"
@@ -14,15 +13,13 @@ DefaultContentLanguage = "cn"
   name = "子舒"
   homepage = "/"
 
-[languages]
-  [languages.cn]
-    contentDir = "content"
-    languageName = "Chinese"
-    weight = 1
-
 [[params.socials]]
 name = "RSS"
 link = "/index.xml"
+
+[[params.socials]]
+name = "留言"
+link = "/message"
 
 [[params.socials]]
 name = "周刊"

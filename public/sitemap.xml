@@ -50,9 +50,6 @@
     <loc>https://blog.zburu.com/posts/162.html/</loc>
     <lastmod>2022-08-22T19:54:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.zburu.com/weekly/</loc>
-    <lastmod>2022-08-17T16:15:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.zburu.com/posts/159.html/</loc>
     <lastmod>2022-08-12T19:36:00+00:00</lastmod>
   </url><url>
@@ -657,5 +654,9 @@
     <lastmod>2020-06-14T20:57:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.zburu.com/about/</loc>
+  </url><url>
+    <loc>https://blog.zburu.com/weekly/</loc>
+  </url><url>
+    <loc>https://blog.zburu.com/message/</loc>
   </url>
 </urlset>
