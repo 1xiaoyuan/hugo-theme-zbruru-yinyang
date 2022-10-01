@@ -1,5 +1,3 @@
 ## hugo-blog
 
-```shell
-.\hugo.sh
-```
+我的 hugo 博客。
