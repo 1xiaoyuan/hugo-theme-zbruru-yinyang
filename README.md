@@ -2,4 +2,8 @@
 
 我的 hugo 博客。
 
-rsync -avuz --progress --delete public/ root@81.69.240.210:/www/wwwroot/hugo-blog
+在文件夹中右键， `git base here`中执行
+
+```sh
+./hugo.sh
+```
