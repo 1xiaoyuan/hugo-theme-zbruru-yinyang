@@ -23,7 +23,7 @@
       "articleSection" : "posts",
       "name" : "HTML事件属性--DOM",
       "headline" : "HTML事件属性--DOM",
-      "description" : "研究html的对象，事件和方法，从js的角度来思考，这个标签的属性是通过什么方法，触发什么事件来实现的\n键盘鼠标事件 页面窗口事件 表单事件 一、window事件属性 针对window对象触发的事件，在\u0026lt;body\u0026gt;中执行\n1.onbeforeprint／onafterprint 在浏览器打印之间\/后触发\n\u0026lt;body onbeforeprint = print()\u0026gt; \u0026lt;script\u0026gt; function print() { alert(\u0026#34;打印之间！\u0026#34;) } \u0026lt;\/script\u0026gt; 打印前和打印后的事件方法类似，一个是在打印前触发事件，一个是在打印这个事件结束之后触发onafterprint这个事件\ndemo查看\n2.onbeforeunload\/unload 离开页面之间触发的事件／之后触发的事件\n打开f12，然后刷新，或者关闭浏览器，可以在浏览器触发事件\n\u0026lt;script\u0026gt; window.onbeforeunload = function(){ return \u0026#34;提示\u0026#34; \/\/返回的内容不会显示， \/\/在刷新的时候触发，或者关闭浏览器，浏览会直接提示是否重新加载，不能直接返回return } \u0026lt;\/script\u0026gt; demo查看\n3.onerror 当图片出错是可以触发该事件，支持该事件的标签只有 \u0026lt;img\u0026gt;,\u0026lt;object\u0026gt;,\u0026lt;style\u0026gt;\n\u0026lt;img src=\u0026#34;1.gif\u0026#34; onerror = \u0026#34;myfun()\u0026#34;\u0026gt; \u0026lt;script\u0026gt; function myfun() { alert(\u0026#34;图片出错\u0026#34;) } \u0026lt;\/script\u0026gt; 1.gif不存在，因此触发了一个myfun()事件，弹出窗口\ndemo查看\n4.onhashchange 当文档改变时发生的脚本 ？？？\n5.onload 页面加载完成之后触发\ndemo查看\n6.onmessage 在消息被触发时运行 ???\n7.onoffline 当浏览器离线时触发\n\u0026lt;body onoffline=\u0026#34;myfun()\u0026#34;\u0026gt; 8.ononline 当浏览器在线工作时触发\n\u0026lt;body ononline=\u0026#34;myfun()\u0026#34;\u0026gt; ononline和onoffline在网络断线或者连线时触发，可以控制电脑网络查看效果",
+      "description" : "研究html的对象，事件和方法，从js的角度来思考，这个标签的属性是通过什么方法，触发什么事件来实现的\n键盘鼠标事件 页面窗口事件 表单事件 一、window事件属性 针对window对象触发的事件，在\u0026lt;body\u0026gt;中执行\n1.onbeforeprint／onafterprint 在浏览器打印之间\/后触发\n\u0026lt;body onbeforeprint = print()\u0026gt; \u0026lt;script\u0026gt; function print() { alert(\u0026#34;打印之间！\u0026#34;) } \u0026lt;\/script\u0026gt; 打印前和打印后的事件方法类似，一个是在打印前触发事件，一个是在打印这个事件结束之后触发onafterprint这个事件\ndemo查看\n2.onbeforeunload\/unload 离开页面之间触发的事件／之后触发的事件\n打开f12，然后刷新，或者关闭浏览器，可以在浏览器触发事件\n\u0026lt;script\u0026gt; window.onbeforeunload = function(){ return \u0026#34;提示\u0026#34; \/\/返回的内容不会显示， \/\/在刷新的时候触发，或者关闭浏览器，浏览会直接提示是否重新加载，不能直接返回return } \u0026lt;\/script\u0026gt; demo查看\n3.onerror 当图片出错是可以触发该事件，支持该事件的标签只有 \u0026lt;img\u0026gt;,\u0026lt;object\u0026gt;,\u0026lt;style\u0026gt;\n\u0026lt;img src=\u0026#34;1.gif\u0026#34; onerror = \u0026#34;myfun()\u0026#34;\u0026gt; \u0026lt;script\u0026gt; function myfun() { alert(\u0026#34;图片出错\u0026#34;) } \u0026lt;\/script\u0026gt; 1.gif不存在，因此触发了一个myfun()事件，弹出窗口\ndemo查看\n4.onhashchange 当文档改变时发生的脚本 ？？？\n5.onload 页面加载完成之后触发\ndemo查看\n6.onmessage 在消息被触发时运行 ???\n7.onoffline 当浏览器离线时触发\n\u0026lt;body onoffline=\u0026#34;myfun()\u0026#34;\u0026gt; 8.ononline 当浏览器在线工作时触发\n\u0026lt;body ononline=\u0026#34;myfun()\u0026#34;\u0026gt; ononline和onoffline在网络断线或者连线时触发，可以控制电脑网络查看效果\n9.onpagehide 当用户从网页离开时触发，也可以理解成当窗口隐藏时运行的脚本\n刷新页面可以触发事件\ndemo查看\n10.onpageshow 打开一个新页面或者刷新的时候触发\ndemo查看\n相当于onload，加载页面时触发，但是在不同浏览器触发的有所不同\n第一次加载页面时，onpageshow在ie浏览器中不触发，其他情况都触发\n11.onresize 当浏览器窗口被改变大小时触发事件\n\u0026lt;body onresize=\u0026#34;myfun()\u0026#34;\u0026gt; \u0026lt;script\u0026gt; function myfun() { alert(\u0026#39;浏览器窗口改变了\u0026#39;) } \u0026lt;\/script\u0026gt; \u0026lt;\/body\u0026gt; demo查看\n12.onunload 页面被下载时触发，就是刷新或者关闭页面时触发\nwindow.onunload = function() { return \u0026#39;确定关闭吗？\u0026#39; } 13.onpopstate 当浏览器窗口记录改变时运行的脚本，\n14.onredo 当文档执行撤销时触发的事件\n二、form事件属性 由html表单内触发的事件，通常使用在form元素中\n1.onblur 失去焦点时运行的脚本\n\u0026lt;input name=\u0026#34;int\u0026#34; id=\u0026#34;int\u0026#34; onblur=\u0026#34;myfun()\u0026#34;\u0026gt; \u0026lt;script\u0026gt; function myfun() { var int = document.getElementById(\u0026#39;int\u0026#39;).value; document.getElementById(\u0026#39;int\u0026#39;).value = int.toUpperCase(); } \u0026lt;\/script\u0026gt; 给input绑定一个onblur=myfun()的事件，当input失去焦点的时候产生什么样的效果\ndemo查看\n2.onfocus 元素获得焦点时触发事件，和onblur相反\ndemo查看\n3.onchange 当元素值被改变的时候触发事件\n\u0026lt;input type=\u0026#34;text\u0026#34; id=\u0026#34;int\u0026#34; name=\u0026#34;int\u0026#34; onchange=\u0026#34;myfun()\u0026#34;\u0026gt; \u0026lt;script\u0026gt; function myfun() { alert(\u0026#39;我的元素被改变啦！\u0026#39;) } \u0026lt;\/script\u0026gt; 这个事件的意思就是，当我对input内容进行操作改变后，浏览器会弹出一个alert",
       "inLanguage" : "en-US",
       "author" : "子舒",
       "creator" : "子舒",
@@ -57,7 +57,27 @@ demo查看
 6.onmessage 在消息被触发时运行 ???
 7.onoffline 当浏览器离线时触发
 &amp;lt;body onoffline=&amp;#34;myfun()&amp;#34;&amp;gt; 8.ononline 当浏览器在线工作时触发
-&amp;lt;body ononline=&amp;#34;myfun()&amp;#34;&amp;gt; ononline和onoffline在网络断线或者连线时触发，可以控制电脑网络查看效果" />
+&amp;lt;body ononline=&amp;#34;myfun()&amp;#34;&amp;gt; ononline和onoffline在网络断线或者连线时触发，可以控制电脑网络查看效果
+9.onpagehide 当用户从网页离开时触发，也可以理解成当窗口隐藏时运行的脚本
+刷新页面可以触发事件
+demo查看
+10.onpageshow 打开一个新页面或者刷新的时候触发
+demo查看
+相当于onload，加载页面时触发，但是在不同浏览器触发的有所不同
+第一次加载页面时，onpageshow在ie浏览器中不触发，其他情况都触发
+11.onresize 当浏览器窗口被改变大小时触发事件
+&amp;lt;body onresize=&amp;#34;myfun()&amp;#34;&amp;gt; &amp;lt;script&amp;gt; function myfun() { alert(&amp;#39;浏览器窗口改变了&amp;#39;) } &amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; demo查看
+12.onunload 页面被下载时触发，就是刷新或者关闭页面时触发
+window.onunload = function() { return &amp;#39;确定关闭吗？&amp;#39; } 13.onpopstate 当浏览器窗口记录改变时运行的脚本，
+14.onredo 当文档执行撤销时触发的事件
+二、form事件属性 由html表单内触发的事件，通常使用在form元素中
+1.onblur 失去焦点时运行的脚本
+&amp;lt;input name=&amp;#34;int&amp;#34; id=&amp;#34;int&amp;#34; onblur=&amp;#34;myfun()&amp;#34;&amp;gt; &amp;lt;script&amp;gt; function myfun() { var int = document.getElementById(&amp;#39;int&amp;#39;).value; document.getElementById(&amp;#39;int&amp;#39;).value = int.toUpperCase(); } &amp;lt;/script&amp;gt; 给input绑定一个onblur=myfun()的事件，当input失去焦点的时候产生什么样的效果
+demo查看
+2.onfocus 元素获得焦点时触发事件，和onblur相反
+demo查看
+3.onchange 当元素值被改变的时候触发事件
+&amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;int&amp;#34; name=&amp;#34;int&amp;#34; onchange=&amp;#34;myfun()&amp;#34;&amp;gt; &amp;lt;script&amp;gt; function myfun() { alert(&amp;#39;我的元素被改变啦！&amp;#39;) } &amp;lt;/script&amp;gt; 这个事件的意思就是，当我对input内容进行操作改变后，浏览器会弹出一个alert" />
   <meta name="description" content="研究html的对象，事件和方法，从js的角度来思考，这个标签的属性是通过什么方法，触发什么事件来实现的
 键盘鼠标事件 页面窗口事件 表单事件 一、window事件属性 针对window对象触发的事件，在&amp;lt;body&amp;gt;中执行
 1.onbeforeprint／onafterprint 在浏览器打印之间/后触发
@@ -75,7 +95,27 @@ demo查看
 6.onmessage 在消息被触发时运行 ???
 7.onoffline 当浏览器离线时触发
 &amp;lt;body onoffline=&amp;#34;myfun()&amp;#34;&amp;gt; 8.ononline 当浏览器在线工作时触发
-&amp;lt;body ononline=&amp;#34;myfun()&amp;#34;&amp;gt; ononline和onoffline在网络断线或者连线时触发，可以控制电脑网络查看效果" />
+&amp;lt;body ononline=&amp;#34;myfun()&amp;#34;&amp;gt; ononline和onoffline在网络断线或者连线时触发，可以控制电脑网络查看效果
+9.onpagehide 当用户从网页离开时触发，也可以理解成当窗口隐藏时运行的脚本
+刷新页面可以触发事件
+demo查看
+10.onpageshow 打开一个新页面或者刷新的时候触发
+demo查看
+相当于onload，加载页面时触发，但是在不同浏览器触发的有所不同
+第一次加载页面时，onpageshow在ie浏览器中不触发，其他情况都触发
+11.onresize 当浏览器窗口被改变大小时触发事件
+&amp;lt;body onresize=&amp;#34;myfun()&amp;#34;&amp;gt; &amp;lt;script&amp;gt; function myfun() { alert(&amp;#39;浏览器窗口改变了&amp;#39;) } &amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; demo查看
+12.onunload 页面被下载时触发，就是刷新或者关闭页面时触发
+window.onunload = function() { return &amp;#39;确定关闭吗？&amp;#39; } 13.onpopstate 当浏览器窗口记录改变时运行的脚本，
+14.onredo 当文档执行撤销时触发的事件
+二、form事件属性 由html表单内触发的事件，通常使用在form元素中
+1.onblur 失去焦点时运行的脚本
+&amp;lt;input name=&amp;#34;int&amp;#34; id=&amp;#34;int&amp;#34; onblur=&amp;#34;myfun()&amp;#34;&amp;gt; &amp;lt;script&amp;gt; function myfun() { var int = document.getElementById(&amp;#39;int&amp;#39;).value; document.getElementById(&amp;#39;int&amp;#39;).value = int.toUpperCase(); } &amp;lt;/script&amp;gt; 给input绑定一个onblur=myfun()的事件，当input失去焦点的时候产生什么样的效果
+demo查看
+2.onfocus 元素获得焦点时触发事件，和onblur相反
+demo查看
+3.onchange 当元素值被改变的时候触发事件
+&amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;int&amp;#34; name=&amp;#34;int&amp;#34; onchange=&amp;#34;myfun()&amp;#34;&amp;gt; &amp;lt;script&amp;gt; function myfun() { alert(&amp;#39;我的元素被改变啦！&amp;#39;) } &amp;lt;/script&amp;gt; 这个事件的意思就是，当我对input内容进行操作改变后，浏览器会弹出一个alert" />
   <meta property="og:locale" content="en-us" /><meta property="og:image" content="https://oss.zburu.com/favicon.ico" />
   
 

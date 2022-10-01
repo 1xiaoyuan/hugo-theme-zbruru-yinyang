@@ -3,6 +3,10 @@ languageCode = "en-us"
 title = "子舒的博客"
 theme = "yinyang"
 
+paginate = 5
+
+summaryLength = 140
+
 [params]
   title = "子舒的博客"
   Description = "基于hugo搭建的静态博客，作为zburu.com的备份"
@@ -16,6 +20,8 @@ theme = "yinyang"
 [[params.socials]]
 name = "RSS"
 link = "/index.xml"
+
+
 
 [[params.socials]]
 name = "留言"

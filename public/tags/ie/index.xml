@@ -33,7 +33,7 @@ window.addEventListener(&amp;#39;scroll&amp;#39;, () =&amp;gt; { var scrollTop =
 window.onscroll = function() { // ... } 在用的过程中我发现，如果只有一个window.scroll没有任何问题，但是如果有多个window.scroll，后面的就不会生效。
 那么如何解决这个问题呢？
 window.scroll只能存在一次，第一个会生效，后面的不生效，可以通过js处理这个问题。
-function addEvent(type, toDo) { if (window.attachEvent) { window.attachEvent(&amp;#39;on&amp;#39; + type, function() { toDo.call(window) }) } else { window.addEventListener(type, toDo, false) } } addEvent(&amp;#39;scroll&amp;#39;, function(){ console.log(&amp;#39;第一次调用window.scroll&amp;#39;) } addEvent(&amp;#39;scroll&amp;#39;, function(){ console.</description>
+function addEvent(type, toDo) { if (window.attachEvent) { window.attachEvent(&amp;#39;on&amp;#39; + type, function() { toDo.call(window) }) } else { window.addEventListener(type, toDo, false) } } addEvent(&amp;#39;scroll&amp;#39;, function(){ console.log(&amp;#39;第一次调用window.scroll&amp;#39;) } addEvent(&amp;#39;scroll&amp;#39;, function(){ console.log(&amp;#39;第一次调用window.scroll&amp;#39;) } 运行一下，多个scroll可以同时运行。</description>
     </item>
     
     <item>

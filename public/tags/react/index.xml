@@ -21,7 +21,11 @@ Braft Editor 官网：https://braft.margox.cn Github 仓库地址：https://gith
 经过我的测试，功能绝对强大，可以满足市面上绝大多数的需求。接下来就说一下如何使用这款插件。
 1.安装 在项目中直接通过 npm 或者 yarn 下载插件：
 # 使用 npm 安装 npm install braft-editor --save # 使用 yarn 安装 yarn add braft-editor 2.使用 新建一个组件 EditorDemo.js，在里面写入下列代码：
-// EditorDemo.js import React from &amp;#39;react&amp;#39;; import BraftEditor from &amp;#39;braft-editor&amp;#39;; import &amp;#39;braft-editor/dist/index.css&amp;#39;; export default class PageDemo extends React.Component { state = { editorState: BraftEditor.createEditorState(null) } render () { return ( &amp;lt;BraftEditor value={this.</description>
+// EditorDemo.js import React from &amp;#39;react&amp;#39;; import BraftEditor from &amp;#39;braft-editor&amp;#39;; import &amp;#39;braft-editor/dist/index.css&amp;#39;; export default class PageDemo extends React.Component { state = { editorState: BraftEditor.createEditorState(null) } render () { return ( &amp;lt;BraftEditor value={this.state.editorState} onChange={this.handleChange}/&amp;gt; ) } handleChange = (editorState) =&amp;gt; { this.setState({ editorState }) } } 然后引入到 index.js 中去。
+3.运行 写完组件之后，npm start 运行看看效果
+相当不错，页面很简洁，如果觉得样式不喜欢，完全可以自己重新定制风格，非常方便。
+4.文档 如果想使用更多功能、方法，进入 Braft Editor 官方文档吧，还有更多关于它的讲解！
+属性、方法、示例，一应俱全。</description>
     </item>
     
     <item>
@@ -38,7 +42,16 @@ Braft Editor 官网：https://braft.margox.cn Github 仓库地址：https://gith
 1.目标 我将会构建一个标准的待办事项应用程序，允许用户添加和删除列表中的项目。这两个应用程序都使用默认的 CLI（command-line interface，命令行界面） 构建，React 使用 create-react-app，Vue 使用 vue-cli。
 两个应用程序的外观如下：
 两个应用程序的 CSS 代码几乎一样，但这些代码的位置存在差异。考虑到这一点，我们来看看这两个应用程序的文件结构：
-你会发现它们的结构几乎完全相同。唯一的区别在于 React App 拥有三个 CSS 文件，而 Vue App 中没有 CSS 文件。这是因为 React 的 create-react-app 组件需要一个附带文件来保存其样式，而 Vue CLI 采用全包方法，其样式在实际组件文件中声明。</description>
+你会发现它们的结构几乎完全相同。唯一的区别在于 React App 拥有三个 CSS 文件，而 Vue App 中没有 CSS 文件。这是因为 React 的 create-react-app 组件需要一个附带文件来保存其样式，而 Vue CLI 采用全包方法，其样式在实际组件文件中声明。
+两种不同的策略得到的结果是一样的，相信开发者很快能够掌握这两种不同的策略。开发者可以根据自己的偏好做出选择，你会听到开发社区关于如何构建 CSS 的大量讨论。以上，我们遵循两个 CLI 列出了代码结构。
+在我们进一步讨论之前，先快速看一下典型的 Vue 和 React 组件的外观：
+现在让我们正式开始，深入其中的细节！
+2.如何修改数据 首先，我们需要明白“修改数据”的意思是什么。它听起来有些学术，但实际上很简单，就是把我们已经存储好的数据进行更改。比如，如果我们想把一个人的名字变量从“Jhon”改为“Mark”，我们就需要执行“修改数据”的操作。在这一点上，React 和 Vue 的处理方式有所区别。Vue 本质上会创建一个数据对象，其中的数据可以自由更改；React 则创建一个状态对象，更改数据需要一些额外的操作。React 之所以需要额外的操作有着自己的理由，稍后我会深入介绍。在此之前，我们先看看 Vue 中的数据对象和 React 中的状态对象：
+vue 数据对象 React 状态对象 从图中可以看出，我们传入了相同的数据，但它们的标记方法不同。因此，将初始数据传递到组件的方式非常相似。但正如我们提到的那样，在两个框架中更改数据的方式有所不同。
+假设我们有一个名为 name: ‘Sunil’ 的数据元素。
+在 Vue 中，我们通过调用 this.name 来引用它。我们也可以通过调用 this.name =&amp;lsquo;John&amp;rsquo; 来更新它。这样一来，名字就被成功改为了 “Jhon”。
+在 React 中，我们通过调用 this.state.name 来引用同一段数据。现在关键的区别在于，我们不能简单地写成 this.state.name =&amp;lsquo;John&amp;rsquo;，因为 React 有限制机制，它会阻止这种简单的修改方式。在 React 中，我们需要这样写：this.setState({name：&amp;lsquo;John&amp;rsquo;})。
+虽然这基本上与我们在 Vue 中实现的结果一样，但是 React 的操作更为繁琐，那是因为 Vue 在每次更新数据时默认组合了自己的 setState 版本。 简单来说就是，React 需要 setState，然后更新其内部数据，而对于 Vue 来说，当你更新数据对象的值时它就默认了你的更改意图。 那么为什么 React 没有进行简化，为什么需要 setState 呢？ Revanth Kumar 对此做出了解释：</description>
     </item>
     
     <item>
@@ -49,7 +62,7 @@ Braft Editor 官网：https://braft.margox.cn Github 仓库地址：https://gith
       <guid>https://blog.zburu.com/posts/42.html/</guid>
       <description>create-react-app 脚手架指令可以生成 React 项目，在项目完成之后执行打包命令 npm run build，文件夹内生成 build文件夹，就是打包后的文件，在浏览器运行 index.html 发现页面空白，打开控制台有报错，css 和 js 文件的引用路径有问题。
 浏览 index.html 代码可以发现：
-&amp;lt;!-- index.html --&amp;gt; &amp;lt;!doctype html&amp;gt; &amp;lt;html lang=&amp;#34;zh&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34; /&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width,initial-scale=1&amp;#34; /&amp;gt; &amp;lt;meta name=&amp;#34;theme-color&amp;#34; content=&amp;#34;#000000&amp;#34; /&amp;gt; &amp;lt;meta name=&amp;#34;description&amp;#34; content=&amp;#34;Web site created using create-react-app&amp;#34; /&amp;gt; &amp;lt;title&amp;gt;React App&amp;lt;/title&amp;gt; &amp;lt;link href=&amp;#34;/static/css/main.3394d54e.chunk.css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt;&amp;lt;noscript&amp;gt;You need to enable JavaScript to run this app.&amp;lt;/noscript&amp;gt; &amp;lt;div id=&amp;#34;root&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt;!function (e) { function r(r) { for (var n, l, f = r[0], i = r[1], a = r[2], c = 0, s = []; c &amp;lt; f.</description>
+&amp;lt;!-- index.html --&amp;gt; &amp;lt;!doctype html&amp;gt; &amp;lt;html lang=&amp;#34;zh&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34; /&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width,initial-scale=1&amp;#34; /&amp;gt; &amp;lt;meta name=&amp;#34;theme-color&amp;#34; content=&amp;#34;#000000&amp;#34; /&amp;gt; &amp;lt;meta name=&amp;#34;description&amp;#34; content=&amp;#34;Web site created using create-react-app&amp;#34; /&amp;gt; &amp;lt;title&amp;gt;React App&amp;lt;/title&amp;gt; &amp;lt;link href=&amp;#34;/static/css/main.3394d54e.chunk.css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt;&amp;lt;noscript&amp;gt;You need to enable JavaScript to run this app.&amp;lt;/noscript&amp;gt; &amp;lt;div id=&amp;#34;root&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt;!function (e) { function r(r) { for (var n, l, f = r[0], i = r[1], a = r[2], c = 0, s = []; c &amp;lt; f.length; c++)l = f[c], Object.prototype.hasOwnProperty.call(o, l) &amp;amp;&amp;amp; o[l] &amp;amp;&amp;amp; s.push(o[l][0]), o[l] = 0; for (n in i) Object.prototype.hasOwnProperty.call(i, n) &amp;amp;&amp;amp; (e[n] = i[n]); for (p &amp;amp;&amp;amp; p(r); s.length;)s.shift()(); return u.push.apply(u, a || []), t() } function t() { for (var e, r = 0; r &amp;lt; u.length; r++) { for (var t = u[r], n = !</description>
     </item>
     
     <item>
@@ -65,7 +78,7 @@ npm run eject 如果这一步失败，执行下列命令：
 git add . git commit -m &amp;#34;init&amp;#34; 然后再执行 npm run eject
 注意：暴露 webpack 文件只能在 create-react-app 之初，一旦项目结构发生改变，再进行暴露操作就会失败。所以尽量在项目建立时就进行 npm run eject 操作。
 3.修改 wenpack.config.js 配置 在合适的位置添加：
-// 放在 // const sassRegex = /\.</description>
+// 放在 // const sassRegex = /\.(scss|sass)$/; // const sassModuleRegex = /\.module\.(scss|sass)$/; // 后面 const lessRegex = /\.less$/; const lessModuleRegex = /\.module\.less$/; // 放在 oneof 数组下 { test: lessRegex, exclude: lessModuleRegex, use: getStyleLoaders( { importLoaders: 2, sourceMap: isEnvProduction &amp;amp;&amp;amp; shouldUseSourceMap, }, &amp;#39;less-loader&amp;#39; ), // Don&amp;#39;t consider CSS imports dead code even if the // containing package claims to have no side effects. // Remove this when webpack adds a warning or an error for this.</description>
     </item>
     
     <item>
@@ -83,7 +96,11 @@ git add . git commit -m &amp;#34;init&amp;#34; 然后再执行 npm run eject
 &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;Duke&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Villanova&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;Connecticut&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Duke&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;Villanova&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; React 不会意识到应该保留 &amp;lt;li&amp;gt;Duke&amp;lt;/li&amp;gt; 和 &amp;lt;li&amp;gt;Villanova&amp;lt;/li&amp;gt;，而是会重建每一个子元素 。这种情况会带来性能问题。
 key
 为了解决上述问题， React 支持 key 属性，当子元素拥有 key 时，React 使用 key 来匹配原有树上的子元素以及最新树上的子元素。以下例子在新增 key 之后使得之前的低效转换变得高效：
-&amp;lt;ul&amp;gt; &amp;lt;li key=&amp;#34;1&amp;#34;&amp;gt;Duke&amp;lt;/li&amp;gt; &amp;lt;li key=&amp;#34;2&amp;#34;&amp;gt;Villanova&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li key=&amp;#34;0&amp;#34;&amp;gt;Connecticut&amp;lt;/li&amp;gt; &amp;lt;li key=&amp;#34;1&amp;#34;&amp;gt;Duke&amp;lt;/li&amp;gt; &amp;lt;li key=&amp;#34;2&amp;#34;&amp;gt;Villanova&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; 现在 React 知道只有带着 &#39;0&#39; key 的元素是新元素，带着 &#39;1&#39; 以及 &#39;2&#39; key 的元素仅仅移动了。</description>
+&amp;lt;ul&amp;gt; &amp;lt;li key=&amp;#34;1&amp;#34;&amp;gt;Duke&amp;lt;/li&amp;gt; &amp;lt;li key=&amp;#34;2&amp;#34;&amp;gt;Villanova&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li key=&amp;#34;0&amp;#34;&amp;gt;Connecticut&amp;lt;/li&amp;gt; &amp;lt;li key=&amp;#34;1&amp;#34;&amp;gt;Duke&amp;lt;/li&amp;gt; &amp;lt;li key=&amp;#34;2&amp;#34;&amp;gt;Villanova&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; 现在 React 知道只有带着 &#39;0&#39; key 的元素是新元素，带着 &#39;1&#39; 以及 &#39;2&#39; key 的元素仅仅移动了。
+现实场景中，产生一个 key 并不困难。你要展现的元素可能已经有了一个唯一 ID，于是 key 可以直接从你的数据中提取：
+&amp;lt;li key={item.id}&amp;gt;{item.name}&amp;lt;/li&amp;gt; 当以上情况不成立时，你可以新增一个 ID 字段到你的模型中，或者利用一部分内容作为哈希值来生成一个 key。这个 key 不需要全局唯一，但在列表中需要保持唯一。
+最后，你也可以使用元素在数组中的下标作为 key。这个策略在元素不进行重新排序时比较合适，如果有顺序修改，diff 就会变得慢。
+当基于下标的组件进行重新排序时，组件 state 可能会遇到一些问题。由于组件实例是基于它们的 key 来决定是否更新以及复用，如果 key 是一个下标，那么修改顺序时会修改当前的 key，导致非受控组件的 state（比如输入框）可能相互篡改导致无法预期的变动。</description>
     </item>
     
     <item>
@@ -99,7 +116,10 @@ key
 受控组件 在 html 中，表单元素比如&amp;lt;input&amp;gt;，&amp;lt;textarea&amp;gt;，&amp;lt;select&amp;gt;，这些表单元素通常自己维护 state，并根据用户输入进行更新。而在 React 中，可变状态（mutable state）通常保存在组件的 state 属性中，并且只能通过使用 setState() 来更新。
 我们可以把两者结合起来，使 React 的 state 成为“唯一数据源”。渲染表单的 React 组件还控制着用户输入过程中表单发生的操作。被 React 以这种方式控制取值的表单输入元素就叫做“受控组件”。
 例如，如果我们想让前一个示例在提交时打印出名称，我们可以将表单写为受控组件：
-class NameForm extends React.Component { constructor(props) { super(props); this.state = {value: &amp;#39;&amp;#39;}; this.handleChange = this.handleChange.bind(this); this.</description>
+class NameForm extends React.Component { constructor(props) { super(props); this.state = {value: &amp;#39;&amp;#39;}; this.handleChange = this.handleChange.bind(this); this.handleSubmit = this.handleSubmit.bind(this); } handleChange(event) { this.setState({value: event.target.value}); } handleSubmit(event) { alert(&amp;#39;提交的名字: &amp;#39; + this.state.value); event.preventDefault(); } render() { return ( &amp;lt;form onSubmit={this.handleSubmit}&amp;gt; &amp;lt;label&amp;gt; 名字: &amp;lt;input type=&amp;#34;text&amp;#34; value={this.state.value} onChange={this.handleChange} /&amp;gt; &amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;提交&amp;#34; /&amp;gt; &amp;lt;/form&amp;gt; ); } } 由于在表单元素上设置了 value 属性，因此显示的值将始终为 this.state.value，这使得 React 的 state 成为唯一数据源。由于 handlechange 在每次按键时都会执行并更新 React 的 state，因此显示的值将随着用户输入而更新。
+对于受控组件来说，输入的值始终由 React 的 state 驱动。你也可以将 value 传递给其他 UI 元素，或者通过其他事件处理函数重置，但这意味着你需要编写更多的代码。
+textarea 标签 在 html 中，&amp;lt;textarea&amp;gt; 元素通过其子元素定义其文本：
+&amp;lt;textarea&amp;gt; 测试！ &amp;lt;/textarea&amp;gt; 而在 React 中，&amp;lt;textarea&amp;gt; 使用 value 属性代替。这样，可以使得使用 &amp;lt;textarea&amp;gt; 的表单和使用单行 input 的表单非常类似：</description>
     </item>
     
     <item>
@@ -112,7 +132,18 @@ class NameForm extends React.Component { constructor(props) { super(props); this
 组件允许你将 UI 拆分为独立可复用的代码片段，并对每个片段进行独立构思。
 1.创建一个组件 // 函数组件 function Welcome(props) { return &amp;lt;h1&amp;gt;Hello, {props.name}&amp;lt;/h1&amp;gt;; } // class组件 class Welcome extends React.Component { render() { return &amp;lt;h1&amp;gt;Hello, {this.props.name}&amp;lt;/h1&amp;gt;; } } 2.渲染组件 class Welcome extends React.Component { render() { return &amp;lt;h1&amp;gt;Hello, {this.props.name}&amp;lt;/h1&amp;gt;; } } ReactDOM.render( &amp;lt;Welcome /&amp;gt;, document.getElementById(&amp;#39;root&amp;#39;) ); 3.组件 React的基础原则有三条，分别是：
 React 界面完全由数据驱动 React 中一切都是组件 props 是 React 组件之间通讯的基本方式 给组件输入一个参数，最终返回一个 React Element,React Element 就是在页面上展示的内容，相当于一个 DOM 节点
-React 一大核心就是－－万物皆可组件</description>
+React 一大核心就是－－万物皆可组件
+用户界面就是组件 组件可以嵌套包装组成复杂功能 组件可以用来实现副作用 一个复杂的界面可以分割很很多简单的组件，每个简单的组件又可以分割成很多小组件
+有些类似于类和对象的概念
+二、组件的划分 **无状态组件：**无状态组件(Stateless Component)是最基础的组件形式，由于没有状态的影响所以就是纯静态展示的作用。基本组成结构就是属性（props）加上一个渲染函数（render）。由于不涉及到状态的更新，所以这种组件的复用性也最强。例如在各UI库中开发的按钮、输入框、图标等等。
+**有状态组件：**组件内部包含状态（state）且状态随着事件或者外部的消息而发生改变的时候，这就构成了有状态组件（Stateful Component）。有状态组件通常会带有生命周期(lifecycle)，用以在不同的时刻触发状态的更新。在写业务逻辑时常用到，不同场景所用的状态和生命周期也会不同。
+**容器组件：**为使组件的职责更加单一，耦合性进一步地降低，引入了容器组件(Container Component)的概念。重要负责对数据获取以及处理的逻辑。下文的设计模式也会提到。
+高阶组件：“高阶组件（HoC）”也算是种组件设计模式。做为一个高阶组件，可以在原有组件的基础上，对其增加新的功能和行为。如打印日志，获取数据和校验数据等和展示无关的逻辑的时候，抽象出一个高阶组件，用以给基础的组件增加这些功能，减少公共的代码。
+**Render Callback组件：**组件模式是在组件中使用渲染回调的方式，将组件中的渲染逻辑委托给其子组件。也是种重用组件逻辑的方式，也叫render props 模式。
+三、设计原则 React 的组件其实是软件设计中的模块，其设计原则也需遵从通用的组件设计原则，简单说来，就是要减少组件之间的耦合性（Coupling)，让组件简单，这样才能让整体系统易于理解、易于维护。
+即，设计原则：
+接口小，props 数量少； 划分组件，充分利用组合（composition）； 把 state 往上层组件提取，让下层组件只需要实现为纯函数。 就像搭积木，复杂的应用和组件都是由简单的界面和组件组成的。划分组件也没有绝对的方法，选择在当下场景合适的方式划分，充分利用组合即可。实际编写代码也是逐步精进的过程，努力做到：
+功能正常； 代码整洁； 高性能。 </description>
     </item>
     
     <item>
@@ -130,7 +161,13 @@ React 事件的命名采用小驼峰式（camelCase），而不是纯小写
 &amp;lt;button onclick={myfun}&amp;gt;点击&amp;lt;/button&amp;gt; 一个完整的事件函数代码如下
 class Demo extends React.Component { render() { // 事件函数 function myfun() { alert(&amp;#39;helo,world&amp;#39;) } return ( // 绑定事件 &amp;lt;button onClick={this.myfun}&amp;gt; Activate Lasers &amp;lt;/button&amp;gt; ) } } ReactDOM.render( &amp;lt;Demo /&amp;gt;, document.getElementById(&amp;#39;root&amp;#39;) ) 如果方法后面没有()，则需要为这个方法绑定 this
 2.阻止默认行为 在 React 中还有一个不同的点，不能通过返回 fasle 阻止默认行为， React 提供了一个属性－－preventDefault，可以通过 preventDefault 阻止脚本执行
-看一下传统的 html 和 React 的对比</description>
+看一下传统的 html 和 React 的对比
+&amp;lt;a href=&amp;#34;#&amp;#34; onclick=&amp;#34;alert(&amp;#39;是否弹窗？&amp;#39;);return false&amp;#34;&amp;gt; Click me &amp;lt;/a&amp;gt; 直接在写上 false 就可以阻止脚本执行
+React 通过 preventDefault 属性阻止脚本执行：
+function ActionLink() { function handleClick(e) { e.preventDefault(); console.log(&amp;#39;The link was clicked.&amp;#39;); } return ( &amp;lt;a href=&amp;#34;#&amp;#34; onClick={handleClick}&amp;gt; Click me &amp;lt;/a&amp;gt; ); } 二、条件渲染 在 React 中，可以创建不同的组件来封装各种你需要的行为，然后，根据应用不同的状态，你可以只渲染对应状态下的部分内容。
+React 中的条件渲染和 javascript 中的一样，使用 if 运算符来表示元素当前的状态，然后让 React 根据他们来更新 UI。
+使用 if..else 语句进行条件渲染 先写一个条件渲染的例子，定义了两个组件，然后通过判断组件 Greeting 中的变量 isLoggedIn 的真伪，让浏览器渲染组件 UserGreeting 或者 GuestGreeting。
+// App.js import React, { Component } from &amp;#39;react&amp;#39; export default class App extends Component { render() { function UserGreeting(props) { return &amp;lt;h3&amp;gt;Welcome back!</description>
     </item>
     
     <item>
@@ -201,7 +238,11 @@ React 的目标群体历来是喜欢尝试新事物的开发者和前端专家. 
 如何踏入 React 生态圈 所有的软件都是建立在某个技术栈之上的, 你需要对整个技术栈有足够深入的理解, 才能建造你的应用. 为什么 React 生态圈的工具似乎总让人感觉压力山大呢, 因为它总是以错误的顺序被解释:
 你应该按照以下的顺序进行学习, 而不是跳着学或者同时学习:
 React npm JavaScript “打包工具” ES6 Routing Flux 你不需要把这些都学完才去使用 React. 只需要在你遇到问题需要解决的时候, 才进入下一步的学习.
-另外, 在 React 社区中, 有一些前沿主题是经常被提及到的, 以下的这些主题很有意思, 但也很难弄懂, 所以它们远没有上面的主题流行, 大多数应用也不需要用到这些.</description>
+另外, 在 React 社区中, 有一些前沿主题是经常被提及到的, 以下的这些主题很有意思, 但也很难弄懂, 所以它们远没有上面的主题流行, 大多数应用也不需要用到这些.
+内联样式 服务器端渲染 Immutable.js Relay, Falcor 等 学习 React 本身 有一种常见的误解是: 你需要花费大量时间在配置工具上, 然后才开始学习 React. 在官方文档里, 你可以找到 copy-paste HTML template. 只需要保存为 .html 文件, 你就可以马上开始学习了. 这个步骤不需要任何工具, 你也无需额外学习工具使用, 直到你能熟练掌握 React 基础.
+我依然觉得, 学习 React 最简单的方法是通过官方教程 the official tutorial.
+学习 npm npm 是 Node.js 包管理工具, 也是前端工程师和设计师分享 JavaScript 代码最流行的方式. 它包含了名为 CommonJS 的模块系统, 让你可以安装 JavaScript 写的命令行工具. 作为背景知识, 可以阅读 这篇文章 了解 CommonJS 对于浏览器的重要性, 阅读 CommonJS Spec Wiki 了解关于 CommonJS API 的更多内容
+在 React 生态圈中, 大部分可重用的组件、库和工具遵循 CommonJS 模块规范, 可通过 npm 来安装.</description>
     </item>
     
   </channel>

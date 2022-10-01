@@ -23,7 +23,7 @@
       "articleSection" : "posts",
       "name" : "javascript——函数、变量和方法",
       "headline" : "javascript——函数、变量和方法",
-      "description" : "当代码出现有规律的重复之后，可以利用函数，定义变量，调用方法，不用去重复的改动代码，只需要进行函数的修改。基本上所有的高级语言都支持函数，javascript也不例外，它可以像变量一样被使用，方便且强大，因此本文对js函数进行系统的学习，并在学习过程中做了详细的笔记以及样例。\n一、函数的定义和调用 1.定义函数 function abs(x) { if(x = 0) { return x; } else { return -x; } } function()指出这是一个函数定义 abs是函数的代码 (x)里面的内容是函数的参数 {...}的内容是函数体，可以包括若干语句，甚至可以没有任何语句 函数体中，必须以return结尾，才可以把结果返回，如果不用return结尾的话，就会返回undefined\n也可以直接定义一个对象，这个对象也可以写成函数的方式\nvar abs = function (x) { if (x\u0026gt;=0) { return x }else { return -x } }； function(x)就是一个匿名函数，这个函数被赋值给了变量abs，所以可以直接通过abs调用该函数\n这两种定义函数的方式完全一致，，但是用变量定义的时候需要注意，要用;结尾，代表函数语句结束\n2.调用函数 调用函数时，直接传参即可 abs(10)，根据函数定义，将10代入进去即可，返回的结果是x , 即10\n3.检查参数 可以对参数进行检查，看看是否是自己想要的参数对类型\n如果传入对参数abs(x)中非数字，控制台返回结果this is not number，如果传参为数字，则进行条件判断\nfunction abs(x) { \/\/ 检查参数x是否为数字 if (typeof x !== \u0026#39;number\u0026#39;) { console.log(\u0026#39;this is not number\u0026#39;) }else{ if (x \u0026gt;= 0) { return x }else { return -x } } } 4.",
+      "description" : "当代码出现有规律的重复之后，可以利用函数，定义变量，调用方法，不用去重复的改动代码，只需要进行函数的修改。基本上所有的高级语言都支持函数，javascript也不例外，它可以像变量一样被使用，方便且强大，因此本文对js函数进行系统的学习，并在学习过程中做了详细的笔记以及样例。\n一、函数的定义和调用 1.定义函数 function abs(x) { if(x = 0) { return x; } else { return -x; } } function()指出这是一个函数定义 abs是函数的代码 (x)里面的内容是函数的参数 {...}的内容是函数体，可以包括若干语句，甚至可以没有任何语句 函数体中，必须以return结尾，才可以把结果返回，如果不用return结尾的话，就会返回undefined\n也可以直接定义一个对象，这个对象也可以写成函数的方式\nvar abs = function (x) { if (x\u0026gt;=0) { return x }else { return -x } }； function(x)就是一个匿名函数，这个函数被赋值给了变量abs，所以可以直接通过abs调用该函数\n这两种定义函数的方式完全一致，，但是用变量定义的时候需要注意，要用;结尾，代表函数语句结束\n2.调用函数 调用函数时，直接传参即可 abs(10)，根据函数定义，将10代入进去即可，返回的结果是x , 即10\n3.检查参数 可以对参数进行检查，看看是否是自己想要的参数对类型\n如果传入对参数abs(x)中非数字，控制台返回结果this is not number，如果传参为数字，则进行条件判断\nfunction abs(x) { \/\/ 检查参数x是否为数字 if (typeof x !== \u0026#39;number\u0026#39;) { console.log(\u0026#39;this is not number\u0026#39;) }else{ if (x \u0026gt;= 0) { return x }else { return -x } } } 4.arguments 利用arguments，可以获得调用者传入的所有参数\narguments代表传入的参数，arguments.length代表传入参数的长度\nconsole.log(arguments.length) \/\/ 这行代码写在函数中，控制台就可以输出出来 先写一个循环，把参数输出的函数方法，函数写完之后，传入参数，控制台随之打印出传入的参数\nfunction str() { var s for(var i = 0; i\u0026lt;arguments.length; i\u002b\u002b) { \/\/ 返回传入的参数 console.log(arguments[i]); s \u002b= arguments[i] \u002b \u0026#34;,\u0026#34;; } return s; }; \/\/ 传入参数 str(\u0026#34;name\u0026#34;, \u0026#34;age\u0026#34;); \/\/控制台输出：name, age 5.return 返回true时，点击链接直接跳转，返回false时，会忽略a链接的地址，跳转到window.location.href后的地址\n\u0026lt;a href=\u0026#34;https:www.baidu.com\u0026#34; onclick=\u0026#34;return myfun()\u0026#34;\u0026gt;baidu\u0026lt;\/a\u0026gt; \u0026lt;input type=\u0026#34;text\u0026#34; id=\u0026#34;test\u0026#34; value=\u0026#34;click\u0026#34;\u0026gt; \u0026lt;script\u0026gt; function myfun() { window.location.href = \u0026#39;https:\/\/www.bilibili.com\u0026#39;; var test = document.",
       "inLanguage" : "en-US",
       "author" : "子舒",
       "creator" : "子舒",
@@ -48,7 +48,11 @@ var abs = function (x) { if (x&amp;gt;=0) { return x }else { return -x } }； fu
 2.调用函数 调用函数时，直接传参即可 abs(10)，根据函数定义，将10代入进去即可，返回的结果是x , 即10
 3.检查参数 可以对参数进行检查，看看是否是自己想要的参数对类型
 如果传入对参数abs(x)中非数字，控制台返回结果this is not number，如果传参为数字，则进行条件判断
-function abs(x) { // 检查参数x是否为数字 if (typeof x !== &amp;#39;number&amp;#39;) { console.log(&amp;#39;this is not number&amp;#39;) }else{ if (x &amp;gt;= 0) { return x }else { return -x } } } 4." />
+function abs(x) { // 检查参数x是否为数字 if (typeof x !== &amp;#39;number&amp;#39;) { console.log(&amp;#39;this is not number&amp;#39;) }else{ if (x &amp;gt;= 0) { return x }else { return -x } } } 4.arguments 利用arguments，可以获得调用者传入的所有参数
+arguments代表传入的参数，arguments.length代表传入参数的长度
+console.log(arguments.length) // 这行代码写在函数中，控制台就可以输出出来 先写一个循环，把参数输出的函数方法，函数写完之后，传入参数，控制台随之打印出传入的参数
+function str() { var s for(var i = 0; i&amp;lt;arguments.length; i&#43;&#43;) { // 返回传入的参数 console.log(arguments[i]); s &#43;= arguments[i] &#43; &amp;#34;,&amp;#34;; } return s; }; // 传入参数 str(&amp;#34;name&amp;#34;, &amp;#34;age&amp;#34;); //控制台输出：name, age 5.return 返回true时，点击链接直接跳转，返回false时，会忽略a链接的地址，跳转到window.location.href后的地址
+&amp;lt;a href=&amp;#34;https:www.baidu.com&amp;#34; onclick=&amp;#34;return myfun()&amp;#34;&amp;gt;baidu&amp;lt;/a&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;test&amp;#34; value=&amp;#34;click&amp;#34;&amp;gt; &amp;lt;script&amp;gt; function myfun() { window.location.href = &amp;#39;https://www.bilibili.com&amp;#39;; var test = document." />
   <meta name="description" content="当代码出现有规律的重复之后，可以利用函数，定义变量，调用方法，不用去重复的改动代码，只需要进行函数的修改。基本上所有的高级语言都支持函数，javascript也不例外，它可以像变量一样被使用，方便且强大，因此本文对js函数进行系统的学习，并在学习过程中做了详细的笔记以及样例。
 一、函数的定义和调用 1.定义函数 function abs(x) { if(x = 0) { return x; } else { return -x; } } function()指出这是一个函数定义 abs是函数的代码 (x)里面的内容是函数的参数 {...}的内容是函数体，可以包括若干语句，甚至可以没有任何语句 函数体中，必须以return结尾，才可以把结果返回，如果不用return结尾的话，就会返回undefined
 也可以直接定义一个对象，这个对象也可以写成函数的方式
@@ -57,7 +61,11 @@ var abs = function (x) { if (x&amp;gt;=0) { return x }else { return -x } }； fu
 2.调用函数 调用函数时，直接传参即可 abs(10)，根据函数定义，将10代入进去即可，返回的结果是x , 即10
 3.检查参数 可以对参数进行检查，看看是否是自己想要的参数对类型
 如果传入对参数abs(x)中非数字，控制台返回结果this is not number，如果传参为数字，则进行条件判断
-function abs(x) { // 检查参数x是否为数字 if (typeof x !== &amp;#39;number&amp;#39;) { console.log(&amp;#39;this is not number&amp;#39;) }else{ if (x &amp;gt;= 0) { return x }else { return -x } } } 4." />
+function abs(x) { // 检查参数x是否为数字 if (typeof x !== &amp;#39;number&amp;#39;) { console.log(&amp;#39;this is not number&amp;#39;) }else{ if (x &amp;gt;= 0) { return x }else { return -x } } } 4.arguments 利用arguments，可以获得调用者传入的所有参数
+arguments代表传入的参数，arguments.length代表传入参数的长度
+console.log(arguments.length) // 这行代码写在函数中，控制台就可以输出出来 先写一个循环，把参数输出的函数方法，函数写完之后，传入参数，控制台随之打印出传入的参数
+function str() { var s for(var i = 0; i&amp;lt;arguments.length; i&#43;&#43;) { // 返回传入的参数 console.log(arguments[i]); s &#43;= arguments[i] &#43; &amp;#34;,&amp;#34;; } return s; }; // 传入参数 str(&amp;#34;name&amp;#34;, &amp;#34;age&amp;#34;); //控制台输出：name, age 5.return 返回true时，点击链接直接跳转，返回false时，会忽略a链接的地址，跳转到window.location.href后的地址
+&amp;lt;a href=&amp;#34;https:www.baidu.com&amp;#34; onclick=&amp;#34;return myfun()&amp;#34;&amp;gt;baidu&amp;lt;/a&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;test&amp;#34; value=&amp;#34;click&amp;#34;&amp;gt; &amp;lt;script&amp;gt; function myfun() { window.location.href = &amp;#39;https://www.bilibili.com&amp;#39;; var test = document." />
   <meta property="og:locale" content="en-us" /><meta property="og:image" content="https://oss.zburu.com/favicon.ico" />
   
 

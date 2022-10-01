@@ -23,7 +23,7 @@
       "articleSection" : "posts",
       "name" : "React 学习笔记（二）",
       "headline" : "React 学习笔记（二）",
-      "description" : "React 元素的事件处理和 DOM 元素的很相似，但是有一点语法上的不同\nReact 事件的命名采用小驼峰式（camelCase），而不是纯小写\n使用 JSX 语法时你需要传入一个函数作为事件处理函数，而不是一个字符串\n一、事件处理 1.事件绑定 React 元素的事件处理和 DOM 元素类似，但是在语法上有些区别，比如：\n传统的html：用双引号包裹，后面必须跟参数\n\u0026lt;button onclick=\u0026#34;myfun()\u0026#34;\u0026gt;点击\u0026lt;\/button\u0026gt; React：用大括号包裹，后面不跟参数\n\u0026lt;button onclick={myfun}\u0026gt;点击\u0026lt;\/button\u0026gt; 一个完整的事件函数代码如下\nclass Demo extends React.Component { render() { \/\/ 事件函数 function myfun() { alert(\u0026#39;helo,world\u0026#39;) } return ( \/\/ 绑定事件 \u0026lt;button onClick={this.myfun}\u0026gt; Activate Lasers \u0026lt;\/button\u0026gt; ) } } ReactDOM.render( \u0026lt;Demo \/\u0026gt;, document.getElementById(\u0026#39;root\u0026#39;) ) 如果方法后面没有()，则需要为这个方法绑定 this\n2.阻止默认行为 在 React 中还有一个不同的点，不能通过返回 fasle 阻止默认行为， React 提供了一个属性－－preventDefault，可以通过 preventDefault 阻止脚本执行\n看一下传统的 html 和 React 的对比",
+      "description" : "React 元素的事件处理和 DOM 元素的很相似，但是有一点语法上的不同\nReact 事件的命名采用小驼峰式（camelCase），而不是纯小写\n使用 JSX 语法时你需要传入一个函数作为事件处理函数，而不是一个字符串\n一、事件处理 1.事件绑定 React 元素的事件处理和 DOM 元素类似，但是在语法上有些区别，比如：\n传统的html：用双引号包裹，后面必须跟参数\n\u0026lt;button onclick=\u0026#34;myfun()\u0026#34;\u0026gt;点击\u0026lt;\/button\u0026gt; React：用大括号包裹，后面不跟参数\n\u0026lt;button onclick={myfun}\u0026gt;点击\u0026lt;\/button\u0026gt; 一个完整的事件函数代码如下\nclass Demo extends React.Component { render() { \/\/ 事件函数 function myfun() { alert(\u0026#39;helo,world\u0026#39;) } return ( \/\/ 绑定事件 \u0026lt;button onClick={this.myfun}\u0026gt; Activate Lasers \u0026lt;\/button\u0026gt; ) } } ReactDOM.render( \u0026lt;Demo \/\u0026gt;, document.getElementById(\u0026#39;root\u0026#39;) ) 如果方法后面没有()，则需要为这个方法绑定 this\n2.阻止默认行为 在 React 中还有一个不同的点，不能通过返回 fasle 阻止默认行为， React 提供了一个属性－－preventDefault，可以通过 preventDefault 阻止脚本执行\n看一下传统的 html 和 React 的对比\n\u0026lt;a href=\u0026#34;#\u0026#34; onclick=\u0026#34;alert(\u0026#39;是否弹窗？\u0026#39;);return false\u0026#34;\u0026gt; Click me \u0026lt;\/a\u0026gt; 直接在写上 false 就可以阻止脚本执行\nReact 通过 preventDefault 属性阻止脚本执行：\nfunction ActionLink() { function handleClick(e) { e.preventDefault(); console.log(\u0026#39;The link was clicked.\u0026#39;); } return ( \u0026lt;a href=\u0026#34;#\u0026#34; onClick={handleClick}\u0026gt; Click me \u0026lt;\/a\u0026gt; ); } 二、条件渲染 在 React 中，可以创建不同的组件来封装各种你需要的行为，然后，根据应用不同的状态，你可以只渲染对应状态下的部分内容。\nReact 中的条件渲染和 javascript 中的一样，使用 if 运算符来表示元素当前的状态，然后让 React 根据他们来更新 UI。\n使用 if..else 语句进行条件渲染 先写一个条件渲染的例子，定义了两个组件，然后通过判断组件 Greeting 中的变量 isLoggedIn 的真伪，让浏览器渲染组件 UserGreeting 或者 GuestGreeting。\n\/\/ App.js import React, { Component } from \u0026#39;react\u0026#39; export default class App extends Component { render() { function UserGreeting(props) { return \u0026lt;h3\u0026gt;Welcome back!",
       "inLanguage" : "en-US",
       "author" : "子舒",
       "creator" : "子舒",
@@ -49,7 +49,13 @@ React 事件的命名采用小驼峰式（camelCase），而不是纯小写
 &amp;lt;button onclick={myfun}&amp;gt;点击&amp;lt;/button&amp;gt; 一个完整的事件函数代码如下
 class Demo extends React.Component { render() { // 事件函数 function myfun() { alert(&amp;#39;helo,world&amp;#39;) } return ( // 绑定事件 &amp;lt;button onClick={this.myfun}&amp;gt; Activate Lasers &amp;lt;/button&amp;gt; ) } } ReactDOM.render( &amp;lt;Demo /&amp;gt;, document.getElementById(&amp;#39;root&amp;#39;) ) 如果方法后面没有()，则需要为这个方法绑定 this
 2.阻止默认行为 在 React 中还有一个不同的点，不能通过返回 fasle 阻止默认行为， React 提供了一个属性－－preventDefault，可以通过 preventDefault 阻止脚本执行
-看一下传统的 html 和 React 的对比" />
+看一下传统的 html 和 React 的对比
+&amp;lt;a href=&amp;#34;#&amp;#34; onclick=&amp;#34;alert(&amp;#39;是否弹窗？&amp;#39;);return false&amp;#34;&amp;gt; Click me &amp;lt;/a&amp;gt; 直接在写上 false 就可以阻止脚本执行
+React 通过 preventDefault 属性阻止脚本执行：
+function ActionLink() { function handleClick(e) { e.preventDefault(); console.log(&amp;#39;The link was clicked.&amp;#39;); } return ( &amp;lt;a href=&amp;#34;#&amp;#34; onClick={handleClick}&amp;gt; Click me &amp;lt;/a&amp;gt; ); } 二、条件渲染 在 React 中，可以创建不同的组件来封装各种你需要的行为，然后，根据应用不同的状态，你可以只渲染对应状态下的部分内容。
+React 中的条件渲染和 javascript 中的一样，使用 if 运算符来表示元素当前的状态，然后让 React 根据他们来更新 UI。
+使用 if..else 语句进行条件渲染 先写一个条件渲染的例子，定义了两个组件，然后通过判断组件 Greeting 中的变量 isLoggedIn 的真伪，让浏览器渲染组件 UserGreeting 或者 GuestGreeting。
+// App.js import React, { Component } from &amp;#39;react&amp;#39; export default class App extends Component { render() { function UserGreeting(props) { return &amp;lt;h3&amp;gt;Welcome back!" />
   <meta name="description" content="React 元素的事件处理和 DOM 元素的很相似，但是有一点语法上的不同
 React 事件的命名采用小驼峰式（camelCase），而不是纯小写
 使用 JSX 语法时你需要传入一个函数作为事件处理函数，而不是一个字符串
@@ -59,7 +65,13 @@ React 事件的命名采用小驼峰式（camelCase），而不是纯小写
 &amp;lt;button onclick={myfun}&amp;gt;点击&amp;lt;/button&amp;gt; 一个完整的事件函数代码如下
 class Demo extends React.Component { render() { // 事件函数 function myfun() { alert(&amp;#39;helo,world&amp;#39;) } return ( // 绑定事件 &amp;lt;button onClick={this.myfun}&amp;gt; Activate Lasers &amp;lt;/button&amp;gt; ) } } ReactDOM.render( &amp;lt;Demo /&amp;gt;, document.getElementById(&amp;#39;root&amp;#39;) ) 如果方法后面没有()，则需要为这个方法绑定 this
 2.阻止默认行为 在 React 中还有一个不同的点，不能通过返回 fasle 阻止默认行为， React 提供了一个属性－－preventDefault，可以通过 preventDefault 阻止脚本执行
-看一下传统的 html 和 React 的对比" />
+看一下传统的 html 和 React 的对比
+&amp;lt;a href=&amp;#34;#&amp;#34; onclick=&amp;#34;alert(&amp;#39;是否弹窗？&amp;#39;);return false&amp;#34;&amp;gt; Click me &amp;lt;/a&amp;gt; 直接在写上 false 就可以阻止脚本执行
+React 通过 preventDefault 属性阻止脚本执行：
+function ActionLink() { function handleClick(e) { e.preventDefault(); console.log(&amp;#39;The link was clicked.&amp;#39;); } return ( &amp;lt;a href=&amp;#34;#&amp;#34; onClick={handleClick}&amp;gt; Click me &amp;lt;/a&amp;gt; ); } 二、条件渲染 在 React 中，可以创建不同的组件来封装各种你需要的行为，然后，根据应用不同的状态，你可以只渲染对应状态下的部分内容。
+React 中的条件渲染和 javascript 中的一样，使用 if 运算符来表示元素当前的状态，然后让 React 根据他们来更新 UI。
+使用 if..else 语句进行条件渲染 先写一个条件渲染的例子，定义了两个组件，然后通过判断组件 Greeting 中的变量 isLoggedIn 的真伪，让浏览器渲染组件 UserGreeting 或者 GuestGreeting。
+// App.js import React, { Component } from &amp;#39;react&amp;#39; export default class App extends Component { render() { function UserGreeting(props) { return &amp;lt;h3&amp;gt;Welcome back!" />
   <meta property="og:locale" content="en-us" /><meta property="og:image" content="https://oss.zburu.com/favicon.ico" />
   
 

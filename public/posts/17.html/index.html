@@ -23,7 +23,7 @@
       "articleSection" : "posts",
       "name" : "有关js函数，方法的一些补充总结",
       "headline" : "有关js函数，方法的一些补充总结",
-      "description" : "数据类型，构造函数，原型和原型链的一些讲解补充\n一、数据类型 1.5个基本类型 string number boolean undefined 未定义 null 值为空 symbol 表示一个符号，符号类型是唯一的并且是不可修改的\n最常见的还是前三种，字符串，数字，布尔值\n2.常见的引用类型 引用类型是一种数据结构，用于将数据和功能组织在一起\n对象－Object, 数组－Array, 函数－Function, 正则－RegExp, 日期－Date等\n二、函数 1.什么是函数？ 具有独立功能的代码块，在js中使用function关键字定义函数 让代码结构更加清晰，提高代码可用性 js函数的分类：自定义函数和系统函数 2.自定义函数 有一种匿名函数，没有名字的函数，创建闭包，避免造成全局变量的污染\n匿名自执行函数\n概念：匿名函数的定义完成后立即执行，执行函数表达式 作用：实现闭包和创建独立的命名空间 使用：分组操作符()，void操作符，~操作符，!操作符等等 使用场景：函数表达式，对象属性，事件，事件参数，返回值 定义完匿名函数后，一定要调用 \/\/ 函数表达式 window.onload = function() { let funcobj = function() { alert(\u0026#34;函数表达式中的匿名函数\u0026#34;) } funcobj(); } \/\/ 对象属性 window.onload = function() { let obj = { name: function() { alert(\u0026#39;对象属性中的匿名函数\u0026#39;) } } obj.name(); } 3.内置函数 放在全局下面叫做函数，放在对象里面被叫做方法，对象的方法\n常规函数 alert() \/\/ 弹出框 confirm() \/\/ 弹出一个确认框 prompt() \/\/ 弹出一个输入框 isNaN() \/\/ 判断是否为数字 parseInt() \/\/ 将字符串或浮点数转换为整数 parseFloat() \/\/ 将字符串转换为整数或浮点数 eval() \/\/ 计算表达式的结果 数组函数 用for循环遍历数组",
+      "description" : "数据类型，构造函数，原型和原型链的一些讲解补充\n一、数据类型 1.5个基本类型 string number boolean undefined 未定义 null 值为空 symbol 表示一个符号，符号类型是唯一的并且是不可修改的\n最常见的还是前三种，字符串，数字，布尔值\n2.常见的引用类型 引用类型是一种数据结构，用于将数据和功能组织在一起\n对象－Object, 数组－Array, 函数－Function, 正则－RegExp, 日期－Date等\n二、函数 1.什么是函数？ 具有独立功能的代码块，在js中使用function关键字定义函数 让代码结构更加清晰，提高代码可用性 js函数的分类：自定义函数和系统函数 2.自定义函数 有一种匿名函数，没有名字的函数，创建闭包，避免造成全局变量的污染\n匿名自执行函数\n概念：匿名函数的定义完成后立即执行，执行函数表达式 作用：实现闭包和创建独立的命名空间 使用：分组操作符()，void操作符，~操作符，!操作符等等 使用场景：函数表达式，对象属性，事件，事件参数，返回值 定义完匿名函数后，一定要调用 \/\/ 函数表达式 window.onload = function() { let funcobj = function() { alert(\u0026#34;函数表达式中的匿名函数\u0026#34;) } funcobj(); } \/\/ 对象属性 window.onload = function() { let obj = { name: function() { alert(\u0026#39;对象属性中的匿名函数\u0026#39;) } } obj.name(); } 3.内置函数 放在全局下面叫做函数，放在对象里面被叫做方法，对象的方法\n常规函数 alert() \/\/ 弹出框 confirm() \/\/ 弹出一个确认框 prompt() \/\/ 弹出一个输入框 isNaN() \/\/ 判断是否为数字 parseInt() \/\/ 将字符串或浮点数转换为整数 parseFloat() \/\/ 将字符串转换为整数或浮点数 eval() \/\/ 计算表达式的结果 数组函数 用for循环遍历数组\nvar arr = [1,2,3,4]; for(var i = 0; i\u0026lt;arr.length; i\u002b\u002b) { console.log(arr[i]) } \/\/ 输出 1,2,3,4 通过for in遍历数组\nvar arr = [1,2,3,4]; for (var i in arr) { console.log(arr[i]); } \/\/ 输出 1,2,3,4 \/\/ 增加 unshift() \/\/ 添加元素在数组首部，返回值是数组长度 push() \/\/ 添加元素在数组尾部，返回值是数组长度 conat() \/\/ 连接两个数组，返回值是连接后的数组 var arr1 = [1]; var arr2 = [2]; let arr = arr1.",
       "inLanguage" : "en-US",
       "author" : "子舒",
       "creator" : "子舒",
@@ -48,7 +48,9 @@
 二、函数 1.什么是函数？ 具有独立功能的代码块，在js中使用function关键字定义函数 让代码结构更加清晰，提高代码可用性 js函数的分类：自定义函数和系统函数 2.自定义函数 有一种匿名函数，没有名字的函数，创建闭包，避免造成全局变量的污染
 匿名自执行函数
 概念：匿名函数的定义完成后立即执行，执行函数表达式 作用：实现闭包和创建独立的命名空间 使用：分组操作符()，void操作符，~操作符，!操作符等等 使用场景：函数表达式，对象属性，事件，事件参数，返回值 定义完匿名函数后，一定要调用 // 函数表达式 window.onload = function() { let funcobj = function() { alert(&amp;#34;函数表达式中的匿名函数&amp;#34;) } funcobj(); } // 对象属性 window.onload = function() { let obj = { name: function() { alert(&amp;#39;对象属性中的匿名函数&amp;#39;) } } obj.name(); } 3.内置函数 放在全局下面叫做函数，放在对象里面被叫做方法，对象的方法
-常规函数 alert() // 弹出框 confirm() // 弹出一个确认框 prompt() // 弹出一个输入框 isNaN() // 判断是否为数字 parseInt() // 将字符串或浮点数转换为整数 parseFloat() // 将字符串转换为整数或浮点数 eval() // 计算表达式的结果 数组函数 用for循环遍历数组" />
+常规函数 alert() // 弹出框 confirm() // 弹出一个确认框 prompt() // 弹出一个输入框 isNaN() // 判断是否为数字 parseInt() // 将字符串或浮点数转换为整数 parseFloat() // 将字符串转换为整数或浮点数 eval() // 计算表达式的结果 数组函数 用for循环遍历数组
+var arr = [1,2,3,4]; for(var i = 0; i&amp;lt;arr.length; i&#43;&#43;) { console.log(arr[i]) } // 输出 1,2,3,4 通过for in遍历数组
+var arr = [1,2,3,4]; for (var i in arr) { console.log(arr[i]); } // 输出 1,2,3,4 // 增加 unshift() // 添加元素在数组首部，返回值是数组长度 push() // 添加元素在数组尾部，返回值是数组长度 conat() // 连接两个数组，返回值是连接后的数组 var arr1 = [1]; var arr2 = [2]; let arr = arr1." />
   <meta name="description" content="数据类型，构造函数，原型和原型链的一些讲解补充
 一、数据类型 1.5个基本类型 string number boolean undefined 未定义 null 值为空 symbol 表示一个符号，符号类型是唯一的并且是不可修改的
 最常见的还是前三种，字符串，数字，布尔值
@@ -57,7 +59,9 @@
 二、函数 1.什么是函数？ 具有独立功能的代码块，在js中使用function关键字定义函数 让代码结构更加清晰，提高代码可用性 js函数的分类：自定义函数和系统函数 2.自定义函数 有一种匿名函数，没有名字的函数，创建闭包，避免造成全局变量的污染
 匿名自执行函数
 概念：匿名函数的定义完成后立即执行，执行函数表达式 作用：实现闭包和创建独立的命名空间 使用：分组操作符()，void操作符，~操作符，!操作符等等 使用场景：函数表达式，对象属性，事件，事件参数，返回值 定义完匿名函数后，一定要调用 // 函数表达式 window.onload = function() { let funcobj = function() { alert(&amp;#34;函数表达式中的匿名函数&amp;#34;) } funcobj(); } // 对象属性 window.onload = function() { let obj = { name: function() { alert(&amp;#39;对象属性中的匿名函数&amp;#39;) } } obj.name(); } 3.内置函数 放在全局下面叫做函数，放在对象里面被叫做方法，对象的方法
-常规函数 alert() // 弹出框 confirm() // 弹出一个确认框 prompt() // 弹出一个输入框 isNaN() // 判断是否为数字 parseInt() // 将字符串或浮点数转换为整数 parseFloat() // 将字符串转换为整数或浮点数 eval() // 计算表达式的结果 数组函数 用for循环遍历数组" />
+常规函数 alert() // 弹出框 confirm() // 弹出一个确认框 prompt() // 弹出一个输入框 isNaN() // 判断是否为数字 parseInt() // 将字符串或浮点数转换为整数 parseFloat() // 将字符串转换为整数或浮点数 eval() // 计算表达式的结果 数组函数 用for循环遍历数组
+var arr = [1,2,3,4]; for(var i = 0; i&amp;lt;arr.length; i&#43;&#43;) { console.log(arr[i]) } // 输出 1,2,3,4 通过for in遍历数组
+var arr = [1,2,3,4]; for (var i in arr) { console.log(arr[i]); } // 输出 1,2,3,4 // 增加 unshift() // 添加元素在数组首部，返回值是数组长度 push() // 添加元素在数组尾部，返回值是数组长度 conat() // 连接两个数组，返回值是连接后的数组 var arr1 = [1]; var arr2 = [2]; let arr = arr1." />
   <meta property="og:locale" content="en-us" /><meta property="og:image" content="https://oss.zburu.com/favicon.ico" />
   
 
