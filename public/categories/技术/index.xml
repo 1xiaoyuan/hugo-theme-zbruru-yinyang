@@ -1476,16 +1476,5 @@ mounted: function () { console.log(&amp;#39;mounted:&amp;#39;,document.getElemen
 5.beforeUpdate 数据更新时调用，发生在虚拟 DOM 重新渲染和打补丁之前。 你可以在这个钩子中进一步地更改状态，这不会触发附加的重渲染过程。</description>
     </item>
     
-    <item>
-      <title>hello, world</title>
-      <link>https://blog.zburu.com/posts/1.html/</link>
-      <pubDate>Sun, 14 Jun 2020 20:57:00 +0000</pubDate>
-      
-      <guid>https://blog.zburu.com/posts/1.html/</guid>
-      <description>2020年6月14日
-我的博客正式建立。
-愿一切安好。</description>
-    </item>
-    
   </channel>
 </rss>
