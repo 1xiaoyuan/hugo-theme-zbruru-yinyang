@@ -1,13 +1,17 @@
-baseURL = "https://zburu.vercel.app"
+baseURL = "https://blog.zburu.com"
 languageCode = "en-us"
 title = "子舒的博客"
 theme = "yinyang"
 DefaultContentLanguage = "cn"
-[Params]
+
+[params]
+  title = "子舒的博客"
+  Description = "基于hugo搭建的静态博客，作为zburu.com的备份"
   favicon = "https://oss.zburu.com/favicon.ico"
 
+
 [author]
-  name = "zburu"
+  name = "子舒"
   homepage = "/"
 
 [languages]
@@ -15,7 +19,6 @@ DefaultContentLanguage = "cn"
     contentDir = "content"
     languageName = "Chinese"
     weight = 1
-
 
 [[params.socials]]
 name = "RSS"
