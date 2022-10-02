@@ -28,18 +28,7 @@ set from=发件人@qq.com #发送邮件后显示的邮件发送方 需要修改 
 测试发送邮件 在终端输入发送测试邮件命令，需要修改收件人邮箱，回车执行。
 echo &amp;#34;这是一封测试邮件&amp;#34; | mail -s &amp;#34;邮件主题&amp;#34; 收件人@qq.com 查看邮箱是否收到测试邮件。
 如果发现终端报以下错误（但没有影响收件），没有错误请跳过。
-Error in certificate: Peer&#39;s certificate issuer has been marked as not trusted by the.
-Ctrl+C结束命令后，修改邮箱服务配置文件，将set ssl-verify=ignore修改为set ssl-verify=strict后保存退出（编辑方法同上）。
-修改完成后在终端输入以下命令。
-获取邮件服务器证书
-echo -n &amp;#34; &amp;#34; | openssl s_client -connect smtp.qq.com:465 | sed -ne &amp;#39;/-BEGIN CERTIFICATE-/,/-END CERTIFIICATE-/p&amp;#39; &amp;gt; /etc/pki/nssdb/qq.crt 把证书添加到受信任表
-certutil -A -n &amp;#39;yeah&amp;#39; -t &amp;#34;P,P,P&amp;#34; -d /etc/pki/nssdb -i /etc/pki/nssdb/qq.crt 注：如果是163或者其他邮箱服务器请将smtp.qq.com改为smtp.163.com，qq.crt改为163.crt 以此类推。
-命令执行完成后，重新执行发送测试邮件命令，不在报错。
-宝塔定时任务 左侧-》计划任务
-首先按自己需求（计划任务执行时间，保留文件数量等）添加网站和数据库源文件备份任务。
-然后添加shell脚本任务，在脚本内容中添加以下脚本命令，修改收件人为自己的邮箱。
-#!/bin/bash cd /www/backup/site for file in $(ls *) do str=&amp;#34;${str} -a ${file}&amp;#34; done echo &amp;#34;主人，今天的网站备份又到了哦，请注意查收！&amp;#34; | mail -s &amp;#34;网站备份&amp;#34; $str 2502393029@qq.com 执行时间可按需求，晚于网站，数据库备份任务执行时间。
-数据库备份和网站备份一样需要再添加一次计划任务，将cd /www/backup/site 修改为cd /www/backup/database数据库备份文件所在目录即可，参考改一下邮件主题，和内容信息。</description>
+Error in certificate: Peer&#39;s certificate issuer has been marked as not trusted by the.</description>
     </item>
     
   </channel>

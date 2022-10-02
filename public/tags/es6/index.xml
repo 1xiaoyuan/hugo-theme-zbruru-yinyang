@@ -25,7 +25,7 @@ PS： 还有其他方法 Function.prototype.bind、String.prototype.trim、Date.
 ES6特性如下：
 块级作用域 关键字let, 常量const
 对象字面量的属性赋值简写（property value shorthand）
-var obj = { // __proto__ __proto__: theProtoObj, // Shorthand for ‘handler: handler’ handler, // Method definitions toString() { // Super calls return &amp;#34;d &amp;#34; + super.toString(); }, // Computed (dynamic) property names [ &amp;#39;prop_&amp;#39; + (() =&amp;gt; 42)() ]: 42 }; 赋值解构 let singer = { first: &amp;#34;Bob&amp;#34;, last: &amp;#34;Dylan&amp;#34; }; let { first: f, last: l } = singer; // 相当于 f = &amp;#34;Bob&amp;#34;, l = &amp;#34;Dylan&amp;#34; let [all, year, month, day] = /^(\d\d\d\d)-(\d\d)-(\d\d)$/.exec(&amp;#34;2015-10-25&amp;#34;); let [x, y] = [1, 2, 3]; // x = 1, y = 2 函数参数 - 默认值、参数打包、 数组展开（Default 、Rest 、Spread） //Default function findArtist(name=&amp;#39;lu&amp;#39;, age=&amp;#39;26&amp;#39;) { .</description>
+var obj = { // __proto__ __proto__: theProtoObj, // Shorthand for ‘handler: handler’ handler, // Method definitions toString() { // Super calls return &amp;#34;d &amp;#34; + super.</description>
     </item>
     
   </channel>

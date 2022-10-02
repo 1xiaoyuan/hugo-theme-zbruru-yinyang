@@ -23,7 +23,7 @@
       "articleSection" : "posts",
       "name" : "Typecho博客搭建及优化教程(详细)",
       "headline" : "Typecho博客搭建及优化教程(详细)",
-      "description" : "1.前言 本文从Typecho 简介开始讲解，其中包括服务器的选择，以及域名注册，服务器系统选择 ，宝塔安装，环境配置，Typecho安装包括中间的防采坑注意事项，为您提供完整的保姆级搭建流程，请珍惜哦！\n如果不喜欢前面的啰嗦讲解，请跳过，直接从宝塔安装开始。\n不喜勿喷，谢谢！\n需要买服务器可以 点击链接在腾讯云购买服务器有优惠哦~ 不嫖白不嫖，省个十几二十块钱不香吗？\n2.Typecho简介 Typecho 基于PHP5开发，支持多种数据库，是一款内核强健﹑扩展方便﹑体验友好﹑运行流畅的轻量级开源博客程序。\nTypecho 非常简洁，仅仅 7 张数据表，加上不足 400KB 的代码，就实现了完整的插件与模板机制。超低的 CPU 和内存使用率，足以发挥主机的最高性能。\n原生支持 Markdown 语法，易读更易写。支持 BAE\/GAE\/SAE 等各类云主机，即使面对突如其来的高访问量，也能轻松应对。\nTypecho 的默认模板和后台，全部采用了响应式设计。所以Typecho的大多数自制模板，都采用了自适应设计。\n现在Typecho 拥有很多用户，完整的生态，各种功能插件和简洁优美的主题，是做博客的不二选择，相信你会喜欢上她简洁的风格！\n3.准备 服务器\u002b域名\n搭建Typecho 博客需要使用服务器或者虚拟机，最近也看到一篇使用Vercel\u002bMysql搭建Typecho的文章，但是这种是使用外部Mysql服务的 ，相比使用服务器或者虚拟机这种还是不太方便配置和管理的。使用服务器相比虚拟机会更加的好用。\n**注：**本文只讲解服务器的搭建流程，虚拟机请参考！\n**服务器选择：**推荐去腾讯云或阿里云,有学生机（9元\/月）可供选择，腾讯云还是25岁以下免学生认证的，学生价续费三次，所以有条件可以选择1年购买和续费，腾讯的还有免费升配置，，阿里云的学生机下架了，但是也可以买为新用户提供的，建议选择 轻量应用服务器，1h2g的配置完全够用，流量也完全够用。\n腾讯云：https:\/\/cloud.tencent.com\/act\/campus\n阿里云：https:\/\/developer.aliyun.com\/plan\/grow-up\n如果你买不了这种，也可以去其他服务商买新用户优惠的服务器，建议选择大厂。\n选择服务器要看下地区，如果是大陆地区的服务器，需要去其对应的服务商进行域名备案，否者你无法使用，如果是香港地区或者国外的服务器，则不需要进行备案。\n**注：**阿里和腾讯这两种轻量应用服务器都是需要 备案的，如果嫌麻烦或者不想备案，可选择其他地区的服务器！\n备案操作有些复杂，也需要好几天的时间，但是备案也有备案的好处，比如使用国内的CDN加速等。另请仔细参考各服务商提供的流程，要注意看清备案流程上的注意事项，防止备案驳回浪费时间。\n相比国外和香港的服务器，使用大陆的服务器在国内的访问速度是最好的，当然如果你搞外国业务当我没说。。。\n**域名选择：**域名选择很简单，去各大服务商注册一个就完事了，喜欢什么就注册什么，但是如果你要备案使用大陆服务器，一定不要注册不支持备案的域名，当然绝大多数都是支持备案的。另各大服务商也有新用户注册域名优惠活动，在百度仔细找一下就行了。 腾讯云：https:\/\/cloud.tencent.com\/act\/domainsales\n阿里云：https:\/\/wanwang.aliyun.com\/domain\n华为云：https:\/\/activity.huaweicloud.com\/domain1.html\n下面开始搭建流程：\n4.LNMP环境 首先我们要搭建的就是LNMP环境，LNMP代表的就是：Linux系统下Nginx\u002bMySQL\u002bPHP这种网站服务器架构。\nLinux 是一类Unix计算机操作系统的统称，是目前最流行的免费操作系统。代表版本有：debian、centos、ubuntu、fedora、gentoo等。\nNginx 是一个高性能的HTTP和反向代理web服务器，同时也提供了IMAP\/POP3\/SMTP服务。\nMysql 是一款安全、跨平台、高效的，并与 PHP、Java 等主流编程语言紧密结合的数据库系统。\nPHP 是一种在服务器端执行的嵌入HTML文档的脚本语言。\n当然如果你不喜欢使用Nginx，或者Mysql，请自行更换其它的，这里不过多介绍！\nLinux系统的话，本文使用Centos 8系统讲解。\n搭建LNMP环境，我们可以选择自行下载对应的安装包，然后在Centos系统中，安装Nginx，Mysql，PHP等，这种纯动手的方式，非常麻烦和复杂，在后期进行多网站管理和配置HTTPS证书，以及网站伪静态配置时非常麻烦。\n所以本文讲解使用宝塔面板来进行安装部署环境！\n5.宝塔是什么 宝塔面板是一款服务器管理软件，支持windows和linux系统，可以通过Web端轻松管理服务器，提升运维效率。例如：创建管理网站、FTP、数据库，拥有可视化文件管理器，可视化软件管理器，可视化CPU、内存、流量监控图表，计划任务等功能。\n宝塔面板拥有极速方便的一键配置与管理，可一键配置服务器环境（LAMP\/LNMP\/Tomcat\/Node.js），一键部署SSL，异地备份；提供SSH开启关闭服务，SSH端口更改，禁ping，防火墙端口放行以及操作日志查看；CPU、内存、磁盘IO、网络IO数据监测，可设置记录保存天数以及任意查看某天数据；\n计划任务可按周期添加执行，支持SHELL脚本，提供网站、数据库备份以及日志切割，且支持一键备份到又拍云存储空间，或者其他云存储空间里；通过web界面就可以轻松管理安装所用的服务器软件，还有实用的扩展插件；集成方便高效的文件管理器，支持上传、下载、打包、解压以及文件编辑查看。\n进入搭建正题：\n6.安装宝塔 选择服务器时，选择系统镜像，不要选择服务商提供的应用镜像，操作系统选择Centos，版本的话7和8都可以。当然你也可以选择其他系统，，，\n接着到服务商的控制台，找到你的服务器，进入控制台，重置密码。\n然后在安全\u0026ndash;》防火墙那里添加规则。\n端口范围8888，其他默认，备注随意。\n**注：**如果你不添加 8888，安装宝塔以后你是进不去的，安装宝塔以后可以修改宝塔的进入端口，再修改一下这里就可以了！\n使用SSH工具连接你的服务器，如果没有SSH工具也可以使用控制台那里提供的远程连接！\n在终端界面输入一下命令开始安装！\nCentos安装命令：\nyum install -y wget \u0026amp;\u0026amp; wget -O install.sh http:\/\/download.bt.cn\/install\/install_6.0.sh \u0026amp;\u0026amp; sh install.sh 不同操作系统有不同的安装命令，详情请去宝塔官网查看！\n遇到安装提示直接输入：y\n安装完成后如下:\n在浏览器中访问外网面板地址。\n**注：**如果你刚才没有在服务器控制台安全防火墙那里添加端口8888是打不开的。\n使用username和password登录宝塔面板，点击我已阅读并同意“《用户协议》”后进入宝塔面板！\n进入宝塔面板后，会弹出一键安装环境套件选择界面，这时我们选择左边的LNMP环境！\nNginx 1.18，Mysql 5.6（如果服务器内存在2g以上可以选择5.7），PHP 7.4（php建议版本选择7.0以上），Pure-Ftpd 1.0.49，phpMyAdmin 5.0（这是一个可以在浏览器页面管理数据库的软件程序，要在服务器控制台安全防火墙那里添加端口888，否则无法打开）\n安装方式有两个，极速安装（安装速度快，节省时间），编译安装（安装速度超级慢，有时会卡死，但会提升服务器性能），可自行选择。本文以极速安装为例！\n安装过程：\n安装完成后，会提示绑定宝塔账号，点击免费注册，去注册一个，然后绑定就可以了！\n**说明：**建议，安装完成后，左侧，面板设置，设置下面板的登录信息，修改一下登录入口，用户名，密码和端口。 注： 如果修改面板设置中的端口，也要在服务器控制台安全防火墙那里修改端口。\n7.安装Typecho 访问Typecho 官网，点击立即下载，点击下载1.1正式版。\n下载完成后，得到一个1.1-17.10.30-release.tar.gz压缩包，解压后可以看到里面有一个build文件夹，文件夹里面便是Typecho程序文件。\n先域名解析一下，去你的域名服务商，控制台找到你的域名，解析，添加记录。主机记录填写@，www或者blog其他的都可以（你填写的是什么就要以什么访问，比如填写www便是www.xxx.com等），记录类型A类型，记录值填写自己服务器的IP地址（如果不知道，可查看宝塔页面的左上角），确认就可以了！\n打开宝塔页面，左侧\u0026ndash;》网站\u0026ndash;》添加站点\n添加域名，数据库选择Mysql utf-8，填写数据库账号和密码以及对应的PHP版本，然后提交。\n这里可以先设置一下站点，点击站点右侧的设置，需要设置的有伪静态，SSL证书，，，\n伪静态选择typecho，然后保存。\nSSL证书，选择宝塔SSL证书，申请证书，填写相关信息，提交资料等申请成功就可以了。\n如果申请失败，可以去域名服务商那里，有提供单域名免费SSL证书，然后选择其他证书，上传证书，开启右上角的强制HTTPs就可以了。\n关闭设置窗口，点击根目录下的路径地址**\/www\/wwwroot\/你的域名**，直接进入根目录文件夹，删除index.html文件。\n点击上传，弹出窗口，点击上传文件，找到下载的Typecho压缩包，打开，然后开始上传，上传完毕关闭窗口。\n解压该压缩包后（删除压缩包），得到build文件夹，进入其文件夹内，选择文件名旁边的框，全选文件，右上角选择剪贴，然后回到上一级根目录下，黏贴，然后删掉没用的build文件夹就可以了。\n到这一步，浏览器输入你的域名，就可以安装Typecho了。\n如有在上方遇到Deprecated: Function get_magic_quotes_gpc() is deprecated in \/www\/wwwroot\/woshishabi.top\/var\/Typecho\/Common.php on line 208报错，不用管，没什么影响。\n点击下一步，进入初始化配置，这一步需要填写修改的是数据库用户名（添加站点时设置的数据库账号，如果忘了可去宝塔面板页面左侧，数据库查看），数据库密码，数据库名（数据库名和数据库用户名是一样的！），用户名，登录密码，邮件地址，确认，开始安装。",
+      "description" : "1.前言 本文从Typecho 简介开始讲解，其中包括服务器的选择，以及域名注册，服务器系统选择 ，宝塔安装，环境配置，Typecho安装包括中间的防采坑注意事项，为您提供完整的保姆级搭建流程，请珍惜哦！\n如果不喜欢前面的啰嗦讲解，请跳过，直接从宝塔安装开始。\n不喜勿喷，谢谢！\n需要买服务器可以 点击链接在腾讯云购买服务器有优惠哦~ 不嫖白不嫖，省个十几二十块钱不香吗？\n2.Typecho简介 Typecho 基于PHP5开发，支持多种数据库，是一款内核强健﹑扩展方便﹑体验友好﹑运行流畅的轻量级开源博客程序。\nTypecho 非常简洁，仅仅 7 张数据表，加上不足 400KB 的代码，就实现了完整的插件与模板机制。超低的 CPU 和内存使用率，足以发挥主机的最高性能。\n原生支持 Markdown 语法，易读更易写。支持 BAE\/GAE\/SAE 等各类云主机，即使面对突如其来的高访问量，也能轻松应对。\nTypecho 的默认模板和后台，全部采用了响应式设计。所以Typecho的大多数自制模板，都采用了自适应设计。\n现在Typecho 拥有很多用户，完整的生态，各种功能插件和简洁优美的主题，是做博客的不二选择，相信你会喜欢上她简洁的风格！\n3.准备 服务器\u002b域名\n搭建Typecho 博客需要使用服务器或者虚拟机，最近也看到一篇使用Vercel\u002bMysql搭建Typecho的文章，但是这种是使用外部Mysql服务的 ，相比使用服务器或者虚拟机这种还是不太方便配置和管理的。使用服务器相比虚拟机会更加的好用。\n**注：**本文只讲解服务器的搭建流程，虚拟机请参考！\n**服务器选择：**推荐去腾讯云或阿里云,有学生机（9元\/月）可供选择，腾讯云还是25岁以下免学生认证的，学生价续费三次，所以有条件可以选择1年购买和续费，腾讯的还有免费升配置，，阿里云的学生机下架了，但是也可以买为新用户提供的，建议选择 轻量应用服务器，1h2g的配置完全够用，流量也完全够用。\n腾讯云：https:\/\/cloud.tencent.com\/act\/campus\n阿里云：https:\/\/developer.aliyun.com\/plan\/grow-up\n如果你买不了这种，也可以去其他服务商买新用户优惠的服务器，建议选择大厂。\n选择服务器要看下地区，如果是大陆地区的服务器，需要去其对应的服务商进行域名备案，否者你无法使用，如果是香港地区或者国外的服务器，则不需要进行备案。\n**注：**阿里和腾讯这两种轻量应用服务器都是需要 备案的，如果嫌麻烦或者不想备案，可选择其他地区的服务器！\n备案操作有些复杂，也需要好几天的时间，但是备案也有备案的好处，比如使用国内的CDN加速等。另请仔细参考各服务商提供的流程，要注意看清备案流程上的注意事项，防止备案驳回浪费时间。\n相比国外和香港的服务器，使用大陆的服务器在国内的访问速度是最好的，当然如果你搞外国业务当我没说。。。\n**域名选择：**域名选择很简单，去各大服务商注册一个就完事了，喜欢什么就注册什么，但是如果你要备案使用大陆服务器，一定不要注册不支持备案的域名，当然绝大多数都是支持备案的。另各大服务商也有新用户注册域名优惠活动，在百度仔细找一下就行了。 腾讯云：https:\/\/cloud.tencent.com\/act\/domainsales\n阿里云：https:\/\/wanwang.aliyun.com\/domain\n华为云：https:\/\/activity.huaweicloud.com\/domain1.html\n下面开始搭建流程：\n4.LNMP环境 首先我们要搭建的就是LNMP环境，LNMP代表的就是：Linux系统下Nginx\u002bMySQL\u002bPHP这种网站服务器架构。\nLinux 是一类Unix计算机操作系统的统称，是目前最流行的免费操作系统。代表版本有：debian、centos、ubuntu、fedora、gentoo等。\nNginx 是一个高性能的HTTP和反向代理web服务器，同时也提供了IMAP\/POP3\/SMTP服务。\nMysql 是一款安全、跨平台、高效的，并与 PHP、Java 等主流编程语言紧密结合的数据库系统。\nPHP 是一种在服务器端执行的嵌入HTML文档的脚本语言。\n当然如果你不喜欢使用Nginx，或者Mysql，请自行更换其它的，这里不过多介绍！\nLinux系统的话，本文使用Centos 8系统讲解。\n搭建LNMP环境，我们可以选择自行下载对应的安装包，然后在Centos系统中，安装Nginx，Mysql，PHP等，这种纯动手的方式，非常麻烦和复杂，在后期进行多网站管理和配置HTTPS证书，以及网站伪静态配置时非常麻烦。\n所以本文讲解使用宝塔面板来进行安装部署环境！\n5.宝塔是什么 宝塔面板是一款服务器管理软件，支持windows和linux系统，可以通过Web端轻松管理服务器，提升运维效率。例如：创建管理网站、FTP、数据库，拥有可视化文件管理器，可视化软件管理器，可视化CPU、内存、流量监控图表，计划任务等功能。\n宝塔面板拥有极速方便的一键配置与管理，可一键配置服务器环境（LAMP\/LNMP\/Tomcat\/Node.js），一键部署SSL，异地备份；提供SSH开启关闭服务，SSH端口更改，禁ping，防火墙端口放行以及操作日志查看；CPU、内存、磁盘IO、网络IO数据监测，可设置记录保存天数以及任意查看某天数据；",
       "inLanguage" : "en-US",
       "author" : "子舒",
       "creator" : "子舒",
@@ -74,44 +74,7 @@ Linux系统的话，本文使用Centos 8系统讲解。
 搭建LNMP环境，我们可以选择自行下载对应的安装包，然后在Centos系统中，安装Nginx，Mysql，PHP等，这种纯动手的方式，非常麻烦和复杂，在后期进行多网站管理和配置HTTPS证书，以及网站伪静态配置时非常麻烦。
 所以本文讲解使用宝塔面板来进行安装部署环境！
 5.宝塔是什么 宝塔面板是一款服务器管理软件，支持windows和linux系统，可以通过Web端轻松管理服务器，提升运维效率。例如：创建管理网站、FTP、数据库，拥有可视化文件管理器，可视化软件管理器，可视化CPU、内存、流量监控图表，计划任务等功能。
-宝塔面板拥有极速方便的一键配置与管理，可一键配置服务器环境（LAMP/LNMP/Tomcat/Node.js），一键部署SSL，异地备份；提供SSH开启关闭服务，SSH端口更改，禁ping，防火墙端口放行以及操作日志查看；CPU、内存、磁盘IO、网络IO数据监测，可设置记录保存天数以及任意查看某天数据；
-计划任务可按周期添加执行，支持SHELL脚本，提供网站、数据库备份以及日志切割，且支持一键备份到又拍云存储空间，或者其他云存储空间里；通过web界面就可以轻松管理安装所用的服务器软件，还有实用的扩展插件；集成方便高效的文件管理器，支持上传、下载、打包、解压以及文件编辑查看。
-进入搭建正题：
-6.安装宝塔 选择服务器时，选择系统镜像，不要选择服务商提供的应用镜像，操作系统选择Centos，版本的话7和8都可以。当然你也可以选择其他系统，，，
-接着到服务商的控制台，找到你的服务器，进入控制台，重置密码。
-然后在安全&amp;ndash;》防火墙那里添加规则。
-端口范围8888，其他默认，备注随意。
-**注：**如果你不添加 8888，安装宝塔以后你是进不去的，安装宝塔以后可以修改宝塔的进入端口，再修改一下这里就可以了！
-使用SSH工具连接你的服务器，如果没有SSH工具也可以使用控制台那里提供的远程连接！
-在终端界面输入一下命令开始安装！
-Centos安装命令：
-yum install -y wget &amp;amp;&amp;amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;amp;&amp;amp; sh install.sh 不同操作系统有不同的安装命令，详情请去宝塔官网查看！
-遇到安装提示直接输入：y
-安装完成后如下:
-在浏览器中访问外网面板地址。
-**注：**如果你刚才没有在服务器控制台安全防火墙那里添加端口8888是打不开的。
-使用username和password登录宝塔面板，点击我已阅读并同意“《用户协议》”后进入宝塔面板！
-进入宝塔面板后，会弹出一键安装环境套件选择界面，这时我们选择左边的LNMP环境！
-Nginx 1.18，Mysql 5.6（如果服务器内存在2g以上可以选择5.7），PHP 7.4（php建议版本选择7.0以上），Pure-Ftpd 1.0.49，phpMyAdmin 5.0（这是一个可以在浏览器页面管理数据库的软件程序，要在服务器控制台安全防火墙那里添加端口888，否则无法打开）
-安装方式有两个，极速安装（安装速度快，节省时间），编译安装（安装速度超级慢，有时会卡死，但会提升服务器性能），可自行选择。本文以极速安装为例！
-安装过程：
-安装完成后，会提示绑定宝塔账号，点击免费注册，去注册一个，然后绑定就可以了！
-**说明：**建议，安装完成后，左侧，面板设置，设置下面板的登录信息，修改一下登录入口，用户名，密码和端口。 注： 如果修改面板设置中的端口，也要在服务器控制台安全防火墙那里修改端口。
-7.安装Typecho 访问Typecho 官网，点击立即下载，点击下载1.1正式版。
-下载完成后，得到一个1.1-17.10.30-release.tar.gz压缩包，解压后可以看到里面有一个build文件夹，文件夹里面便是Typecho程序文件。
-先域名解析一下，去你的域名服务商，控制台找到你的域名，解析，添加记录。主机记录填写@，www或者blog其他的都可以（你填写的是什么就要以什么访问，比如填写www便是www.xxx.com等），记录类型A类型，记录值填写自己服务器的IP地址（如果不知道，可查看宝塔页面的左上角），确认就可以了！
-打开宝塔页面，左侧&amp;ndash;》网站&amp;ndash;》添加站点
-添加域名，数据库选择Mysql utf-8，填写数据库账号和密码以及对应的PHP版本，然后提交。
-这里可以先设置一下站点，点击站点右侧的设置，需要设置的有伪静态，SSL证书，，，
-伪静态选择typecho，然后保存。
-SSL证书，选择宝塔SSL证书，申请证书，填写相关信息，提交资料等申请成功就可以了。
-如果申请失败，可以去域名服务商那里，有提供单域名免费SSL证书，然后选择其他证书，上传证书，开启右上角的强制HTTPs就可以了。
-关闭设置窗口，点击根目录下的路径地址**/www/wwwroot/你的域名**，直接进入根目录文件夹，删除index.html文件。
-点击上传，弹出窗口，点击上传文件，找到下载的Typecho压缩包，打开，然后开始上传，上传完毕关闭窗口。
-解压该压缩包后（删除压缩包），得到build文件夹，进入其文件夹内，选择文件名旁边的框，全选文件，右上角选择剪贴，然后回到上一级根目录下，黏贴，然后删掉没用的build文件夹就可以了。
-到这一步，浏览器输入你的域名，就可以安装Typecho了。
-如有在上方遇到Deprecated: Function get_magic_quotes_gpc() is deprecated in /www/wwwroot/woshishabi.top/var/Typecho/Common.php on line 208报错，不用管，没什么影响。
-点击下一步，进入初始化配置，这一步需要填写修改的是数据库用户名（添加站点时设置的数据库账号，如果忘了可去宝塔面板页面左侧，数据库查看），数据库密码，数据库名（数据库名和数据库用户名是一样的！），用户名，登录密码，邮件地址，确认，开始安装。" />
+宝塔面板拥有极速方便的一键配置与管理，可一键配置服务器环境（LAMP/LNMP/Tomcat/Node.js），一键部署SSL，异地备份；提供SSH开启关闭服务，SSH端口更改，禁ping，防火墙端口放行以及操作日志查看；CPU、内存、磁盘IO、网络IO数据监测，可设置记录保存天数以及任意查看某天数据；" />
   <meta name="description" content="1.前言 本文从Typecho 简介开始讲解，其中包括服务器的选择，以及域名注册，服务器系统选择 ，宝塔安装，环境配置，Typecho安装包括中间的防采坑注意事项，为您提供完整的保姆级搭建流程，请珍惜哦！
 如果不喜欢前面的啰嗦讲解，请跳过，直接从宝塔安装开始。
 不喜勿喷，谢谢！
@@ -146,51 +109,14 @@ Linux系统的话，本文使用Centos 8系统讲解。
 搭建LNMP环境，我们可以选择自行下载对应的安装包，然后在Centos系统中，安装Nginx，Mysql，PHP等，这种纯动手的方式，非常麻烦和复杂，在后期进行多网站管理和配置HTTPS证书，以及网站伪静态配置时非常麻烦。
 所以本文讲解使用宝塔面板来进行安装部署环境！
 5.宝塔是什么 宝塔面板是一款服务器管理软件，支持windows和linux系统，可以通过Web端轻松管理服务器，提升运维效率。例如：创建管理网站、FTP、数据库，拥有可视化文件管理器，可视化软件管理器，可视化CPU、内存、流量监控图表，计划任务等功能。
-宝塔面板拥有极速方便的一键配置与管理，可一键配置服务器环境（LAMP/LNMP/Tomcat/Node.js），一键部署SSL，异地备份；提供SSH开启关闭服务，SSH端口更改，禁ping，防火墙端口放行以及操作日志查看；CPU、内存、磁盘IO、网络IO数据监测，可设置记录保存天数以及任意查看某天数据；
-计划任务可按周期添加执行，支持SHELL脚本，提供网站、数据库备份以及日志切割，且支持一键备份到又拍云存储空间，或者其他云存储空间里；通过web界面就可以轻松管理安装所用的服务器软件，还有实用的扩展插件；集成方便高效的文件管理器，支持上传、下载、打包、解压以及文件编辑查看。
-进入搭建正题：
-6.安装宝塔 选择服务器时，选择系统镜像，不要选择服务商提供的应用镜像，操作系统选择Centos，版本的话7和8都可以。当然你也可以选择其他系统，，，
-接着到服务商的控制台，找到你的服务器，进入控制台，重置密码。
-然后在安全&amp;ndash;》防火墙那里添加规则。
-端口范围8888，其他默认，备注随意。
-**注：**如果你不添加 8888，安装宝塔以后你是进不去的，安装宝塔以后可以修改宝塔的进入端口，再修改一下这里就可以了！
-使用SSH工具连接你的服务器，如果没有SSH工具也可以使用控制台那里提供的远程连接！
-在终端界面输入一下命令开始安装！
-Centos安装命令：
-yum install -y wget &amp;amp;&amp;amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;amp;&amp;amp; sh install.sh 不同操作系统有不同的安装命令，详情请去宝塔官网查看！
-遇到安装提示直接输入：y
-安装完成后如下:
-在浏览器中访问外网面板地址。
-**注：**如果你刚才没有在服务器控制台安全防火墙那里添加端口8888是打不开的。
-使用username和password登录宝塔面板，点击我已阅读并同意“《用户协议》”后进入宝塔面板！
-进入宝塔面板后，会弹出一键安装环境套件选择界面，这时我们选择左边的LNMP环境！
-Nginx 1.18，Mysql 5.6（如果服务器内存在2g以上可以选择5.7），PHP 7.4（php建议版本选择7.0以上），Pure-Ftpd 1.0.49，phpMyAdmin 5.0（这是一个可以在浏览器页面管理数据库的软件程序，要在服务器控制台安全防火墙那里添加端口888，否则无法打开）
-安装方式有两个，极速安装（安装速度快，节省时间），编译安装（安装速度超级慢，有时会卡死，但会提升服务器性能），可自行选择。本文以极速安装为例！
-安装过程：
-安装完成后，会提示绑定宝塔账号，点击免费注册，去注册一个，然后绑定就可以了！
-**说明：**建议，安装完成后，左侧，面板设置，设置下面板的登录信息，修改一下登录入口，用户名，密码和端口。 注： 如果修改面板设置中的端口，也要在服务器控制台安全防火墙那里修改端口。
-7.安装Typecho 访问Typecho 官网，点击立即下载，点击下载1.1正式版。
-下载完成后，得到一个1.1-17.10.30-release.tar.gz压缩包，解压后可以看到里面有一个build文件夹，文件夹里面便是Typecho程序文件。
-先域名解析一下，去你的域名服务商，控制台找到你的域名，解析，添加记录。主机记录填写@，www或者blog其他的都可以（你填写的是什么就要以什么访问，比如填写www便是www.xxx.com等），记录类型A类型，记录值填写自己服务器的IP地址（如果不知道，可查看宝塔页面的左上角），确认就可以了！
-打开宝塔页面，左侧&amp;ndash;》网站&amp;ndash;》添加站点
-添加域名，数据库选择Mysql utf-8，填写数据库账号和密码以及对应的PHP版本，然后提交。
-这里可以先设置一下站点，点击站点右侧的设置，需要设置的有伪静态，SSL证书，，，
-伪静态选择typecho，然后保存。
-SSL证书，选择宝塔SSL证书，申请证书，填写相关信息，提交资料等申请成功就可以了。
-如果申请失败，可以去域名服务商那里，有提供单域名免费SSL证书，然后选择其他证书，上传证书，开启右上角的强制HTTPs就可以了。
-关闭设置窗口，点击根目录下的路径地址**/www/wwwroot/你的域名**，直接进入根目录文件夹，删除index.html文件。
-点击上传，弹出窗口，点击上传文件，找到下载的Typecho压缩包，打开，然后开始上传，上传完毕关闭窗口。
-解压该压缩包后（删除压缩包），得到build文件夹，进入其文件夹内，选择文件名旁边的框，全选文件，右上角选择剪贴，然后回到上一级根目录下，黏贴，然后删掉没用的build文件夹就可以了。
-到这一步，浏览器输入你的域名，就可以安装Typecho了。
-如有在上方遇到Deprecated: Function get_magic_quotes_gpc() is deprecated in /www/wwwroot/woshishabi.top/var/Typecho/Common.php on line 208报错，不用管，没什么影响。
-点击下一步，进入初始化配置，这一步需要填写修改的是数据库用户名（添加站点时设置的数据库账号，如果忘了可去宝塔面板页面左侧，数据库查看），数据库密码，数据库名（数据库名和数据库用户名是一样的！），用户名，登录密码，邮件地址，确认，开始安装。" />
+宝塔面板拥有极速方便的一键配置与管理，可一键配置服务器环境（LAMP/LNMP/Tomcat/Node.js），一键部署SSL，异地备份；提供SSH开启关闭服务，SSH端口更改，禁ping，防火墙端口放行以及操作日志查看；CPU、内存、磁盘IO、网络IO数据监测，可设置记录保存天数以及任意查看某天数据；" />
   <meta property="og:locale" content="en-us" /><meta property="og:image" content="https://oss.zburu.com/favicon.ico" />
   
 
   <link rel="stylesheet" href="/css/simplebox.min.css">
 
   
-    <style>::-webkit-scrollbar{width:10px;height:16px;background-color:#f5f5f5}::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);border-radius:10px;background-color:#f5f5f5}::-webkit-scrollbar-thumb{border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);background-color:#555}html{overflow-y:scroll}@font-face{font-family:opposans;src:url(/fonts/OPPOSans.subset.ttf)}body{font-family:opposans;-webkit-font-smoothing:antialiased;margin:0;padding:0 5px;background:#f3f3f3}article{max-width:800px;margin-left:auto;margin-right:auto;box-shadow:1px 2px 10px rgb(0 0 0/.2);padding:0 2rem;box-sizing:border-box;background:#fff}a{color:#000;text-decoration:none}a:hover{color:#666;text-decoration:underline}.post-ads{margin:50px 0}.markdown-body{font-size:18px;max-width:100%}.markdown-body a{text-decoration:underline;text-decoration-color:#000}.markdown-body blockquote{margin:0;padding:0 1em;color:#57606a;border-left:.25em solid #d0d7de}.markdown-body pre{padding:16px;overflow:auto;border-radius:10px}.markdown-body code{padding:.2em .4em;font-size:85%;background-color:#f6f8fa;border-radius:6px}.markdown-body pre>code{padding:0;background-color:inherit;border:0;font-family:Consolas,Monaco,andale mono,ubuntu mono,monospace;font-size:15px}.site-date-catalog{font-size:2rem}.header-title{font-family:cursive;font-size:2rem;font-weight:700;margin-top:32px}.header-title a{text-decoration:none}.header-subtitle{color:#666;margin-top:10px}.header-items{margin:10px 0}.header-item{margin:0 5px}.header-line{width:100%;border-width:2px;border-color:#482936;border-style:solid none none none}.lang-switch{font-weight:600}#posts-list{min-height:600px}.posts-line{font-size:1.2rem;margin:12px 0}.posts-categories{font-size:.8rem;margin:auto;text-align:center}.posts-category{padding:3px 0;border:#000 2px solid;border-radius:5px}.posts-category a{display:inline-block;width:100%}.site-footer{margin-top:50px}.site-footer-item{margin-right:12px}.post-content img{max-width:100%;display:block;margin-right:auto;margin-top:12px}.post-header{margin-bottom:50px}.post-title{font-size:2rem;font-weight:600}.post-tags{display:inline;font-weight:600;padding:2px 5px;margin-right:6px;border:#000 2px solid;border-radius:5px}.post-date{font-weight:800;font-style:italic}.post-author{float:right;font-weight:600}.page-content{min-height:60%}.post-content{margin-bottom:50px}.post-content p{hyphens:auto;line-height:1.8;text-justify:ideographic;margin-bottom:1em}.related-content{border-width:3px;border-style:solid;border-color:#000;padding:0 10px;margin-bottom:50px;margin-top:100px}.related-content li{margin:5px 0}.taxonomy-term{font-size:3rem}.gallery-img{text-align:center}.gallery-img span{text-align:center}.gallery-img-desc{font-size:.8em;font-weight:800}#disqus_thread{position:relative}#disqus_thread:after{content:"";display:block;height:55px;width:100%;position:absolute;bottom:0;background:#fff}@media screen and (max-width:600px){article{padding:0 15px}.header-title,.header-subtitle,.header-items{text-align:center}.posts-line{font-size:16px}.markdown-body{font-size:16px}.post-title{font-size:1.6rem}.post-content p{letter-spacing:.05em}}@media screen and (max-width:48em){.posts-category{display:none}}</style>
+    <style>::-webkit-scrollbar{width:10px;height:16px;background-color:#f5f5f5}::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);border-radius:10px;background-color:#f5f5f5}::-webkit-scrollbar-thumb{border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);background-color:#555}html{overflow-y:scroll}@font-face{font-family:opposans;src:url(/fonts/OPPOSans.subset.ttf)}body{font-family:opposans;-webkit-font-smoothing:antialiased;margin:0;padding:0 5px;background:#f3f3f3}article{max-width:800px;margin-left:auto;margin-right:auto;box-shadow:1px 2px 10px rgb(0 0 0/.2);padding:0 2rem;box-sizing:border-box;background:#fff}a{color:#000;text-decoration:none}a:hover{color:#666;text-decoration:underline}.post-ads{margin:50px 0}.markdown-body{font-size:18px;max-width:100%}.markdown-body a{text-decoration:underline;text-decoration-color:#000}.markdown-body blockquote{margin:0;padding:0 1em;color:#57606a;border-left:.25em solid #d0d7de}.markdown-body pre{padding:16px;overflow:auto;border-radius:10px}.markdown-body code{padding:.2em .4em;font-size:85%;background-color:#f6f8fa;border-radius:6px}.markdown-body pre>code{padding:0;background-color:inherit;border:0;font-family:Consolas,Monaco,andale mono,ubuntu mono,monospace;font-size:15px}.site-date-catalog{font-size:2rem}.header-title{font-family:cursive;font-size:2rem;font-weight:700;margin-top:32px}.header-title a{text-decoration:none}.header-subtitle{color:#666;margin-top:10px}.header-items{margin:10px 0}.header-item{margin:0 5px}.header-line{width:100%;border-width:2px;border-color:#482936;border-style:solid none none none}.lang-switch{font-weight:600}#posts-list{padding-bottom:30px}.pagination{display:flex;align-items:center;justify-content:space-between;list-style:none}.pagination a{background:#eee;padding:4px 10px;border-radius:4px;transition:all .1s linear;text-decoration:none}.posts-categories{font-size:.8rem;margin:auto;text-align:center}.posts-category{padding:3px 0;border:#000 2px solid;border-radius:5px}.posts-category a{display:inline-block;width:100%}.site-footer{margin-top:50px;border-top:1px solid #eee;padding-top:20px;padding-bottom:20px;font-size:15px}.site-footer,.site-footer a{color:#666}.post-content img{max-width:100%;display:block;margin-right:auto;margin-top:12px}.post-header{margin-bottom:50px}.posts-line a{width:100%;padding:12px 10px;display:flex;flex-wrap:wrap;align-items:center;font-size:1.2rem;transition:all .1s linear;border-radius:4px;box-sizing:border-box}.posts-line a:hover{text-decoration:none;background:#eee}.posts-date{font-size:1rem;color:#858b93;width:80px}.post-title{font-size:1.5rem;font-weight:600}.post-tags{display:inline;font-weight:600;padding:2px 5px;margin-right:6px;border:#000 2px solid;border-radius:5px}.post-date{font-weight:800;font-style:italic}.post-author{float:right;font-weight:600}.page-content{min-height:60%}.post-content{margin-bottom:50px}.post-content p{hyphens:auto;line-height:1.8;text-justify:ideographic;margin-bottom:1em}.related-content{border-width:3px;border-style:solid;border-color:#000;padding:0 10px;margin-bottom:50px;margin-top:100px}.related-content li{margin:5px 0}.taxonomy-term{font-size:3rem}.gallery-img{text-align:center}.gallery-img span{text-align:center}.gallery-img-desc{font-size:.8em;font-weight:800}#disqus_thread{position:relative}#disqus_thread:after{content:"";display:block;height:55px;width:100%;position:absolute;bottom:0;background:#fff}@media screen and (max-width:600px){article{padding:0 15px}.header-title,.header-subtitle,.header-items{text-align:center}.posts-line a{flex-direction:column;align-items:flex-start}.markdown-body{font-size:16px}.post-content p{letter-spacing:.05em}}@media screen and (max-width:48em){.posts-category{display:none}}</style>
   
   
     <style>.container,.container-fluid{margin-right:auto;margin-left:auto}.container-fluid{padding-right:2rem;padding-left:2rem}.row{box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex:0 1 auto;flex:initial;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-.5rem;margin-left:-.5rem}.row.reverse{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}.col.reverse{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.col-xs,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-offset-0,.col-xs-offset-1,.col-xs-offset-10,.col-xs-offset-11,.col-xs-offset-12,.col-xs-offset-2,.col-xs-offset-3,.col-xs-offset-4,.col-xs-offset-5,.col-xs-offset-6,.col-xs-offset-7,.col-xs-offset-8,.col-xs-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-xs{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-xs-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-xs-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-xs-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-xs-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-xs-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-xs-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-xs-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-xs-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-xs-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-xs-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-xs-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-xs-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-xs-offset-0{margin-left:0}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-11{margin-left:91.66666667%}.start-xs{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-xs{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-xs{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-xs{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-xs{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-xs{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-xs{-ms-flex-pack:distribute;justify-content:space-around}.between-xs{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-xs{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-xs{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}@media only screen and (min-width:48em){.container{width:49rem}.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-offset-0,.col-sm-offset-1,.col-sm-offset-10,.col-sm-offset-11,.col-sm-offset-12,.col-sm-offset-2,.col-sm-offset-3,.col-sm-offset-4,.col-sm-offset-5,.col-sm-offset-6,.col-sm-offset-7,.col-sm-offset-8,.col-sm-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-sm{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-sm-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-sm-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-sm-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-sm-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-sm-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-sm-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-sm-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-sm-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-sm-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-sm-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-sm-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-sm-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-sm-offset-0{margin-left:0}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-11{margin-left:91.66666667%}.start-sm{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-sm{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-sm{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-sm{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-sm{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-sm{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-sm{-ms-flex-pack:distribute;justify-content:space-around}.between-sm{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-sm{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-sm{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}@media only screen and (min-width:64em){.container{width:65rem}.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-offset-0,.col-md-offset-1,.col-md-offset-10,.col-md-offset-11,.col-md-offset-12,.col-md-offset-2,.col-md-offset-3,.col-md-offset-4,.col-md-offset-5,.col-md-offset-6,.col-md-offset-7,.col-md-offset-8,.col-md-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-md{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-md-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-md-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-md-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-md-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-md-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-md-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-md-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-md-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-md-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-md-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-md-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-md-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-md-offset-0{margin-left:0}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-3{margin-left:25%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-6{margin-left:50%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-9{margin-left:75%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-11{margin-left:91.66666667%}.start-md{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-md{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-md{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-md{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-md{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-md{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-md{-ms-flex-pack:distribute;justify-content:space-around}.between-md{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-md{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-md{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}@media only screen and (min-width:75em){.container{width:76rem}.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-offset-0,.col-lg-offset-1,.col-lg-offset-10,.col-lg-offset-11,.col-lg-offset-12,.col-lg-offset-2,.col-lg-offset-3,.col-lg-offset-4,.col-lg-offset-5,.col-lg-offset-6,.col-lg-offset-7,.col-lg-offset-8,.col-lg-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-lg{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-lg-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-lg-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-lg-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-lg-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-lg-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-lg-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-lg-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-lg-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-lg-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-lg-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-lg-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-lg-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-lg-offset-0{margin-left:0}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-11{margin-left:91.66666667%}.start-lg{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-lg{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-lg{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-lg{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-lg{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-lg{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-lg{-ms-flex-pack:distribute;justify-content:space-around}.between-lg{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-lg{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-lg{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}</style>
@@ -202,6 +128,16 @@ SSL证书，选择宝塔SSL证书，申请证书，填写相关信息，提交�
     title="子舒的博客">
 
   
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5f4839173d00c8b0d3dd40533d14450d";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>    
 </head>
 
 
@@ -221,6 +157,10 @@ SSL证书，选择宝塔SSL证书，申请证书，填写相关信息，提交�
   
   <div class="header-item">
     <a href="/index.xml">RSS</a>
+  </div>
+  
+  <div class="header-item">
+    <a href="/posts">归档</a>
   </div>
   
   <div class="header-item">
@@ -454,9 +394,34 @@ SSL证书，选择宝塔SSL证书，申请证书，填写相关信息，提交�
         
 
         <div class="site-footer">
-    
-</div>
+  <div>
+   
 
+    © 2020-<span id="year"></span> · 
+    <a href="https://beian.miit.gov.cn/" target="_blank">
+      <span>浙ICP备2022002453号-2</span>
+    </a>
+
+    · 网站运行: <span id="days">0</span> 天
+
+    <div class="top">
+      <i></i>
+      <i></i>
+    </div>
+  </div>
+
+  <script>
+    var s0 = '2020-06-14';
+    s1 = new Date(s0.replace(/-/g, "/"));
+    s2 = new Date();
+    var days = s2.getTime() - s1.getTime();
+    var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+    document.getElementById('days').innerHTML = number_of_days;
+
+    var date = new Date;
+    var year = date.getFullYear();
+    document.getElementById('year').innerHTML = year;
+  </script>
       </div>
     </div>
   </article>

@@ -19,10 +19,7 @@
 调用js 然后我们需要给图片一个类名，以及一个父元素盒子，同样也可以使用 jq 来完成。
 这里的 .post-content 正文的类名，如果你是别的类名，可以直接将 .post-content 替换掉。
 $(function(){ $(&amp;#39;.post-content img&amp;#39;).addClass(&amp;#39;smallimg&amp;#39;) $(&amp;#39;.post-content img&amp;#39;).wrap(&amp;#39;&amp;lt;div class=&amp;#34;imgbox&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;&amp;#39;) }) 接着我们需要对插件进行初始化，直接在刚才的代码下面写入。
-$(function(){ $(&amp;#39;.post-content img&amp;#39;).addClass(&amp;#39;smallimg&amp;#39;) $(&amp;#39;.post-content img&amp;#39;).wrap(&amp;#39;&amp;lt;div class=&amp;#34;imgbox&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;&amp;#39;) /* smallimg // 小图 bigimg //点击放大的图片 mask //黑色遮罩 */ var obj = new zoom(&amp;#39;mask&amp;#39;, &amp;#39;bigimg&amp;#39;, &amp;#39;smallimg&amp;#39;); obj.init(); }) 回到页面上，点击正文的图片就可以成功放大了。
-结束 随便放个图片试验一下吧！
-之所以我限制了在正文中才可以放大，是因为网站其他地方也有图片，如果都可以点击放大，就很不合理。
-如果在使用中有其他问题，欢迎留言。</description>
+$(function(){ $(&amp;#39;.post-content img&amp;#39;).addClass(&amp;#39;smallimg&amp;#39;) $(&amp;#39;.post-content img&amp;#39;).wrap(&amp;#39;&amp;lt;div class=&amp;#34;imgbox&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;&amp;#39;) /* smallimg // 小图 bigimg //点击放大的图片 mask //黑色遮罩 */ var obj = new zoom(&amp;#39;mask&amp;#39;, &amp;#39;bigimg&amp;#39;, &amp;#39;smallimg&amp;#39;); obj.</description>
     </item>
     
   </channel>
