@@ -16,9 +16,6 @@ paginate = 9
   name = "子舒"
   homepage = "/"
 
-[[params.socials]]
-name = "RSS"
-link = "/index.xml"
 
 [[params.socials]]
 name = "归档"
