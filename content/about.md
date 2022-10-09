@@ -25,7 +25,8 @@ E-mail: shuxhan#163.com
 
 
 ### 博客日志
-2022-05-13: 更换域名 [zburu.com](https://zburu.com)
+2022-10-09: 博客使用hugo构建。
+2022-05-13: 更换域名 [zburu.com](https://zburu.com)。
 2022-04-10: 博客使用 [Anghunk](https://github.com/zburu/Anghunk) 主题，程序使用 Typecho。
 2020-06-14 - 2022-04-09: 折腾了不少，换过不少域名和博客系统。。。
 

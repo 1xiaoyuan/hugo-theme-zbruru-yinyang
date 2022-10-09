@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vue on 子舒的博客</title>
-    <link>https://blog.zburu.com/tags/vue/</link>
+    <link>https://zburu.com/tags/vue/</link>
     <description>Recent content in vue on 子舒的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Mar 2022 13:08:00 +0000</lastBuildDate><atom:link href="https://blog.zburu.com/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Mar 2022 13:08:00 +0000</lastBuildDate><atom:link href="https://zburu.com/tags/vue/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在vue中制作canvas波浪图</title>
-      <link>https://blog.zburu.com/posts/111.html/</link>
+      <link>https://zburu.com/archives/111.html/</link>
       <pubDate>Tue, 29 Mar 2022 13:08:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/111.html/</guid>
+      <guid>https://zburu.com/archives/111.html/</guid>
       <description>新建组件 Canvas.vue 。
 // @/components/Canvas.vue &amp;lt;template&amp;gt; &amp;lt;div :style=&amp;#34;{ height: waveAllHeight + &amp;#39;px&amp;#39;, background: bgColor }&amp;#34; class=&amp;#34;wave&amp;#34;&amp;gt; &amp;lt;canvas id=&amp;#34;wave1&amp;#34;&amp;gt;&amp;lt;/canvas&amp;gt; &amp;lt;canvas id=&amp;#34;wave2&amp;#34;&amp;gt;&amp;lt;/canvas&amp;gt; &amp;lt;canvas id=&amp;#34;wave3&amp;#34;&amp;gt;&amp;lt;/canvas&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; export default { name: &amp;#34;Canvas&amp;#34;, props: { bgColor: { default: &amp;#34;none&amp;#34;, }, // 背景色 waveAllHeight: { default: 160 }, // 波浪的整体高度 waveCount: { default: 2 }, // 波峰个数 waveHeight: { default: 50 }, // 波浪起伏高度 // 波浪颜色 waveColor: { default () { return [ &amp;#34;#f3f3f3&amp;#34;, &amp;#34;#f3f3f3&amp;#34;, &amp;#34;#f3f3f3&amp;#34;, ]; }, }, // 波浪速率 waveTime: { default () { return [4000, 4000, 4000]; }, }, }, data () { return {}; }, mounted () { this.</description>
     </item>
     
     <item>
       <title>在 vue 中使用 axios 调用数据</title>
-      <link>https://blog.zburu.com/posts/71.html/</link>
+      <link>https://zburu.com/archives/71.html/</link>
       <pubDate>Tue, 08 Jun 2021 21:02:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/71.html/</guid>
+      <guid>https://zburu.com/archives/71.html/</guid>
       <description>如何在 vue 中完成一次接口的调用？首选就是 axios，方便快捷又好用，支持各种 api ,封装也很方便。
 先用 node 安装一下。
 npm install axios 然后在 main.js 文件中引入。
@@ -32,10 +32,10 @@ import axios from &amp;#39;axios&amp;#39; import VueAxios from &amp;#39;vue-axio
     
     <item>
       <title>使用 React 与 Vue 创建同一款 App，差别究竟有多大？</title>
-      <link>https://blog.zburu.com/posts/43.html/</link>
+      <link>https://zburu.com/archives/43.html/</link>
       <pubDate>Wed, 06 Jan 2021 20:47:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/43.html/</guid>
+      <guid>https://zburu.com/archives/43.html/</guid>
       <description>关于 React 框架 和 Vue 框架 的对比，用两者写出同一个程序，对比其代码实现的过程，看看它们的差异究竟有多大？
 转载于：https://blog.csdn.net/csdnnews/article/details/81880378 原文：https://medium.com/javascript-in-plain-english/i-created-the-exact-same-app-in-react-and-vue-here-are-the-differences-e9a1ae8077fd 作者简介：Sunil Sandhu，一位 Web 全栈工程师 + 空想家。 译者：安翔，责编：屠敏
 众所周知，Vue 和 React 都是目前非常著名的前端框架。我在工作中经常使用 Vue，因此我对它有很深入的了解。同时，我也对 React 充满了好奇，想要学习一下，一探究竟。
@@ -49,10 +49,10 @@ import axios from &amp;#39;axios&amp;#39; import VueAxios from &amp;#39;vue-axio
     
     <item>
       <title>vue学习笔记(3)－－computed, watch，calss, style</title>
-      <link>https://blog.zburu.com/posts/29.html/</link>
+      <link>https://zburu.com/archives/29.html/</link>
       <pubDate>Wed, 25 Nov 2020 13:05:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/29.html/</guid>
+      <guid>https://zburu.com/archives/29.html/</guid>
       <description>一、计算属性computed 1.例子 &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;div&amp;gt;{{message}}&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;{{revermessage}}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; var vm = new Vue({ el: &amp;#39;#app&amp;#39;, data: { message: &amp;#39;hello,wolrd&amp;#39; }, computed: { revermessage: function() { return this.message.split(&amp;#39;&amp;#39;).reverse().join(&amp;#39;&amp;#39;) } } }) &amp;lt;/script&amp;gt; 声明一个计算属性severmessage，在computed中被指向对message进行一些方法操作后的返回值
 此时vm.severmessage依赖于vm.message的变化，对message改变数据，会引起severmessage的更新
 2.计算属性缓存和方法 还可以通过在表达式中调用方法来达到想要的效果
@@ -65,10 +65,10 @@ import axios from &amp;#39;axios&amp;#39; import VueAxios from &amp;#39;vue-axio
     
     <item>
       <title>vue学习笔记(2)－－vue实例和模板语法</title>
-      <link>https://blog.zburu.com/posts/28.html/</link>
+      <link>https://zburu.com/archives/28.html/</link>
       <pubDate>Tue, 24 Nov 2020 13:05:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/28.html/</guid>
+      <guid>https://zburu.com/archives/28.html/</guid>
       <description>一、vue实例 1.创建vue实例 一个vue实例应该通过new Vue来创建根实例，所有的 vue 组件其实都是 vue 实例
 var vm = new Vue({ ... }) 当一个实例被创建时，data对象中的 property 都被加入到vue的响应式系统中，当值发生改变时，试图也会改变
 var data = {a: 1} var vm = new Vue({ data: data }) 此时在控制台输入vm.a == data.a会返回true，变量data已经被赋给vue实例中的data对象了
@@ -82,10 +82,10 @@ Object.freeze() 方法可以冻结一个对象。一个被冻结的对象再也�
     
     <item>
       <title>vue学习笔记(1)－－什么是vue?</title>
-      <link>https://blog.zburu.com/posts/27.html/</link>
+      <link>https://zburu.com/archives/27.html/</link>
       <pubDate>Mon, 23 Nov 2020 13:04:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/27.html/</guid>
+      <guid>https://zburu.com/archives/27.html/</guid>
       <description>一、什么是vue? 练习时使用，最新版本
 &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 生产时使用，明确版本号的版本，避免造成不可预见的问题
 &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/vue@2.6.12&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; hello world
@@ -98,10 +98,10 @@ vue官网例子：
     
     <item>
       <title>vue使用cli脚手架构建项目工程</title>
-      <link>https://blog.zburu.com/posts/24.html/</link>
+      <link>https://zburu.com/archives/24.html/</link>
       <pubDate>Fri, 20 Nov 2020 13:03:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/24.html/</guid>
+      <guid>https://zburu.com/archives/24.html/</guid>
       <description>vue使用cli脚手架构建项目工程，执行的命令以及遇到的相关的问题
 1.下载安装node 测试一下是否成功安装，
 $ node -v // 返回下载的版本号 2.安装webpack环境 $ npm install webpack -g // 如果失败，可能是因为用户没有权限 // 使用下面这种，管理员权限 $ sudo npm install webpack -g 如果返回版本号代表成功，如果没有，则需要输入下面的命令
@@ -115,10 +115,10 @@ $ vue init webpack vuedemo // 名字自己根据要求起,vuedemo Project name (
     
     <item>
       <title>vue生命周期</title>
-      <link>https://blog.zburu.com/posts/5.html/</link>
+      <link>https://zburu.com/archives/5.html/</link>
       <pubDate>Fri, 19 Jun 2020 21:07:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/5.html/</guid>
+      <guid>https://zburu.com/archives/5.html/</guid>
       <description>学习vue中一个非常重要的领域，就是生命周期，它包含了很多的内容。每个vue实例在被创建的时候都要经历一系列的初始化过程，这个过程就是vue的生命周期。
 每个vue实例在被创建的时候都要经过一系列的初始化过程——例如，需要把设置数据监听、编译模板、将实例挂载到DOM并在数据变化时更新DOM等，我们要把这一系列的过程称为组件的生命周期（组件从注册到销毁的整个过程）。我们有时候需要在组件生命周期的某个过程中，执行某些代码，基于此，vue提供了生命周期钩子函数，给了用户在不同阶段添加自己的代码的机会。
 但是在此之前，我们要详细的介绍下组件的生命周期，以及生命后期中每个阶段组件完成和未完成的部分。

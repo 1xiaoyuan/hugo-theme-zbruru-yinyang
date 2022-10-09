@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="子舒" />
+  <meta property="og:url" content="https://zburu.com/archives/71.html/" />
+  <link rel="canonical" href="https://zburu.com/archives/71.html/" /><link rel="apple-touch-icon" href="https://oss.zburu.com/favicon.ico" />
+  <link rel="icon" href="https://oss.zburu.com/favicon.ico" />
+  <link rel="shortcut" href="https://oss.zburu.com/favicon.ico" /><link rel="alternate" type="application/atom+xml" href="https://zburu.comindex.xml" title="子舒的博客">
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https:\/\/zburu.com"
+      },
+      "articleSection" : "posts",
+      "name" : "在 vue 中使用 axios 调用数据",
+      "headline" : "在 vue 中使用 axios 调用数据",
+      "description" : "如何在 vue 中完成一次接口的调用？首选就是 axios，方便快捷又好用，支持各种 api ,封装也很方便。\n先用 node 安装一下。\nnpm install axios 然后在 main.js 文件中引入。\nimport axios from \u0026#39;axios\u0026#39; import VueAxios from \u0026#39;vue-axios\u0026#39; Vue.use(VueAxios, axios) 以我的一个工程目录作为实例，看一下代码。\n\/\/ ListThere.vue \/\/ html 代码 ... \u0026lt;div\u0026gt;{{ info }}\u0026lt;\/div\u0026gt; ... \/\/ js 代码 import axios from \u0026#34;axios\u0026#34;; export default { name: \u0026#34;ListThere\u0026#34;, data() { return { ... }; }, components: { ... }, methods: { ... }, mounted() { axios .get(\u0026#34;http:\/\/api.h-camel.com\/api?mod=interview\u0026amp;ctr=issues\u0026amp;act=today\u0026#34;) .then((response) =\u0026gt; (this.info = response)) }, }; 数据成功的被取到，然后需要将它在页面中展示出来。使用 vue 自带的 v-for 列表渲染。",
+      "inLanguage" : "en-US",
+      "author" : "子舒",
+      "creator" : "子舒",
+      "publisher": "子舒",
+      "accountablePerson" : "子舒",
+      "copyrightHolder" : "子舒",
+      "copyrightYear" : "2021",
+      "datePublished": "2021-06-08 21:02:00 \u002b0000 UTC",
+      "dateModified" : "2021-06-08 21:02:00 \u002b0000 UTC",
+      "url" : "https:\/\/zburu.com\/archives\/71.html\/",
+      "keywords" : [ "vue","ajax","axios", ]
+  }
+</script>
+<title>在 vue 中使用 axios 调用数据</title>
+  <meta property="og:title" content="在 vue 中使用 axios 调用数据" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="如何在 vue 中完成一次接口的调用？首选就是 axios，方便快捷又好用，支持各种 api ,封装也很方便。
+先用 node 安装一下。
+npm install axios 然后在 main.js 文件中引入。
+import axios from &amp;#39;axios&amp;#39; import VueAxios from &amp;#39;vue-axios&amp;#39; Vue.use(VueAxios, axios) 以我的一个工程目录作为实例，看一下代码。
+// ListThere.vue // html 代码 ... &amp;lt;div&amp;gt;{{ info }}&amp;lt;/div&amp;gt; ... // js 代码 import axios from &amp;#34;axios&amp;#34;; export default { name: &amp;#34;ListThere&amp;#34;, data() { return { ... }; }, components: { ... }, methods: { ... }, mounted() { axios .get(&amp;#34;http://api.h-camel.com/api?mod=interview&amp;amp;ctr=issues&amp;amp;act=today&amp;#34;) .then((response) =&amp;gt; (this.info = response)) }, }; 数据成功的被取到，然后需要将它在页面中展示出来。使用 vue 自带的 v-for 列表渲染。" />
+  <meta name="description" content="如何在 vue 中完成一次接口的调用？首选就是 axios，方便快捷又好用，支持各种 api ,封装也很方便。
+先用 node 安装一下。
+npm install axios 然后在 main.js 文件中引入。
+import axios from &amp;#39;axios&amp;#39; import VueAxios from &amp;#39;vue-axios&amp;#39; Vue.use(VueAxios, axios) 以我的一个工程目录作为实例，看一下代码。
+// ListThere.vue // html 代码 ... &amp;lt;div&amp;gt;{{ info }}&amp;lt;/div&amp;gt; ... // js 代码 import axios from &amp;#34;axios&amp;#34;; export default { name: &amp;#34;ListThere&amp;#34;, data() { return { ... }; }, components: { ... }, methods: { ... }, mounted() { axios .get(&amp;#34;http://api.h-camel.com/api?mod=interview&amp;amp;ctr=issues&amp;amp;act=today&amp;#34;) .then((response) =&amp;gt; (this.info = response)) }, }; 数据成功的被取到，然后需要将它在页面中展示出来。使用 vue 自带的 v-for 列表渲染。" />
+  <meta property="og:locale" content="en-us" /><meta property="og:image" content="https://oss.zburu.com/favicon.ico" />
+  
+
+  <link rel="stylesheet" href="/css/simplebox.min.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/flexboxgrid-6.3.1.min.css">
+
+  <link href="/index.xml" rel="alternate" type="application/rss+xml"
+    title="子舒的博客">
+
+  
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5f4839173d00c8b0d3dd40533d14450d";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>    
+</head>
+
+
+<body>
+  <article class="post " id="article">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="site-header">
+          
+<header>
+  <div class="header-title">
+    <a href="/">子舒的博客</a>
+  </div>
+  <div class="header-subtitle">七碗受至味，一壶得真趣，空持百千偈，不如吃茶去。</div>
+</header>
+<div class="row end-md center-xs header-items">
+  <div class="header-item">
+    <a href="/index.xml" target="_blank">RSS</a>
+  </div>
+
+  
+  
+  <div class="header-item">
+    <a href="/posts">归档</a>
+  </div>
+  
+  <div class="header-item">
+    <a href="/message">留言</a>
+  </div>
+  
+  <div class="header-item">
+    <a href="/weekly">周刊</a>
+  </div>
+  
+  <div class="header-item">
+    <a href="/about">关于</a>
+  </div>
+  
+</div>
+
+<div class="header-line"></div>
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">在 vue 中使用 axios 调用数据</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2021-06-08 21:02:00 UTC">
+                08 Jun 2021
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+              <div class="post-author">
+                <a target="_blank" href="/">@子舒</a>
+              </div>
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>如何在 vue 中完成一次接口的调用？首选就是 axios，方便快捷又好用，支持各种 api ,封装也很方便。</p>
+<p>先用 node 安装一下。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">npm</span> <span style="color:#a6e22e">install</span> <span style="color:#a6e22e">axios</span>
+</span></span></code></pre></div><p>然后在 main.js 文件中引入。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">axios</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;axios&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">VueAxios</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vue-axios&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">VueAxios</span>, <span style="color:#a6e22e">axios</span>)
+</span></span></code></pre></div><p>以我的一个工程目录作为实例，看一下代码。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// ListThere.vue
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// html 代码
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>...
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span><span style="color:#f92672">&gt;</span>{{ <span style="color:#a6e22e">info</span> }}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;</span>
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// js 代码
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">axios</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;axios&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;ListThere&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">data</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>      ...
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mounted</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">axios</span>
+</span></span><span style="display:flex;"><span>      .<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;http://api.h-camel.com/api?mod=interview&amp;ctr=issues&amp;act=today&#34;</span>)
+</span></span><span style="display:flex;"><span>      .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">response</span>) =&gt; (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">info</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">response</span>))
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>数据成功的被取到，然后需要将它在页面中展示出来。使用 vue 自带的 <code>v-for</code> 列表渲染。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;list-api-show&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">v-for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;(item, index) in show&#34;</span> <span style="color:#a6e22e">:key</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;index&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    {{ item.title }}
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span></code></pre></div><p>然后通过 axios 把数据指向 v-for.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">mounted</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">axios</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">response</span>) =&gt; (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">show</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">today</span>))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>数据成功取出然后展示在 <code>v-for</code> 里面。</p>
+<p>当然了，这是成功的情况，加入失败了呢？我们需要浏览器给出提示，所以 axios 给出了一个 api &mdash; <code>err 语法</code>。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">mounted</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">axios</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#66d9ef">catch</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">error</span>.<span style="color:#a6e22e">response</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">error</span>.<span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">data</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">error</span>.<span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">status</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">error</span>.<span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">headers</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;err&#39;</span>)
+</span></span><span style="display:flex;"><span>      } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">error</span>.<span style="color:#a6e22e">request</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">error</span>.<span style="color:#a6e22e">request</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;err&#39;</span>)
+</span></span><span style="display:flex;"><span>      } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Error&#39;</span>, <span style="color:#a6e22e">error</span>.<span style="color:#a6e22e">message</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;err&#39;</span>)
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">error</span>.<span style="color:#a6e22e">config</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;err&#39;</span>)
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>如果接口有问题，或者我们调用时代码写错了，都会给出报错提示，具体什么样的错误会有什么样的警告，需要我们一一去经历摸索。</p>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+            <div class="post-tags">
+              <a href="/tags/vue/">
+                vue
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/ajax/">
+                ajax
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/axios/">
+                axios
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+<div class="related-content">
+  <h3>Related Posts</h3>
+  <ul>
+    
+    <li><a href="/archives/58.html/">ajax 和 js 事件的执行顺序</a></li>
+    
+    <li><a href="/archives/59.html/">ajax拼接模版字符串的几种方法</a></li>
+    
+    <li><a href="/archives/57.html/">用ajax请求获取数据</a></li>
+    
+  </ul>
+</div>
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          <div class="post-comments">
+            <div class="giscus"></div>
+<script src="https://giscus.app/client.js"
+  data-repo="zburu/hugo-blog"
+  data-repo-id="R_kgDOHwNIPQ"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOHwNIPc4CRsQ1"
+  data-mapping="title"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="1"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="zh-CN"
+  data-loading="lazy"
+  crossorigin="anonymous"
+  async>
+</script>
+          </div>
+        
+
+        <div class="site-footer">
+  <div>
+   
+
+    © 2020-<span id="year"></span> · 
+    <a href="https://beian.miit.gov.cn/" target="_blank">
+      <span>浙ICP备2022002453号-2</span>
+    </a>
+
+    · 网站运行: <span id="days">0</span> 天
+
+    <div class="top">
+      <i></i>
+      <i></i>
+    </div>
+  </div>
+
+  <script>
+    var s0 = '2020-06-14';
+    s1 = new Date(s0.replace(/-/g, "/"));
+    s2 = new Date();
+    var days = s2.getTime() - s1.getTime();
+    var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+    document.getElementById('days').innerHTML = number_of_days;
+
+    var date = new Date;
+    var year = date.getFullYear();
+    document.getElementById('year').innerHTML = year;
+  </script>
+      </div>
+    </div>
+  </article>
+
+  
+
+<script src="https://cdn.zburu.com/list/jquery3.6.0.js"></script>
+<script src="/js/simplebox.min.js"></script>
+<script>
+  $('.post-content img').addClass('slb')
+  $('.slb').simplebox({
+    fadeSpeed: 400
+  });
+</script>
+  
+
+</body>
+
+</html>

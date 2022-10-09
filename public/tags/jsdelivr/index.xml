@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jsdelivr on 子舒的博客</title>
-    <link>https://blog.zburu.com/tags/jsdelivr/</link>
+    <link>https://zburu.com/tags/jsdelivr/</link>
     <description>Recent content in jsdelivr on 子舒的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Dec 2021 14:25:00 +0000</lastBuildDate><atom:link href="https://blog.zburu.com/tags/jsdelivr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Dec 2021 14:25:00 +0000</lastBuildDate><atom:link href="https://zburu.com/tags/jsdelivr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>有关 cdn.jsdelivr.net 证书错误的一些想法</title>
-      <link>https://blog.zburu.com/posts/91.html/</link>
+      <link>https://zburu.com/archives/91.html/</link>
       <pubDate>Mon, 20 Dec 2021 14:25:00 +0000</pubDate>
       
-      <guid>https://blog.zburu.com/posts/91.html/</guid>
+      <guid>https://zburu.com/archives/91.html/</guid>
       <description>记录一次不大不小的事件，2021年12月20日，cdn.jsdelivr.net 国内ip全面崩盘，说是证书出错了，然后所有使用cdn.jsdelivr.net进行加速的资源全部404。
 我也是在朋友圈看到的这个消息，上线一看果然全部显示丢失。
 对国外资源没有影响，所以这是一次只出现在国内的问题，jsd官网都还在，估计是cdn配置出错，应该很快就可以修复了。

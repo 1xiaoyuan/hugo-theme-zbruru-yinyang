@@ -1,4 +1,4 @@
-baseURL = "https://blog.zburu.com"
+baseURL = "https://zburu.com"
 languageCode = "en-us"
 title = "子舒的博客"
 theme = "yinyang"
@@ -7,7 +7,7 @@ paginate = 9
 
 [params]
   title = "子舒的博客"
-  Description = "基于hugo搭建的静态博客，作为zburu.com的备份"
+  Description = "七碗受至味，一壶得真趣，空持百千偈，不如吃茶去。"
   favicon = "https://oss.zburu.com/favicon.ico"
   buildDate = "2020-06-14"
   beian = "浙ICP备2022002453号-2"
@@ -16,6 +16,8 @@ paginate = 9
   name = "子舒"
   homepage = "/"
 
+[permalinks]
+  posts = "/archives/:slug.html"
 
 [[params.socials]]
 name = "归档"
@@ -33,6 +35,3 @@ link = "/weekly"
 [[params.socials]]
 name = "关于"
 link = "/about"
-
-[permalinks]
-  posts = "/posts/:slug.html"
