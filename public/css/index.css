@@ -104,11 +104,13 @@ a:hover {
 /* header */
 
 .site-date-catalog {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin-top: 0;
+  padding-left: 10px;
 }
 
 .header-title {
-  font-family: cursive;
+  font-family: fangsong;
   font-size: 2rem;
   font-weight: bold;
   margin-top: 32px;
@@ -288,7 +290,9 @@ a:hover {
 /* taxonomy */
 
 .taxonomy-term {
-  font-size: 3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
 }
 
 /* gallery */
