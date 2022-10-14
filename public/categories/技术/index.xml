@@ -6,7 +6,21 @@
     <description>Recent content in 技术 on 子舒的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zburu.com/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zburu.com/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo 一键打包并上传 github</title>
+      <link>https://zburu.com/archives/170.html/</link>
+      <pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zburu.com/archives/170.html/</guid>
+      <description>分享一个 hugo 一键打包并上传 github 的方法，前提是你之前上传过 GitHub 仓库。
+采用 window 支持的 sh可执行文件，在根目录新建一个 hugo.sh 文件，里面放上一些命令。
+hugo # cd public time=$(date &amp;#34;+%Y-%m-%d %H:%M:%S&amp;#34;) echo $time git add . git commit -m &amp;#34;自动执行构建脚本 🎓$time&amp;#34; git push exit 可以在文件夹双击运行 hugo.sh，也可以在终端输入命令。
+.\hugo.sh 省去了我输入繁琐的 Git 上传指令，并且自动生成当前系统时间作为 commit。
+其他
+这里我上传的是整体的 hugo 目录，如果你只想上传生成的 /public ，在中间加入 cd public。</description>
+    </item>
+    
     <item>
       <title>将数组中多个对象的同名属性值取出合并成新数组</title>
       <link>https://zburu.com/archives/168.html/</link>

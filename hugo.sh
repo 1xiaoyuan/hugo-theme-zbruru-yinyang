@@ -1,5 +1,7 @@
 hugo
 
+# cd public
+
 time=$(date "+%Y-%m-%d %H:%M:%S")
 echo $time
 
