@@ -20,15 +20,15 @@ title: 关于
 ✨2022，希望世界和平。 --2021.12
 
 
-Github: [https://github.com/zburu](https://github.com/zburu)
+Github: [https://github.com/zburu](https://github.com/zburu)  
 E-mail: shuxhan#163.com
 
 
 ### 博客日志
-2022-10-09: 博客使用hugo构建。
-2022-05-13: 更换域名 [zburu.com](https://zburu.com)。
-2022-04-10: 博客使用 [Anghunk](https://github.com/zburu/Anghunk) 主题，程序使用 Typecho。
-2020-06-14 - 2022-04-09: 折腾了不少，换过不少域名和博客系统。。。
+2022-10-09: 博客使用hugo构建。  
+2022-05-13: 更换域名 [zburu.com](https://zburu.com)。  
+2022-04-10: 博客使用 [Anghunk](https://github.com/zburu/Anghunk) 主题，程序使用 Typecho。  
+2020-06-14 - 2022-04-09: 折腾了不少，换过不少域名和博客系统。。。  
 
 版权声明：网站文章所有版权如无特殊说明，均归本人所有。允许转载，标明出处即可。
 

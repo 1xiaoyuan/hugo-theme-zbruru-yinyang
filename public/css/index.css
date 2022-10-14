@@ -130,6 +130,7 @@ a:hover {
 
 .header-item {
   margin: 0 5px;
+  font-size: 18px;
 }
 
 .header-line {
@@ -249,8 +250,7 @@ a:hover {
 }
 
 .post-date {
-  font-weight: 800;
-  font-style: italic;
+  color: #666;
 }
 
 .post-author {
@@ -267,9 +267,7 @@ a:hover {
 }
 
 .post-content p {
-  hyphens: auto;
   line-height: 1.8;
-  /* text-align: justify; */
   text-justify: ideographic;
   margin-bottom: 1em;
 }
@@ -280,7 +278,7 @@ a:hover {
   border-color: #000;
   padding: 0 10px;
   margin-bottom: 50px;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .related-content li {
@@ -347,7 +345,7 @@ a:hover {
   }
 
   .post-content p {
-    letter-spacing: 0.05em;
+    font-size: 18px;
   }
 }
 
