@@ -6,16 +6,28 @@
     <description>Recent content in 随笔 on 子舒的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Sep 2022 19:26:00 +0000</lastBuildDate><atom:link href="https://zburu.com/categories/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zburu.com/categories/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>#3 关于密码的一些想法</title>
+      <title>开发后的反省</title>
+      <link>https://zburu.com/archives/169.html/</link>
+      <pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://zburu.com/archives/169.html/</guid>
+      <description>昨天晚上给朋友写了一个油猴脚本，场景是一个拥有很多输入框的表单，多为经常填写的一些字符串。跟我说了一下，刚好没什么事情，吃完晚饭抽两小时出来简单写了写。
+需求是预设多套模板，后期可以自己添加内容，置顶在网页空白处，点击按钮让设置好的文本填充到网页的表单中。
+处理起来很简单，我原本打算使用ajax调用json文件，把模板写在json中，这样一目了然便于后期自行添加数据，但是在测试后发现目标网站屏蔽了外部文件，所以放弃这种写法。转而new了一个数组，每个对象就是一套模板，接下来就是简单的循环，写了一个可以缩放的弹窗，然后把交互的按钮绑定点击事件，点击对应按钮就会在网站上填充对面模板的字符串。
+流程大概就是这样，结束之后在给他润润色，写一下css代码。总体来说没什么难度，两个小时不到就搞定了。
+但是我发现，天天写vue，element写多了，最基础的js有些生疏了，比如数组的操作遍历循环，中间竟然还报错，仔细检查才发现原因，实属不应该。
+深刻反省一下自己，基础知识还是要巩固的，不能一味的调用框架，即使它写起来很爽。</description>
+    </item>
+    
+    <item>
+      <title>关于密码的一些想法</title>
       <link>https://zburu.com/archives/167.html/</link>
       <pubDate>Wed, 21 Sep 2022 19:26:00 +0000</pubDate>
       
       <guid>https://zburu.com/archives/167.html/</guid>
-      <description>七日谈，说说我的心里话。
-第3期：关于密码的一些想法
-今天在坐地铁的过程中，突然想要一个问题，一个安全稳定，便于记忆的密码时什么样子的。是否要包括字母大小写，数字，以及特殊符号？
+      <description>今天在坐地铁的过程中，突然想要一个问题，一个安全稳定，便于记忆的密码时什么样子的。是否要包括字母大小写，数字，以及特殊符号？
 如何设置并存储？ 我想这是必须的，但是密码如果太过复杂，就不便于记忆。而想要记忆就必须有自己的规律，可一旦有了规律，别人在破解的时候就有了更多的思路，安全性相对来说就下降了。
 不论怎么想，这两者是冲突的，很难让它们统一起来。
 然后就和朋友讨论关于密码的问题，他们也有着自己独特的方法，给了我很多扩展的思路，比如记忆一个公式，圆周率第多少位，拼音+数字等等，这样既能够记忆，也拥有足够的混淆性。你不知道它的位置下标，就不能够找到对应的密码字符，安全性比通用一套密码又高了很多。
@@ -25,13 +37,12 @@
     </item>
     
     <item>
-      <title>#2 你是否想过成为一名作家？</title>
+      <title>你是否想过成为一名作家？</title>
       <link>https://zburu.com/archives/166.html/</link>
       <pubDate>Wed, 14 Sep 2022 17:59:00 +0000</pubDate>
       
       <guid>https://zburu.com/archives/166.html/</guid>
-      <description>第2期：你是否想过成为一名作家？
-https://poets.org/poem/so-you-want-be-writer
+      <description>https://poets.org/poem/so-you-want-be-writer
 这是曾经询问过自己的一个问题，我想很多人在年少时期可能都会有过这样的经历，渴望将自己的文字带给更多人。
 这件事情大多发生在高中时期吧，如果我没记错的话。忽然想起来那个年轻段的人都有些中二，看了不少玄幻和悬疑小说，心中泛起了写小说的念头，于是动笔。但最终也没有坚持很久，草草写了几万字，只在几个朋友中传阅。
 可惜在高考结束后一些残留的手稿都丢失了，每每想到这件事情都暗自懊恼，也算是一个回忆吧。现在再让我写根本没有那个精力，但我也曾涌起过当一名作家的想法，好像文科生都曾这样。
@@ -43,13 +54,12 @@ if it doesn&amp;rsquo;t come bursting out of you in spite of everything, don&amp
     </item>
     
     <item>
-      <title>#1 文档和视频，你更喜欢哪种学习方式？</title>
+      <title>文档和视频，你更喜欢哪种学习方式？</title>
       <link>https://zburu.com/archives/165.html/</link>
       <pubDate>Wed, 07 Sep 2022 22:21:00 +0000</pubDate>
       
       <guid>https://zburu.com/archives/165.html/</guid>
-      <description>内容很枯燥，有营养但不多。纯粹为了锻炼写作和思考能力，所以每周打算写一个话题，周一到周日之间不定时发布
-如题，这是我今天思考的话题。灵感来源于我在dev.to网站上看到的一个帖子。对于 learning 的方式，更倾向于看文档还是视频？我觉得可以从多个维度进行分析。
+      <description>如题，这是我今天思考的话题。灵感来源于我在dev.to网站上看到的一个帖子。对于 learning 的方式，更倾向于看文档还是视频？我觉得可以从多个维度进行分析。
 学习进度，也可以说是过程 行业领域 后天应该养成什么样的习惯呢？ 1.学习进度 学习进度应该是对学习方式影响最大的因素了。
 学习的初始阶段以看视频为主，应该对这个领域不熟悉，一直在行内人看起来随手就能做很简单的操作，新人往往不能够很好的了解它，所以最开始的阶段最好是以视频教材为主。
 打个比方，上学时老师都是手把手的教学，因为你什么都不会，必须口口相传，这是对待新人的方式，如果让他自己一直干看，一学期下来估计也看不懂几页书。（当然了，天才除外，这不在讨论的范围，大家90%都是普通人。）然后到后期的时候一般都是自习因为该教的基础都是都教了，需要学生自己研究琢磨，不然根本不能融会贯通。
