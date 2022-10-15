@@ -114,31 +114,32 @@ hugo # cd public time=$(date &amp;#34;&#43;%Y-%m-%d %H:%M:%S&amp;#34;) echo $tim
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">hugo 一键打包并上传 github</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2022-10-14 00:00:00 UTC">
-                发布于   2022-10-14
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">hugo 一键打包并上传 github</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2022-10-14 00:00:00 UTC">
+                  发布于 2022-10-14
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <p>分享一个 hugo 一键打包并上传 github 的方法，前提是你之前上传过 GitHub 仓库。</p>
+          <div class="post-content markdown-body">
+            
+            <p>分享一个 hugo 一键打包并上传 github 的方法，前提是你之前上传过 GitHub 仓库。</p>
 <p>采用 window 支持的 sh可执行文件，在根目录新建一个 <code>hugo.sh</code> 文件，里面放上一些命令。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo
 </span></span><span style="display:flex;"><span>
@@ -157,20 +158,20 @@ hugo # cd public time=$(date &amp;#34;&#43;%Y-%m-%d %H:%M:%S&amp;#34;) echo $tim
 <p><strong>其他</strong></p>
 <p>这里我上传的是整体的 hugo 目录，如果你只想上传生成的 <code>/public</code> ，在中间加入 <code>cd public</code>。</p>
 
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                博客
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                  博客
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -195,8 +196,10 @@ hugo # cd public time=$(date &amp;#34;&#43;%Y-%m-%d %H:%M:%S&amp;#34;) echo $tim
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -215,8 +218,8 @@ hugo # cd public time=$(date &amp;#34;&#43;%Y-%m-%d %H:%M:%S&amp;#34;) echo $tim
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

@@ -114,31 +114,32 @@ $sql = &amp;#34;select FROM_UNIXTIME(created) as created,text from ... order by 
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">sql中时间戳转日期</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2022-03-10 17:33:00 UTC">
-                发布于   2022-03-10
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">sql中时间戳转日期</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2022-03-10 17:33:00 UTC">
+                  发布于 2022-03-10
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <p>需求: 我将博客和 typecho 后台结合起来，打算做一个在线说说的功能，在 typecho 中输入内容，然后调用接口，实现在我的博客查看说说功能的功能。是不是有点绕？我也这么觉得，但是折腾一下也挺好的。</p>
+          <div class="post-content markdown-body">
+            
+            <p>需求: 我将博客和 typecho 后台结合起来，打算做一个在线说说的功能，在 typecho 中输入内容，然后调用接口，实现在我的博客查看说说功能的功能。是不是有点绕？我也这么觉得，但是折腾一下也挺好的。</p>
 <!-- raw HTML omitted -->
 <p>typecho 导出的数据默认是时间戳格式，那我在前端调用的时候就很麻烦，所以选择在 sql 查询时直接转换，created 是表里面的参数。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// 时间转换语句
@@ -153,26 +154,26 @@ $sql = &amp;#34;select FROM_UNIXTIME(created) as created,text from ... order by 
 <p>成功导出，接下来调用就很简单了。</p>
 <p>多谢<a href="https://www.emoao.com/">梦繁星</a>的指导。</p>
 
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/sql/">
-                sql
-              </a>
-            </div>
-            
-            <div class="post-tags">
-              <a href="/tags/%E6%97%B6%E9%97%B4%E6%88%B3/">
-                时间戳
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/sql/">
+                  sql
+                </a>
+              </div>
+              
+              <div class="post-tags">
+                <a href="/tags/%E6%97%B6%E9%97%B4%E6%88%B3/">
+                  时间戳
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -184,8 +185,10 @@ $sql = &amp;#34;select FROM_UNIXTIME(created) as created,text from ... order by 
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -204,8 +207,8 @@ $sql = &amp;#34;select FROM_UNIXTIME(created) as created,text from ... order by 
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

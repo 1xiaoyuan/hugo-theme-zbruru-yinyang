@@ -116,31 +116,32 @@ conosle.log(li.length) // 6 重新用querySelector获取一遍元素
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">getElementBy系列和querySelector系列的区别</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2020-11-16 12:59:00 UTC">
-                发布于   2020-11-16
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">getElementBy系列和querySelector系列的区别</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2020-11-16 12:59:00 UTC">
+                  发布于 2020-11-16
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <p><code>querySelector</code>和<code>querySelectorAll</code>的用法和<code>getElementBy</code>大致一样，获取的时候带上符号，getElementBy获取的是元素的<code>动态集合</code>，querySelector获取的是元素的<code>静态集合</code>。</p>
+          <div class="post-content markdown-body">
+            
+            <p><code>querySelector</code>和<code>querySelectorAll</code>的用法和<code>getElementBy</code>大致一样，获取的时候带上符号，getElementBy获取的是元素的<code>动态集合</code>，querySelector获取的是元素的<code>静态集合</code>。</p>
 <!-- raw HTML omitted -->
 <p><!-- raw HTML omitted -->但是需要注意：getElementBy系列和querySelector系列的区别<!-- raw HTML omitted --></p>
 <p>比如，我们写一个for循环，每次获取li标签的时候，ul生成一个li子元素</p>
@@ -184,20 +185,20 @@ conosle.log(li.length) // 6 重新用querySelector获取一遍元素
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>&lt;/<span style="color:#f92672">script</span>&gt;
 </span></span></code></pre></div><p>静态集合体现在<code>querySelectorAll('li')</code>获取到ul里所有li后，不管后续再动态添加了多少li，都是不会对其参数影响</p>
 
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                笔记
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                  笔记
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -222,8 +223,10 @@ conosle.log(li.length) // 6 重新用querySelector获取一遍元素
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -242,8 +245,8 @@ conosle.log(li.length) // 6 重新用querySelector获取一遍元素
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

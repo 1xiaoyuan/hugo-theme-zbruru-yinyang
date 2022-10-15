@@ -110,31 +110,32 @@ live server 不明白的可以百度看看，也是一个技巧。" />
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">用ajax请求获取数据</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2021-03-19 13:01:00 UTC">
-                发布于   2021-03-19
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">用ajax请求获取数据</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2021-03-19 13:01:00 UTC">
+                  发布于 2021-03-19
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <p>通过jquery进行ajax请求数据是一种较为简便的方式，我简单写了一个本地的<code>data.json</code>文件，然后用<code>get</code>请求数据，下面是部分代码</p>
+          <div class="post-content markdown-body">
+            
+            <p>通过jquery进行ajax请求数据是一种较为简便的方式，我简单写了一个本地的<code>data.json</code>文件，然后用<code>get</code>请求数据，下面是部分代码</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// ajax 请求获取数据
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">picShow</span>(){
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
@@ -155,26 +156,26 @@ live server 不明白的可以百度看看，也是一个技巧。" />
 <p>其实解决的方法也很简单，通过node服务，用<code>live server</code>在本地跑一下，就可以让ajax获取数据，当然还有其他更好的解决方法，或者直接在服务器跑，通过jsonp等等。</p>
 <p><code>live server</code> 不明白的可以百度看看，也是一个技巧。</p>
 
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/js/">
-                js
-              </a>
-            </div>
-            
-            <div class="post-tags">
-              <a href="/tags/ajax/">
-                ajax
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/js/">
+                  js
+                </a>
+              </div>
+              
+              <div class="post-tags">
+                <a href="/tags/ajax/">
+                  ajax
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -199,8 +200,10 @@ live server 不明白的可以百度看看，也是一个技巧。" />
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -219,8 +222,8 @@ live server 不明白的可以百度看看，也是一个技巧。" />
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

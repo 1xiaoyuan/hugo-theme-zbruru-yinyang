@@ -122,31 +122,32 @@ class Demo extends React.Component { render() { // 事件函数 function myfun()
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">React 学习笔记（二）</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2020-12-16 13:15:00 UTC">
-                发布于   2020-12-16
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">React 学习笔记（二）</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2020-12-16 13:15:00 UTC">
+                  发布于 2020-12-16
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <p>React 元素的事件处理和 DOM 元素的很相似，但是有一点语法上的不同</p>
+          <div class="post-content markdown-body">
+            
+            <p>React 元素的事件处理和 DOM 元素的很相似，但是有一点语法上的不同</p>
 <p>React 事件的命名采用小驼峰式（camelCase），而不是纯小写</p>
 <p>使用 JSX 语法时你需要传入一个函数作为事件处理函数，而不是一个字符串</p>
 <!-- raw HTML omitted -->
@@ -846,20 +847,20 @@ tags:</li>
 <p>Vue 中渲染列表使用的是特殊指令 <code>v-for</code>，其中也有 <code>key</code> 的相关用法</p>
 <p>React 中采用的是 <code>map()</code> 方法遍历数组，然后渲染列表</p>
 
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/react/">
-                react
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/react/">
+                  react
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -884,8 +885,10 @@ tags:</li>
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -904,8 +907,8 @@ tags:</li>
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

@@ -122,31 +122,32 @@ flex布局是前端写代码经常使用的一种布局方式，简单便捷且�
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">文字溢出隐藏以及和flex冲突的问题</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2020-08-03 21:08:00 UTC">
-                发布于   2020-08-03
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">文字溢出隐藏以及和flex冲突的问题</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2020-08-03 21:08:00 UTC">
+                  发布于 2020-08-03
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <p>在某些段落中，页面要求文字只显示一行，但是<code>width</code>固定，而文字过长，就会出现一个需求，超过长度限制的文字被隐藏且显示省略号，css 支持这样的属性。</p>
+          <div class="post-content markdown-body">
+            
+            <p>在某些段落中，页面要求文字只显示一行，但是<code>width</code>固定，而文字过长，就会出现一个需求，超过长度限制的文字被隐藏且显示省略号，css 支持这样的属性。</p>
 <p><strong>单行文本溢出隐藏</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">div</span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
@@ -173,20 +174,20 @@ flex布局是前端写代码经常使用的一种布局方式，简单便捷且�
 </span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">span</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">p</span>&gt;
 </span></span></code></pre></div>
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/css/">
-                css
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/css/">
+                  css
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -198,8 +199,10 @@ flex布局是前端写代码经常使用的一种布局方式，简单便捷且�
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -218,8 +221,8 @@ flex布局是前端写代码经常使用的一种布局方式，简单便捷且�
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

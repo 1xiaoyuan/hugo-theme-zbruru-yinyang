@@ -114,31 +114,32 @@
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">揭秘箭头函数</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2021-11-05 12:16:00 UTC">
-                发布于   2021-11-05
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">揭秘箭头函数</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2021-11-05 12:16:00 UTC">
+                  发布于 2021-11-05
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <blockquote>
+          <div class="post-content markdown-body">
+            
+            <blockquote>
 <p>英文地址: <a href="https://javascript.plainenglish.io/demystifying-javascript-arrow-functions-7b2a0908a2b3">https://javascript.plainenglish.io/demystifying-javascript-arrow-functions-7b2a0908a2b3</a><br>
 通过掘金翻译计划活动进行翻译</p>
 </blockquote>
@@ -183,26 +184,26 @@
 </span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div><p>箭头函数没有被提升，因为它们也是函数表达式，其中函数被分配为变量的值。 当 JavaScript 引擎执行上述代码时，在创建阶段，声明语句 <code>var amIGoingToBeHoisted</code> 将被移到顶部并使用值 <code>undefined</code> 进行初始化，而将初始值留在后面。 在执行阶段，遇到语句<code>amIGoingToBeHoisted</code> 时会抛出类型错误，因为它的值是 undefined ，这不是提升后的函数类型。 要了解有关 JavaScript 提升的更多信息，我建议您阅读 <a href="https://themallu.dev/demystifying-hoisting"><strong>文章</strong></a>。</p>
 
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/js/">
-                js
-              </a>
-            </div>
-            
-            <div class="post-tags">
-              <a href="/tags/%E7%BF%BB%E8%AF%91/">
-                翻译
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/js/">
+                  js
+                </a>
+              </div>
+              
+              <div class="post-tags">
+                <a href="/tags/%E7%BF%BB%E8%AF%91/">
+                  翻译
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -227,8 +228,10 @@
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -247,8 +250,8 @@
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

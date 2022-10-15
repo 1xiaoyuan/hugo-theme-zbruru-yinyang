@@ -116,31 +116,32 @@ $(function(){ $(&amp;#39;.post-content img&amp;#39;).addClass(&amp;#39;smallimg&
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">实现图片灯箱功能</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2021-12-07 16:55:00 UTC">
-                发布于   2021-12-07
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">实现图片灯箱功能</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2021-12-07 16:55:00 UTC">
+                  发布于 2021-12-07
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <p>写博客必不可少的一个功能就是图片灯箱功能，也就是点击放大查看。但是不同程序的博客所使用的插件也都不一样，我这里研究出一套可以满足绝大部分程序的灯箱插件。已经测试过hexo, hugo, typecho 均无问题。</p>
+          <div class="post-content markdown-body">
+            
+            <p>写博客必不可少的一个功能就是图片灯箱功能，也就是点击放大查看。但是不同程序的博客所使用的插件也都不一样，我这里研究出一套可以满足绝大部分程序的灯箱插件。已经测试过hexo, hugo, typecho 均无问题。</p>
 <h2 id="引入文件">引入文件</h2>
 <p>首先引入我们关键的两个文件分别是 <code>zoom.css</code> 和 <code>zoom.js</code> 。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- head头部 --&gt;</span>
@@ -182,26 +183,26 @@ $(function(){ $(&amp;#39;.post-content img&amp;#39;).addClass(&amp;#39;smallimg&
 <p>之所以我限制了在正文中才可以放大，是因为网站其他地方也有图片，如果都可以点击放大，就很不合理。</p>
 <p>如果在使用中有其他问题，欢迎留言。</p>
 
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                博客
-              </a>
-            </div>
-            
-            <div class="post-tags">
-              <a href="/tags/%E6%8F%92%E4%BB%B6/">
-                插件
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                  博客
+                </a>
+              </div>
+              
+              <div class="post-tags">
+                <a href="/tags/%E6%8F%92%E4%BB%B6/">
+                  插件
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -226,8 +227,10 @@ $(function(){ $(&amp;#39;.post-content img&amp;#39;).addClass(&amp;#39;smallimg&
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -246,8 +249,8 @@ $(function(){ $(&amp;#39;.post-content img&amp;#39;).addClass(&amp;#39;smallimg&
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

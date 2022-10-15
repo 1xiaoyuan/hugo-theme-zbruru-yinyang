@@ -106,31 +106,32 @@ const num = [ { id: 1, name: &amp;#39;abc&amp;#39;, }, { id: 2, name: &amp;#39;x
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">将数组中多个对象的同名属性值取出合并成新数组</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2022-09-26 00:00:00 UTC">
-                发布于   2022-09-26
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">将数组中多个对象的同名属性值取出合并成新数组</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2022-09-26 00:00:00 UTC">
+                  发布于 2022-09-26
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <p>业务中需求的方法，接口返回一个数组，里面包含了大量的对象，具有同名的属性名，比较常见。但是需要将其中参数为name的属性值全部取出，合并成数组。</p>
+          <div class="post-content markdown-body">
+            
+            <p>业务中需求的方法，接口返回一个数组，里面包含了大量的对象，具有同名的属性名，比较常见。但是需要将其中参数为name的属性值全部取出，合并成数组。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">num</span> <span style="color:#f92672">=</span> [
 </span></span><span style="display:flex;"><span>    {
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
@@ -152,20 +153,20 @@ const num = [ { id: 1, name: &amp;#39;abc&amp;#39;, }, { id: 2, name: &amp;#39;x
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>);             <span style="color:#75715e">// [&#39;abc&#39;, &#39;xyz&#39;]
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#39; &#39;</span>));   <span style="color:#75715e">// &#34;abc xyz&#34;
 </span></span></span></code></pre></div>
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/js/">
-                js
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/js/">
+                  js
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -190,8 +191,10 @@ const num = [ { id: 1, name: &amp;#39;abc&amp;#39;, }, { id: 2, name: &amp;#39;x
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -210,8 +213,8 @@ const num = [ { id: 1, name: &amp;#39;abc&amp;#39;, }, { id: 2, name: &amp;#39;x
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

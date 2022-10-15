@@ -122,31 +122,32 @@
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">chrome浏览器无法显示12px以下的字体</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2021-02-26 22:38:00 UTC">
-                发布于   2021-02-26
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">chrome浏览器无法显示12px以下的字体</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2021-02-26 22:38:00 UTC">
+                  发布于 2021-02-26
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <p>最近正在面试，遇到了很多有意思的东西，比如今天，在面试前先做了一套面试题，其中有这么一道题，觉得挺有意思，之前也没见过，就打算记录下来：</p>
+          <div class="post-content markdown-body">
+            
+            <p>最近正在面试，遇到了很多有意思的东西，比如今天，在面试前先做了一套面试题，其中有这么一道题，觉得挺有意思，之前也没见过，就打算记录下来：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- chrome浏览器12px字体大小以下无法显示，均显示为12px，应该怎么解决。 --&gt;</span>
 </span></span></code></pre></div><p>我确实有点蒙，在之前写代码的时候，没有遇到过这样的情况，不过既然这样问了，就得想出解决的办法。</p>
 <p>首先我想到之前的一个问题，0.5px 的边框该如何实现，通过 scale(0.5) 可以实现，这是 css3 新属性。</p>
@@ -179,26 +180,26 @@
 <p>虽然存在这么个问题，但是按照我自己的预估，平时我们浏览的网站基本没有低于12px大小的字体吧！反正我是没有遇到过，我估计面试题也是想考验我们对一些生僻知识的处理吧，不过也不算生僻，前有0.5px，后有12px，其实都大同小异。</p>
 <p>在遇到这个问题的时候，确实可以通过 <code>scale()</code> 处理一下，然后在认真设置其他属性，尽量避免更多的弊端。</p>
 
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/css/">
-                css
-              </a>
-            </div>
-            
-            <div class="post-tags">
-              <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/">
-                浏览器
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/css/">
+                  css
+                </a>
+              </div>
+              
+              <div class="post-tags">
+                <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/">
+                  浏览器
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -223,8 +224,10 @@
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -243,8 +246,8 @@
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

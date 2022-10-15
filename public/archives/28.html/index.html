@@ -120,31 +120,32 @@ Object.freeze() 方法可以冻结一个对象。一个被冻结的对象再也�
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">vue学习笔记(2)－－vue实例和模板语法</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2020-11-24 13:05:00 UTC">
-                发布于   2020-11-24
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">vue学习笔记(2)－－vue实例和模板语法</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2020-11-24 13:05:00 UTC">
+                  发布于 2020-11-24
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <h2 id="一vue实例">一、vue实例</h2>
+          <div class="post-content markdown-body">
+            
+            <h2 id="一vue实例">一、vue实例</h2>
 <h3 id="1创建vue实例">1.创建vue实例</h3>
 <p>一个vue实例应该通过<code>new Vue</code>来创建根实例，所有的 vue 组件其实都是 vue 实例</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">vm</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
@@ -335,26 +336,26 @@ Object.freeze() 方法可以冻结一个对象。一个被冻结的对象再也�
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#960050;background-color:#1e0010">@[</span><span style="color:#a6e22e">event</span><span style="color:#960050;background-color:#1e0010">]=&#34;</span><span style="color:#a6e22e">doSomething</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt; ... &lt;/<span style="color:#f92672">a</span>&gt;
 </span></span></code></pre></div><p>它们看起来可能与普通的 HTML 略有不同，但<code>:</code>与<code>@</code>对于 attribute 名来说都是合法字符，在所有支持 Vue 的浏览器都能被正确地解析。而且，它们不会出现在最终渲染的标记中。缩写语法是完全可选的，但随着你更深入地了解它们的作用，你会庆幸拥有它们。</p>
 
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/vue/">
-                vue
-              </a>
-            </div>
-            
-            <div class="post-tags">
-              <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                笔记
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/vue/">
+                  vue
+                </a>
+              </div>
+              
+              <div class="post-tags">
+                <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                  笔记
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -379,8 +380,10 @@ Object.freeze() 方法可以冻结一个对象。一个被冻结的对象再也�
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -399,8 +402,8 @@ Object.freeze() 方法可以冻结一个对象。一个被冻结的对象再也�
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

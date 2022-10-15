@@ -140,31 +140,32 @@ mounted: function () { console.log(&amp;#39;mounted:&amp;#39;,document.getElemen
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">vue生命周期</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2020-06-19 21:07:00 UTC">
-                发布于   2020-06-19
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">vue生命周期</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2020-06-19 21:07:00 UTC">
+                  发布于 2020-06-19
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <p>学习vue中一个非常重要的领域，就是生命周期，它包含了很多的内容。每个vue实例在被创建的时候都要经历一系列的初始化过程，这个过程就是vue的生命周期。</p>
+          <div class="post-content markdown-body">
+            
+            <p>学习vue中一个非常重要的领域，就是生命周期，它包含了很多的内容。每个vue实例在被创建的时候都要经历一系列的初始化过程，这个过程就是vue的生命周期。</p>
 <!-- raw HTML omitted -->
 <p>每个vue实例在被创建的时候都要经过一系列的初始化过程——例如，需要把设置数据监听、编译模板、将实例挂载到DOM并在数据变化时更新DOM等，我们要把这一系列的过程称为组件的<code>生命周期</code>（组件从注册到销毁的整个过程）。我们有时候需要在组件生命周期的某个过程中，执行某些代码，基于此，vue提供了<code>生命周期钩子函数</code>，给了用户在不同阶段添加自己的代码的机会。</p>
 <p>但是在此之前，我们要详细的介绍下组件的生命周期，以及生命后期中每个阶段组件完成和未完成的部分。</p>
@@ -234,20 +235,20 @@ mounted: function () { console.log(&amp;#39;mounted:&amp;#39;,document.getElemen
 <p><img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-imgbed/a5c2e40a-9be7-4b8b-8beb-5371cf727878.png" alt=""></p>
 <p>可以看打到销毁Vue实例时会调用这两个函数</p>
 
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/vue/">
-                vue
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/vue/">
+                  vue
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -259,8 +260,10 @@ mounted: function () { console.log(&amp;#39;mounted:&amp;#39;,document.getElemen
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -279,8 +282,8 @@ mounted: function () { console.log(&amp;#39;mounted:&amp;#39;,document.getElemen
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

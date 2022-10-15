@@ -110,31 +110,32 @@ window.addEventListener(&amp;#39;load&amp;#39;, function() { window.addEventList
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">实时监听页面的变化</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2021-03-26 14:24:00 UTC">
-                发布于   2021-03-26
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">实时监听页面的变化</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2021-03-26 14:24:00 UTC">
+                  发布于 2021-03-26
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <p>问题产生于需求，因为项目需要适配pc和移动端多套布局，所以某些元素在特定的宽度下会产生错位的现象。</p>
+          <div class="post-content markdown-body">
+            
+            <p>问题产生于需求，因为项目需要适配pc和移动端多套布局，所以某些元素在特定的宽度下会产生错位的现象。</p>
 <p>如果是在css中，可以很好的判断，使用媒体查询可以实时检测页面的宽度，从而给予标签不同的属性。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">max-width</span>:<span style="color:#a6e22e">768px</span><span style="color:#f92672">)</span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
@@ -151,20 +152,20 @@ window.addEventListener(&amp;#39;load&amp;#39;, function() { window.addEventList
 </span></span></code></pre></div><p>具体操作的细节可以尝试一下，还是很不错的一个方法，同时注意 <code>window</code> ，因为这是个例子我就直接写了，实际编码中，慎用 
 <code>window</code> 事件。</p>
 
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/js/">
-                js
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/js/">
+                  js
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -189,8 +190,10 @@ window.addEventListener(&amp;#39;load&amp;#39;, function() { window.addEventList
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -209,8 +212,8 @@ window.addEventListener(&amp;#39;load&amp;#39;, function() { window.addEventList
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

@@ -122,31 +122,32 @@
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">有关 cdn.jsdelivr.net 证书错误的一些想法</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2021-12-20 14:25:00 UTC">
-                发布于   2021-12-20
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">有关 cdn.jsdelivr.net 证书错误的一些想法</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2021-12-20 14:25:00 UTC">
+                  发布于 2021-12-20
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <p>记录一次不大不小的事件，2021年12月20日，cdn.jsdelivr.net 国内ip全面崩盘，说是证书出错了，然后所有使用cdn.jsdelivr.net进行加速的资源全部404。</p>
+          <div class="post-content markdown-body">
+            
+            <p>记录一次不大不小的事件，2021年12月20日，cdn.jsdelivr.net 国内ip全面崩盘，说是证书出错了，然后所有使用cdn.jsdelivr.net进行加速的资源全部404。</p>
 <p>我也是在朋友圈看到的这个消息，上线一看果然全部显示丢失。</p>
 <p>对国外资源没有影响，所以这是一次只出现在国内的问题，jsd官网都还在，估计是cdn配置出错，应该很快就可以修复了。</p>
 <p>然后，我就开始思考将一些文件资源挂在一些比较可靠的网站是否真的可靠，包括之前使用 Github Pages + Vercel ，也出现过一段时间的证书错误，导出托管的网站崩了两天了，之后官方更换了新的 ip，虽然没什么大问题，但依旧是会有一些断断续续的连接错误404。</p>
@@ -157,26 +158,26 @@
 <p>写完测试一下 jsdelivr 是否修复，很好，已经半天过去了，没有修复完成的迹象。</p>
 <p>最后感叹一句，数据真的是又脆弱又重要！</p>
 
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/%E9%9A%8F%E7%AC%94/">
-                随笔
-              </a>
-            </div>
-            
-            <div class="post-tags">
-              <a href="/tags/jsdelivr/">
-                jsdelivr
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/%E9%9A%8F%E7%AC%94/">
+                  随笔
+                </a>
+              </div>
+              
+              <div class="post-tags">
+                <a href="/tags/jsdelivr/">
+                  jsdelivr
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -201,8 +202,10 @@
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -221,8 +224,8 @@
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

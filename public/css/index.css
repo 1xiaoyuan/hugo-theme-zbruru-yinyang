@@ -184,7 +184,7 @@ a:hover {
 }
 
 .site-footer {
-  margin-top: 50px;
+  margin-top: 20px;
   border-top: 1px solid #eee;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -285,6 +285,10 @@ a:hover {
   margin: 5px 0;
 }
 
+.post-comments {
+  padding: 20px 0;
+}
+
 /* taxonomy */
 
 .taxonomy-term {
@@ -324,9 +328,15 @@ a:hover {
   background: white;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   article {
-    padding: 0 15px;
+    padding: 0 5px;
+    background: none;
+    box-shadow: none;
+  }
+
+  #posts-list {
+    padding-top: 0;
   }
 
   .header-title,
@@ -335,9 +345,40 @@ a:hover {
     text-align: center;
   }
 
+  .header-items {
+    margin-bottom: 20px;
+  }
+
+  .posts-line {
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 0 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .pagination {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px 5px;
+  }
+
+  .header-line {
+    display: none;
+  }
+
   .posts-line a {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .post-box {
+    margin-top: 10px;
+    background: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px 15px;
   }
 
   .markdown-body {

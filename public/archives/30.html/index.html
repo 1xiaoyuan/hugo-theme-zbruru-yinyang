@@ -112,31 +112,32 @@ function component() { var element = document.createElement(&amp;#39;div&amp;#39
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">webpack安装配置指令</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2020-11-26 13:08:00 UTC">
-                发布于   2020-11-26
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">webpack安装配置指令</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2020-11-26 13:08:00 UTC">
+                  发布于 2020-11-26
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <p>进行重新加载编译。实际就是将浏览器不认识的语法编译成浏览器认识的语法。比如less编译成css，ES6 语法 转成 ES5等等。</p>
+          <div class="post-content markdown-body">
+            
+            <p>进行重新加载编译。实际就是将浏览器不认识的语法编译成浏览器认识的语法。比如less编译成css，ES6 语法 转成 ES5等等。</p>
 <p>减少io请求,通常我们在请求后，会返回一个html到浏览器。这时，我们如果打开控制台，就会发现在html页面通过script,link等标签引用的静态资源， 浏览器会再次发出请求去获取这些资源。但是webpack的打包，将所有的静态资源都合并好了，减少了io请求。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 安装webpack</span>
 </span></span><span style="display:flex;"><span>npm install --save-dev webpack
@@ -300,26 +301,26 @@ function component() { var element = document.createElement(&amp;#39;div&amp;#39
 <p>然后在<code>index.js</code>中引入：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">data</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./data.json&#39;</span>
 </span></span></code></pre></div>
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/%E5%B7%A5%E5%85%B7/">
-                工具
-              </a>
-            </div>
-            
-            <div class="post-tags">
-              <a href="/tags/webpack/">
-                webpack
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/%E5%B7%A5%E5%85%B7/">
+                  工具
+                </a>
+              </div>
+              
+              <div class="post-tags">
+                <a href="/tags/webpack/">
+                  webpack
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -331,8 +332,10 @@ function component() { var element = document.createElement(&amp;#39;div&amp;#39
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -351,8 +354,8 @@ function component() { var element = document.createElement(&amp;#39;div&amp;#39
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    

@@ -110,31 +110,32 @@ alter table typecho_comments convert to character set utf8mb4 collate utf8mb4_un
 
 <div class="header-line"></div>
         </div>
-        <header class="post-header">
-          <h1 class="post-title">typecho 博客小表情无法显示问题</h1>
-          
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              
-              <time class="post-date" datetime="2021-02-04 19:47:00 UTC">
-                发布于   2021-02-04
-              </time>
-              
-            </div>
-            <div class="col-xs-6">
-              
-              <div class="post-author">
-                <a target="_blank" href="/">@子舒</a>
+        <div class="post-box">
+          <header class="post-header">
+            <h1 class="post-title">typecho 博客小表情无法显示问题</h1>
+            
+            <div class="row post-desc">
+              <div class="col-xs-6">
+                
+                <time class="post-date" datetime=" 2021-02-04 19:47:00 UTC">
+                  发布于 2021-02-04
+                </time>
+                
               </div>
-              
+              <div class="col-xs-6">
+                
+                <div class="post-author">
+                  <a target="_blank" href="/">@子舒</a>
+                </div>
+                
+              </div>
             </div>
-          </div>
-          
-        </header>
+            
+          </header>
 
-        <div class="post-content markdown-body">
-          
-          <p>typecho 博客建立完成之后，会发现如果插入一些小表情，页面渲染完之后，表情不会显示，并且表情之后的内容全部消失，导致体验感很差。</p>
+          <div class="post-content markdown-body">
+            
+            <p>typecho 博客建立完成之后，会发现如果插入一些小表情，页面渲染完之后，表情不会显示，并且表情之后的内容全部消失，导致体验感很差。</p>
 <p>表情无法显示的原因是 uft-8 编码的问题，无法识别小表情，需要将其改成 utf8mb4</p>
 <h3 id="第一步进入数据库">第一步，进入数据库</h3>
 <p>首先登陆博客后台的数据库，然后点击 sql ，输入下列代码：</p>
@@ -163,26 +164,26 @@ alter table typecho_comments convert to character set utf8mb4 collate utf8mb4_un
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Typecho_Db</span><span style="color:#f92672">::</span><span style="color:#a6e22e">set</span>($db);
 </span></span></code></pre></div><p>在文章后台重新输入小表情，然后保存回到页面，小表情成功显示了。</p>
 
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            
-            <div class="post-tags">
-              <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                博客
-              </a>
-            </div>
-            
-            <div class="post-tags">
-              <a href="/tags/typecho/">
-                typecho
-              </a>
-            </div>
-            
           </div>
-        </div>
-        
+
+          <div class="row middle-xs">
+            <div class="col-xs-12">
+              
+              <div class="post-tags">
+                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                  博客
+                </a>
+              </div>
+              
+              <div class="post-tags">
+                <a href="/tags/typecho/">
+                  typecho
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs-12">
               
@@ -203,8 +204,10 @@ alter table typecho_comments convert to character set utf8mb4 collate utf8mb4_un
 
 
           
-          
-          <div style="height: 50px;"></div>
+        </div>
+        
+        <div style="height:15px;"></div>
+        <div class="post-box">
           <div class="post-comments">
             <div class="giscus"></div>
 <script src="https://giscus.app/client.js"
@@ -223,8 +226,8 @@ alter table typecho_comments convert to character set utf8mb4 collate utf8mb4_un
   async>
 </script>
           </div>
-        
-
+          
+        </div>
         <div class="site-footer">
   <div>
    
