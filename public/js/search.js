@@ -41,6 +41,8 @@ function executeSearch(searchQuery){
   });
 }
 
+
+
 function populateResults(result){
   $.each(result,function(key,value){
     var contents= value.item.contents;
