@@ -364,6 +364,21 @@ a:hover {
   padding: 20px 0;
 }
 
+.cate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cate .posts-line {
+  width: 45%;
+}
+
+.cate .posts-line a {
+  width: 100%;
+  justify-content: center;
+}
+
 /* taxonomy */
 
 .taxonomy-term {
