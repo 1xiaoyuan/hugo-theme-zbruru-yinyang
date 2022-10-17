@@ -5,6 +5,7 @@
   <meta name="generator" content="Hugo 0.101.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="toTop" content="true">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="子舒" />
   <meta property="og:url" content="https://zburu.com/archives/81.html/" />
@@ -36,7 +37,7 @@
       "url" : "https:\/\/zburu.com\/archives\/81.html\/",
       "keywords" : [ "js", ]
   }
-</script><title>js奇怪的知识--console.table</title>
+</script><title>js奇怪的知识--console.table - 子舒的博客</title>
   <meta property="og:title" content="js奇怪的知识--console.table" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="这个属性对我来说还真有些陌生，无意中发现的，查询过 MDN 之后听得挺有意思的，就记录一下。
@@ -64,6 +65,8 @@ function Fun(title, date) { this.title = title this.date = date } const one = ne
     title="子舒的博客">
 
   
+  
+  <script src="https://cdn.zburu.com/list/jquery3.6.0.js"></script>
 
   
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-671ZJMVQN9"></script>
@@ -93,6 +96,7 @@ function Fun(title, date) { this.title = title this.date = date } const one = ne
       <div class="col-xs-12">
         <div class="site-header">
           
+<div class="progress-bar"></div>
 <header>
   <div class="header-title">
     <a href="/">子舒的博客</a>
@@ -152,7 +156,7 @@ function Fun(title, date) { this.title = title this.date = date } const one = ne
             </div>
             
           </header>
-
+          <div class="autoMenu" id="autoMenu" data-autoMenu></div>
           <div class="post-content markdown-body">
             
             <p>这个属性对我来说还真有些陌生，无意中发现的，查询过 MDN 之后听得挺有意思的，就记录一下。</p>
@@ -215,7 +219,7 @@ function Fun(title, date) { this.title = title this.date = date } const one = ne
           
 
 <div class="related-content">
-  <h3>Related Posts</h3>
+  <h4>Related Posts</h4>
   <ul>
     
     <li><a href="/archives/80.html/">通过 getTimezoneOffset() 方法判断当前时区是否为夏令时</a></li>
@@ -289,23 +293,10 @@ function Fun(title, date) { this.title = title this.date = date } const one = ne
 
   
 
-<script src="https://cdn.zburu.com/list/jquery3.6.0.js"></script>
+<script src="/js/toc.js"></script>
 <script src="/js/simplebox.min.js"></script>
-<script>
-$('.post-content img').addClass('slb')
-  $('.slb').simplebox({
-    fadeSpeed: 400
-});
-</script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
-<script src="https://zburu.com/js/search.js"></script>
-<script>
-  $(function(){
-    $('#search-query').focus();
-  })
-</script>
+<script src="/js/main.js"></script>
   
 
 </body>

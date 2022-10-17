@@ -5,6 +5,7 @@
   <meta name="generator" content="Hugo 0.101.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="toTop" content="true">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="子舒" />
   <meta property="og:url" content="https://zburu.com/archives/76.html/" />
@@ -36,7 +37,7 @@
       "url" : "https:\/\/zburu.com\/archives\/76.html\/",
       "keywords" : [ "jquery", ]
   }
-</script><title>使用jq做一个数字递增效果</title>
+</script><title>使用jq做一个数字递增效果 - 子舒的博客</title>
   <meta property="og:title" content="使用jq做一个数字递增效果" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="数字递增，顾名思义就是数字不断增加，数字递增的效果就是要一定时间内，让数字有一个增加的特效，一般用于强调某个内容。
@@ -60,6 +61,8 @@ $.fn.countTo = function (a) { a = a || {}; return $(this).each(function () { var
     title="子舒的博客">
 
   
+  
+  <script src="https://cdn.zburu.com/list/jquery3.6.0.js"></script>
 
   
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-671ZJMVQN9"></script>
@@ -89,6 +92,7 @@ $.fn.countTo = function (a) { a = a || {}; return $(this).each(function () { var
       <div class="col-xs-12">
         <div class="site-header">
           
+<div class="progress-bar"></div>
 <header>
   <div class="header-title">
     <a href="/">子舒的博客</a>
@@ -148,7 +152,7 @@ $.fn.countTo = function (a) { a = a || {}; return $(this).each(function () { var
             </div>
             
           </header>
-
+          <div class="autoMenu" id="autoMenu" data-autoMenu></div>
           <div class="post-content markdown-body">
             
             <p>数字递增，顾名思义就是数字不断增加，数字递增的效果就是要一定时间内，让数字有一个增加的特效，一般用于强调某个内容。</p>
@@ -323,23 +327,10 @@ $.fn.countTo = function (a) { a = a || {}; return $(this).each(function () { var
 
   
 
-<script src="https://cdn.zburu.com/list/jquery3.6.0.js"></script>
+<script src="/js/toc.js"></script>
 <script src="/js/simplebox.min.js"></script>
-<script>
-$('.post-content img').addClass('slb')
-  $('.slb').simplebox({
-    fadeSpeed: 400
-});
-</script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
-<script src="https://zburu.com/js/search.js"></script>
-<script>
-  $(function(){
-    $('#search-query').focus();
-  })
-</script>
+<script src="/js/main.js"></script>
   
 
 </body>

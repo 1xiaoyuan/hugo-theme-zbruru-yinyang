@@ -43,6 +43,7 @@ body {
   margin: 0;
   padding: 0 5px;
   background: #f3f3f3;
+  overflow-x: hidden;
 }
 
 article {
@@ -65,6 +66,30 @@ a:hover {
   /* font-weight: 500; */
   color: #666;
   text-decoration: underline;
+}
+
+.progress-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 3px;
+  background: rgb(16 158 222);
+  width: 0;
+  z-index: 999;
+}
+
+#toTop {
+  text-decoration: none;
+  display: none;
+  width: 50px;
+  height: 50px;
+  bottom: 10px;
+  right: 15px;
+  position: fixed;
+  cursor: pointer;
+  z-index: 999999;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .post-ads {
@@ -156,6 +181,20 @@ a:hover {
 
 /* posts list */
 
+.iframe {
+  position: relative;
+  height: 0;
+  padding-bottom: 60%;
+}
+
+.iframe iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #posts-list {
   padding-top: 10px;
   padding-bottom: 30px;
@@ -216,7 +255,28 @@ a:hover {
 }
 
 .post-header {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.autoMenu {
+  background: #eee;
+  width: 100% !important;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.autoMenu ul {
+  margin: 0;
+  line-height: 1.6;
+  /* padding: 10px 0; */
+}
+
+.autoMenu ul li:first-child {
+  padding-top: 10px;
+}
+
+.autoMenu ul li:last-child {
+  padding-bottom: 10px;
 }
 
 .posts-line a {
@@ -289,6 +349,11 @@ a:hover {
   padding: 0 10px;
   margin-bottom: 50px;
   margin-top: 60px;
+}
+
+.related-content h4 {
+  font-size: 1.3rem;
+  margin-bottom: 14px;
 }
 
 .related-content li {
@@ -409,6 +474,7 @@ a:hover {
 
 /* 搜索 */
 .resume-section input {
+  font-size: 16px;
   width: 100%;
   outline: none;
   padding: 10px 10px;

@@ -5,6 +5,7 @@
   <meta name="generator" content="Hugo 0.101.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="toTop" content="true">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="子舒" />
   <meta property="og:url" content="https://zburu.com/archives/102.html/" />
@@ -36,7 +37,7 @@
       "url" : "https:\/\/zburu.com\/archives\/102.html\/",
       "keywords" : [ "博客","评论", ]
   }
-</script><title>Nuxt.js如何部署Artalk和遇到的问题</title>
+</script><title>Nuxt.js如何部署Artalk和遇到的问题 - 子舒的博客</title>
   <meta property="og:title" content="Nuxt.js如何部署Artalk和遇到的问题" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="花了两天时间，终于把 Artalk 部署好了，一款数据自托管带后端的评论程序，非常适合我。这篇文章就介绍一下我部署的流程，以及我在部署过程中遇到的一些问题，将它记录一下，以便之后研究，顺便对使用 Nuxt.js 搭建博客的伙伴提供一些参考价值。
@@ -80,6 +81,8 @@ docker run -d \ --name artalk-go \ -p 0." />
     title="子舒的博客">
 
   
+  
+  <script src="https://cdn.zburu.com/list/jquery3.6.0.js"></script>
 
   
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-671ZJMVQN9"></script>
@@ -109,6 +112,7 @@ docker run -d \ --name artalk-go \ -p 0." />
       <div class="col-xs-12">
         <div class="site-header">
           
+<div class="progress-bar"></div>
 <header>
   <div class="header-title">
     <a href="/">子舒的博客</a>
@@ -168,7 +172,7 @@ docker run -d \ --name artalk-go \ -p 0." />
             </div>
             
           </header>
-
+          <div class="autoMenu" id="autoMenu" data-autoMenu></div>
           <div class="post-content markdown-body">
             
             <p>花了两天时间，终于把 Artalk 部署好了，一款数据自托管带后端的评论程序，非常适合我。这篇文章就介绍一下我部署的流程，以及我在部署过程中遇到的一些问题，将它记录一下，以便之后研究，顺便对使用 Nuxt.js 搭建博客的伙伴提供一些参考价值。</p>
@@ -334,7 +338,7 @@ docker run -d \ --name artalk-go \ -p 0." />
           
 
 <div class="related-content">
-  <h3>Related Posts</h3>
+  <h4>Related Posts</h4>
   <ul>
     
     <li><a href="/archives/96.html/">Nuxt 项目中如何引入百度统计？</a></li>
@@ -408,23 +412,10 @@ docker run -d \ --name artalk-go \ -p 0." />
 
   
 
-<script src="https://cdn.zburu.com/list/jquery3.6.0.js"></script>
+<script src="/js/toc.js"></script>
 <script src="/js/simplebox.min.js"></script>
-<script>
-$('.post-content img').addClass('slb')
-  $('.slb').simplebox({
-    fadeSpeed: 400
-});
-</script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
-<script src="https://zburu.com/js/search.js"></script>
-<script>
-  $(function(){
-    $('#search-query').focus();
-  })
-</script>
+<script src="/js/main.js"></script>
   
 
 </body>

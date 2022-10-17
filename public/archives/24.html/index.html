@@ -5,6 +5,7 @@
   <meta name="generator" content="Hugo 0.101.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="toTop" content="true">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="子舒" />
   <meta property="og:url" content="https://zburu.com/archives/24.html/" />
@@ -36,7 +37,7 @@
       "url" : "https:\/\/zburu.com\/archives\/24.html\/",
       "keywords" : [ "vue", ]
   }
-</script><title>vue使用cli脚手架构建项目工程</title>
+</script><title>vue使用cli脚手架构建项目工程 - 子舒的博客</title>
   <meta property="og:title" content="vue使用cli脚手架构建项目工程" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="vue使用cli脚手架构建项目工程，执行的命令以及遇到的相关的问题
@@ -68,6 +69,8 @@ $ vue init webpack vuedemo // 名字自己根据要求起,vuedemo Project name (
     title="子舒的博客">
 
   
+  
+  <script src="https://cdn.zburu.com/list/jquery3.6.0.js"></script>
 
   
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-671ZJMVQN9"></script>
@@ -97,6 +100,7 @@ $ vue init webpack vuedemo // 名字自己根据要求起,vuedemo Project name (
       <div class="col-xs-12">
         <div class="site-header">
           
+<div class="progress-bar"></div>
 <header>
   <div class="header-title">
     <a href="/">子舒的博客</a>
@@ -156,7 +160,7 @@ $ vue init webpack vuedemo // 名字自己根据要求起,vuedemo Project name (
             </div>
             
           </header>
-
+          <div class="autoMenu" id="autoMenu" data-autoMenu></div>
           <div class="post-content markdown-body">
             
             <p>vue使用cli脚手架构建项目工程，执行的命令以及遇到的相关的问题</p>
@@ -245,7 +249,7 @@ Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specificHTML
           
 
 <div class="related-content">
-  <h3>Related Posts</h3>
+  <h4>Related Posts</h4>
   <ul>
     
     <li><a href="/archives/5.html/">vue生命周期</a></li>
@@ -315,23 +319,10 @@ Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specificHTML
 
   
 
-<script src="https://cdn.zburu.com/list/jquery3.6.0.js"></script>
+<script src="/js/toc.js"></script>
 <script src="/js/simplebox.min.js"></script>
-<script>
-$('.post-content img').addClass('slb')
-  $('.slb').simplebox({
-    fadeSpeed: 400
-});
-</script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
-<script src="https://zburu.com/js/search.js"></script>
-<script>
-  $(function(){
-    $('#search-query').focus();
-  })
-</script>
+<script src="/js/main.js"></script>
   
 
 </body>

@@ -5,6 +5,7 @@
   <meta name="generator" content="Hugo 0.101.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="toTop" content="true">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="子舒" />
   <meta property="og:url" content="https://zburu.com/archives/96.html/" />
@@ -36,7 +37,7 @@
       "url" : "https:\/\/zburu.com\/archives\/96.html\/",
       "keywords" : [ "博客","Nuxt", ]
   }
-</script><title>Nuxt 项目中如何引入百度统计？</title>
+</script><title>Nuxt 项目中如何引入百度统计？ - 子舒的博客</title>
   <meta property="og:title" content="Nuxt 项目中如何引入百度统计？" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="在部署一个网站之后，我们最关心的事情无异于是访问量，以及对它的分析。国内的百度统计是一个不错的选择，基本的功能都是免费的。
@@ -60,6 +61,8 @@
     title="子舒的博客">
 
   
+  
+  <script src="https://cdn.zburu.com/list/jquery3.6.0.js"></script>
 
   
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-671ZJMVQN9"></script>
@@ -89,6 +92,7 @@
       <div class="col-xs-12">
         <div class="site-header">
           
+<div class="progress-bar"></div>
 <header>
   <div class="header-title">
     <a href="/">子舒的博客</a>
@@ -148,7 +152,7 @@
             </div>
             
           </header>
-
+          <div class="autoMenu" id="autoMenu" data-autoMenu></div>
           <div class="post-content markdown-body">
             
             <p>在部署一个网站之后，我们最关心的事情无异于是访问量，以及对它的分析。国内的百度统计是一个不错的选择，基本的功能都是免费的。</p>
@@ -231,7 +235,7 @@
           
 
 <div class="related-content">
-  <h3>Related Posts</h3>
+  <h4>Related Posts</h4>
   <ul>
     
     <li><a href="/archives/88.html/">实现图片灯箱功能</a></li>
@@ -305,23 +309,10 @@
 
   
 
-<script src="https://cdn.zburu.com/list/jquery3.6.0.js"></script>
+<script src="/js/toc.js"></script>
 <script src="/js/simplebox.min.js"></script>
-<script>
-$('.post-content img').addClass('slb')
-  $('.slb').simplebox({
-    fadeSpeed: 400
-});
-</script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
-<script src="https://zburu.com/js/search.js"></script>
-<script>
-  $(function(){
-    $('#search-query').focus();
-  })
-</script>
+<script src="/js/main.js"></script>
   
 
 </body>
