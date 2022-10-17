@@ -31,7 +31,10 @@ link = "/message"
 name = "周刊"
 link = "/weekly"
 
-
 [[params.socials]]
 name = "关于"
 link = "/about"
+
+[[params.socials]]
+name = "搜索"
+link = "/search"
