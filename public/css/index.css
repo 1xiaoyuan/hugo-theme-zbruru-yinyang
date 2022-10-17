@@ -406,3 +406,38 @@ a:hover {
     display: none;
   }
 }
+
+/* 搜索 */
+.resume-section input {
+  width: 100%;
+  outline: none;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border: 2px solid #eee;
+  border-radius: 6px;
+}
+
+/* --- */
+
+.search-list {
+  background: #f3f3f3;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.search-list a {
+  text-decoration: none;
+}
+
+.search-list h4 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.search-list .summary {
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden; */
+}

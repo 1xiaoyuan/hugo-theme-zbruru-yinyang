@@ -1,6 +1,5 @@
 ---
 slug: search
-title: 搜索
-layout: 'search'
+title: "Search"
+layout: "search"
 ---
-
