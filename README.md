@@ -1,10 +1,5 @@
 ## hugo-blog
 
-我的 hugo 博客。
+我的 hugo 博客源码。
 
-在文件夹中右键， `git base here`中执行
-
-```sh
-./hugo.sh
-```
-
+双击运行 `hugo.sh` 文件。
