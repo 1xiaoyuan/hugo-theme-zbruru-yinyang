@@ -202,17 +202,7 @@
           <div class="post-content markdown-body">
             
             
-            <div class="lab-list">
-              <div class="item">
-                <a href="">
-                  <div class="icon"><img src="https://oss.zburu.com/i/2022/10/19/634fab40627ea.png" alt=""></div>
-                  <div class="info">
-                    <span>资源导航站</span>
-                    <p>基于 vitepress 建立的网址导航站</p>
-                  </div>
-                </a>
-              </div>
-            </div>
+            <div class="lab-list"></div>
           </div>
 
           <script>
@@ -224,7 +214,6 @@
                 dataType: 'json',
                 success: function (data) {
                   $.each(data, function (i, item) {
-                    console.log(item)
                     list = "<div class='item'>"
                       + "<a target='_blank' href='" + item.url + "'>"
                       + "<div class='icon'><img src='" + item.icon + "'></div>"
@@ -238,7 +227,6 @@
                     str += list;
                   }),
                     $(".lab-list").html(str);
-                  console.log('数据请求成功')
 
                 },
                 error: function () {
