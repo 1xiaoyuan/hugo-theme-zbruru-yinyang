@@ -172,7 +172,7 @@ var li = document.getElementsByTagName(&amp;#34;li&amp;#34;); for (var i = 0; i 
 </span></span></code></pre></div><p>通过 <code>Math.random()</code> 属性可以随机生成一个数字，然后通过转化为十六进制的方法进行处理，下面就是随机生成 6 位数字的代码，并进行转化的代码。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">randomHex</span> <span style="color:#f92672">=</span> () =&gt; <span style="color:#e6db74">`#</span><span style="color:#e6db74">${</span>Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">0xffffff</span>).<span style="color:#a6e22e">toString</span>(<span style="color:#ae81ff">16</span>).<span style="color:#a6e22e">padEnd</span>(<span style="color:#ae81ff">6</span>, <span style="color:#e6db74">&#34;0&#34;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
 </span></span></code></pre></div><p>可以在控制台输出看一下结果，随机生成了一个结果 <code>#62113b</code>。</p>
-<p><img src="https://oss.zburu.com/i/2021/09/29/157fa8f9834a8e9001c270d7223a1aa9.png" alt=""></p>
+<p><img src="https://cdn.staticaly.com/gh/zburu/pic-cdn@main/2021/09/29/157fa8f9834a8e9001c270d7223a1aa9.png" alt=""></p>
 <p>接下来就需要将这个颜色传给上面的 li 标签，首先需要将所有的 li 遍历然后生成一个数组，可以使用 for 循环进行遍历。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">arr</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#e6db74">&#39;li&#39;</span>), <span style="color:#a6e22e">temp</span> <span style="color:#f92672">=</span> [];
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
@@ -189,7 +189,7 @@ var li = document.getElementsByTagName(&amp;#34;li&amp;#34;); for (var i = 0; i 
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>这些事件都是在页面加载完成之后运行的，所以需要通过 <code>window.onload</code> 写入事件，然后把所有的代码合在一起。</p>
 <p>看看效果如果。</p>
-<p><img src="https://oss.zburu.com/i/2021/09/29/ea9f9e27be2f3587cda141bc998d4b80.png" alt=""></p>
+<p><img src="https://cdn.staticaly.com/gh/zburu/pic-cdn@main/2021/09/29/ea9f9e27be2f3587cda141bc998d4b80.png" alt=""></p>
 <p>把这些复制下来放到本地运行一下就可以看到效果了。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;

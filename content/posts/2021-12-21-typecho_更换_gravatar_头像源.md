@@ -15,7 +15,7 @@ tags:
 
 <!-- more -->
 
-![](https://oss.zburu.com/i/2022/01/05/3e5e307b9fb3ba048fdc9f7b5351d7b9.png)
+![](https://cdn.staticaly.com/gh/zburu/pic-cdn@main/2022/01/05/3e5e307b9fb3ba048fdc9f7b5351d7b9.png)
 
 ```php
 define('__TYPECHO_GRAVATAR_PREFIX__', 'https://sdn.geekzu.org/avatar/');

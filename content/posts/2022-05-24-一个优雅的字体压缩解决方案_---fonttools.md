@@ -22,7 +22,7 @@ pip install fonttools
 ```
 
 ### 字体库
-![1653623749590.png](https://oss.zburu.com/i/2022/05/27/62904bc40bec5.png)
+![1653623749590.png](https://cdn.staticaly.com/gh/zburu/pic-cdn@main/2022/05/27/62904bc40bec5.png)
 
 1. 本地新建一个文件夹，取名为 `fonts` ，随意即可。将自己需要压缩整理的字体放在文件夹中，如 `OPPOSans.ttf` 。
 2. 然后建立一个文件取名为 `word.txt`，这时我们需要找到一个常用字体库，这里我在github分享一个 [https://github.com/zburu/cdn/blob/main/font/汉字常用字体.txt](https://github.com/zburu/cdn/blob/main/font/%E6%B1%89%E5%AD%97%E5%B8%B8%E7%94%A8%E5%AD%97%E4%BD%93.txt) ，把里面的内容常用字体复制到 `word.txt` 文件。
@@ -34,12 +34,12 @@ pip install fonttools
 pyftsubset OPPOSans.ttf --text=$(cat word.txt) --no-hinting
 ```
 
-![1653623896959.png](https://oss.zburu.com/i/2022/05/27/62904c5765152.png)
+![1653623896959.png](https://cdn.staticaly.com/gh/zburu/pic-cdn@main/2022/05/27/62904c5765152.png)
 
 我们看一下命令，其中 `OPPOSans.ttf` 是字体文件，`word.txt` 是常用字体，我们要将这些字单独分离出来。
 
 名字都可以按照自己的要求来，但是一定要互相对应。
 
-![1653623936778.png](https://oss.zburu.com/i/2022/05/27/62904c7f37cd3.png)
+![1653623936778.png](https://cdn.staticaly.com/gh/zburu/pic-cdn@main/2022/05/27/62904c7f37cd3.png)
 
 在命令行输入即可，运行完成之后，可以在文件夹中看到带有 `subset` 字样的字体文件，占用空间大大缩小，可以直接拿来使用。
