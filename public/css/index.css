@@ -116,13 +116,12 @@ a:hover {
 .markdown-body pre {
   padding: 16px;
   overflow: auto;
-  border-radius: 10px;
 }
 
 .markdown-body code {
   padding: 0.2em 0.4em;
   font-size: 85%;
-  background-color: #f6f8fa;
+  background-color: #d1d1d1;
   border-radius: 6px;
 }
 
@@ -496,6 +495,11 @@ a:hover {
   box-sizing: border-box;
   border: 2px solid #eee;
   border-radius: 6px;
+  transition: all 0.1s linear;
+}
+
+.resume-section input:focus {
+  border: 2px solid #c1bfbf;
 }
 
 /* --- */

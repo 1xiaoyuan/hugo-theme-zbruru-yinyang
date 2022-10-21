@@ -19,17 +19,30 @@ localStorage 的使用也非常简单，分为存入和读取，可以将其绑�
 ```js
 // 存入
 const arr= 100;
-localStorage.setItem("number", JSON.stringify(arr));
+localStorage.setItem("key", JSON.stringify(arr));
 
 // 读取
-const number = JSON.parse(localStorage.getItem("number"));
+const arr = JSON.parse(localStorage.getItem("key"));
 ```
 
-这里 `"number"` 指的是存到浏览器中的参数名，`arr` 则是参数值。
+这里 `"key"` 指的是存到浏览器中的参数名，`arr` 则是参数值。
 
-1. `localStorage.setItem("number", JSON.stringify(arr));` 这个方法就是将数组arr存到了浏览器的localStorage 中，它的参数名叫 number。
-2. `const number = JSON.parse(localStorage.getItem("number"));` 就是读取浏览器中参数名为 number 的参数值。
+1. `localStorage.setItem("key", JSON.stringify(arr));` 这个方法就是将数组arr存到了浏览器的localStorage 中，它的参数名叫 key
+2. `const arr = JSON.parse(localStorage.getItem("key"));` 就是读取浏览器中参数名为 key 的参数值。
 
 比如静态保存某个设置参数，可以将其写入数组中，然后通过 localStorage 存储，原本刷新就会显示默认设置，现在可以在每次刷新的适合读取存入的参数。
 
+![](https://cdn.staticaly.com/gh/zburu/pic-cdn@main/2022/image.21ou0cungctc.webp)
+
 在一些场景下非常好用，比如开发一个油猴脚本等等。
+
+清除 localStorage，分为清除所以的存储值和清除某个特定的 key。
+
+```js
+// 清除本地存储中的所有值
+localStorage.clear(); 
+
+// 本地存储中删除特定项
+localStorage.removeItem(key);
+```
+
