@@ -2,7 +2,7 @@ baseURL = "https://zburu.com"
 languageCode = "en-us"
 title = "子舒的博客"
 theme = "yinyang"
-paginate = 9
+paginate = 10
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
