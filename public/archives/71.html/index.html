@@ -9,9 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="子舒" />
   <meta property="og:url" content="https://zburu.com/archives/71.html/" />
-  <link rel="canonical" href="https://zburu.com/archives/71.html/" /><link rel="apple-touch-icon" href="https://oss.zburu.com/favicon.ico" />
-  <link rel="icon" href="https://oss.zburu.com/favicon.ico" />
-  <link rel="shortcut" href="https://oss.zburu.com/favicon.ico" /><link rel="alternate" type="application/atom+xml" href="https://zburu.comindex.xml" title="子舒的博客">
+  <link rel="canonical" href="https://zburu.com/archives/71.html/" /><link rel="apple-touch-icon" href="https://cdn.zburu.com/favicon.ico" />
+  <link rel="icon" href="https://cdn.zburu.com/favicon.ico" />
+  <link rel="shortcut" href="https://cdn.zburu.com/favicon.ico" /><link rel="alternate" type="application/atom+xml" href="https://zburu.comindex.xml" title="子舒的博客">
 
   <script type="application/ld+json">
   {
@@ -50,7 +50,7 @@ import axios from &amp;#39;axios&amp;#39; import VueAxios from &amp;#39;vue-axio
 npm install axios 然后在 main.js 文件中引入。
 import axios from &amp;#39;axios&amp;#39; import VueAxios from &amp;#39;vue-axios&amp;#39; Vue.use(VueAxios, axios) 以我的一个工程目录作为实例，看一下代码。
 // ListThere.vue // html 代码 ... &amp;lt;div&amp;gt;{{ info }}&amp;lt;/div&amp;gt; ... // js 代码 import axios from &amp;#34;axios&amp;#34;; export default { name: &amp;#34;ListThere&amp;#34;, data() { return { ... }; }, components: { ... }, methods: { ... }, mounted() { axios .get(&amp;#34;http://api.h-camel.com/api?mod=interview&amp;amp;ctr=issues&amp;amp;act=today&amp;#34;) .then((response) =&amp;gt; (this.info = response)) }, }; 数据成功的被取到，然后需要将它在页面中展示出来。使用 vue 自带的 v-for 列表渲染。" />
-  <meta property="og:locale" content="en-us" /><meta property="og:image" content="https://oss.zburu.com/favicon.ico" />
+  <meta property="og:locale" content="en-us" /><meta property="og:image" content="https://cdn.zburu.com/favicon.ico" />
   
 
   <link rel="stylesheet" href="/css/simplebox.min.css">

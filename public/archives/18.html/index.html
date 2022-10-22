@@ -9,9 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="子舒" />
   <meta property="og:url" content="https://zburu.com/archives/18.html/" />
-  <link rel="canonical" href="https://zburu.com/archives/18.html/" /><link rel="apple-touch-icon" href="https://oss.zburu.com/favicon.ico" />
-  <link rel="icon" href="https://oss.zburu.com/favicon.ico" />
-  <link rel="shortcut" href="https://oss.zburu.com/favicon.ico" /><link rel="alternate" type="application/atom+xml" href="https://zburu.comindex.xml" title="子舒的博客">
+  <link rel="canonical" href="https://zburu.com/archives/18.html/" /><link rel="apple-touch-icon" href="https://cdn.zburu.com/favicon.ico" />
+  <link rel="icon" href="https://cdn.zburu.com/favicon.ico" />
+  <link rel="shortcut" href="https://cdn.zburu.com/favicon.ico" /><link rel="alternate" type="application/atom+xml" href="https://zburu.comindex.xml" title="子舒的博客">
 
   <script type="application/ld+json">
   {
@@ -48,7 +48,7 @@ js通过dom节点，可以对文档的html标签，属性，css样式，以及�
 一、什么是DOM？ DOM中文名文档对象模型，英文名Document Object Model，我们简称为DOM，是针对html和xml文档的一种API，将html以一种树状结构呈现出来，可以更直观去研究文档结构，我们将这种树状文档结构称为－－DOM树，或者节点树，一样的概念
 js通过dom节点，可以对文档的html标签，属性，css样式，以及具体的内容做出修改，并对页面中的所有事件进行响应
 二、节点树 1.节点类型 文档节点－－Document 标签节点－－Element 文本节点－－Text 注释节点－－Comment 属性节点－－Attr 2. 属性 节点类型－－nodeType 节点名称－－nodeName 节点值－－nodeValue 子节点－－childNodes 父节点－－parentNodes 上一个节点－－previousSibling 下一个节点－－nextSibling 第一个子节点－－firstChild 最后一个子节点－－lastChild 3.文档节点－－document (1) 获取 getElementById()－－通过id获取元素 &amp;lt;div id=&amp;#34;demo&amp;#34;&amp;gt;通过id获取元素&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; var demo = document.getElementById(&amp;#39;demo&amp;#39;); demo.onclick = function() { console.log(&amp;#39;通过id获取元素&amp;#39;) } &amp;lt;/script&amp;gt; &amp;lt;!-- 点击id为demo的元素，控制台输出&amp;#39;通过id获取元素&amp;#39; --&amp;gt; getElementsByName()－－通过name获取元素 &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;int&amp;#34; value=&amp;#34;通过name获取元素1&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;int&amp;#34; value=&amp;#34;通过name获取元素2&amp;#34;&amp;gt; &amp;lt;script&amp;gt; var int = document.getElementsByName(&amp;#39;int&amp;#39;); for(var i = 0;i &amp;lt; int.length; i&#43;&#43;) { console.log(int[i].value); } &amp;lt;/script&amp;gt; &amp;lt;!" />
-  <meta property="og:locale" content="en-us" /><meta property="og:image" content="https://oss.zburu.com/favicon.ico" />
+  <meta property="og:locale" content="en-us" /><meta property="og:image" content="https://cdn.zburu.com/favicon.ico" />
   
 
   <link rel="stylesheet" href="/css/simplebox.min.css">

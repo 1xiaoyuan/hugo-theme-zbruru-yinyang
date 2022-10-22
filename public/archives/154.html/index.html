@@ -9,9 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="子舒" />
   <meta property="og:url" content="https://zburu.com/archives/154.html/" />
-  <link rel="canonical" href="https://zburu.com/archives/154.html/" /><link rel="apple-touch-icon" href="https://oss.zburu.com/favicon.ico" />
-  <link rel="icon" href="https://oss.zburu.com/favicon.ico" />
-  <link rel="shortcut" href="https://oss.zburu.com/favicon.ico" /><link rel="alternate" type="application/atom+xml" href="https://zburu.comindex.xml" title="子舒的博客">
+  <link rel="canonical" href="https://zburu.com/archives/154.html/" /><link rel="apple-touch-icon" href="https://cdn.zburu.com/favicon.ico" />
+  <link rel="icon" href="https://cdn.zburu.com/favicon.ico" />
+  <link rel="shortcut" href="https://cdn.zburu.com/favicon.ico" /><link rel="alternate" type="application/atom+xml" href="https://zburu.comindex.xml" title="子舒的博客">
 
   <script type="application/ld+json">
   {
@@ -52,7 +52,7 @@
 但是，经过我解析表情之后，就可以变成下面这样，使用主题如果需要这种功能，可以按照我下面的步骤进行改造。
 修改 打开 /admin/manage-comments.php 文件，在题头插入：
 /* * 解析表情 */ function getparseBiaoQingComment($content) { $emopath=$_SERVER[&amp;#39;REQUEST_SCHEME&amp;#39;].&amp;#34;:&amp;#34;. DIRECTORY_SEPARATOR . DIRECTORY_SEPARATOR . $_SERVER[&amp;#39;HTTP_HOST&amp;#39;]; $emo = false; global $emo; if(!$emo) { $emo = json_decode(file_get_contents(dirname(dirname(dirname(__FILE__))).&amp;#39;/zburu.com/usr/themes/Anghunk/libs/OwO.json&amp;#39;), true); } foreach ($emo as $v) { if($v[&amp;#39;type&amp;#39;] == &amp;#39;image&amp;#39;) { foreach ($v[&amp;#39;container&amp;#39;] as $vv) { $emoaa=&amp;#34;::&amp;#34;.$v[&amp;#39;name&amp;#39;].&amp;#34;:&amp;#34;.$vv[&amp;#39;icon&amp;#39;].&amp;#34;::&amp;#34;; $content = str_replace($emoaa, &amp;#39; &amp;lt;img style=&amp;#34;max-height:40px;vertical-align:middle;&amp;#34; src=&amp;#34;&amp;#39;.$emopath.&amp;#39;/usr/themes/Anghunk/libs/emotion/&amp;#39;.$v[&amp;#39;name&amp;#39;].&amp;#39;/&amp;#39;.$vv[&amp;#39;icon&amp;#39;] .&amp;#39;.png&amp;#34; alt=&amp;#34;&amp;#39;.$vv[&amp;#39;text&amp;#39;] .&amp;#39;&amp;#34;&amp;gt; &amp;#39;, $content); } } } return $content; } 注意我放置的位置，必须要要 &amp;lt;?" />
-  <meta property="og:locale" content="en-us" /><meta property="og:image" content="https://oss.zburu.com/favicon.ico" />
+  <meta property="og:locale" content="en-us" /><meta property="og:image" content="https://cdn.zburu.com/favicon.ico" />
   
 
   <link rel="stylesheet" href="/css/simplebox.min.css">

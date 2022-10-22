@@ -9,9 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="子舒" />
   <meta property="og:url" content="https://zburu.com/archives/73.html/" />
-  <link rel="canonical" href="https://zburu.com/archives/73.html/" /><link rel="apple-touch-icon" href="https://oss.zburu.com/favicon.ico" />
-  <link rel="icon" href="https://oss.zburu.com/favicon.ico" />
-  <link rel="shortcut" href="https://oss.zburu.com/favicon.ico" /><link rel="alternate" type="application/atom+xml" href="https://zburu.comindex.xml" title="子舒的博客">
+  <link rel="canonical" href="https://zburu.com/archives/73.html/" /><link rel="apple-touch-icon" href="https://cdn.zburu.com/favicon.ico" />
+  <link rel="icon" href="https://cdn.zburu.com/favicon.ico" />
+  <link rel="shortcut" href="https://cdn.zburu.com/favicon.ico" /><link rel="alternate" type="application/atom+xml" href="https://zburu.comindex.xml" title="子舒的博客">
 
   <script type="application/ld+json">
   {
@@ -50,7 +50,7 @@
 看一下具体内容
 写一个接口 很好，拥有我们需要的字段。事不宜迟，直接开动，下面是完成的接口代码。
 &amp;lt;?php header(&amp;#39;Content-Type:application/json; charset=utf-8&amp;#39;); header(&amp;#34;Access-Control-Allow-Origin:*&amp;#34;); $servername = &amp;#34;localhost&amp;#34;; $username = &amp;#34;imgbed&amp;#34;; $password = &amp;#34;imgbed&amp;#34;; $dbname = &amp;#34;imgbed&amp;#34;; // 创建连接 $conn = new mysqli($servername, $username, $password, $dbname); // 检测连接 if ($conn-&amp;gt;connect_error) { die(&amp;#34;连接失败: &amp;#34; . $conn-&amp;gt;connect_error); } // imgmd5 名称转md5 // imguploadtime 上传时间戳 // imgurl 链接 // 上传 ip $sql = &amp;#34;select imgmd5,imguploadtime,imgurl,imguploadip from remote_imgs &amp;#34;; $result = $conn-&amp;gt;query($sql); if ($result-&amp;gt;num_rows &amp;gt; 0) { // 输出数据 while($row = $result-&amp;gt;fetch_assoc()) { $data[]=$row; } $json = json_encode($data,JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT);//把数据转换为JSON数据." />
-  <meta property="og:locale" content="en-us" /><meta property="og:image" content="https://oss.zburu.com/favicon.ico" />
+  <meta property="og:locale" content="en-us" /><meta property="og:image" content="https://cdn.zburu.com/favicon.ico" />
   
 
   <link rel="stylesheet" href="/css/simplebox.min.css">
