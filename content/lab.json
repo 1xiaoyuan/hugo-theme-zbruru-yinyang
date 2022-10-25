@@ -28,5 +28,11 @@
     "name": "memos在线笔记",
     "url": "https://memos.zburu.com/",
     "des": "私有部署的memos笔记，类flomo，简洁美观。"
+  },
+  {
+    "icon": "https://cdn.staticaly.com/gh/zburu/pic-cdn@main/2022/image.1jgrn9j1yu1s.jpg",
+    "name": "Wiki 搜索网站",
+    "url": "https://wiki.zburu.com/",
+    "des": "我个人创建的一个 wiki 站点，会记录汇集一些教程，通过搜索可以直接查看你想要的内容。"
   }
 ]
