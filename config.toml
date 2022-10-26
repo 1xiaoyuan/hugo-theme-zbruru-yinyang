@@ -2,13 +2,13 @@ baseURL = "https://zburu.com"
 languageCode = "en-us"
 title = "子舒的博客"
 theme = "yinyang"
-paginate = 10
+paginate = 15
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
 [params]
-  title = "子舒的博客"
+  title = "不如吃茶去"
   Description = "七碗受至味，一壶得真趣，空持百千偈，不如吃茶去。"
   favicon = "https://cdn.zburu.com/favicon.ico"
   buildDate = "2020-06-14"

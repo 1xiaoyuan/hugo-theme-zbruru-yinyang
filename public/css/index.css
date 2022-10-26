@@ -443,11 +443,11 @@ a:hover {
     margin-bottom: 15px;
     border-radius: 5px;
     padding: 0;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
   }
 
   .pagination {
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
     background: #fff;
     border-radius: 5px;
     padding: 10px 5px;
@@ -466,7 +466,7 @@ a:hover {
   .post-box {
     margin-top: 10px;
     background: #fff;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     padding: 10px 15px;
   }
