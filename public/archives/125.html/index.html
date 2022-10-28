@@ -227,33 +227,31 @@ ps: 这周碎碎念很少，因为五一有事出去了，身体和心灵都没�
         </div>
         <div class="site-footer">
   <div>
-   
-
-    © 2020-<span id="year"></span> · 
+    © 2020-<span id="year"></span> ·
     <a href="https://beian.miit.gov.cn/" target="_blank">
       <span>浙ICP备2022002453号-2</span>
     </a>
-
     · 网站运行: <span id="days">0</span> 天
-
-    <div class="top">
-      <i></i>
-      <i></i>
-    </div>
   </div>
+</div>
+<div class="canvas-wrap">
+  <canvas id="canvas"></canvas>
+</div>
+<div id="toTop">
+  Top!!
+</div>
+<script>
+  var s0 = '2020-06-14';
+  s1 = new Date(s0.replace(/-/g, "/"));
+  s2 = new Date();
+  var days = s2.getTime() - s1.getTime();
+  var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+  document.getElementById('days').innerHTML = number_of_days;
 
-  <script>
-    var s0 = '2020-06-14';
-    s1 = new Date(s0.replace(/-/g, "/"));
-    s2 = new Date();
-    var days = s2.getTime() - s1.getTime();
-    var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
-    document.getElementById('days').innerHTML = number_of_days;
-
-    var date = new Date;
-    var year = date.getFullYear();
-    document.getElementById('year').innerHTML = year;
-  </script>
+  var date = new Date;
+  var year = date.getFullYear();
+  document.getElementById('year').innerHTML = year;
+</script>
       </div>
     </div>
   </article>
